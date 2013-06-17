@@ -1,0 +1,37 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/agent
+http://192.168.9.252/svn/code2
+
+
+
+2010-11-10T01:59:26.567643Z
+1282
+wguojie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+warns
+dir
+
+comm
+dir
+
+errors
+dir
+

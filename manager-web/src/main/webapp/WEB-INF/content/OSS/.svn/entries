@@ -1,0 +1,77 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-18T02:03:50.926866Z
+3623
+liuqing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+smoa
+dir
+
+wom
+dir
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:50:58.552747Z
+3bb4ce2c1ce1b3e4e53017b8c39ec440
+2010-11-30T11:33:39.364260Z
+1803
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1745
+
+klbm
+dir
+
+comm
+dir
+
+pm
+dir
+

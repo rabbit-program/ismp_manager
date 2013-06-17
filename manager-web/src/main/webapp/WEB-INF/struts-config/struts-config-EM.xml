@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  
+  <form-beans>
+    <form-bean name="statisticalAnalsForm" type="edu.sjtu.infosec.ismp.manager.EM.web.form.EventStatisticalAnalsForm"/>
+    <form-bean name="eventSelectConditionForm" type="edu.sjtu.infosec.ismp.manager.EM.web.form.EventSelectConditionForm"/>
+    <form-bean name="eventCorrelationForm" 
+	        type="edu.sjtu.infosec.ismp.manager.EM.web.form.EventCorrelationForm"/>
+	        
+	<form-bean name="reportEventGroupByForm" type="edu.sjtu.infosec.ismp.manager.EM.web.form.ReportEventGroupByForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  
+  <action-mappings>
+  
+        <action path="/eventAction"
+                type="org.springframework.web.struts.DelegatingActionProxy" 
+                scope="request" parameter="method" validate="false">
+            <forward name="eventList" path="/WEB-INF/content/EM/eventList.jsp"></forward>
+            <forward name="markReport" path="/WEB-INF/content/EM/reportMark.jsp"></forward>
+            <forward name="eventTimeTrend" path="/WEB-INF/content/EM/timeTrend.jsp"></forward>
+            <forward name="inTimeReportMark" path="/WEB-INF/content/EM/inTimeReportMark.jsp"></forward>
+            <forward name="monitoring_information" path="/WEB-INF/content/EM/monitoring_information.jsp"></forward>
+        </action>
+        
+        <action path="/eventSelectCondition"
+                name="eventSelectConditionForm"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="false">
+            <forward name="eventSelectCondition" path="/WEB-INF/content/EM/eventSelectCondition.jsp"></forward>
+        </action>
+        
+        <action path="/eventStatisticalAnals"
+                name="statisticalAnalsForm"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="session" parameter="method" validate="false">
+            <forward name="eventStatisticalAnalysis" path="/WEB-INF/content/EM/eventStatisticalAnalysis.jsp"></forward>
+            <forward name="eventDisplay" path="/WEB-INF/content/EM/eventDisplay.jsp"></forward>
+        </action>
+        
+        <action path="/eventCorrelationAction"
+        		name="eventCorrelationForm"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="true">
+            <forward name="eventCorrelation" path="/WEB-INF/content/EM/eventCorrelation.jsp"></forward>
+            <forward name="eventCorrelationInUse" path="/WEB-INF/content/EM/eventCorrelationInUse.jsp"></forward>
+        </action>
+        
+   <!-- 事件 报表 -->
+    <action path="/EventGroupByDeviceType"
+    	type="edu.sjtu.infosec.ismp.manager.EM.web.reports.EventGroupByDeviceType"
+    	attribute="reportEventGroupByForm" 
+    	name="reportEventGroupByForm"
+    	validate="false" 
+    	scope="request" />
+    <action path="/EventTop10" 
+        type="edu.sjtu.infosec.ismp.manager.EM.web.reports.EventTop10"
+        attribute="reportEventGroupByForm" 
+        name="reportEventGroupByForm"
+        validate="false" 
+        scope="request" />
+    <action path="/EventGroupByType" 
+        type="edu.sjtu.infosec.ismp.manager.EM.web.reports.EventGroupByType"
+        attribute="reportEventGroupByForm" 
+        name="reportEventGroupByForm"
+        validate="false" 
+        scope="request" />
+    <action path="/EventGroupBySubDomain" 
+        type="edu.sjtu.infosec.ismp.manager.EM.web.reports.EventGroupBySubDomain"
+        attribute="reportEventGroupByForm" 
+        name="reportEventGroupByForm"
+        validate="false" 
+        scope="request" />
+    <action path="/TopoEvent" 
+        type="edu.sjtu.infosec.ismp.manager.EM.web.reports.TopoEvent"
+        attribute="reportEventGroupByForm" 
+        name="reportEventGroupByForm"
+        validate="false" 
+        scope="request" />
+        
+ <!--   作废     
+        <action path="/associatedAssetsAction"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="true">
+            <forward name="associatedAssets" path="/WEB-INF/jsp/posture/assetsDomainMessage.jsp"></forward>
+            <forward name="associatedAssetsUpd" path="/WEB-INF/jsp/posture/associatedAssets.jsp"></forward>
+        </action>
+        
+        <action path="/alarmSettingsAction"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="true">
+            <forward name="alarmSettings" path="/WEB-INF/jsp/posture/alarmSettings.jsp"></forward>
+        </action>
+        
+        <action path="/posturePlaybackAction"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="true">
+            <forward name="posturePlayback" path="/WEB-INF/jsp/posture/posturePlayback.jsp"></forward>
+        </action>
+        
+        <action path="/realTimePostureAction"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                scope="request" parameter="method" validate="true">
+            <forward name="realTimePosture" path="/WEB-INF/jsp/posture/realTimePosture.jsp"></forward>
+        </action>
+         -->
+  </action-mappings>
+  
+  <message-resources parameter="ApplicationResources_event" key="event"/>
+  <!-- <message-resources parameter="edu.sjtu.infosec.ismp.manager.web.actions.event.ApplicationResources_zh_CN" key="eventValidate"/> -->
+  
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validation-event.xml"/>
+  </plug-in>
+  
+</struts-config>

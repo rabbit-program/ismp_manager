@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+  <!-- 风险评估 -->
+
+  <!-- 评测项目 -->
+  <bean id="projectService"  parent="txProxyTemplate">
+    <property name="target"> 
+     <bean class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.ProjectServiceImpl">
+        <property name="projectDao" ref="projectDao" />
+     </bean>
+    </property>
+  </bean>
+  
+  <!--安全级别 -->
+  <bean id="dicSecuLeveService"  parent="txProxyTemplate">
+   <property name="target"> 
+      <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DicSecuLeveServiceImpl">
+        <property name="dicSecuLeveDao" ref="dicSecuLeveDao" />
+      </bean>
+   </property>
+  </bean>
+  
+   <!-- 测评状态 -->
+  <bean id="dicAsseStatService" parent="txProxyTemplate">
+     <property name="target"> 
+      <bean class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DicAsseStatServiceImpl">
+        <property name="dicAsseStatDao" ref="dicAsseStatDao" />
+      </bean>
+     </property>
+  </bean>
+  
+  <!-- 测评类型 -->
+  <bean id="dicCpKindService" parent="txProxyTemplate">
+   <property name="target"> 
+      <bean class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DicCpKindServiceImpl">
+     <property name="dicCpKindDao" ref="dicCpKindDao" />
+     </bean>
+   </property>
+  </bean>
+  
+    <!-- 业务录入 -->
+  <bean id="businessService" parent="txProxyTemplate">
+      <property name="target"> 
+       <bean class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.BusinessServiceImpl">
+        <property name="businessDao" ref="businessDao" />
+       </bean>
+     </property>
+  </bean>
+  
+  
+     <!-- 资产类型 -->
+  <bean id="dicAsseKindService" parent="txProxyTemplate">
+     <property name="target"> 
+       <bean class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DicAsseKindServiceImpl">
+        <property name="dicAsseKindDao" ref="dicAsseKindDao" />
+      </bean>
+     </property>
+  </bean>
+  
+   <!-- 资产录入 -->
+  <bean id="assetService"  parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.AssetServiceImpl">
+	     <property name="assetDao" ref="assetDao" />
+	     <property name="dicAsseKindDao" ref="dicAsseKindDao"/>
+	   </bean>
+	   </property>
+  </bean>
+  
+     <!-- 安全要素 -->
+  <bean id="statSecuElemService"  parent="txProxyTemplate">
+     <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatSecuElemServiceImpl">
+        <property name="secuElemDao" ref="statSecuElemDao" />
+       </bean>
+     </property>
+  </bean>
+   
+     <!-- 问卷 -->
+  <bean id="papeService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.PapeServiceImpl">
+	     <property name="secuElemDao" ref="statSecuElemDao" />
+	     <property name="papeDao" ref="papeDao"/>
+	     <property name="projectDao" ref="projectDao" />
+	     <property name="vulnAnalDao" ref="vulnAnalDao"/>
+       </bean>
+       </property>
+  </bean> 
+    
+    <!-- 漏洞扫描 -->
+    <bean id="leakScanService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.LeakScanServiceImpl">
+         <property name="leakScanDao" ref="leakScanDao" />
+         <property name="assetDao" ref="assetDao"/>
+         <property name="dicAsseKindDao" ref="dicAsseKindDao" />
+       </bean>
+       </property>
+  </bean> 
+  
+  
+  <!--动态资产漏洞分析 -->
+    <bean id="dynaLeakService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaLeakServiceImpl">
+         <property name="leakScanDao" ref="leakScanDao" />
+         <property name="assetDao" ref="assetDao"/>
+         <property name="dynaLeakDao" ref="dynaLeakDao" />
+       </bean>
+       </property>
+  </bean> 
+  
+     <!-- 动态资产漏洞威胁分析-->
+
+    <bean id="dynaLeakThreService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaLeakThreServiceImpl">
+         <property name="dynaLeakDao" ref="dynaLeakDao" />
+         <property name="dynaLeakThreDao" ref="dynaLeakThreDao"/>
+         <property name="statCVEThreDao" ref="statCVEThreDao" />
+       </bean>
+       </property>
+    </bean> 
+    
+    <!-- 动态脆弱点分析 -->
+     <bean id="vulnAnalService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.VulnAnalServiceImpl">
+         <property name="vulnAnalDao" ref="vulnAnalDao" />
+         <property name="assetDao" ref="assetDao"/>
+         <property name="statVulnPoinDao" ref="statVulnPoinDao" />
+       </bean>
+       </property>
+    </bean> 
+    
+    <!-- 静态脆弱点类别-->
+     <bean id="statVulnKindService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatVulnKindServiceImpl">
+         <property name="statVulnKindDao" ref="statVulnKindDao" />
+       </bean>
+       </property>
+    </bean> 
+    
+        <!-- 静态脆弱点-->
+     <bean id="statVulnPoinService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatVulnPoinServiceImpl">
+         <property name="statVulnKindDao" ref="statVulnKindDao" />         
+         <property name="statVulnPoinDao" ref="statVulnPoinDao" />
+       </bean>
+       </property>
+    </bean> 
+    
+           <!-- 动态威胁分析-->
+     <bean id="threAnalService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.ThreAnalServiceImpl">
+         <property name="vulnAnalDao" ref="vulnAnalDao" />         
+         <property name="threAnalDao" ref="threAnalDao" />
+         <property name="assetDao" ref="assetDao" />         
+         <property name="statThreDao" ref="statThreDao" />
+         <property name="statVulnPoinDao" ref="statVulnPoinDao" />         
+       </bean>
+       </property>
+    </bean> 
+    
+     <!-- 静态威胁类型-->
+     <bean id="statThreKindService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatThreKindServiceImpl">
+         <property name="statThreKindDao" ref="statThreKindDao" />         
+       </bean>
+       </property>
+    </bean> 
+    
+     <!-- 静态威胁-->
+     <bean id="statThreService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatThreServiceImpl">
+         <property name="statThreDao" ref="statThreDao" />         
+       </bean>
+       </property>
+    </bean> 
+    
+      <!-- 知识库静态漏洞威胁-->
+     <bean id="statCVEThreService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatCVEThreServiceImpl">
+         <property name="statCVEThreDao" ref="statCVEThreDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+       <!-- 知识库静态安全阈值-->
+     <bean id="statWarnStriService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.StatWarnStriServiceImpl">
+         <property name="statWarnStriDao" ref="statWarnStriDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+       <!-- 风险矩阵字典表-->
+     <bean id="dicRiskMatrRuleService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DicRiskMatrRuleServiceImpl">
+         <property name="dicRiskMatrRuleDao" ref="dicRiskMatrRuleDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+      <!-- 知识库项目动态评估结果-->
+     <bean id="dynaAsseResuService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaAsseResuServiceImpl">
+         <property name="dynaAsseResuDao" ref="dynaAsseResuDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+      <!-- 知识库项目总体评估值-->
+     <bean id="dynaAsseValueService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaAsseValueServiceImpl">
+         <property name="dynaAsseValueDao" ref="dynaAsseValueDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+     <!-- 知识库资产评估要素结果-->
+     <bean id="dynaElemResuService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaElemResuServiceImpl">
+         <property name="dynaElemResuDao" ref="dynaElemResuDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+     <!-- 知识库动态V-T-A-R评估报告-->
+     <bean id="dynaVTARepoService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.DynaVTARepoServiceImpl">
+         <property name="dynaVTARepoDao" ref="dynaVTARepoDao" />         
+       </bean>
+       </property>
+    </bean>
+    
+    <!-- 报表生成 -->
+     <bean id="reportService" parent="txProxyTemplate">
+       <property name="target"> 
+       <bean  class="edu.sjtu.infosec.ismp.manager.RAM.service.impl.ReportServiceImpl">
+         <property name="assetDao" ref="assetDao" />       
+         <property name="dicCpKindDao" ref="dicCpKindDao" />   
+         <property name="businessDao" ref="businessDao" />       
+         <property name="dynaAsseValueDao" ref="dynaAsseValueDao" />
+         <property name="dynaElemResuDao" ref="dynaElemResuDao" />       
+         <property name="leakScanDao" ref="leakScanDao" />
+         <property name="dynaLeakDao" ref="dynaLeakDao" />       
+         <property name="dynaLeakThreDao" ref="dynaLeakThreDao" />
+         <property name="dynaVTARepoDao" ref="dynaVTARepoDao" />     
+         <property name="vulnAnalDao" ref="vulnAnalDao" />
+         <property name="threAnalDao" ref="threAnalDao" />       
+         <property name="statVulnPoinDao" ref="statVulnPoinDao" />
+         <property name="statThreDao" ref="statThreDao" />       
+         <property name="statCVEThreDao" ref="statCVEThreDao" />
+       </bean>
+       </property>
+    </bean>
+    </beans>

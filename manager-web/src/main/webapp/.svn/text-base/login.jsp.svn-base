@@ -1,0 +1,85 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/common/taglibs.jsp" %>
+<%@ page import="org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter" %>
+<%@ page import="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter" %>
+<%@ page import="org.springframework.security.core.AuthenticationException" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>登录页</title>
+		<%@ include file="/common/meta.jsp" %>
+		<link href="${ctx}/css/comm/other/login.css" type="text/css" rel="stylesheet"/>
+		<script src="${ctx}/js/comm/other/formstyle.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function cls(){
+				//捕获触发事件的对象，并设置为以下语句的默认对象
+				with(event.srcElement)
+					//如果当前值为默认值，则清空
+					if(value==defaultValue) value="";
+			}
+			function res(){
+				//捕获触发事件的对象，并设置为以下语句的默认对象
+				with(event.srcElement)
+					//如果当前值为空，则重置为默认值
+					if(value=="") value=defaultValue;
+			}
+			if (window != top) 
+				top.location.href = location.href; 
+		</script>
+	</head>
+	
+	<body>
+        <form id="loginForm" action="${ctx}/j_spring_security_check" method="post">
+<!-- 
+            1====${param.error}</br>
+            2====${param.login_error}</br>
+            3====${SPRING_SECURITY_LAST_EXCEPTION}</br>
+            4====${SPRING_SECURITY_LAST_EXCEPTION.message}</br>
+              <div style="display: ${param.error == true ? '' : 'none'}">
+                <h4 style="color: red">
+                    ${sessionScope.SPRING_SECURITY_LAST_EXCEPTION.message }
+                </h4>
+                <br/>
+              </div>
+-->
+<!-- 
+            <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION.message }">
+                <h4 style="color: red">
+                                                用户名或密码错误，请重新登陆！
+                </h4>
+            </c:if>
+-->
+			<div id="board">
+			  <div class="inputBox">
+			    <li>
+			      <p>
+			        <input name='j_username' type='text' class="userBox" value="请输入角色名" onfocus="cls()" onblur="res()" />
+			      </p>
+			      <p class="pwposition">
+			        <input name='j_password' type="password" class="pwBox" value="******" onfocus="cls()" onblur="res()" />
+			      </p>
+<!-- 
+			      <div class="wrapper">
+	                  <p class="rember">
+				        <input name="_spring_security_remember_me" class="styled" type="checkbox"/>记住我
+	                  </p>
+			      </div>
+ -->
+			    </li>
+			    <li class="loginBtn">
+                    <input value="" type="submit"/>
+<!-- 
+                    <a href="common/frames/main/frame.htm"></a>
+ -->
+                </li>
+			  </div>
+			</div>
+        </form>
+        <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION.message }">
+            <script>
+            alert("用户名或密码输入有误，请重新登陆！");
+            </script>
+        </c:if>
+	</body>
+</html>

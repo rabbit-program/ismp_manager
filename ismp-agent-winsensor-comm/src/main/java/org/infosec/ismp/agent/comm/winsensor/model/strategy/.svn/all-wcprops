@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy
+END
+CommWinsensorManagerStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommWinsensorManagerStrategy.java
+END
+CommRegisterStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommRegisterStrategy.java
+END
+CommHostResourceStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommHostResourceStrategy.java
+END
+CommBaseStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommBaseStrategy.java
+END
+CommWindowsLogStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommWindowsLogStrategy.java
+END
+CommSoftwareUpdateStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommSoftwareUpdateStrategy.java
+END
+CommWindowsUpdateStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/strategy/CommWindowsUpdateStrategy.java
+END

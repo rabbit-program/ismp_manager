@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    
+    <!-- 主机 -->
+    <bean id="machineDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 机柜 -->
+    <bean id="machineCabinetDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineCabinetDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 机房 -->
+    <bean id="machineRoomDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineRoomDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 安全域 -->
+    <bean id="securityAreaDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.SecurityAreaDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 顏色閾值 -->
+    <bean id="colorThresholdDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.ColorThresholdDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 主机态势 -->
+    <bean id="machineSituationDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineSituationDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 机柜态势 -->
+    <bean id="machineCabinetSituationDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineCabinetSituationDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 机房态势 -->
+    <bean id="machineRoomSituationDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.MachineRoomSituationDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 安全域态势 -->
+    <bean id="securityAreaSituationDao"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.dao.impl.SecurityAreaSituationDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+</beans>

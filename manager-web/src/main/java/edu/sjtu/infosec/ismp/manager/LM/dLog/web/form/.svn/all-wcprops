@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/1064/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/web/form
+END
+SysLogInitQueryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/820/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/web/form/SysLogInitQueryBean.java
+END
+SysLogFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1064/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/web/form/SysLogFrom.java
+END
+SysLogResponseQueryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/820/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/web/form/SysLogResponseQueryBean.java
+END

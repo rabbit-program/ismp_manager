@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+     <!-- 补丁户端映射 bean 的配置 -->
+    <form-bean name="patchForm" 
+      type="edu.sjtu.infosec.ismp.manager.VPM.pm.web.form.PatchForm" />
+    <form-bean name="tacticsForm" 
+      type="edu.sjtu.infosec.ismp.manager.VPM.pm.web.form.TacticsForm" />
+    <form-bean name="statisticsForm" 
+      type="edu.sjtu.infosec.ismp.manager.VPM.pm.web.form.StatisticsForm" />  
+    <!-- 软件分发 bean 的配置 --> 
+    <form-bean name="softwareForm" 
+      type="edu.sjtu.infosec.ismp.manager.VPM.sd.web.form.SoftwareForm" />  
+    <!-- 病毒客户端映射 bean 的配置 -->
+    <form-bean name="virusClientsORMForm" 
+                type="edu.sjtu.infosec.ismp.manager.VPM.vm.web.form.VirusClientsORMForm" />
+    <form-bean name="virusClientsORMModifyForm" 
+                type="edu.sjtu.infosec.ismp.manager.VPM.vm.web.form.VirusClientsORMModifyForm" />
+  </form-beans>
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  
+  <!-- action -->
+  <action-mappings>
+  
+   <!--补丁 action -->
+  <action path="/ismp/domain/local/vpm/pm/patchAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="patchForm" 
+        name="patchForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="index"
+                path="/WEB-INF/content/VPM/pm/pm_index.jsp" /> 
+        <forward name="domain"
+                path="/WEB-INF/content/VPM/pm/pmUpdate.jsp" />
+    </action>
+   <action path="/ismp/domain/local/vpm/pm/pmUpdateTacticsAction" forward="/WEB-INF/content/VPM/pm/pm_up_tactics.jsp" /> 
+    
+    
+    
+      <!-- 补丁统计Action -->
+    <action path="/ismp/domain/local/vpm/pm/statisticsIndexAction" forward="/WEB-INF/content/VPM/pm/pmStatistics.jsp" /> 
+    <action 
+        path="/ismp/domain/local/vpm/pm/statisticsAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="statisticsForm" 
+        name="statisticsForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="index"
+                path="/WEB-INF/content/VPM/pm/index_pm.jsp" /> 
+        <forward name="domain"
+                path="/WEB-INF/content/VPM/pm/pmUpdate.jsp" />
+    </action>
+    <!--
+    <action path="/ismp/domain/local/vpm/pm_topAction" forward="/WEB-INF/content/VPM/pm/pm_top.jsp" />
+    <action path="/ismp/domain/local/vpm/pm_frameAction" forward="/WEB-INF/content/VPM/pm/pm_frame.jsp" />
+    -->
+
+    
+    <action path="/ismp/domain/local/vpm/pm/pmAction" forward="/WEB-INF/content/VPM/pm/pm_index.jsp" /> 
+    <action path="/ismp/domain/local/vpm/pm/pmUpdateAction" forward="/WEB-INF/content/VPM/pm/pmUpdate.jsp" />
+   <!-- 补丁信息基本修改  Action -->
+     <action path="/ismp/domain/local/vpm/pm/pm_assets_update_01" forward="/WEB-INF/content/VPM/pm/pm_assets_up_01.jsp"/>
+     <action path="/ismp/domain/local/vpm/pm/pm_assets_update_02" forward="/WEB-INF/content/VPM/pm/pm_assets_up_02.jsp"/>
+     <action path="/ismp/domain/local/vpm/pm/pm_assets_update_03" forward="/WEB-INF/content/VPM/pm/pm_assets_up_03.jsp"/>
+     <!-- 策略配置  首页 -->
+     <action path="/ismp/domain/local/vpm/pm/tacticsIndex" forward="/WEB-INF/content/VPM/pm/pmTactics.jsp" />
+    <!-- 策略配置  修改 -->
+    <action path="/ismp/domain/local/vpm/pm/pm_tactics_update" forward="/WEB-INF/content/VPM/pm/pm_tactics_update.jsp" />
+    <action path="/ismp/domain/local/vpm/pm/pm_tactics_add" forward="/WEB-INF/content/VPM/pm/pm_tactics_add.jsp" />
+    
+   
+   <!-- 策略 Action -->
+    <action 
+        path="/ismp/domain/local/vpm/pm/TacticsAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="tacticsForm" 
+        name="tacticsForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+    </action>
+  <!--左边树-->  
+      <action 
+        path="/ismp/domain/local/vpm/pm/doManinTree"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        validate="false" 
+        scope="request" 
+        parameter="method"/> 
+  
+  <!--软件分发 -->
+       
+       <action 
+        path="/ismp/domain/local/vpm/sd/softwareDistributionAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="softwareForm" 
+        name="softwareForm"
+        validate="false" 
+        scope="request" 
+        parameter="method"> 
+        <forward name="index"
+                path="/WEB-INF/content/VPM/sd/index.jsp" /> 
+        <forward name="update"
+                path="/WEB-INF/content/VPM/sd/software_update.jsp" /> 
+        </action>
+        <!-- 首页 -->
+      <action path="/ismp/domain/local/vpm/sd/software_index" forward="/WEB-INF/content/VPM/sd/index.jsp" />
+      <!-- 改 -->
+      <action path="/ismp/domain/local/vpm/sd/software_detail" forward="/WEB-INF/content/VPM/sd/software_detail.jsp" />
+      <!-- 增 -->
+      <action path="/ismp/domain/local/vpm/sd/software_add" forward="/WEB-INF/content/VPM/sd/software_add.jsp" />
+        
+        
+  
+  <!--病毒 action -->
+  
+    <action path="/ismp/domain/local/vpm/vm/vmAction" forward="/WEB-INF/content/VPM/vm/virusClients/vm_index.jsp" />
+
+    <action  
+        path="/ismp/domain/local/vpm/vm/virusMappedAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMForm" 
+        name="virusClientsORMForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="clientQuery"
+                path="/WEB-INF/content/VPM/vm/virusClients/show/virusClientsMapping.jsp" /> 
+    </action>
+
+    <action 
+        path="/ismp/domain/local/vpm/vm/virusMappingModify"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMModifyForm" 
+        name="virusClientsORMModifyForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="success"
+                path="/ismp/domain/local/vpm/vm/virusMappedAction.do" />
+        <forward name="mClientName"
+                path="/WEB-INF/content/VPM/vm/virusClients/modify/virusClientNameUpdate.jsp" />
+        <forward name="mAssetDevice"
+                path="/WEB-INF/content/VPM/vm/virusClients/modify/virusClientAssetUpdate.jsp" />
+        <forward name="mManager"
+                path="/WEB-INF/content/VPM/vm/virusClients/modify/virusClientDepartmentUpdate.jsp" />
+    </action>
+    <action 
+        path="/ismp/domain/local/vpm/vm/virusInfo"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="virusQuery"
+                path="/WEB-INF/content/VPM/vm/virusInfo/virusIndex.jsp" /> 
+    </action>
+    <action 
+        path="/ismp/domain/local/vpm/vm/clientsVirusInfoAction"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="virusQuery"
+                path="/WEB-INF/content/VPM/vm/virusInfo/clientsVirusInfo.jsp" /> 
+    </action>
+    <action 
+        path="/ismp/domain/local/vpm/vm/virusAlertDetial"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="virusAlertDetial"
+                path="/WEB-INF/content/VPM/vm/virusInfo/virusAlertDetail.jsp" /> 
+    </action>
+    <action 
+        path="/ismp/domain/local/vpm/vm/contractInfoTop"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="virusTopShow"
+                path="/WEB-INF/content/VPM/vm/virusInfo/virusTopNDetail.jsp" />
+        <forward name="clientsTopShow"
+                path="/WEB-INF/content/VPM/vm/virusInfo/clientsContractTopNDetail.jsp" />
+        <forward name="topShowError"
+                path="/WEB-INF/content/VPM/vm/errors/error.jsp" />
+    </action>
+    <action 
+        path="/ismp/domain/local/vpm/vm/virusStatistics"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="statistics"
+                path="/WEB-INF/content/VPM/vm/virusStatistics/statisticsIndex.jsp" />
+        <forward name="statisticsError"
+                path="/WEB-INF/content/VPM/vm/errors/error.jsp" />
+    </action>
+    
+  </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2795/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/dao/impl
+END
+SysConfigDbDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/2795/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/dao/impl/SysConfigDbDaoImpl.java
+END
+SysConfigSmsDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/2795/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/dao/impl/SysConfigSmsDaoImpl.java
+END
+SysConfigDataSynDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/2795/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/dao/impl/SysConfigDataSynDaoImpl.java
+END

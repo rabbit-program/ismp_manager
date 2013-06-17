@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code2/!svn/ver/3116/trunk/ismp-manager/src/test/resources/snmpTrap
+END
+applicationContext-snmpTrap-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3116/trunk/ismp-manager/src/test/resources/snmpTrap/applicationContext-snmpTrap-rmi-client.xml
+END

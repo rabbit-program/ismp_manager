@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <!-- 
+    <bean id="killResultTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.dao.impl.KillResultTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    -->
+<!--知识库-->
+    <bean id="gospKnowledgeDao"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.dao.impl.GospKnowledgeBaseDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+<!--法律法规-->
+    <bean id="lawsAndRulesDao"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.dao.impl.LawsAndRulesDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+<!--网络等保状态-->
+    <bean id="safeStateRecordsDao"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.dao.impl.SafeStateRecordsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

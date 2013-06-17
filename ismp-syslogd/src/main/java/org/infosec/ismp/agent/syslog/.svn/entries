@@ -1,0 +1,34 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/agent/syslog
+http://192.168.9.252/svn/code2
+
+
+
+2010-10-19T02:51:31.339433Z
+936
+llin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+model
+dir
+
+dao
+dir
+

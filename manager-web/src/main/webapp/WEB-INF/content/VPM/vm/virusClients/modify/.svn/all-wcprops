@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusClients/modify
+END
+virusClientAssetUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusClients/modify/virusClientAssetUpdate.jsp
+END
+virusClientNameUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusClients/modify/virusClientNameUpdate.jsp
+END
+virusClientDepartmentUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusClients/modify/virusClientDepartmentUpdate.jsp
+END

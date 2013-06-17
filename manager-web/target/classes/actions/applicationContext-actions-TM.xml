@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <!-- 
+	<bean name="/virusMappedAction"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.web.actions.VirusMappedAction"
+		singleton="false" lazy-init="true">
+		<property name="virusClientsService">
+			<ref bean="virusClientsService" />
+		</property>
+	</bean>
+	 -->
+</beans>

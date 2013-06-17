@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="true">
+
+     <!-- 事件管理功能Spring Ioc配置 -->
+	<bean id="eventmoniDao"
+		class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventmoniDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventtaskseleDao"
+		class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventtaskseleDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventmoniinfoDao"
+		class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventmoniinfoDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventrealdispDao"
+		class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventrealdispDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventcorrruleDao"
+		class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventcorrruleDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventGetTopoDao"
+        class="edu.sjtu.infosec.ismp.manager.EM.dao.impl.EventGetTopoDao">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+</beans>

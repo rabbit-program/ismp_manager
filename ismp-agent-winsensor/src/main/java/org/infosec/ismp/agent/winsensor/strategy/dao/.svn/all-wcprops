@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/3516/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao
+END
+WindowsLogStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/WindowsLogStrategyDao.java
+END
+SoftwareUpdateStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/SoftwareUpdateStrategyDao.java
+END
+WindowsUpdateStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/WindowsUpdateStrategyDao.java
+END
+WinsensorManagerStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/WinsensorManagerStrategyDao.java
+END
+RegisterStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/RegisterStrategyDao.java
+END
+HostResourceStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3063/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/dao/HostResourceStrategyDao.java
+END

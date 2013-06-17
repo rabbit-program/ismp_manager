@@ -1,0 +1,25 @@
+.dragAble {
+    position: relative;
+    top: -200px;
+    left: 300px;
+}
+.STYLE1 {
+    color: #FF0000
+}
+
+.STYLE2 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.STYLE3 {
+    font-size: 12px
+}
+
+.STYLE4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.STYLE5 {color: #FFFFFF}
+.STYLE6 {color: #FF6666}
+.n{TEXT-DECORATION:none;color:#FFFFFF}

@@ -1,0 +1,71 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/TM
+http://192.168.9.252/svn/code2
+
+
+
+2010-11-10T01:59:26.567643Z
+1282
+wguojie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:50:50.264273Z
+5b83ab3a9aed374eee86576d92bc1650
+2010-10-09T03:09:18.422482Z
+804
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+745
+
+warns
+dir
+
+comm
+dir
+
+errors
+dir
+

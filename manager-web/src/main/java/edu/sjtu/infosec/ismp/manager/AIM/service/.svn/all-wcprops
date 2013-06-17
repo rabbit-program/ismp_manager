@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2618/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service
+END
+AlertRuleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service/AlertRuleService.java
+END
+SendAlertService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2134/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service/SendAlertService.java
+END
+AlertFusionRuleServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service/AlertFusionRuleServices.java
+END
+AlertService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2618/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service/AlertService.java
+END
+AlertTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/service/AlertTypeService.java
+END

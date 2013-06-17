@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2919/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status
+END
+LocalDNS.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/LocalDNS.java
+END
+ProcessStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/ProcessStatus.java
+END
+LocalSystemStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/2919/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/LocalSystemStatus.java
+END
+HostResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/HostResource.java
+END
+WinsensorClientStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/WinsensorClientStatus.java
+END
+CPUStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/CPUStatus.java
+END
+LocalRouter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/LocalRouter.java
+END
+RegisterOfflineStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/2487/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/RegisterOfflineStatus.java
+END
+MemoryStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/MemoryStatus.java
+END
+HardDiskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/HardDiskStatus.java
+END
+LocalARP.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/LocalARP.java
+END
+NetworkStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/NetworkStatus.java
+END
+PartitionStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/code2/!svn/ver/1939/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/PartitionStatus.java
+END
+RegisterOnlineStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/code2/!svn/ver/2487/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/status/RegisterOnlineStatus.java
+END

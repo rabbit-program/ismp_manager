@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/654/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/user/self/errors
+END
+sessionFailed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/654/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/user/self/errors/sessionFailed.jsp
+END
+loginFailed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/650/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/user/self/errors/loginFailed.jsp
+END

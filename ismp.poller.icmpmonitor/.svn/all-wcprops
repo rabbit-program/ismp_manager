@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/code2/!svn/ver/3530/trunk/ismp.poller.icmpmonitor
+END
+libjicmp.so
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code2/!svn/ver/3530/trunk/ismp.poller.icmpmonitor/libjicmp.so
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code2/!svn/ver/3529/trunk/ismp.poller.icmpmonitor/pom.xml
+END
+jicmp.dll
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/code2/!svn/ver/592/trunk/ismp.poller.icmpmonitor/jicmp.dll
+END

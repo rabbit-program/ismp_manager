@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+<!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogservice"></property>
+    </bean>
+      -->
+	<!--值班管理-->
+        <!--排班记录-->
+            <bean id="dutyScheduleService" parent="txProxyTemplate">
+               <property name="target"> 
+                <bean
+                  class="edu.sjtu.infosec.ismp.manager.OSS.pm.service.impl.DutyScheduleServiceImpl">
+                  <property name="dutyScheduleDao" ref="dutyScheduleDao"></property>
+                </bean>
+               </property>
+            </bean>
+        <!--值班人员-->
+            <bean id="rosterService" parent="txProxyTemplate">
+               <property name="target"> 
+                <bean
+                  class="edu.sjtu.infosec.ismp.manager.OSS.pm.service.impl.RosterServiceImpl">
+                  <property name="rosterDao" ref="rosterDao"></property>
+                </bean>
+               </property>
+            </bean>
+        <!--投诉电话-->
+            <bean id="complaintService" parent="txProxyTemplate">
+               <property name="target"> 
+                <bean
+                  class="edu.sjtu.infosec.ismp.manager.OSS.pm.service.impl.ComplaintServiceImpl">
+                  <property name="complaintDao" ref="complaintDao"></property>
+                </bean>
+               </property>
+            </bean>
+        <!--发布人员-->
+        <bean id="rmiDutyScheduleService" parent="rmiProxyParent">
+            <property name="serviceInterface">
+                <value>org.infosec.ismp.manager.rmi.sensor.operation.service.WinsensorOperationDutyManagerService</value>
+            </property>
+            <property name="serviceUrl">
+                <value>rmi://localhost:1199/WinsensorOperationDutyManagerService</value>
+            </property>
+       </bean> 
+	<!--运维知识库-->
+	    <!-- 知识库 -->
+	    <bean id="ossKnowledgeBaseService" parent="txProxyTemplate">
+	       <property name="target"> 
+	        <bean
+	          class="edu.sjtu.infosec.ismp.manager.OSS.klbm.service.impl.OssKnowledgeBaseServiceImpl">
+	          <property name="ossKnowledgeDao" ref="ossKnowledgeDao"></property>
+	        </bean>
+	       </property>
+	    </bean>
+	<!--安全管理操作审计-->
+    <!--运维工单-->
+      <!-- 客户端问题service -->
+      <bean id="clientQuestionService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.OSS.wom.service.impl.ClientQuestionServiceImpl">
+              <property name="clientQuestionDao" ref="clientQuestionDao"></property>
+            </bean>
+           </property>
+      </bean>
+        
+      <!-- 派工单service -->
+      <bean id="workOrderService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.OSS.wom.service.impl.WorkOrderServiceImpl">
+              <property name="workOrderDao" ref="workOrderDao"></property>
+            </bean>
+           </property>
+     </bean>
+      <bean id="winsensorOperationWorkOrdersService" parent="rmiProxyParent">
+            <property name="serviceInterface">
+                <value>org.infosec.ismp.manager.rmi.sensor.operation.service.WinsensorOperationWorkOrdersService</value>
+            </property>
+            <property name="serviceUrl">
+                <value>rmi://localhost:1199/WinsensorOperationWorkOrdersService</value>
+            </property>
+       </bean> 
+</beans>

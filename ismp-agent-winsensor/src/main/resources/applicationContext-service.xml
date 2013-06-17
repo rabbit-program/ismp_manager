@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    
+    <bean id="winsensorDeviceService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.service.impl.WinsensorDeviceServiceImpl">
+                <property name="dao" ref="winsensorDeviceDao" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="hostResourceStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.HostResourceStrategyServiceImpl">
+                <property name="strategyDao" ref="hostResourceStrategyDao" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="registerStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.RegisterStrategyServiceImpl">
+                <property name="strategyDao" ref="registerStrategyDao" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="softwareUpdateStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.SoftwareUpdateStrategyServiceImpl">
+                <property name="strategyDao" ref="softwareUpdateStrategyDao" />            
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="windowsLogStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.WindowsLogStrategyServiceImpl">
+                <property name="strategyDao" ref="windowsLogStrategyDao" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="windowsUpdateStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.WindowsUpdateStrategyServiceImpl">
+                <property name="strategyDao" ref="windowsUpdateStrategyDao" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="winsensorManagerStrategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.WinsensorManagerStrategyServiceImpl">
+                <property name="strategyDao" ref="winsensorManagerStrategyDao" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="strategyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="org.infosec.ismp.agent.winsensor.strategy.service.impl.StrategyServiceImpl">
+                <property name="hostResourceStrategyService" ref="hostResourceStrategyService" />
+                <property name="registerStrategyService" ref="registerStrategyService" />
+                <property name="softwareUpdateStrategyService" ref="softwareUpdateStrategyService" />
+                <property name="windowsLogStrategyService" ref="windowsLogStrategyService" />
+                <property name="windowsUpdateStrategyService" ref="windowsUpdateStrategyService" />
+                <property name="winsensorManagerStrategyService" ref="winsensorManagerStrategyService" />
+                <property name="agentIp" value="${agentAddress}" />
+                <property name="windowsLogPath" value="${winsensor.windowsLog.path}" />
+                <property name="windowsLogPort" value="${winsensor.windowsLog.port}" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="agentDutyManagerSentHisService" parent="txProxyTemplate">
+    	<property name="target">
+    		<bean class="org.infosec.ismp.agent.winsensor.operation.service.impl.AgentDutyManagerSentHisServiceImpl">
+    			<property name="dao" ref="agentDutyManagerSentHisDao" />
+    		</bean>
+    	</property>
+    </bean>
+    
+    <bean id="agentDutyManagerService" parent="txProxyTemplate">
+    	<property name="target">
+    		<bean class="org.infosec.ismp.agent.winsensor.operation.service.impl.AgentDutyManagerServiceImpl">
+    			<property name="dao" ref="agentDutyManagerDao" />
+    		</bean>
+    	</property>
+    </bean>
+    
+        <bean id="problemService" parent="txProxyTemplate">
+    	<property name="target">
+    		<bean class="org.infosec.ismp.agent.winsensor.operation.service.impl.ProblemServiceImpl">
+    			<property name="dao" ref="problemDao" />
+    		</bean>
+    	</property>
+    </bean>
+</beans>

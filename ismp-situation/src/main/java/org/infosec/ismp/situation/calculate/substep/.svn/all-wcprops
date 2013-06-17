@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/1209/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep
+END
+IllicitConnectReckom.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1207/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/IllicitConnectReckom.java
+END
+AttackReckon.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1207/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/AttackReckon.java
+END
+VirusReckon.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1207/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/VirusReckon.java
+END

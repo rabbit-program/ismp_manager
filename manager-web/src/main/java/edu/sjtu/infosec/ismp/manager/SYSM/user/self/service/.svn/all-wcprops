@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3654/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/875/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service/UserService.java
+END
+BlackAndWhiteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/791/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service/BlackAndWhiteService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/704/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service/RoleService.java
+END
+BlackAndWhiteStatusService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/791/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service/BlackAndWhiteStatusService.java
+END
+DomainService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/2014/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/service/DomainService.java
+END

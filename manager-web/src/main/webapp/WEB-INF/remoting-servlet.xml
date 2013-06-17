@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="remotingMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+			<!-- 拓扑管理Start...... -->
+			<!-- 
+				<prop key="topoDeviceManageRemoting">topoDeviceManageRemoting</prop>
+				<prop key="topoViewManageRemoting">topoViewManageRemoting</prop>
+				<prop key="bureauIPManageRemoting">bureauIPManageRemoting</prop>
+			 -->
+			  <prop key="topoManagerWebServiceRemoting">topoManagerWebServiceRemoting</prop> 
+			  <prop key="topoManagerServiceRemoting">topoManagerServiceRemoting</prop>
+            <!-- 拓扑管理end...... -->
+				
+            <!-- 拓扑发现Start...... -->
+				<prop key="cdpSearchServiceRemoting">cdpSearchServiceRemoting</prop>
+				<prop key="icmpSearchServiceRemoting">icmpSearchServiceRemoting</prop>
+				<prop key="pcSearchServiceRemoting">pcSearchServiceRemoting</prop>
+				<prop key="snmpSearchServiceRemoting">snmpSearchServiceRemoting</prop>
+			<!-- 拓扑发现end...... -->
+			
+            <!-- 事件模块Start...... -->
+            	<prop key="eventInvokerServiceRemoting">eventInvokerServiceRemoting</prop>
+            <!-- 事件模块end...... -->
+			</props>
+		</property>
+	</bean>
+	
+	
+	
+<!-- 拓扑管理Start...... -->
+<!-- 
+	<bean id="topoDeviceManageRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="topoDeviceService"></property>
+		<property name="serviceInterface">
+			<value>edu.sjtu.infosec.ismp.micommon.topo.topomanage.service.TopoManageDeviceManage</value>
+		</property>
+	</bean>
+	<bean id="topoViewManageRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="topoViewService"></property>
+		<property name="serviceInterface">
+			<value>edu.sjtu.infosec.ismp.micommon.topo.topomanage.service.TopoMangeViewManage</value>
+		</property>
+	</bean>
+	<bean id="bureauIPManageRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="bureauIPService"></property>
+		<property name="serviceInterface">
+			<value>edu.sjtu.infosec.ismp.micommon.topo.topomanage.service.BureauIPService</value>
+		</property>
+	</bean>
+ -->
+<!-- 拓扑管理end...... -->
+   
+<!-- 拓扑发现Start...... -->
+	<bean id="cdpSearchServiceRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="cdpSearchService"></property>
+		<property name="serviceInterface">
+			<value>org.infosec.ismp.manager.rmi.tm.discover.service.applet.CDPSearchService</value>
+		</property>
+	</bean>
+	<bean id="icmpSearchServiceRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="icmpSearchService"></property>
+		<property name="serviceInterface">
+			<value>org.infosec.ismp.manager.rmi.tm.discover.service.applet.ICMPSearchService</value>
+		</property>
+	</bean>
+	<bean id="pcSearchServiceRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="pcSearchService"></property>
+		<property name="serviceInterface">
+			<value>org.infosec.ismp.manager.rmi.tm.discover.service.applet.PCSearchService</value>
+		</property>
+	</bean>
+	<bean id="snmpSearchServiceRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="snmpSearchService"></property>
+		<property name="serviceInterface">
+			<value>org.infosec.ismp.manager.rmi.tm.discover.service.applet.SNMPSearchService</value>
+		</property>
+	</bean>
+<!-- 拓扑发现end...... -->
+    
+<!-- 拓扑管理start...... -->
+    <bean id="topoManagerWebServiceRemoting"
+        class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+        <property name="service" ref="topoWebService"></property>
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.tm.manager.service.TopoWebService</value>
+        </property>
+    </bean>
+    <bean id="topoManagerServiceRemoting"
+        class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+        <property name="service" ref="topoManagerService"></property>
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.tm.manager.service.TopoManagerService</value>
+        </property>
+    </bean>
+    
+    <!--  
+    <bean id="topoWebService" class="edu.sjtu.infosec.ismp.manager.TM.manager.service.TopoWebServiceImpl">
+    </bean>-->
+<!-- 拓扑管理end...... -->
+
+<!-- 事件模块Start...... -->
+   
+    <bean id="eventInvokerServiceRemoting"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="eventInvokerService"></property>
+		<property name="serviceInterface">
+			<value>org.infosec.ismp.manager.rmi.event.Ilnvoker</value>
+		</property>
+	</bean>
+<!-- 事件模块end...... -->
+
+<!-- XXX模块Start...... -->
+    <!--  -->
+<!-- XXX模块end...... -->
+</beans>

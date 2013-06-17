@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2121/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl
+END
+RespProcServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1190/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl/RespProcServiceImpl.java
+END
+RespInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1190/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl/RespInfoServiceImpl.java
+END
+NotifurocServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/859/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl/NotifurocServiceImpl.java
+END
+LinkManServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2121/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl/LinkManServiceImpl.java
+END
+BiaServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/859/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/service/impl/BiaServiceImpl.java
+END

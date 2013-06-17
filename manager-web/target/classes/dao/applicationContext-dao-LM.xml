@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="false">
+
+    <bean id="sysLogDao"
+        class="edu.sjtu.infosec.ismp.manager.LM.dLog.dao.impl.SysLogDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="pcDao"
+        class="edu.sjtu.infosec.ismp.manager.LM.dLog.dao.impl.PcDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="ftpDao"
+        class="edu.sjtu.infosec.ismp.manager.LM.dLog.dao.impl.FtpDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- ...............................下面为平台日志模块所用................................... 
+    <bean id="systemlogDao"
+		class="edu.sjtu.infosec.ismp.manager.LM.pfLog.dao.SystemLogDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+    -->
+    
+    <!-- ...............................下面为系统配置模块所用.................................. -->
+    
+     <!-- SysLog Source-->
+    <bean id="sysLogSourceDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.config.dao.lm.dLog.impl.SysLogSourceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+     <!-- SnmpTrap Source-->
+    <bean id="snmpTrapSourceDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.config.dao.lm.dLog.impl.SnmpTrapSourceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+     <!-- Pc Source-->
+    <bean id="pcSourceDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.config.dao.lm.dLog.impl.PcSourceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+     <!-- Ftp Source-->
+    <bean id="ftpSourceDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.config.dao.lm.dLog.impl.FtpSourceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

@@ -1,0 +1,83 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/GOSP
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-04T08:50:48.748244Z
+3535
+cxke
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:51:00.630866Z
+a8e56c77a7935781b78cf9d3a71c2e2c
+2010-10-09T03:09:18.422482Z
+804
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+745
+
+html
+dir
+
+netSafe
+dir
+
+knowledgeBase
+dir
+
+warns
+dir
+
+comm
+dir
+
+errors
+dir
+
+lawRules
+dir
+

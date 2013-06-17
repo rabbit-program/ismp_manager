@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/3504/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/web/actions
+END
+SysConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/1228/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/web/actions/SysConfigAction.java
+END
+UserConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/3504/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/web/actions/UserConfigAction.java
+END
+LoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/3057/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/web/actions/LoginAction.java
+END

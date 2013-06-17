@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3319/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/service/lm/dLog/impl
+END
+SysLogSourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/3319/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/service/lm/dLog/impl/SysLogSourceServiceImpl.java
+END
+PcSourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3222/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/service/lm/dLog/impl/PcSourceServiceImpl.java
+END
+SnmpTrapSourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/code2/!svn/ver/3319/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/service/lm/dLog/impl/SnmpTrapSourceServiceImpl.java
+END
+FtpSourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/951/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/service/lm/dLog/impl/FtpSourceServiceImpl.java
+END

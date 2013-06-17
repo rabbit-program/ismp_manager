@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2412/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/service
+END
+SafeStateRecordsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/2411/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/service/SafeStateRecordsService.java
+END
+GospKnowledgeBaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/1761/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/service/GospKnowledgeBaseService.java
+END
+LawsAndRulesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1674/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/service/LawsAndRulesService.java
+END

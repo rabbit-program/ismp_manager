@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2706/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model
+END
+DispatchPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2703/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/DispatchPolicy.java
+END
+ExecutePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2394/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/ExecutePolicy.java
+END
+SoftwareInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2703/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/SoftwareInfo.java
+END
+ValidatePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2394/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/ValidatePolicy.java
+END
+TypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2703/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/TypeInfo.java
+END

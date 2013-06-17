@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/2805/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions
+END
+VirusAlertDetialAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/VirusAlertDetialAction.java
+END
+VirusStatisticsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/VirusStatisticsAction.java
+END
+VirusInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/VirusInfoAction.java
+END
+ClientsVirusInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/ClientsVirusInfoAction.java
+END
+ContractInfoTopAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/ContractInfoTopAction.java
+END
+VirusMappingModifyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/815/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/VirusMappingModifyAction.java
+END
+VirusMappedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/3775/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/web/actions/VirusMappedAction.java
+END

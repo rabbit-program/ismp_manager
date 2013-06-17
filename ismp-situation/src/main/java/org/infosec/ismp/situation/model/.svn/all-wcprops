@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model
+END
+SecurityAreaSituation.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/SecurityAreaSituation.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3405/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/Event.java
+END
+MachineRoom.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/MachineRoom.java
+END
+MachineRoomSituation.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/MachineRoomSituation.java
+END
+SituationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3405/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/SituationEvent.java
+END
+Machine.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/Machine.java
+END
+MachineSituation.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/MachineSituation.java
+END
+RecordIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3405/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/RecordIndex.java
+END
+Domain.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/Domain.java
+END
+MachineCabinet.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/MachineCabinet.java
+END
+MachineCabinetSituation.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/MachineCabinetSituation.java
+END
+ColorThreshold.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/model/ColorThreshold.java
+END

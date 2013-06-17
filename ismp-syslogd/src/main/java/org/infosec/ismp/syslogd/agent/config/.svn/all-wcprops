@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config
+END
+SyslogParserLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config/SyslogParserLocator.java
+END
+MemorySyslogdConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config/MemorySyslogdConfig.java
+END
+DefaultSyslogParserLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config/DefaultSyslogParserLocator.java
+END
+DBSyslogParserMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config/DBSyslogParserMgr.java
+END
+CastorDataAccessFailureException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/881/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/agent/config/CastorDataAccessFailureException.java
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code2/!svn/ver/3687/trunk/manager-web/src/main/resources/actions
+END
+applicationContext-actions-RAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2826/trunk/manager-web/src/main/resources/actions/applicationContext-actions-RAM.xml
+END
+applicationContext-actions-TM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/74/trunk/manager-web/src/main/resources/actions/applicationContext-actions-TM.xml
+END
+applicationContext-actions-SCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3221/trunk/manager-web/src/main/resources/actions/applicationContext-actions-SCM.xml
+END
+applicationContext-actions-BSAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3556/trunk/manager-web/src/main/resources/actions/applicationContext-actions-BSAM.xml
+END
+applicationContext-actions-ERM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2826/trunk/manager-web/src/main/resources/actions/applicationContext-actions-ERM.xml
+END
+applicationContext-actions-comm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/324/trunk/manager-web/src/main/resources/actions/applicationContext-actions-comm.xml
+END
+applicationContext-actions-SYSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3957/trunk/manager-web/src/main/resources/actions/applicationContext-actions-SYSM.xml
+END
+applicationContext-actions-AM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2619/trunk/manager-web/src/main/resources/actions/applicationContext-actions-AM.xml
+END
+applicationContext-actions-EM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/1994/trunk/manager-web/src/main/resources/actions/applicationContext-actions-EM.xml
+END
+applicationContext-actions-VPM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2837/trunk/manager-web/src/main/resources/actions/applicationContext-actions-VPM.xml
+END
+applicationContext-actions-OSS.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3074/trunk/manager-web/src/main/resources/actions/applicationContext-actions-OSS.xml
+END
+applicationContext-actions-HM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/324/trunk/manager-web/src/main/resources/actions/applicationContext-actions-HM.xml
+END
+applicationContext-actions-WSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2826/trunk/manager-web/src/main/resources/actions/applicationContext-actions-WSM.xml
+END
+applicationContext-actions-AIM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2774/trunk/manager-web/src/main/resources/actions/applicationContext-actions-AIM.xml
+END
+applicationContext-actions-LM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3538/trunk/manager-web/src/main/resources/actions/applicationContext-actions-LM.xml
+END
+applicationContext-actions-GOSP.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/2902/trunk/manager-web/src/main/resources/actions/applicationContext-actions-GOSP.xml
+END

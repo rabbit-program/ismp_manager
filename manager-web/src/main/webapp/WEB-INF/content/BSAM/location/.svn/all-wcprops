@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/3560/trunk/manager-web/src/main/webapp/WEB-INF/content/BSAM/location
+END
+securityAreaSubUnitList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/3560/trunk/manager-web/src/main/webapp/WEB-INF/content/BSAM/location/securityAreaSubUnitList.jsp
+END
+machineRoomSubUnitList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3560/trunk/manager-web/src/main/webapp/WEB-INF/content/BSAM/location/machineRoomSubUnitList.jsp
+END
+machineCabinetSubUnitList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3560/trunk/manager-web/src/main/webapp/WEB-INF/content/BSAM/location/machineCabinetSubUnitList.jsp
+END

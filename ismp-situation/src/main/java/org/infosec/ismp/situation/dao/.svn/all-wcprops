@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao
+END
+ColorThresholdDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/999/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/ColorThresholdDao.java
+END
+SecurityAreaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/SecurityAreaDao.java
+END
+SecurityAreaSituationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/999/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/SecurityAreaSituationDao.java
+END
+MachineRoomDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1140/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineRoomDao.java
+END
+MachineRoomSituationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/999/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineRoomSituationDao.java
+END
+SituationEventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1209/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/SituationEventDao.java
+END
+MachineDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/1140/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineDao.java
+END
+MachineSituationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/999/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineSituationDao.java
+END
+RecordIndexDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/982/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/RecordIndexDao.java
+END
+MachineCabinetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1140/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineCabinetDao.java
+END
+MachineCabinetSituationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/999/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/MachineCabinetSituationDao.java
+END

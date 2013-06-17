@@ -1,0 +1,34 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/resources/connection
+http://192.168.9.252/svn/code2
+
+
+
+2010-11-08T12:05:44.551850Z
+1256
+liuqing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+jdbc
+dir
+
+rmi
+dir
+

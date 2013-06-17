@@ -1,0 +1,34 @@
+<div  id="data" class="pad1 ">
+<h2>用户资料更新 "<span class="alert">*</span>"为必填项</h2>
+  <table id="senfe" sortcol="-1">
+            <tr>
+              <th>类型</th>
+              <td><select><option>00000</option></select> "<span class="alert">*</span>"</td>
+            </tr>
+            <tr>
+              <th>角色</th>
+              <td><select name="select">
+                <option>00000</option>
+              </select></td>
+            </tr>
+            <tr>
+              <th>域</th>
+              <td><select name="select2">
+                <option>00000</option>
+              </select></td>
+            </tr>
+            <tr>
+              <th> IP地址</th>
+              <td><input size="16" />
+                &quot;<span class="alert">*</span>&quot;</td>
+            </tr>
+            <tr>
+              <th> 描述 </th>
+              <td><textarea cols="60" rows="6"></textarea>
+              </td>
+            </tr>
+          </table>
+  <div class="paddiv">This is for verticl spacing</div>
+<a href="#" class="R6">保存</a>
+<div class="paddiv">This is for verticl spacing</div>
+</div>

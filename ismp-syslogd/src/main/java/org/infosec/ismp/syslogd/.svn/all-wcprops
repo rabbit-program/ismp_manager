@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd
+END
+QueueManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/QueueManager.java
+END
+SyslogdParserMgrFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/841/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogdParserMgrFactory.java
+END
+SyslogConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogConnection.java
+END
+SyslogProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogProcessor.java
+END
+SyslogNodeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogNodeManager.java
+END
+BroadcastEventProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/BroadcastEventProcessor.java
+END
+Syslogd.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/Syslogd.java
+END
+ConvertToEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/ConvertToEvent.java
+END
+SyslogReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogReceiver.java
+END
+SyslogNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogNode.java
+END
+SyslogdParserMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogdParserMgr.java
+END
+SyslogdConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/841/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogdConfig.java
+END
+SyslogHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/SyslogHandler.java
+END

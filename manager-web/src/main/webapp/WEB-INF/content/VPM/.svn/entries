@@ -1,0 +1,74 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM
+http://192.168.9.252/svn/code2
+
+
+
+2011-01-21T08:41:33.863637Z
+3436
+caoxiaoma
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+vm
+dir
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:50:55.174554Z
+63896835ea3673f2883197563f5fb649
+2010-10-09T03:09:18.422482Z
+804
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+745
+
+sd
+dir
+
+comm
+dir
+
+pm
+dir
+

@@ -1,0 +1,9 @@
+#manager ip and port
+managerIp=127.0.0.1
+managerPort=5817
+
+#agent self ip and port
+agentId=agent1
+agentAddress=127.0.0.1
+agentPort=5819
+syslogPort=1033

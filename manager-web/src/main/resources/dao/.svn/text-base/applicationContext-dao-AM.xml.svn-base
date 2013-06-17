@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <bean id="assetDeviceDao"
+        class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetDeviceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="assetHardwareDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetHardwareDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetChangeLogDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetChangeLogDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetDailyAvailabilityDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetDailyAvailabilityDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetMonthlyAvailabilityDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetMonthlyAvailabilityDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetPositionDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetPositionDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetRawAvailabilityDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetRawAvailabilityDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetSoftwareDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetSoftwareDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetToHardwareDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetToHardwareDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetToPositionDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetToPositionDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="assetToSoftwareDao" class="edu.sjtu.infosec.ismp.manager.AM.dao.impl.AssetToSoftwareDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+</beans>

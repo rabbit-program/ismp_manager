@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	
+   <!-- event -->
+   <bean id="eventBaseClass" class="edu.sjtu.infosec.ismp.manager.EM.web.actions.EventBaseClass">
+        <property name="eventmoniService" ref="eventmoniService"></property>
+        <property name="eventtaskseleService" ref="eventtaskseleService"></property>
+        <property name="eventrealdispService" ref="eventrealdispService"></property>
+        <property name="eventStatisticsService" ref="eventStatisticsService"></property>
+        <property name="serviceClient" ref="eventSrviceClient"></property>
+        <property name="eventcorrruleService" ref="eventcorrruleService"></property>
+        <property name="getTopoInfo" ref="getTopoInfo"></property>
+        <property name="logService" ref="systemlogService"></property>
+        <property name="eventmoniinfoService" ref="eventmoniinfoService"></property>
+   </bean>
+   
+   <bean name="/eventAction" 
+          class="edu.sjtu.infosec.ismp.manager.EM.web.actions.EventAction"> 
+          <property name="eventBaseClass" ref="eventBaseClass"></property>
+   </bean> 
+
+    <bean name="/eventSelectCondition" 
+          class="edu.sjtu.infosec.ismp.manager.EM.web.actions.EventSelectConditionAction"> 
+          <property name="eventBaseClass" ref="eventBaseClass"></property>
+   </bean>
+   
+    <bean name="/eventStatisticalAnals" 
+          class="edu.sjtu.infosec.ismp.manager.EM.web.actions.EventStatisticalAnalsAction"> 
+          <property name="eventBaseClass" ref="eventBaseClass"></property>
+   </bean>
+   
+   <bean name="/eventCorrelationAction"
+         class="edu.sjtu.infosec.ismp.manager.EM.web.actions.EventCorrelationAction">
+         <property name="eventBaseClass" ref="eventBaseClass"></property>
+  </bean> 
+  
+  <!-- AOP实现权限控制         作废
+    <bean id="eventAspect" class="edu.sjtu.infosec.ismp.manager.EM.web.EventAspect"></bean>
+    
+    AOP实现权限控制切入    
+    <bean  class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass" value="true"></property> 
+        <property name="beanNames">
+            <list>
+                <value>/eventAction</value>
+                <value>/eventSelectCondition</value>
+                <value>/eventStatisticalAnals</value>
+                <value>/eventCorrelationAction</value>
+            </list>
+        </property>
+        
+        <property name="interceptorNames">
+            <list>
+                <value>eventAspect</value>
+            </list>
+        </property>
+    </bean>
+    -->
+</beans>

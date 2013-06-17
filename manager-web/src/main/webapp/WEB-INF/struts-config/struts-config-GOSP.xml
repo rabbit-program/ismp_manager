@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form 配置信息-->
+  <form-beans>
+    <!--等级保护-知识库-Form表单的配置 -->
+    <form-bean name="knowledgeBaseForm" 
+                type="edu.sjtu.infosec.ismp.manager.GOSP.web.form.KnowledgeBaseForm" />
+    <!--等级保护-网络等级保护状况-Form表单的配置 -->
+    <form-bean name="safeStateForm" 
+                type="edu.sjtu.infosec.ismp.manager.GOSP.web.form.SafeStateForm" />
+     <!--等级保护-法律法规-Form表单的配置 -->
+     <form-bean name="lawRulesForm" 
+                type="edu.sjtu.infosec.ismp.manager.GOSP.web.form.LawRulesForm" />
+     <!--等级保护-法律法规(知识库、等保状况共用)-条件查询用到的-Form表单的配置 -->
+     <form-bean name="showLawRulesForm" 
+                type="edu.sjtu.infosec.ismp.manager.GOSP.web.form.ShowLawRulesForm" />           
+  </form-beans>
+  
+  
+  <global-exceptions />
+  <global-forwards />
+ 
+   <action-mappings>
+   <!-- Action 配置信息-->
+   <!-- 等级保护-知识库添加 --> 
+   <action 
+        path="/ismp/domain/local/gosp/addKB"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="knowledgeBaseForm"
+        validate="false" 
+        parameter="method"
+        scope="request">
+        <forward name="opSucc"
+                path="/WEB-INF/content/GOSP/knowledgeBase/knowledgeBaseAdd.jsp" /> 
+        <forward name="addSuccess"
+                path="/ismp/domain/local/gosp/knowledgeBase.do" /> 
+                        
+    </action>
+    
+   <!-- 等级保护-知识库显示 --> 
+    <action 
+        path="/ismp/domain/local/gosp/knowledgeBase"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="showLawRulesForm"
+        validate="false" 
+        scope="request">
+        <forward name="findSuccess"
+         		path="/WEB-INF/content/GOSP/knowledgeBase/knowledgeBaseShow.jsp" /> 
+    </action>
+    
+    <!-- 等级保护-知识库更新 --> 
+    <action 
+        path="/ismp/domain/local/gosp/updateKB"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="knowledgeBaseForm"
+        validate="false" 
+        parameter="method"
+        scope="request">
+        <forward name="updateSuccess"
+                path="/WEB-INF/content/GOSP/knowledgeBase/knowledgeBaseUpdate.jsp" /> 
+        <forward name="update"
+                path="/ismp/domain/local/gosp/knowledgeBase.do" /> 
+         <forward name="delSuccess"
+                path="/ismp/domain/local/gosp/knowledgeBase.do" />                
+    </action>
+    
+                                <!-- 等级保护-网络等级保护状况-配置信息 -->
+     
+      <!-- 等级保护-网络等级保护状况-添加 -配置--> 
+   <action 
+        path="/ismp/domain/local/gosp/addNetSafe"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="safeStateForm"
+        validate="false" 
+        scope="request">
+        <forward name="netSafeOpSucc"
+                path="/WEB-INF/content/GOSP/netSafe/netSafeAdd.jsp" /> 
+        <forward name="addNetSafeSucc"
+                path="/ismp/domain/local/gosp/netSafe.do" /> 
+                        
+    </action>
+    
+     <!-- 等级保护-网络等级保护状况-查询-配置 -->
+     <action 
+        path="/ismp/domain/local/gosp/netSafe"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="showLawRulesForm"
+        validate="false" 
+        scope="request">
+        <forward name="netSafeSuccess"
+                path="/WEB-INF/content/GOSP/netSafe/netSafeShow.jsp" /> 
+    </action>
+    
+    <!-- 等级保护-网络等级保护状况-更新-配置 -->
+     <action 
+        path="/ismp/domain/local/gosp/netSafeUpdate"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="safeStateForm"
+        validate="false" 
+        parameter="method"
+        scope="request">
+        <forward name="updateInfo"
+                path="/WEB-INF/content/GOSP/netSafe/netSafeUpdate.jsp" /> 
+        <forward name="updateSuccess"
+                path="/ismp/domain/local/gosp/netSafe.do" /> 
+         <forward name="delSuccess"
+                path="/ismp/domain/local/gosp/netSafe.do" />                
+    </action>
+
+  
+                         <!-- 等级保护-法律法规-配置信息 -->
+                         
+    <!-- 等级保护-法律法规-添加 -配置--> 
+   <action 
+        path="/ismp/domain/local/gosp/upload"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="lawRulesForm"
+        validate="false" 
+        scope="request">
+        <forward name="lawRulesOpSucc"
+                path="/WEB-INF/content/GOSP/lawRules/uploadLawRules.jsp" /> 
+        <forward name="uploadSuccess"
+                path="/ismp/domain/local/gosp/findLawRules.do" /> 
+                        
+    </action>
+    
+     <!-- 等级保护-法律法规-查询-配置 -->
+     <action 
+        path="/ismp/domain/local/gosp/findLawRules"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="showLawRulesForm"
+        validate="false" 
+        scope="request">
+        <forward name="findUploadSucc"
+                path="/WEB-INF/content/GOSP/lawRules/lawRulesShow.jsp" /> 
+    </action>
+    
+    <!-- 等级保护-法律法规-更新-配置 -->
+    <action 
+        path="/ismp/domain/local/gosp/lawRulesUpdate"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="lawRulesForm"
+        validate="false" 
+        parameter="method"
+        scope="request">
+        <forward name="updateLawRules"
+                path="/WEB-INF/content/GOSP/lawRules/lawRulesUpdate.jsp" /> 
+        <forward name="updateLawRulesSucc"
+                path="/ismp/domain/local/gosp/findLawRules.do" /> 
+         <forward name="deleteSuccess"
+                path="/ismp/domain/local/gosp/findLawRules.do" />                
+    </action>
+    
+    <!-- 等级保护-法律法规-下载-配置 -->
+     <action 
+        path="/ismp/domain/local/gosp/down"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        validate="false" 
+        scope="request">                  
+    </action>
+  </action-mappings>
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

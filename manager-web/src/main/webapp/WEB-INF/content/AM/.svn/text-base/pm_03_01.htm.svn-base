@@ -1,0 +1,75 @@
+
+
+  <div class="contant">
+     <div class="overf h20 martop10">
+       <li id="m"><a  class="mback" href="pm_03_02.htm" target="select"><span class="menus10">软件信息</span></a></li>
+      <li><a  class="mback" href="pm_03_03.htm" target="select"><span class="menus11"> 硬件信息</span></a></li>
+      <li><a  class="mback" href="pm_03_04.htm" target="select"><span class="menus12">地理位置信息</span></a></li>
+       <li><a  class="mback" href="pm_03_05.htm" target="select"><span class="menus07">资产变动信息</span></a></li>
+       <li><a  class="mback" href="pm_03_06.htm" target="select"><span class="menus07">可用性统计查看</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf" id="data">  
+    <h2 class="martop10">设备详细信息</h2><table>
+  <tr>
+    <th>资产名称</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+    <th>资产类型</th>
+    <td><span class="pad3">
+      <select name="select">
+        <option>==全部==</option>
+      </select>
+    </span></td>
+  </tr>
+  <tr>
+    <th>资产编号</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+    <th>采购日期</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+  </tr>
+  <tr>
+    <th>有效期</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+    <th>当前状态</th>
+    <td><span class="pad3">
+      <select name="select2">
+        <option>==全部==</option>
+      </select>
+    </span></td>
+  </tr>
+  <tr>
+    <th>使用人</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+    <th>联系方式</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+  </tr>
+  <tr>
+    <th>IP 地 址</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+    <th>单位</th>
+    <td><span style="float:left;">
+      <input type="text" size="12" class="input"/>
+    </span></td>
+  </tr>
+  <tr>
+    <td height="35" colspan="4" align="center"><a href="#" class="R6" style="margin-left:12px;">修改</a><a href="#" class="R6" style="margin-left:12px;">重置</a></td>
+    </tr>
+</table>    
+      <iframe width="580" height="200" src="pm_03_02.htm" name="select" style="border:none;"></iframe>
+  </div>
+
+<script type="text/javascript" src="../../../js/comm/other/tablelink.js"></script>
+

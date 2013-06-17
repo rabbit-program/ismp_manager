@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/3188/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/8/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/ServiceException.java
+END
+IPRoleAuthenticationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/791/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/IPRoleAuthenticationFilter.java
+END
+OperatorDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/255/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/OperatorDetails.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/126/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/Role.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/876/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/UserDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/8/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/RoleDao.java
+END
+AccountManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/2773/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/AccountManager.java
+END
+Domain.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/876/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/Domain.java
+END
+UserDetailsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/277/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/UserDetailsServiceImpl.java
+END
+IdEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/421/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/IdEntity.java
+END
+IsmpWebConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/221/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/IsmpWebConfig.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3188/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/security/User.java
+END

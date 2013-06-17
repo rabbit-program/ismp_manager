@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/3131/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic
+END
+WeblogicDeviceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3131/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic/WeblogicDeviceStatus.java
+END
+WeblogicThreadPoolStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic/WeblogicThreadPoolStatus.java
+END
+WeblogicHistoryEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic/WeblogicHistoryEntity.java
+END
+WeblogicJdbcConnectionPoolStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic/WeblogicJdbcConnectionPoolStatus.java
+END
+WeblogicJvmStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/weblogic/WeblogicJvmStatus.java
+END

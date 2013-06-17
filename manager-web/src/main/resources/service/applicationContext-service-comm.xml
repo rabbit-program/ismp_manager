@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+     <!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogservice"></property>
+    </bean>
+      -->
+     
+     
+     
+     <!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+     
+     
+     
+   <!-- 所有RMI客户端的父类 -->
+    <bean id="rmiProxyParent" abstract="true"
+        class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+</beans>

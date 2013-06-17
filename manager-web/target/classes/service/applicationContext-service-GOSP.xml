@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+<!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogservice"></property>
+    </bean>
+      -->
+    <!-- 知识库 -->
+    <bean id="knowledgeBaseService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.GOSP.service.impl.GospKnowledgeBaseServiceImpl">
+          <property name="gospKnowledgeDao" ref="gospKnowledgeDao"></property>
+        </bean>
+       </property>
+    </bean>
+    <!-- 法律法规 -->
+    <bean id="lawsAndRulesService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.GOSP.service.impl.LawsAndRulesServiceImpl">
+          <property name="lawsAndRulesDao" ref="lawsAndRulesDao"></property>
+        </bean>
+       </property>
+    </bean>
+    <!-- 网络等保状态 -->
+    <bean id="safeStateRecordsService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.GOSP.service.impl.SafeStateRecordsServiceImpl">
+          <property name="safeStateRecordsDao" ref="safeStateRecordsDao"></property>
+        </bean>
+       </property>
+    </bean>
+     
+     
+     
+<!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+</beans>

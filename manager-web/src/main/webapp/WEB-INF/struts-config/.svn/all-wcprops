@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code2/!svn/ver/3688/trunk/manager-web/src/main/webapp/WEB-INF/struts-config
+END
+struts-config-RAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/1352/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-RAM.xml
+END
+struts-config-TM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/181/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-TM.xml
+END
+struts-config-SCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2035/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-SCM.xml
+END
+struts-config-BSAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2853/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-BSAM.xml
+END
+struts-config-ERM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3497/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-ERM.xml
+END
+struts-config-comm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/804/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-comm.xml
+END
+struts-config-SYSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3958/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-SYSM.xml
+END
+struts-config-AM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3581/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-AM.xml
+END
+struts-config-EM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3174/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-EM.xml
+END
+struts-config-VPM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2726/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-VPM.xml
+END
+struts-config-OSS.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2725/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-OSS.xml
+END
+struts-config-HM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/327/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-HM.xml
+END
+struts-config-WSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/1528/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-WSM.xml
+END
+struts-config-AIM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2626/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-AIM.xml
+END
+struts-config-LM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3501/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-LM.xml
+END
+struts-config-GOSP.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/1663/trunk/manager-web/src/main/webapp/WEB-INF/struts-config/struts-config-GOSP.xml
+END

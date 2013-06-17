@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3840/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor
+END
+register.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/3692/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/register.jsp
+END
+defConfig.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3814/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/defConfig.jsp
+END
+hostResource.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3692/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/hostResource.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/3711/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/index.jsp
+END
+detailConfig.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3814/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/detailConfig.jsp
+END
+windowsLog.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3840/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/windowsLog.jsp
+END
+softwareUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/3692/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/softwareUpdate.jsp
+END
+windowsUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3692/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/windowsUpdate.jsp
+END
+winSensorManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/3692/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/client/winSensor/winSensorManager.jsp
+END

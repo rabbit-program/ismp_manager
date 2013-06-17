@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <!-- 
+    <form-bean name="virusClientsORMForm" 
+                type="edu.sjtu.infosec.ismp.manager.virusManager.web.form.VirusClientsORMForm" />
+    -->
+	 <!-- agent管理 -->
+	 <!-- bbs -->
+     
+     
+     
+	 <!-- 系统配置 -->
+	 
+        
+        
+        
+	 <!-- 用户管理 -->
+	 <!-- userForm -->
+     <form-bean name="userForm" type="edu.sjtu.infosec.ismp.manager.SYSM.user.self.web.form.UserForm"></form-bean>
+     <form-bean name="appSysInfoForm" type="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.form.AppSysInfoForm"></form-bean> 
+     <form-bean name="appSysRoleForm" type="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.form.AppSysRoleForm"></form-bean>
+     <form-bean name="rARForm" type="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.form.RARForm"></form-bean>   
+     <form-bean name="dataSynConfigForm" type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.ds.DataSynConfigForm"></form-bean>
+     <form-bean name="smsConfigForm"  type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.sms.SmsConfigForm"></form-bean> 
+     <form-bean name="patchDbConfigForm" type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.vpm.pm.PatchDbConfigForm"></form-bean>
+     <form-bean name="virusDbConfigForm" type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.vpm.vm.VirusDbConfigForm"></form-bean>
+  </form-beans>
+  
+  
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  
+  <!-- action -->
+  <action-mappings>
+  	<!--
+    <action 
+        path="/virusMappedAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMForm" 
+        name="virusClientsORMForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="clientQuery"
+         		path="/WEB-INF/jsp/virusManager/virusClients/show/virusClientsMapping.jsp" /> 
+    </action>
+    -->
+	 <!-- agent管理 -->
+	 <!-- bbs -->
+     <action path="/ismp/sysm/other/bbs" 
+       type="org.springframework.web.struts.DelegatingActionProxy" 
+       validate="false" 
+       scope="request" 
+       parameter="method">
+         <forward name="index" path="/WEB-INF/content/SYSM/bbs/index.jsp"/>
+          <forward name="update" path="/WEB-INF/content/SYSM/bbs/modifyCard.jsp"/>
+           <forward name="detail" path="/WEB-INF/content/SYSM/bbs/cardDetail.jsp"/>
+     </action>
+      <action path="/ismp/sysm/other/new_card" forward="/WEB-INF/content/SYSM/bbs/newCard.jsp"></action>
+     
+     <!-- 系统配置 -->
+        <!-- 数据上报 -->
+	    <action 
+	        path="/ismp/domain/local/sysm/config/ds/dataSynConfigFind"
+	        type="org.springframework.web.struts.DelegatingActionProxy">
+	        <forward name="success" 
+	            path="/WEB-INF/content/SYSM/config/ds/index.jsp" />
+	        <forward name="failed" 
+	            path="/WEB-INF/content/SYSM/config/ds/index.jsp" />
+	        <forward name="unLogin" 
+	            path="/login.jsp" />
+	    </action>
+	    <action 
+            path="/ismp/domain/local/sysm/config/ds/dataSynConfigModify"
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="dataSynConfigForm">
+            <forward name="success" 
+                path="/WEB-INF/content/SYSM/config/ds/index.jsp" />
+            <forward name="failed" 
+                path="/WEB-INF/content/SYSM/config/ds/index.jsp" />
+            <forward name="unLogin" 
+                path="/login.jsp" />
+        </action>
+        <!-- 信息发送 -->
+        <action 
+            path="/ismp/domain/local/sysm/config/sms/smsConfigFind"
+            type="org.springframework.web.struts.DelegatingActionProxy">
+            <forward name="success" 
+                path="/WEB-INF/content/SYSM/config/sms/index.jsp" />
+            <forward name="failed" 
+                path="/WEB-INF/content/SYSM/config/sms/index.jsp" />
+            <forward name="unLogin" 
+                path="/login.jsp" />
+        </action>
+        <action 
+            path="/ismp/domain/local/sysm/config/sms/smsConfigModify"
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="smsConfigForm">
+            <forward name="success" 
+                path="/WEB-INF/content/SYSM/config/sms/index.jsp" />
+            <forward name="failed" 
+                path="/WEB-INF/content/SYSM/config/sms/index.jsp" />
+            <forward name="unLogin" 
+                path="/login.jsp" />
+        </action>
+        <!-- 病毒补丁数据库 -->
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/vpmDbConfigFindAction"
+	            type="org.springframework.web.struts.DelegatingActionProxy">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/vpmDbConfigModifyAction"
+	            type="org.springframework.web.struts.DelegatingActionProxy">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+	        <!-- 补丁数据库 -->
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/pm/patchDbConfigFind"
+	            type="org.springframework.web.struts.DelegatingActionProxy">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/pm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/pm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/pm/patchDbConfigModify"
+	            type="org.springframework.web.struts.DelegatingActionProxy"
+	            name="patchDbConfigForm">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+	        <!-- 病毒数据库 -->
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/vm/virusDbConfigFind"
+	            type="org.springframework.web.struts.DelegatingActionProxy">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/vm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/vm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+	        <action 
+	            path="/ismp/domain/local/sysm/config/vpm/vm/virusDbConfigModify"
+	            type="org.springframework.web.struts.DelegatingActionProxy"
+	            name="virusDbConfigForm">
+	            <forward name="success" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="failed" 
+	                path="/WEB-INF/content/SYSM/config/vpm/index.jsp" />
+	            <forward name="unLogin" 
+	                path="/login.jsp" />
+	        </action>
+        <!-- WinSensor配置 -->
+            <!-- 默认配置 -->
+            <action 
+                path="/ismp/domain/local/sysm/config/client/winSensor/defSensorConfigFind"
+                type="org.springframework.web.struts.DelegatingActionProxy">
+                <forward name="success" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/defConfig.jsp" />
+                <forward name="failed" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/defConfig.jsp" />
+                <forward name="unLogin" 
+                    path="/login.jsp" />
+            </action>
+            <action 
+                path="/ismp/domain/local/sysm/config/client/winSensor/defSensorConfigModify"
+                type="org.springframework.web.struts.DelegatingActionProxy">
+                <forward name="success" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/defConfig.jsp" />
+                <forward name="failed" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/defConfig.jsp" />
+                <forward name="unLogin" 
+                    path="/login.jsp" />
+            </action>
+            <!-- 详细配置 -->
+            <action 
+                path="/ismp/domain/local/sysm/config/client/winSensor/detailSensorConfigFind"
+                type="org.springframework.web.struts.DelegatingActionProxy">
+                <forward name="success" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/detailConfig.jsp" />
+                <forward name="failed" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/detailConfig.jsp" />
+                <forward name="unLogin" 
+                    path="/login.jsp" />
+            </action>
+            <action 
+                path="/ismp/domain/local/sysm/config/client/winSensor/detailSensorConfigModify"
+                type="org.springframework.web.struts.DelegatingActionProxy">
+                <forward name="success" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/detailConfig.jsp" />
+                <forward name="failed" 
+                    path="/WEB-INF/content/SYSM/config/client/winSensor/detailConfig.jsp" />
+                <forward name="unLogin" 
+                    path="/login.jsp" />
+            </action>
+	            <!-- 注册 -->
+	            <!-- 本地信息上报 -->
+	            <!-- 补丁更新 -->
+	            <!-- 软件分发 -->
+	            <!-- Windows日志信息 -->
+	            <!-- WinSensor管理策略 -->
+        
+        
+        
+        
+	 <!-- 用户管理 -->
+    <action 
+        path="/security/login"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="success"
+                path="/common/frames/main/home.jsp" />
+        <forward name="failed"
+                path="/WEB-INF/content/SYSM/user/self/errors/loginFailed.jsp" />
+        <forward name="sessionFailed"
+                path="/WEB-INF/content/SYSM/user/self/errors/sessionFailed.jsp" />
+        <forward name="unLogin"
+                path="/login.jsp" />
+    </action>
+    
+    
+    
+    <!-- 用户配置 -->
+     <action path="/ismp/domain/local/userConfig" parameter="method" name="userForm">
+     	 <forward name="userMain" path="/WEB-INF/content/SYSM/user/self/userMain.jsp"></forward>   
+     	 <forward name="userDetails" path="/WEB-INF/content/SYSM/user/self/userDetails.jsp"></forward>
+     	 <forward name="userUpdate" path="/WEB-INF/content/SYSM/user/self/userUpdate.jsp"></forward>
+     	 <forward name="userSearch" path="/WEB-INF/content/SYSM/user/self/userSearch.jsp"></forward>
+         <forward name="userRegister" path="/WEB-INF/content/SYSM/user/self/userAdd.jsp"></forward>
+         <forward name="addBlackAndWhite" path="/WEB-INF/content/SYSM/user/self/userBlackandWhiteAdd.jsp"></forward>
+         <forward name="userToManagerIndex" path="/WEB-INF/content/SYSM/user/self/domainMain.jsp"></forward>
+         <forward name="blackandwhitestatus" path="/WEB-INF/content/SYSM/user/self/userBlackandWhitestatus.jsp"></forward>
+         <forward name="userBlackandWhiteSearch" path="/WEB-INF/content/SYSM/user/self/userBlackandWhiteSearch.jsp"></forward>
+         <forward name="updateBlackAndWhite" path="/WEB-INF/content/SYSM/user/self/userBlackandWhiteUpdate.jsp"></forward>
+           <!-- 分配委办局 -->
+         <forward name="userToManager" path="/WEB-INF/content/SYSM/user/self/userToDomain.jsp"></forward>
+         <forward name="userToManagerSave" path="/WEB-INF/content/SYSM/user/self/domainAdd.jsp"></forward>
+         <forward name="userToManagerUpdate" path="/WEB-INF/content/SYSM/user/self/domainUpdate.jsp"></forward>
+           <!-- 分配角色 -->
+         <forward name="userToRole" path="/WEB-INF/content/SYSM/user/self/userToRole.jsp"></forward>
+        </action>
+        <action path="/ismp/domain/local/sysm/sysConfig" parameter="method">
+        	<forward name="sysconfig" path="/WEB-INF/content/SYSM/config/sysconfig.jsp"></forward>
+        </action>  
+        
+		<action path="/ismp/domain/local/userResetPassword" forward="/WEB-INF/content/SYSM/user/self/userResetPassword.jsp"></action>
+		<action path="/ismp/domain/local/resetPassWord" forward="/WEB-INF/content/SYSM/user/self/passwordReset.jsp"></action>
+		<action path="/ismp/domain/local/updatePassWord" forward="/WEB-INF/content/SYSM/user/self/passwordUpdate.jsp"></action>
+		
+		
+		     <!--应用系统信息-->
+      <action path="/ismp/sysm/other/appSysInfo"        
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="appSysInfoForm" 
+        name="appSysInfoForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+            <forward name="index" path="/WEB-INF/content/SYSM/user/other/asi/asi_index.jsp"/>
+       </action>
+            <action path="/ismp/sysm/other/appSysInfoadd" forward="/WEB-INF/content/SYSM/user/other/asi/asi_add.jsp"></action>
+            <action path="/ismp/sysm/other/appSysInfoup" forward="/WEB-INF/content/SYSM/user/other/asi/asi_up.jsp"></action>
+            <action path="/ismp/sysm/other/appSysInfosecurity" forward="/WEB-INF/content/SYSM/user/other/asi/asi_security_desc.jsp"></action>
+       
+       
+       
+    <!--应用系统权限-->
+      <action path="/ismp/sysm/other/appSysRole"        
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="appSysRoleForm" 
+        name="appSysRoleForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+            <forward name="index" path="/WEB-INF/content/SYSM/user/other/asi/asi_index.jsp"/>
+      </action>
+            <action path="/ismp/sysm/other/asrinfo" forward="/WEB-INF/content/SYSM/user/other/asr/asr_index.jsp"></action>
+
+
+
+    <!--应用系统权限分配记录-->
+       <action path="/ismp/sysm/other/rarInfo"        
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="rARForm" 
+        name="rARForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+            <forward name="index" path="/WEB-INF/content/SYSM/user/other/asi/asi_index.jsp"/>
+      </action>
+       <action path="/ismp/sysm/other/rarSecurity" forward="/WEB-INF/content/SYSM/user/other/rar/rar_security_index.jsp"></action>
+      
+ 
+  </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

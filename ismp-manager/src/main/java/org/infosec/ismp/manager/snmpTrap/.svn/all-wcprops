@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3310/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap
+END
+SnmpTrapMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3310/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapMessageListener.java
+END
+AgentRemoveSnmpTrapTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3049/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/AgentRemoveSnmpTrapTask.java
+END
+AgentAddSnmpTrapNodeTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3050/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/AgentAddSnmpTrapNodeTask.java
+END
+SnmpTrapLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3310/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapLocator.java
+END
+SnmpTrapNodeEntityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/3049/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapNodeEntityService.java
+END
+SnmpTrapControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3049/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapControllerImpl.java
+END
+SnmpTrapNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3049/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapNode.java
+END
+SnmpTrapNodeEntityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3049/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmpTrap/SnmpTrapNodeEntityDao.java
+END

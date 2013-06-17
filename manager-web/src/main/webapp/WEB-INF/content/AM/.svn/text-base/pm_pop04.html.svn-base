@@ -1,0 +1,71 @@
+
+<div  id="data" class="pad1 ">
+  <h2>硬件详细信</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>资产名称</th>
+        <th>操作</th>
+        <th>资产名称</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td width="220">192.168.9.121</td>
+        <td width="100"><input class="noneborder" name="deviceId" id="deviceId" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td width="200">104</td>
+        <td width="100"><input class="noneborder" name="deviceId" id="deviceId10" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>192.168.9.254</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId3" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>155</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId11" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId4" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>103</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId12" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>防火墙2</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId5" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>交换机2</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId13" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>防火墙3</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId6" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>交换机3</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId14" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>防火墙4</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId7" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>SNMP1</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId15" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>IDS</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId8" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>SNMP2</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId16" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>服务器</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId9" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>服务器</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId17" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+      <tr>
+        <td>交换机</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId2" value="66" onclick="doValue(this.value)" type="radio" /></td>
+        <td>192.168.9.121</td>
+        <td><input class="noneborder" name="deviceId" id="deviceId18" value="66" onclick="doValue(this.value)" type="radio" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <div align="center" class="martop8">
+    <input class="submit" type="submit" value="更新"  name="Submit">
+  </div>
+</div>

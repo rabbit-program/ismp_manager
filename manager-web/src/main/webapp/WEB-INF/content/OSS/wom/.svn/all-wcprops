@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/3468/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/1705/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/index.jsp
+END
+newWorkOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3468/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/newWorkOrder.jsp
+END
+showQuestion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/1928/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/showQuestion.jsp
+END
+showWorkOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3758/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/showWorkOrder.jsp
+END
+lookQues.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1910/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/lookQues.jsp
+END
+lookWorkOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3758/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/wom/lookWorkOrder.jsp
+END

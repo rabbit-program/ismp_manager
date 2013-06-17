@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    
+	<bean id="colorThresholdDao" class="org.infosec.ismp.situation.dao.impl.ColorThresholdDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineDao" class="org.infosec.ismp.situation.dao.impl.MachineDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineSituationDao" class="org.infosec.ismp.situation.dao.impl.MachineSituationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineCabinetDao" class="org.infosec.ismp.situation.dao.impl.MachineCabinetDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineCabinetSituationDao" class="org.infosec.ismp.situation.dao.impl.MachineCabinetSituationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineRoomDao" class="org.infosec.ismp.situation.dao.impl.MachineRoomDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="machineRoomSituationDao" class="org.infosec.ismp.situation.dao.impl.MachineRoomSituationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="securityAreaDao" class="org.infosec.ismp.situation.dao.impl.SecurityAreaDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="securityAreaSituationDao" class="org.infosec.ismp.situation.dao.impl.SecurityAreaSituationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="recordIndexDao" class="org.infosec.ismp.situation.dao.impl.RecordIndexDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="situationEventDao" class="org.infosec.ismp.situation.dao.impl.SituationEventDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+<!--    <bean id="alarmDao" class="edu.sjtu.infosec.ismp.manager.server.situation2.dao.impl.AlarmDaoImpl">-->
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate" />-->
+<!--    </bean>-->
+<!--    -->
+<!--    <bean id="departmentDao" class="edu.sjtu.infosec.ismp.manager.server.situation2.dao.impl.DepartmentDaoImpl">-->
+<!--    <property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+<!--    </bean>-->
+    
+<!--    <bean id="netSituationDao" class="edu.sjtu.infosec.ismp.manager.server.situation2.dao.impl.NetSituationDaoImpl">-->
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate" />-->
+<!--    </bean>-->
+<!--    -->
+    
+<!--    -->
+<!--    <bean id="totalMachineRoomSituationDao" class="edu.sjtu.infosec.ismp.manager.server.situation2.dao.impl.TotalMachineRoomSituationDaoImpl">-->
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate" />-->
+<!--    </bean>-->
+<!--    -->
+<!--    <bean id="eventDao" class="edu.sjtu.infosec.ismp.manager.server.situation2.dao.impl.EventDaoImpl">-->
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate" />-->
+<!--    </bean>-->
+    
+    
+</beans>

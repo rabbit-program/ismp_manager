@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/discovery
+END
+DiscoveryPingResponseCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/discovery/DiscoveryPingResponseCallback.java
+END
+IPPollAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/discovery/IPPollAddress.java
+END
+Discovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/discovery/Discovery.java
+END
+DiscoveryEventProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/discovery/DiscoveryEventProcessor.java
+END

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    
+    <bean id="winsensorDeviceDao" 
+        class="org.infosec.ismp.agent.winsensor.dao.impl.WinsensorDeviceDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="hostResourceStrategyDao" 
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.HostResourceStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="registerStrategyDao" 
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.RegisterStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="softwareUpdateStrategyDao"
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.SoftwareUpdateStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="windowsLogStrategyDao" 
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.WindowsLogStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="windowsUpdateStrategyDao" 
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.WindowsUpdateStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="winsensorManagerStrategyDao" 
+        class="org.infosec.ismp.agent.winsensor.strategy.dao.impl.WinsensorManagerStrategyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="agentDutyManagerDao" 
+    	class="org.infosec.ismp.agent.winsensor.operation.dao.impl.AgentDutyManagerDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="agentDutyManagerSentHisDao" 
+    	class="org.infosec.ismp.agent.winsensor.operation.dao.impl.AgentDutyManagerSentHisDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="problemDao" 
+    	class="org.infosec.ismp.agent.winsensor.operation.dao.impl.ProblemDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

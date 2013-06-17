@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device type="baseResource" brand="">
+	<table name="atTable" table="true">
+		<column type="SnmpInt32">
+			<name>atIfIndex</name>
+			<value>.1.3.6.1.2.1.3.1.1.1</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>atPhysAddress</name>
+			<value>.1.3.6.1.2.1.3.1.1.2</value>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>atNetAddress</name>
+			<value>.1.3.6.1.2.1.3.1.1.3</value>
+		</column>
+	</table>
+	<table name="egpNeighTable" table="true">
+		<column type="SnmpInt32">
+			<name>egpNeighState</name>
+			<value>.1.3.6.1.2.1.8.5.1.1</value>
+			<comments></comments>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>egpNeighAddr</name>
+			<value>.1.3.6.1.2.1.8.5.1.2</value>
+			<comments></comments>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpNeighAs</name>
+			<value>.1.3.6.1.2.1.8.5.1.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighInMsgs</name>
+			<value>.1.3.6.1.2.1.8.5.1.4</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighInErrs</name>
+			<value>.1.3.6.1.2.1.8.5.1.5</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighOutMsgs</name>
+			<value>.1.3.6.1.2.1.8.5.1.6</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighOutErrs</name>
+			<value>.1.3.6.1.2.1.8.5.1.7</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighInErrMsgs</name>
+			<value>.1.3.6.1.2.1.8.5.1.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighOutErrMsgs</name>
+			<value>.1.3.6.1.2.1.8.5.1.9</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighStateUps</name>
+			<value>.1.3.6.1.2.1.8.5.1.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpNeighStateDowns</name>
+			<value>.1.3.6.1.2.1.8.5.1.11</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpNeighIntervalHello</name>
+			<value>.1.3.6.1.2.1.8.5.1.12</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpNeighIntervalPoll</name>
+			<value>.1.3.6.1.2.1.8.5.1.13</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpNeighMode</name>
+			<value>.1.3.6.1.2.1.8.5.1.14</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpNeighEventTrigger</name>
+			<value>.1.3.6.1.2.1.8.5.1.15</value>
+		</column>
+		<comments></comments>
+	</table>
+	<table name="ifTable" table="true">
+		<column type="SnmpInt32">
+			<name>ifIndex</name>
+			<value>.1.3.6.1.2.1.2.2.1.1</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>description</name>
+			<value>.1.3.6.1.2.1.2.2.1.2</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ifType</name>
+			<value>.1.3.6.1.2.1.2.2.1.3</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ifMtu</name>
+			<value>.1.3.6.1.2.1.2.2.1.4</value>
+		</column>
+		<column type="SnmpGauge32">
+			<name>speed</name>
+			<value>.1.3.6.1.2.1.2.2.1.5</value>
+			<comments>An estimate of the interface's current bandwidth in bits
+				per second</comments>
+		</column>
+		<column type="SnmpHexString">
+			<name>physicalAddress</name>
+			<value>.1.3.6.1.2.1.2.2.1.6</value>
+			<comments>接口MAC地址</comments>
+		</column>
+		<column type="SnmpInt32">
+			<name>status</name>
+			<value>.1.3.6.1.2.1.2.2.1.8</value>
+			<comments>接口状态</comments>
+		</column>
+		<column type="SnmpCounter32">
+			<name>inBytes</name>
+			<value>.1.3.6.1.2.1.2.2.1.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>inPackets</name>
+			<value>.1.3.6.1.2.1.2.2.1.11</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>outBytes</name>
+			<value>.1.3.6.1.2.1.2.2.1.16</value>
+			<comments>ifOutOctets接口累计流出字节数</comments>
+		</column>
+		<column type="SnmpCounter32">
+			<name>outPackets</name>
+			<value>.1.3.6.1.2.1.2.2.1.17</value>
+			<comments>ifOutOctets接口累计流出报文数</comments>
+		</column>
+	</table>
+	<table name="ifXTable" table="true">
+		<column type="SnmpOctetString">
+			<name>ifName</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ifInMulticastPkts</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.2</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ifInBroadcastPkts</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ifOutMulticastPkts</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.4</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ifLinkUpDownTrapEnable</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.14</value>
+		</column>
+		<column type="SnmpGauge32">
+			<name>ifHighSpeed</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.15</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ifPromiscuousMode</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.16</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ifConnectorPresent</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.17</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>ifAlias</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.18</value>
+		</column>
+		<column type="SnmpTimeTicks">
+			<name>ifCounterDiscontinuityTime</name>
+			<value>.1.3.6.1.2.1.31.1.1.1.19</value>
+		</column>
+	</table>
+	<table name="ipAddrTable" table="true">
+		<column type="SnmpIPAddress">
+			<name>ipAdEntAddr</name>
+			<value>.1.3.6.1.2.1.4.20.1.1</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipAdEntIfIndex</name>
+			<value>.1.3.6.1.2.1.4.20.1.2</value>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>ipAdEntNetMask</name>
+			<value>.1.3.6.1.2.1.4.20.1.3</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipAdEntBcastAddr</name>
+			<value>.1.3.6.1.2.1.4.20.1.4</value>
+		</column>
+	</table>
+	<table name="ipNetToMediaTable" table="true">
+		<column type="SnmpInt32">
+			<name>ipNetToMediaIfIndex</name>
+			<value>.1.3.6.1.2.1.4.22.1.1</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>ipNetToMediaPhysAddress</name>
+			<value>.1.3.6.1.2.1.4.22.1.2</value>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>ipNetToMediaNetAddress</name>
+			<value>.1.3.6.1.2.1.4.22.1.3</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipNetToMediaType</name>
+			<value>.1.3.6.1.2.1.4.22.1.4</value>
+		</column>
+	</table>
+	<table name="ipRouteTable" table="true">
+		<column type="SnmpOctetString">
+			<name>ipRouteDest</name>
+			<value>.1.3.6.1.2.1.4.21.1.1</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteIfIndex</name>
+			<value>.1.3.6.1.2.1.4.21.1.2</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteMetric1</name>
+			<value>.1.3.6.1.2.1.4.21.1.3</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteMetric2</name>
+			<value>.1.3.6.1.2.1.4.21.1.4</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteMetric3</name>
+			<value>.1.3.6.1.2.1.4.21.1.5</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteMetric4</name>
+			<value>.1.3.6.1.2.1.4.21.1.6</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>ipRouteNextHop</name>
+			<value>.1.3.6.1.2.1.4.21.1.7</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipRouteType</name>
+			<value>.1.3.6.1.2.1.4.21.1.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipRouteProto</name>
+			<value>.1.3.6.1.2.1.4.21.1.9</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteAge</name>
+			<value>.1.3.6.1.2.1.4.21.1.10</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>ipRouteMask</name>
+			<value>.1.3.6.1.2.1.4.21.1.11</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipRouteMetric5</name>
+			<value>.1.3.6.1.2.1.4.21.1.12</value>
+		</column>
+		<column type="SnmpObjectId">
+			<name>ipRouteInfo</name>
+			<value>.1.3.6.1.2.1.4.21.1.13</value>
+		</column>
+	</table>
+	<table name="tcpConnTable" table="true">
+		<column type="SnmpInt32">
+			<name>tcpConnState</name>
+			<value>.1.3.6.1.2.1.6.13.1.1</value>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>tcpConnLocalAddress</name>
+			<value>.1.3.6.1.2.1.6.13.1.2</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>tcpConnLocalPort</name>
+			<value>.1.3.6.1.2.1.6.13.1.3</value>
+		</column>
+		<column type="SnmpIPAddress">
+			<name>tcpConnRemAddress</name>
+			<value>.1.3.6.1.2.1.6.13.1.4</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>tcpConnRemPort</name>
+			<value>.1.3.6.1.2.1.6.13.1.5</value>
+		</column>
+	</table>
+	<table name="udpTable" table="true">
+		<column type="SnmpIPAddress">
+			<name>udpLocalAddress</name>
+			<value>.1.3.6.1.2.1.7.5.1.1</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>udpLocalPort</name>
+			<value>.1.3.6.1.2.1.7.5.1.2</value>
+		</column>
+	</table>
+	<table name="udpGroup" table="false">
+		<column type="SnmpCounter32">
+			<name>udpInDatagrams</name>
+			<value>.1.3.6.1.2.1.7.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>udpNoPorts</name>
+			<value>.1.3.6.1.2.1.7.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>udpInErrors</name>
+			<value>.1.3.6.1.2.1.7.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>udpOutDatagrams</name>
+			<value>.1.3.6.1.2.1.7.1</value>
+		</column>
+	</table>
+	<table name="tcpGroup" table="false">
+		<column type="SnmpInt32">
+			<name>tcpRtoAlgorithm</name>
+			<value>.1.3.6.1.2.1.6.1</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>tcpRtoMin</name>
+			<value>.1.3.6.1.2.1.6.2</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>tcpRtoMax</name>
+			<value>.1.3.6.1.2.1.6.3</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>tcpMaxConn</name>
+			<value>.1.3.6.1.2.1.6.4</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpActiveOpens</name>
+			<value>.1.3.6.1.2.1.6.5</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpPassiveOpens</name>
+			<value>.1.3.6.1.2.1.6.6</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpAttemptFails</name>
+			<value>.1.3.6.1.2.1.6.7</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpEstabResets</name>
+			<value>.1.3.6.1.2.1.6.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpCurrEstab</name>
+			<value>.1.3.6.1.2.1.6.9</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpInSegs</name>
+			<value>.1.3.6.1.2.1.6.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpOutSegs</name>
+			<value>.1.3.6.1.2.1.6.11</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpRetransSegs</name>
+			<value>.1.3.6.1.2.1.6.12</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpInErrs</name>
+			<value>.1.3.6.1.2.1.6.14</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>tcpOutRsts</name>
+			<value>.1.3.6.1.2.1.6.15</value>
+		</column>
+	</table>
+	<table name="snmpGroup" table="false">
+		<column type="SnmpCounter32">
+			<name>snmpInPkts</name>
+			<value>.1.3.6.1.2.1.11.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutPkts</name>
+			<value>.1.3.6.1.2.1.11.2</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInBadVersions</name>
+			<value>.1.3.6.1.2.1.11.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInBadCommunityNames</name>
+			<value>.1.3.6.1.2.1.11.4</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInBadCommunityUses</name>
+			<value>.1.3.6.1.2.1.11.5</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInASNParseErrs</name>
+			<value>.1.3.6.1.2.1.11.6</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInTooBigs</name>
+			<value>.1.3.6.1.2.1.11.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInNoSuchNames</name>
+			<value>.1.3.6.1.2.1.11.9</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInBadValues</name>
+			<value>.1.3.6.1.2.1.11.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInReadOnlys</name>
+			<value>.1.3.6.1.2.1.11.11</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInGenErrs</name>
+			<value>.1.3.6.1.2.1.11.12</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInTotalReqVars</name>
+			<value>.1.3.6.1.2.1.11.13</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInTotalSetVars</name>
+			<value>.1.3.6.1.2.1.11.14</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInGetRequests</name>
+			<value>.1.3.6.1.2.1.11.15</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInGetNexts</name>
+			<value>.1.3.6.1.2.1.11.16</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInSetRequests</name>
+			<value>.1.3.6.1.2.1.11.17</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInGetResponses</name>
+			<value>.1.3.6.1.2.1.11.18</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpInTraps</name>
+			<value>.1.3.6.1.2.1.11.19</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutTooBigs</name>
+			<value>.1.3.6.1.2.1.11.20</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutNoSuchNames</name>
+			<value>.1.3.6.1.2.1.11.21</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutBadValues</name>
+			<value>.1.3.6.1.2.1.11.22</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutGenErrs</name>
+			<value>.1.3.6.1.2.1.11.24</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutGetRequests</name>
+			<value>.1.3.6.1.2.1.11.25</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutGetNexts</name>
+			<value>.1.3.6.1.2.1.11.26</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutSetRequests</name>
+			<value>.1.3.6.1.2.1.11.27</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutGetResponses</name>
+			<value>.1.3.6.1.2.1.11.28</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>snmpOutTraps</name>
+			<value>.1.3.6.1.2.1.11.29</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>snmpEnableAuthenTraps</name>
+			<value>.1.3.6.1.2.1.11.30</value>
+		</column>
+	</table>
+	<table name="ipGroup" table="false">
+		<column type="SnmpInt32">
+			<name>ipForwarding</name>
+			<value>.1.3.6.1.2.1.4.1</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipDefaultTTL</name>
+			<value>.1.3.6.1.2.1.4.2</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInReceives</name>
+			<value>.1.3.6.1.2.1.4.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInHdrErrors</name>
+			<value>.1.3.6.1.2.1.4.4</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInAddrErrors</name>
+			<value>.1.3.6.1.2.1.4.5</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipForwDatagrams</name>
+			<value>.1.3.6.1.2.1.4.6</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInUnknownProtos</name>
+			<value>.1.3.6.1.2.1.4.7</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInDiscards</name>
+			<value>.1.3.6.1.2.1.4.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipInDelivers</name>
+			<value>.1.3.6.1.2.1.4.9</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipOutRequests</name>
+			<value>.1.3.6.1.2.1.4.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipOutDiscards</name>
+			<value>.1.3.6.1.2.1.4.11</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipOutNoRoutes</name>
+			<value>.1.3.6.1.2.1.4.12</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>ipReasmTimeout</name>
+			<value>.1.3.6.1.2.1.4.13</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipReasmReqds</name>
+			<value>.1.3.6.1.2.1.4.14</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipReasmOKs</name>
+			<value>.1.3.6.1.2.1.4.15</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipReasmFails</name>
+			<value>.1.3.6.1.2.1.4.16</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipFragOKs</name>
+			<value>.1.3.6.1.2.1.4.17</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipFragFails</name>
+			<value>.1.3.6.1.2.1.4.18</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipFragCreates</name>
+			<value>.1.3.6.1.2.1.4.19</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>ipRoutingDiscards</name>
+			<value>.1.3.6.1.2.1.4.23</value>
+		</column>
+	</table>
+	<table name="icmpGroup" table="false">
+		<column type="SnmpCounter32">
+			<name>icmpInMsgs</name>
+			<value>.1.3.6.1.2.1.5.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInErrors</name>
+			<value>.1.3.6.1.2.1.5.2</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInDestUnreachs</name>
+			<value>.1.3.6.1.2.1.5.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInTimeExcds</name>
+			<value>.1.3.6.1.2.1.5.4</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInParmProbs</name>
+			<value>.1.3.6.1.2.1.5.5</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInSrcQuenchs</name>
+			<value>.1.3.6.1.2.1.5.6</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInRedirects</name>
+			<value>.1.3.6.1.2.1.5.7</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInEchos</name>
+			<value>.1.3.6.1.2.1.5.8</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInEchoReps</name>
+			<value>.1.3.6.1.2.1.5.9</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInTimestamps</name>
+			<value>.1.3.6.1.2.1.5.10</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInTimestampReps</name>
+			<value>.1.3.6.1.2.1.5.11</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInAddrMasks</name>
+			<value>.1.3.6.1.2.1.5.12</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpInAddrMaskReps</name>
+			<value>.1.3.6.1.2.1.5.13</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutMsgs</name>
+			<value>.1.3.6.1.2.1.5.14</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutErrors</name>
+			<value>.1.3.6.1.2.1.5.15</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutDestUnreachs</name>
+			<value>.1.3.6.1.2.1.5.16</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutTimeExcds</name>
+			<value>.1.3.6.1.2.1.5.17</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutParmProbs</name>
+			<value>.1.3.6.1.2.1.5.18</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutSrcQuenchs</name>
+			<value>.1.3.6.1.2.1.5.19</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutRedirects</name>
+			<value>.1.3.6.1.2.1.5.20</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutEchos</name>
+			<value>.1.3.6.1.2.1.5.21</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutEchoReps</name>
+			<value>.1.3.6.1.2.1.5.22</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutTimestamps</name>
+			<value>.1.3.6.1.2.1.5.23</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutTimestampReps</name>
+			<value>.1.3.6.1.2.1.5.24</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutAddrMasks</name>
+			<value>.1.3.6.1.2.1.5.25</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>icmpOutAddrMaskReps</name>
+			<value>.1.3.6.1.2.1.5.26</value>
+		</column>
+	</table>
+	<table name="icmpGroup" table="false">
+		<column type="SnmpTimeTicks">
+			<name>hrSystemUptime</name>
+			<value>.1.3.6.1.2.1.25.1.1</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>hrSystemDate</name>
+			<value>.1.3.6.1.2.1.25.1.2</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>hrSystemInitialLoadDevice</name>
+			<value>.1.3.6.1.2.1.25.1.3</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>hrSystemInitialLoadParameters
+			</name>
+			<value>.1.3.6.1.2.1.25.1.4</value>
+		</column>
+	</table>
+	<table name="egpGroup" table="false">
+		<column type="SnmpCounter32">
+			<name>egpInMsgs</name>
+			<value>..1.3.6.1.2.1.8.1</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpInErrors</name>
+			<value>..1.3.6.1.2.1.8.2</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpOutMsgs</name>
+			<value>..1.3.6.1.2.1.8.3</value>
+		</column>
+		<column type="SnmpCounter32">
+			<name>egpOutErrors</name>
+			<value>..1.3.6.1.2.1.8.4</value>
+		</column>
+		<column type="SnmpInt32">
+			<name>egpAs</name>
+			<value>..1.3.6.1.2.1.8.6</value>
+		</column>
+	</table>
+	<table name="systemGroup" table="false">
+		<column type="SnmpOctetString">
+			<name>sysDescr</name>
+			<value>.1.3.6.1.2.1.1.1</value>
+		</column>
+		<column type="SnmpObjectId">
+			<name>sysObjectID</name>
+			<value>.1.3.6.1.2.1.1.2</value>
+		</column>
+		<column type="SnmpTimeTicks">
+			<name>sysUptime</name>
+			<value>.1.3.6.1.2.1.1.3</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>sysContact</name>
+			<value>.1.3.6.1.2.1.1.4</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>sysName</name>
+			<value>.1.3.6.1.2.1.1.5</value>
+		</column>
+		<column type="SnmpOctetString">
+			<name>sysLocation</name>
+			<value>.1.3.6.1.2.1.1.6</value>
+		</column>
+	</table>
+</device>

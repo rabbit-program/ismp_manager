@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    
+    
+    <bean id="sensorServer" 
+        class="org.infosec.ismp.manager.winsensor.ManagerSensorServer" init-method="init">
+        <property name="agentService" ref="agentService" />
+        <property name="deviceService" ref="managerWinsensorDeviceService" />
+        <property name="pcLogService" ref="pcLogService" />
+        <property name="pcLogSourceService" ref="pcLogSourceService" />
+        <property name="patchClientService" ref="patchClientService" />
+        <property name="thresholdService" ref="thresholdService" />
+        <property name="hostResourceHistoryService" ref="hostResourceHistoryService" />
+        <property name="hostResourceStatusScheduledInterval" value="30" />
+        <property name="hostResourceCacheTime" value="300000" />
+        <property name="hostResourceAlertGenerator" ref="hostResourceAlertGenerator" />
+    </bean>
+    
+    <bean id="hostResourceAlertGenerator" 
+    	class="org.infosec.ismp.manager.winsensor.alert.HostResourceAlertGenerator">
+    	<property name="thresholdService" ref="thresholdService" />
+    	<property name="corePoolSize" value="5" />
+    	<property name="maximumPoolSize" value="20" />
+    	<property name="keepAliveTime" value="3" />
+    	<property name="blockingQueueSize" value="1000" />
+    </bean>
+</beans>

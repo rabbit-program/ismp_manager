@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<!-- 补丁 -->
+    <bean name="/ismp/domain/local/vpm/pm/patchAction" 
+         class="edu.sjtu.infosec.ismp.manager.VPM.pm.web.actions.PatchAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="sensorClientsService">
+            <ref bean="sensorClientsService"/>
+        </property>
+        <property name="doaminService">
+            <ref bean="domainService"/>
+        </property>
+       <property name="patchTacticsService">
+            <ref bean="patchTacicsService"/>
+        </property>
+        <property name="assetDeviceService">
+            <ref bean="assetDeviceService"/>
+        </property>
+        <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+   
+   <!-- 统计-->
+    <bean name="/ismp/domain/local/vpm/pm/statisticsAction" 
+         class="edu.sjtu.infosec.ismp.manager.VPM.pm.web.actions.StatisticsAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="sensorClientsService">
+            <ref bean="sensorClientsService"/>
+        </property>
+        <property name="sensorService">
+             <ref bean="sensorService"/>
+        </property>
+        <property name="domainService">
+           <ref bean="domainService"/>
+        </property>
+         <property name="systemlogservice">
+                <ref bean="systemlogService" />
+         </property>
+         <property name="sysConfigDbService">
+                <ref bean="sysConfigDbService"/>
+         </property>
+    </bean>
+   
+   <!-- 策略 -->
+     <bean name="/ismp/domain/local/vpm/pm/TacticsAction" 
+         class="edu.sjtu.infosec.ismp.manager.VPM.pm.web.actions.TacticsAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="patchTacicsService">
+            <ref bean="patchTacicsService"/>
+        </property>
+         <property name="systemlogservice">
+                <ref bean="systemlogService" />
+         </property>
+    </bean>   
+   <!-- 树 -->
+   <bean name="/ismp/domain/local/vpm/pm/doManinTree" 
+         class="edu.sjtu.infosec.ismp.manager.VPM.pm.web.actions.DomainTree"
+        singleton="false" 
+        lazy-init="true">
+        <property name="sensorClientsService">
+            <ref bean="sensorClientsService"/>
+        </property>
+   </bean>  
+   <!-- 软件分发 -->
+   <bean name="/ismp/domain/local/vpm/sd/softwareDistributionAction" 
+         class="edu.sjtu.infosec.ismp.manager.VPM.sd.web.actions.SoftwareAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="softwareManagerService">
+            <ref bean="softwareManagerService"/>
+        </property>
+        <property name="softwareTypeInfoService">
+             <ref bean="softwareTypeInfoService"/>
+        </property>
+        <property name="softWarePatch">
+          <value>C:\\manager</value>
+        </property>
+         <property name="systemlogservice">
+                <ref bean="systemlogService" />
+         </property>
+   </bean>  
+
+
+
+  <!-- 病毒  Actions -->
+    <bean name="/ismp/domain/local/vpm/vm/virusMappedAction"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.VirusMappedAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        <property name="assetDeviceService">
+            <ref bean="assetDeviceService"/>
+        </property>
+         <property name="systemlogservice">
+                <ref bean="systemlogService" />
+         </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/virusMappingModify"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.VirusMappingModifyAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="assetDeviceService">
+            <ref bean="assetDeviceService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/virusInfo"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.VirusInfoAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="virusAlertsStatService">
+            <ref bean="virusAlertsStatService" />
+        </property>
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/clientsVirusInfoAction"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.ClientsVirusInfoAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="virusAlertsStatService">
+            <ref bean="virusAlertsStatService" />
+        </property>
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/virusAlertDetial"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.VirusAlertDetialAction"
+        singleton="false" lazy-init="true">
+        <property name="virusAlertsStatService">
+            <ref bean="virusAlertsStatService" />
+        </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/contractInfoTop"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.ContractInfoTopAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="virusAlertsStatService">
+            <ref bean="virusAlertsStatService" />
+        </property>
+        <!-- 
+        <property name="virusService">
+            <ref bean="virusService" />
+        </property>
+         -->
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+    </bean>
+    <bean name="/ismp/domain/local/vpm/vm/virusStatistics"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.web.actions.VirusStatisticsAction"
+        singleton="false" lazy-init="true">
+        <property name="virusClientsService">
+            <ref bean="virusClientsService" />
+        </property>
+        <property name="virusAlertsStatService">
+            <ref bean="virusAlertsStatService" />
+        </property>
+        <!-- 
+        <property name="virusService">
+            <ref bean="virusService" />
+        </property>
+         -->
+        <property name="userService">
+            <ref bean="userService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+    </bean>
+</beans>

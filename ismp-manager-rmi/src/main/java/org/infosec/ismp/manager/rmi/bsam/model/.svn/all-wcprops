@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3543/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/bsam/model
+END
+SecurityAreaSituationVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/3543/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/bsam/model/SecurityAreaSituationVO.java
+END
+MachineSituationVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/3543/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/bsam/model/MachineSituationVO.java
+END
+SubUnitSituationVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/3543/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/bsam/model/SubUnitSituationVO.java
+END

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="pm_04.htm"><span style="background:url(../../../../img/comm/other/virus.gif) no-repeat; padding-left:22px;">病毒管理</span></a></li>
+    <li class="act" id="m"><a href="#"><span style="background:url(../../../../img/comm/other/01.gif) no-repeat; padding-left:22px;">补丁管理</span></a></li>
+    <li class="nor"><a href="#"><span style="background:url(../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">其他管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div class="overf h20 martop10">
+      <li id="m"><a  class="mbacka" href="#"><span class="menus10"> WinSensor资产映射</span></a></li>
+      <li><a  class="mback" href="pm_02.htm"><span class="menus11">补丁更新</span></a></li>
+      <li><a  class="mback" href="pm_03.htm"><span class="menus12">软件分发</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf">
+    <h2 class="martop10">请选择查询条件</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <span style="float:left;">客户端名称<input type="text" size="8" class="input"/> sensorIP<input type="text" size="8" class="input"/> 创建时间(起始)<input type="text" size="8" class="input"/> 创建时间(最末)<input type="text" size="8" class="input"/></span> <a href="#" class="R6" style="margin-left:12px;">搜索</a><a href="#" class="R6" style="margin-left:12px;">重置</a>
+    </div>
+      <h2 class="martop10">资产映射列表</h2>
+      <div id="data" class="greenborder overf pad1" >
+        <form name="f1" id="f1" action="" method="post">
+          <table id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+                <th> 客户端名称</th>
+                <th> 所关联资产 </th>
+                <th> 所属委办局 </th>
+                <th> 关联时间 </th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> 
+                <td> 0 </td>
+                <td> <span style="float:left">192.168.9.120</span> <span class="edit"><a href="#" onclick="Boxy.load('pm_pop01.html');" title="编辑"></a></span></td>
+                <td> <span style="float:left">F9FnVZGYZnbZS9XXD3p1..</span><span class="edit"><a href="pm_pop02.html" class="boxy" title="关联资产编辑"></a></span> </td>
+                <td> <span style="float:left">产品市场销售部</span><span class="edit"><a href="pm_pop03.html" class="boxy" title="编辑"></a></span> </td>
+                <td> 2010-12-12 </td>
+                <td><a href="#" class="R6 R7">取消关联</a></td>
+              </tr>
+              <tr>
+                <td> 0 </td>
+                <td> <span style="float:left">192.168.9.120</span> <span class="edit"><a href="#" onclick="Boxy.load('pm_pop01.html');" title="编辑"></a></span></td>
+                <td> <span style="float:left">F9FnVZGYZnbZS9XXD3p1..</span><span class="edit"><a href="pm_pop02.html" class="boxy" title="关联资产编辑"></a></span> </td>
+                <td> <span style="float:left">产品市场销售部</span><span class="edit"><a href="#" onclick="Boxy.load('pm_pop03.html');" title="编辑"></a></span> </td>
+                <td> 2010-12-11 </td>
+                <td><a href="#" class="R6 R7">取消关联</a></td>
+              </tr>
+              <tr>
+                <td> 0 </td>
+                <td> <span style="float:left">192.168.9.120</span> <span class="edit"><a href="#" onclick="Boxy.load('pm_pop01.html');" title="编辑"></a></span></td>
+                <td> <span style="float:left">F9FnVZGYZnbZS9XXD3p1..</span><span class="edit"><a href="pm_pop02.html" class="boxy" title="关联资产编辑"></a></span> </td>
+                <td> <span style="float:left">产品市场销售部</span><span class="edit"><a href="#" onclick="Boxy.load('pm_pop03.html');" title="编辑"></a></span> </td>
+                <td> 2010-02-12 </td>
+                <td><a href="#" class="R6 R7">取消关联</a></td>
+              </tr>
+              <tr>
+                <td> 2229 </td>
+                <td> <span style="float:left">192.168.9.120</span> <span class="edit"><a href="#" onclick="Boxy.load('pm_pop01.html');" title="编辑"></a></span></td>
+                <td> <span style="float:left">F9FnVZGYZnbZS9XXD3p1..</span><span class="edit"><a href="pm_pop02.html" class="boxy" title="关联资产编辑"></a></span> </td>
+                <td> <span style="float:left">产品市场销售部</span><span class="edit"><a href="#" onclick="Boxy.load('pm_pop03.html');" title="编辑"></a></span> </td>
+                <td> 2001-12-12 </td>
+                <td><a href="#" class="R6 R7">取消关联</a></td>
+              </tr>
+              <tr>
+                <td> 5529 </td>
+                <td> <span style="float:left">192.168.9.120</span> <span class="edit"><a href="#" onclick="Boxy.load('pm_pop01.html');" title="编辑"></a></span></td>
+                <td> <span style="float:left">F9FnVZGYZnbZS9XXD3p1..</span><span class="edit"><a href="pm_pop02.html" class="boxy" title="关联资产编辑"></a></span> </td>
+                <td> <span style="float:left">产品市场销售部</span><span class="edit"><a href="#" onclick="Boxy.load('pm_pop03.html');" title="编辑"></a></span> </td>
+                <td> 2010-12-12 </td>
+                <td><a href="#" class="R6 R7">取消关联</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="paddiv">This is for verticl spacing</div>
+      <ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../js/comm/other/tablelink.js"></script>
+</html>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/3678/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp
+END
+SnmpDeviceMonitorRmiImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3597/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/SnmpDeviceMonitorRmiImpl.java
+END
+SnmpDeviceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/3597/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/SnmpDeviceLocator.java
+END
+MessageProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3093/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/MessageProcessor.java
+END
+SnmpMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3615/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/SnmpMessageListener.java
+END
+SnmpDeviceConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3615/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/SnmpDeviceConstants.java
+END

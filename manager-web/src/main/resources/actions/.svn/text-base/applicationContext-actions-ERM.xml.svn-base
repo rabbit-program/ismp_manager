@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 应急响应 -->
+<!-- 新建预案 -->
+	<bean name="/ismp/domain/local/erm/addrespinfo" 
+	    class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.AddRespInfoAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="respInfoService">
+            <ref bean="respInfoService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+	</bean>
+
+<!-- 预案管理 -->
+    <bean name="/ismp/domain/local/erm/respShow"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.RespShowAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="respInfoService">
+            <ref bean="respInfoService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+
+<!-- 修改预案 -->
+     <bean name="/ismp/domain/local/erm/updateResp"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.UpdateAndDelRespAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="continotifyrocService">
+            <ref bean="continotifyrocService" />
+        </property>
+        <property name="respInfoService">
+            <ref bean="respInfoService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        <property name="biaService">
+            <ref bean="biaService" />
+        </property>
+        <property name="respprocService">
+            <ref bean="respprocService" />
+        </property>
+        <property name="linkManService">
+            <ref bean="linkManService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+    
+<!-- 应急通知过程 -->
+     <bean name="/ismp/domain/local/erm/respnotify"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.RespNotifyAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="continotifyrocService">
+            <ref bean="continotifyrocService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+      
+<!-- 应急响应过程 -->
+     <bean name="/ismp/domain/local/erm/respproc"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.RespProcAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="respprocService">
+            <ref bean="respprocService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+    
+
+    
+<!-- 预案文件打印 -->
+    <bean name="/ismp/domain/local/erm/respPrint"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respPrint.RespPrintAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="respInfoService">
+            <ref bean="respInfoService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+    
+<!-- BIA -->
+    <bean name="/ismp/domain/local/erm/bia"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.BiaAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="biaService">
+            <ref bean="biaService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+    
+<!-- 电话树 -->
+    <bean name="/ismp/domain/local/erm/phoneTree"
+        class="edu.sjtu.infosec.ismp.manager.ERM.web.actions.respList.PhoneTreeAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="linkManService">
+            <ref bean="linkManService" />
+        </property>
+        <property name="respProcService">
+            <ref bean="respprocService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+    </bean>
+</beans>

@@ -1,0 +1,117 @@
+
+
+<div  id="data" class="pad1 ">
+  <table width="600">
+    <tr>
+      <th>用 户 名</th>
+      <td><span style="float:left;">
+        <input type="text" class="input" size="24"/>
+      </span></td>
+      <th>真实姓名</th>
+      <td><span style="float:left;">
+        <input type="text" class="input" size="24"/>
+      </span></td>
+      <td><input class="submit" type="submit" name="测试" value="查询" />
+      <input class="submit80" type="submit" name="测试2" value="提取联系方式" /></td>
+    </tr>
+  </table>
+  <div class="paddiv"></div>
+  <h2 class="martop10">用户列表</h2>
+  <table id="senfe" sortcol="-1">
+    <thead>
+      <tr>
+        <th style="cursor:pointer" onclick="sortTable('senfe',0);">ID <span class="webdings">6</span></th>
+        <th>时间</th>
+        <th>优先级</th>
+        <th>类型</th>
+        <th>子类型</th>
+        <th>类别</th>
+        <th>事件描述</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> 6629 </td>
+        <td>2010年10月27日  09:46:31 </td>
+        <td>2</td>
+        <td>服务检测</td>
+        <td>DB检测</td>
+        <td>事件报告</td>
+        <td>监测 192.168.9.122 (192.168.9.122:1521) 的数据库服务失败, 无法建立连接!</td>
+      </tr>
+      <tr>
+        <td> 6429 </td>
+        <td>2010年10月27日  09:46:31 </td>
+        <td>2</td>
+        <td>服务检测</td>
+        <td>20</td>
+        <td>事件报告</td>
+        <td>监测 192.168.9.122 (192.168.9.122:1521) 的数据库服务失败, 无法建立连接!</td>
+      </tr>
+      <tr>
+        <td> 1239 </td>
+        <td>2010年10月27日  09:46:31 </td>
+        <td>2</td>
+        <td>服务检测</td>
+        <td>20</td>
+        <td>事件报告</td>
+        <td>监测 192.168.9.122 (192.168.9.122:1521) 的数据库服务失败, 无法建立连接!</td>
+      </tr>
+      <tr>
+        <td> 2229 </td>
+        <td>2010年10月27日  09:46:31 </td>
+        <td>2</td>
+        <td>服务检测</td>
+        <td>5</td>
+        <td>事件报告</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td> 5529 </td>
+        <td>2010年10月27日  09:46:31</td>
+        <td><span style="float:left">2</span></td>
+        <td>服务检测</td>
+        <td>6</td>
+        <td>事件报告</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td> 5529 </td>
+        <td>2010年10月27日  09:46:31</td>
+        <td><span style="float:left">2</span></td>
+        <td>服务检测</td>
+        <td>6</td>
+        <td>事件报告</td>
+        <td>监测 192.168.9.122 (192.168.9.122:1521) 的数据库服务失败, 无法建立连接!</td>
+      </tr>
+      <tr>
+        <td> 5529 </td>
+        <td>2010年10月27日  09:46:31</td>
+        <td><span style="float:left">2</span></td>
+        <td>服务检测</td>
+        <td>6</td>
+        <td>事件报告</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td> 5529 </td>
+        <td>2010年10月27日  09:46:31 </td>
+        <td>2</td>
+        <td>服务检测</td>
+        <td>6</td>
+        <td>事件报告</td>
+        <td>监测 192.168.9.122 (192.168.9.122:1521) 的数据库服务失败, 无法建立连接!</td>
+      </tr>
+    </tbody>
+  </table><ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+    </ul><br />
+  <div class="paddiv"></div>
+</div>

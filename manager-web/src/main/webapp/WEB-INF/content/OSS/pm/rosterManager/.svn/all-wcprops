@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3623/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/rosterManager
+END
+modifyRoster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3623/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/rosterManager/modifyRoster.jsp
+END
+newRoster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3773/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/rosterManager/newRoster.jsp
+END
+showList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3241/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/rosterManager/showList.jsp
+END
+rosterDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3531/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/rosterManager/rosterDetail.jsp
+END

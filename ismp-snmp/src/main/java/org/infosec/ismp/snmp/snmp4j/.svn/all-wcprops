@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j
+END
+Snmp4JAgentConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JAgentConfig.java
+END
+Snmp4JV1TrapBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JV1TrapBuilder.java
+END
+Snmp4JValueFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JValueFactory.java
+END
+Snmp4JV2TrapBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JV2TrapBuilder.java
+END
+Snmp4JWalker.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JWalker.java
+END
+Snmp4JTrapNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JTrapNotifier.java
+END
+Snmp4JValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JValue.java
+END
+IpAddressNetSnmp64bitBugAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/IpAddressNetSnmp64bitBugAware.java
+END
+Snmp4JStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/Snmp4JStrategy.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/1077/trunk/ismp-snmp/src/main/java/org/infosec/ismp/snmp/snmp4j/package.html
+END

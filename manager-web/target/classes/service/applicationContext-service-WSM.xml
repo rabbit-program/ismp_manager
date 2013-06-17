@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+     <!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogservice"></property>
+    </bean>
+      -->
+<!--网站安全检测记录-->
+    <bean id="webMonitorRecordsService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.WSM.service.impl.WebMonitorRecordsServiceImpl">
+          <property name="webMonitorRecordsDao" ref="webMonitorRecordsDao"></property>
+          <property name="siteCheckRmiInterface" ref="siteCheckRmiInterface"/>
+        </bean>
+       </property>
+    </bean>
+     
+     <!-- 
+      <bean id="siteCheckRmiInterface" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="org.infosec.ismp.manager.rmi.wsm.service.impl.SiteCheckRmiInterfaceImpl">
+        </bean>
+       </property>
+    </bean>
+     --> 
+     
+     <bean id="siteCheckRmiInterface" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.wsm.service.SiteCheckRmiInterface</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost:1199/SiteCheckRmiInterface</value>
+        </property>
+    </bean>
+     
+     <!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      
+    <bean id="webStatesService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.wsm.service.WebStatesService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/webStatesManagerService</value>
+        </property>
+    </bean>
+    -->
+</beans>

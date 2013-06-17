@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/eventd/adaptors
+END
+EventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/eventd/adaptors/EventHandler.java
+END
+EventReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/eventd/adaptors/EventReceiver.java
+END
+EventIpcManagerEventHandlerProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/216/trunk/ismp-services/src/main/java/org/infosec/ismp/eventd/adaptors/EventIpcManagerEventHandlerProxy.java
+END

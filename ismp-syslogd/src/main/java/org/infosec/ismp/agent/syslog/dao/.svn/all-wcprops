@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/936/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/agent/syslog/dao
+END
+SyslogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/879/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/agent/syslog/dao/SyslogDao.java
+END
+SyslogDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/936/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/agent/syslog/dao/SyslogDaoImpl.java
+END

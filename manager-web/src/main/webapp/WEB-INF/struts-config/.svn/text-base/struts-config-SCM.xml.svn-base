@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <form-bean name="monitorForm" type="edu.sjtu.infosec.ismp.manager.SCM.web.form.MonitorForm" />
+  </form-beans>
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  <!-- action -->
+  <action-mappings>
+  
+    <!-- 服务检测 -->
+    <action path="/ismp/domain/local/scm/monitorAction" 
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        parameter="method" name="monitorForm">
+        <forward name="monitorList" path="/WEB-INF/content/SCM/monitorList.jsp" />
+        <forward name="monitorInput" path="/WEB-INF/content/SCM/monitorInput.jsp" />
+        <forward name="monitorDetail" path="/WEB-INF/content/SCM/monitorDetail.jsp" />
+        <forward name="monitorUpdate" path="/WEB-INF/content/SCM/monitorUpdate.jsp" />
+        <forward name="failed" path="/WEB-INF/content/SCM/error/500.jsp" /> 
+    </action>
+    
+  </action-mappings>
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

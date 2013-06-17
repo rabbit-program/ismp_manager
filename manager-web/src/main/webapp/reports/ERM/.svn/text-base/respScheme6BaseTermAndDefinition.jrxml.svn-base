@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="respScheme6BaseTermAndDefinition"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="535"
+		 pageHeight="802"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="schemeId" isForPrompting="false" class="java.lang.Integer"/>
+	<queryString language="hql"><![CDATA[select id as id, 
+	name as name, 
+	domain.id as domainId, 
+	domain.domainName as domainName, 
+	sysName as sysName, 
+	refs as refs, 
+	state as state, 
+	sysDesc as sysDesc, 
+	touchBy as touchBy, 
+	expect as expect, 
+	createTime as createTime, 
+	updateTime as updateTime 
+from RespInfoBO 
+where id=$P{schemeId}]]></queryString>
+
+	<field name="id" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="domainId" class="java.lang.Integer"/>
+	<field name="domainName" class="java.lang.String"/>
+	<field name="sysName" class="java.lang.String"/>
+	<field name="refs" class="java.lang.String"/>
+	<field name="state" class="java.lang.Integer"/>
+	<field name="sysDesc" class="java.lang.String"/>
+	<field name="touchBy" class="java.lang.String"/>
+	<field name="expect" class="java.lang.String"/>
+	<field name="createTime" class="java.util.Date"/>
+	<field name="updateTime" class="java.util.Date"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="30"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="50"
+						y="0"
+						width="485"
+						height="30"
+						key="staticText-1"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[基本术语和定义]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-2"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[6]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="255"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="15"
+						key="textField-1"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【激活】 – 恢复计划投入运行。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="15"
+						width="535"
+						height="15"
+						key="textField-3"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【告警】 – 安全事故发生后通知应急响应团队。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="30"
+						width="535"
+						height="15"
+						key="textField-5"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【备用站点】 – 用于存放备用设备，数据和基础设施的场所，相对生产站点而言。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="45"
+						width="535"
+						height="15"
+						key="textField-7"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【资产】 – 组织拥有的有价值的信息物品。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="60"
+						width="535"
+						height="15"
+						key="textField-9"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【假定】 – 预案发生作用的条件和假设。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="75"
+						width="535"
+						height="15"
+						key="textField-11"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【备份】 – 对设备，人员或者数据进行有策略地预先采取后备措施。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="90"
+						width="535"
+						height="15"
+						key="textField-13"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【业务连续性规划】 – 组织针对关键业务的可持续性进行的规划。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="105"
+						width="535"
+						height="15"
+						key="textField-15"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【业务影响分析 (BIA)】 – 针对关键业务过程进行分析，评估中断对其影响，确定其所需的恢复优先级和指标。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="120"
+						width="535"
+						height="15"
+						key="textField-17"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【应急预案】 – 用于IT系统在出现安全事故之时，迅速做出响应，实现关键业务恢复的预案。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="135"
+						width="535"
+						height="30"
+						key="textField-19"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【损害评估】 – 在发生安全事故后，相关小组到现场对资产损失情况，IT系统受损情况进行安全评估，并将结果汇报给Coordinator。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="165"
+						width="535"
+						height="15"
+						key="textField-21"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【灾难】 – 导致组织关键业务过程发生不可接受的中断的安全事故。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="180"
+						width="535"
+						height="15"
+						key="textField-23"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【灾难恢复】 - 实施灾难恢复预案来应对突然的中断，并恢复组织的关键业务功能。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="195"
+						width="535"
+						height="15"
+						key="textField-25"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【HVAC】 – 供暖，通风，空调等基础设施。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="210"
+						width="535"
+						height="15"
+						key="textField-27"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【恢复时间点目标 (RPO)】 – 代表系统需要恢复到该时间段以前的数据状态。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="225"
+						width="535"
+						height="15"
+						key="textField-29"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["【恢复时间目标 (RTO)】 - 代表系统恢复所需要的时间要求。"]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+
+    <bean id="respInfoService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.ERM.service.impl.RespInfoServiceImpl">
+          <property name="respInfoDao" ref="respInfoDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 应急通知过程 -->
+    <bean id="continotifyrocService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.ERM.service.impl.NotifurocServiceImpl">
+          <property name="continotifyprocDao" ref="continotifyprocDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 应急响应过程 -->
+    <bean id="respprocService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.ERM.service.impl.RespProcServiceImpl">
+          <property name="respprocDao" ref="respprocDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- BIA -->
+    <bean id="biaService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.ERM.service.impl.BiaServiceImpl">
+          <property name="biaDao" ref="biaDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 电话树 -->
+    <bean id="linkManService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.ERM.service.impl.LinkManServiceImpl">
+          <property name="linkManDao" ref="linkManDao"></property>
+        </bean>
+       </property>
+    </bean>
+</beans>

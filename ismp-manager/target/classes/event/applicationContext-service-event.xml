@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-lazy-init="true">
+
+
+      <!-- 事件功能 IOC注入
+	<bean id="realtimeEventService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.server.event.process.EventTopoStatistics">
+				<property name="eventrealdispDao" ref="eventrealdispDao" />
+			</bean>
+		</property>
+	</bean>
+	-->
+	<!-- 事件发应急响应 
+    <bean id="contiEventService" parent="txProxyTemplate">
+        <property name="target">
+            <bean
+                class="edu.sjtu.infosec.ismp.manager.server.util.ContiEventService">
+                <property name="contiEventDao" ref="contiEventDao" />
+            </bean>
+        </property>
+    </bean>
+    -->
+     <!--事件DB操作-->
+	<bean id="eventSaveToDB" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.server.event.process.EventSaveToDB">
+				<property name="eventrealdispDao" ref="eventrealdispDao"></property>
+				<property name="eventmoniDao" ref="eventmoniDao"></property>
+				<property name="eventGetTopoDao" ref="eventGetTopoDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="eventFilter" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.server.event.process.EventFilter">
+				<property name="eventSaveToDB" ref="eventSaveToDB"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="eventTopoStatistics" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.server.event.process.EventTopoStatistics">
+				<property name="eventSaveToDB" ref="eventSaveToDB"/>
+				<property name="eventmoniDao" ref="eventmoniDao"/>
+				<property name="eventRecivePipe" ref="eventRecivePipe" />
+				<!-- <property name="bureauEventStatistics" ref="bureauEventStatistics"></property>
+				<property name="sendAlertService" ref="alertManager"></property>-->
+			</bean>
+		</property>
+	</bean>
+	<!-- test  sendAlertService-->
+	<bean id="sendAlertService" class="org.infosec.ismp.manager.rmi.aim.service.impl.SendAlertServiceImpl"/>
+
+	<!--
+		阈值事件接收器 <bean id="alertReceiver"
+		class="edu.sjtu.infosec.ismp.manager.alert.AlertReceiver" />
+	-->
+	
+	<!-- 与center事件通信客户端配置
+	<bean id="bureauEventStatistics" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.server.event.process.BureauEventStatistics">
+				<property name="eventSendToCenter" ref="eventSendToCenter"></property>
+			</bean>
+		</property>
+	</bean> 
+	<bean id="eventSendToCenter"
+		class="org.infosec.ismp.manager.server.event.eventMain.EventSendToCenter">
+	</bean>
+	-->
+	<!--启动scheduler -->
+	<bean id="scheduler"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="cronTriggerBean" />
+			</list>
+		</property>
+	</bean>  
+
+    <!--用于定时调用的Bean-->
+	<bean id="methodInvokingJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="eventSaveToDB" />
+		</property>
+		<property name="targetMethod">
+			<value>getTopoFromDB</value>
+		</property>
+	</bean>   
+    <!--定时器()-->
+	<bean id="cronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="methodInvokingJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<value>0 0 12 * * ?</value>
+		</property>
+	</bean>
+</beans>

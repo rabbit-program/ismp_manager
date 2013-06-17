@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="AssessmentReport5ThreatenAndProbabilityImage1"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="535"
+		 pageHeight="802"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<reportFont name="song标题" isDefault="false" fontName="宋体" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+
+	<parameter name="asseInfoProjId" isForPrompting="false" class="java.lang.Integer"/>
+	<queryString language="hql"><![CDATA[select secuLeveName as possLeveName, 
+	(select COUNT(possibility) from AsseKnowDynaThre 
+	 where asseInfoProjId=$P{asseInfoProjId} 
+	 and possibility = a.secuLeveId
+	) as threPossNum, 
+	(select COUNT(possibility) from AsseKnowDynaLeakThre 
+	 where asseInfoProjId=$P{asseInfoProjId}
+	 and possibility = a.secuLeveId
+	) as leakPossNum, 
+	(select COUNT(possibility) from AsseKnowDynaThre 
+	 where asseInfoProjId=$P{asseInfoProjId}
+	) as threPossNumTotal, 
+	(select COUNT(possibility) from AsseKnowDynaLeakThre  
+	 where asseInfoProjId=$P{asseInfoProjId}
+	) as leakPossNumTotal 
+from AsseKnowDicSecuLeve a
+group by secuLeveId]]></queryString>
+
+	<field name="possLeveName" class="java.lang.String"/>
+	<field name="threPossNum" class="java.lang.Long"/>
+	<field name="leakPossNum" class="java.lang.Long"/>
+	<field name="threPossNumTotal" class="java.lang.Long"/>
+	<field name="leakPossNumTotal" class="java.lang.Long"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="300"  isSplitAllowed="true" >
+				<pie3DChart>
+					<chart  hyperlinkTarget="Self" >
+					<reportElement
+						x="85"
+						y="25"
+						width="365"
+						height="260"
+						key="element-1"/>
+					<box></box>
+						<chartLegend textColor="#000000" backgroundColor="#FFFFFF" >
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+					</chartLegend>
+					</chart>
+					<pieDataset>
+						<dataset >
+						</dataset>
+						<keyExpression><![CDATA["安全事件发生可能性"+$F{possLeveName}]]></keyExpression>
+						<valueExpression><![CDATA[new java.lang.Long(  ($F{threPossNum}.longValue()) +($F{leakPossNum}.longValue()) )]]></valueExpression>
+						<labelExpression><![CDATA["安全事件发生可能性性"+$F{possLeveName}+"有"+(($F{threPossNum}.longValue()) + ($F{leakPossNum}.longValue()))+"个，占"+new DecimalFormat("#.00").format((($F{threPossNum}.doubleValue())+($F{leakPossNum}.doubleValue()))*100/(($F{threPossNumTotal}.doubleValue())+($F{leakPossNumTotal}.doubleValue())))+"%"]]></labelExpression>
+				<sectionHyperlink >
+				</sectionHyperlink>
+					</pieDataset>
+					<pie3DPlot isCircular="true" depthFactor="0.0" >
+						<plot />
+					</pie3DPlot>
+				</pie3DChart>
+				<staticText>
+					<reportElement
+						x="0"
+						y="5"
+						width="535"
+						height="20"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song标题"/>
+					</textElement>
+				<text><![CDATA[不同可能性等级的威胁数量统计]]></text>
+				</staticText>
+			</band>
+		</summary>
+</jasperReport>

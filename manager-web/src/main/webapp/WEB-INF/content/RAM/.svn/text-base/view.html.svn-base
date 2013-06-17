@@ -1,0 +1,55 @@
+
+<div  id="data" class="pad1 ">
+<table>
+  <tr>
+    <th>目标主机IP</th>
+    <td>192.168.0.0</td>
+    <th>对应资产名称</th>
+    <td>Hrad ware</td>
+  </tr>
+  <tr>
+    <th>资产编号</th>
+    <td>#0235</td>
+    <th>插件ID号</th>
+    <td>#0213</td>
+  </tr>
+  <tr>
+    <th>漏洞ID号</th>
+    <td>06645896</td>
+    <th>CVE(CAN)ID</th>
+    <td>77</td>
+  </tr>
+  <tr>
+    <th>插件（漏洞）名称</th>
+    <td>windows server list</td>
+    <th>严重程度</th>
+    <td><span class="font_tip"><b>High</b></span></td>
+  </tr>
+  <tr>
+    <th>厂商ID号</th>
+    <td>00251-001</td>
+    <th>对应端口</th>
+    <td>8032</td>
+  </tr>
+  <tr>
+    <th>威胁描述</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4"><div style="width:450px;">尽管在Microsoft在MS03-31公告中声称对该万台进行了修补，但事实上，用于加密验证公钥有效性的过程仍然存在漏洞，起因是Microsoft将加密公钥签名的私钥存放在mstlsapi.dll中，因此，任何人都可读取该密钥进而发动中间人攻击。</div></td>
+    </tr>
+  <tr>
+    <th>漏洞对应的返回值和建议措施</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4"><div style="width:450px;">临时解决方法：<br />
+      如果您不能立刻安装补丁或者升级，NSFOCUS建议您采取以下措施以降低威胁：</div></td>
+    </tr>
+</table>
+
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<script language="javascript">
+function show(m){
+document.getElementById('No'+m).style.display="";
+}
+function noshow(n){
+document.getElementById('No'+n).style.display="none";
+}
+</script>
+</head>
+<body class="pad3">
+<div  id="data" class="pad1 ">
+  <h2>安全威胁列表</h2>
+  <div class="greenborder greenback overf pad3 Height_t" >
+    <ul style="line-height:40px;">
+      <li>
+        <select>
+          <option>select item</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+  <div class="paddiv">This is for verticl spacing</div>
+  <h2>预案 '病毒感染' 的响应过程列表</h2>
+  <table  id="senfesub" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>响应过程名称</th>
+        <th>响应过程内容</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> 6629 </td>
+        <td> 病毒感染 </td>
+        <td> 产品市场销售部 </td>
+        <td><a href="#" class="R6">编辑</a><a href="#" class="R6">删除</a><a href="#" class="R6 R7">编辑响应指令</a><a href="#" class="R6 R7">添加脚本</a></td>
+      </tr>
+      <tr>
+        <td> 6429 </td>
+        <td> 病毒感染 </td>
+        <td> 产品市场销售部 </td>
+        <td><a href="#" class="R6">编辑</a><a href="#" class="R6">删除</a></td>
+      </tr>
+      <tr>
+        <td> 2629 </td>
+        <td> 病毒感染 </td>
+        <td> 产品市场销售部 </td>
+        <td><a href="#" class="R6">编辑</a><a href="#" class="R6">删除</a></td>
+      </tr>
+      <tr>
+        <td> 6429 </td>
+        <td> 病毒感染 </td>
+        <td> 产品市场销售部 </td>
+        <td><a href="#" class="R6">编辑</a><a href="#" class="R6">删除</a></td>
+      </tr>
+      <tr>
+        <td> 1239 </td>
+        <td> 病毒感染 </td>
+        <td> 产品市场销售部 </td>
+        <td><a href="#" class="R6">编辑</a><a href="#" class="R6">删除</a></td>
+      </tr>
+    </tbody>
+  </table> 
+  <ul id="page">
+  <li style="margin-right:10px;"><a href="#" class="R6 R7" onclick="show(2)">新建响应过程</a></li>
+    <li><a class="first" href="#"></a></li>
+    <li><a class="pre" href="#"></a></li>
+    <li><a class="next" href="#"></a></li>
+    <li><a class="last" href="#"></a></li>
+    <li>共 5 页 跳至
+      <input type="text" size="2" class="input"/>
+      &nbsp; </li>
+    <li><a class="R6" href="#">GO</a></li>
+  </ul>
+  <div class="paddiv">This is for verticl spacing</div>
+  <div name=No2 id=No2  style="display:none;">
+    <h2> 新建应急响应过程 至 <b>无作为</b> "<span class="alert">*</span>"为必填项</h2>
+    <table>
+      <tr>
+        <th> 应急响应过程内容 <span class="alert">*</span></th>
+        <td colspan="3"><textarea cols="60" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <th> 应急响应过程名称 <span class="alert">*</span></th>
+        <td colspan="3"><input type="text" size="12" class="input"/></td>
+      </tr>
+    </table>
+    <div class="paddiv">This is for verticl spacing</div>
+    <a href="#" class="R6" onclick="noshow(2)">保存</a>
+    <div class="paddiv">This is for verticl spacing</div>
+  </div>
+</div>
+</body>
+</html>

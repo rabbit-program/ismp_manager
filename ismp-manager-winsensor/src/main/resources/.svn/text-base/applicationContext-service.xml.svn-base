@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<bean id="agentService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.service.impl.AgentServiceImpl">
+				<property name="dao" ref="agentDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="managerWinsensorDeviceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.service.impl.ManagerWinsensorDeviceServiceImpl">
+				<property name="dao" ref="managerWinsensorDeviceDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="patchClientService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.patch.service.impl.PatchClientServiceImpl">
+				<property name="dao" ref="patchClientDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="pcLogService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.windowslog.service.impl.PcLogServiceImpl">
+				<property name="dao" ref="pcLogDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="pcLogSourceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.windowslog.service.impl.PcLogSourceServiceImpl">
+				<property name="dao" ref="pcLogSourceDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="thresholdService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.service.impl.ThresholdServiceImpl">
+				<property name="dao" ref="thresholdDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="hostResourceHistoryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="org.infosec.ismp.manager.winsensor.history.service.impl.HostResourceHistoryServiceImpl">
+				<property name="dao" ref="hostResourceHistoryDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="dutyManagerSentHistoryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="org.infosec.ismp.manager.winsensor.operation.service.impl.DutyManagerSentHistoryServiceImpl">
+				<property name="dao" ref="dutyManagerSentHistoryDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="dutyManagerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="org.infosec.ismp.manager.winsensor.operation.service.impl.DutyManagerServiceImpl">
+				<property name="dao" ref="dutyManagerDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="managerProblemService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="org.infosec.ismp.manager.winsensor.operation.service.impl.ManagerProblemServiceImpl">
+				<property name="dao" ref="managerProblemDao" />
+			</bean>
+		</property>
+	</bean>
+</beans>

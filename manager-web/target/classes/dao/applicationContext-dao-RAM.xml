@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+  
+  <!-- 风险评估 -->
+  
+  <!-- 评测项目 -->
+  <bean id="projectDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.ProjectDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!--安全级别 -->
+  <bean id="dicSecuLeveDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DicSecuLeveDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!-- 测评状态 -->
+  <bean id="dicAsseStatDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DicAsseStatDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+    <!-- 测评类型 -->
+  <bean id="dicCpKindDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DicCpKindDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+     <!-- 业务录入 -->
+  <bean id="businessDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.BusinessDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+    <!-- 资产类型 -->
+  <bean id="dicAsseKindDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DicAsseKindDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+      <!-- 资产录入 -->
+  <bean id="assetDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.AssetDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+
+     <!--安全要素 -->
+  <bean id="statSecuElemDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatSecuElemDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+      <!--问卷 -->
+  <bean id="papeDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.PapeDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  
+    <!-- 动态脆弱点分析 -->
+  <bean id="vulnAnalDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.VulnAnalDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+      <!-- 漏洞扫描 -->
+  <bean id="leakScanDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.LeakScanDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+
+    <!-- 动态资产漏洞分析 -->
+  <bean id="dynaLeakDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaLeakDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!-- 知识库静态漏洞威胁 -->
+  <bean id="statCVEThreDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatCVEThreDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!-- 动态资产漏洞威胁分析 -->
+    <bean id="dynaLeakThreDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaLeakThreDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+   <!-- 静态脆弱点 -->
+    <bean id="statVulnPoinDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatVulnPoinDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+    <!-- 静态脆弱点类别 -->
+    <bean id="statVulnKindDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatVulnKindDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+      <!-- 动态威胁分析 -->
+    <bean id="threAnalDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.ThreAnalDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+     <!-- 静态威胁 -->
+    <bean id="statThreDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatThreDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+   <!-- 静态威胁类型 -->
+    <bean id="statThreKindDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatThreKindDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!-- 知识库静态安全阈值 -->
+    <bean id="statWarnStriDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.StatWarnStriDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+    <!-- 风险矩阵数据字典值 -->
+    <bean id="dicRiskMatrRuleDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DicRiskMatrRuleDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+     <!--  知识库项目总体评估值 -->
+    <bean id="dynaAsseValueDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaAsseValueDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+     <!-- 知识库资产评估要素结果 -->
+    <bean id="dynaElemResuDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaElemResuDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+     <!-- 知识库资产评估要素结果 -->
+    <bean id="dynaVTARepoDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaVTARepoDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <!-- 知识库项目动态评估结果 -->
+   <bean id="dynaAsseResuDao"
+        class="edu.sjtu.infosec.ismp.manager.RAM.dao.impl.DynaAsseResuDaoImpl">
+     <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+</beans>

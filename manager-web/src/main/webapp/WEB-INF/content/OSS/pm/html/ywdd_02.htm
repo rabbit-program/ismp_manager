@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+  <li class="act" id="m"><a href="#"><span style="background:url(../../../../../img/comm/other/013.gif) no-repeat; padding-left:22px;">值班管理</span></a></li>
+    
+    <li class="nor"><a href="../../klbm/html/zsk_01.html"><span style="background:url(../../../../../img/comm/other/027.gif) no-repeat; padding-left:22px;">知识库</span></a></li>
+        <li class="nor"><a href="#"><span style="background:url(../../../../../img/comm/other/062.gif) no-repeat; padding-left:22px;">管理操作</span></a></li>
+    <li class="nor"><a href="#"><span style="background:url(../../../../../img/comm/other/379.gif) no-repeat; padding-left:22px;">运维管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div class="overf h20 martop10"> 
+      <li><a  class="mback" href="pm_03.htm"><span class="menus11">当班人员</span></a></li>
+      <li><a  class="mbacka" href="#"><span class="menus12">排班管理</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf">
+    <h2 class="martop10">请选择委办局</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <span style="float:left;">委办局
+      
+      
+      <select name="select" id="select" >
+        <option>==委办局==</option>
+      </select>
+      
+      </span>
+      <span style="float:left;">
+      选择时间
+      <select name="select" id="select" >
+        <option>2010-10-10</option>
+      </select> </span> <a href="#" class="R6" style="margin-left:12px;">查询</a><a href="ywdd_02-02.htm" class="R6" style="margin-left:12px;">排班</a>
+      <a href="#" class="R6" style="margin-left:12px;">发布</a>
+      <a href="ywdd_02-03.htm" class="R6 R7" style="margin-left:12px;">人员变更</a></div>
+      
+      <h2 class="martop10">列表</h2>
+      <div id="data" class="greenborder overf pad1" >
+        <form name="f1" id="f1" action="" method="post">
+          <table id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                <th width="21%" style="cursor:pointer" onclick="sortTable('senfe',0);">时间</th>
+                <th width="41%"> 备注</th>
+                <th width="21%"> 人员</th>
+                <th width="17%"> 操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> 6629 </td>
+                <td> </td>
+                <td>&nbsp;</td>
+                <td><span class="tdnowrap"><a href="#">查看</a>| <a href="@">修改| 修改</a></span></td>
+              </tr>
+              <tr>
+                <td> 6429 </td>
+                <td> </td>
+                <td>&nbsp;</td>
+                <td><span class="tdnowrap"><a href="#">查看</a>| <a href="@">修改| 修改</a></span></td>
+              </tr>
+              <tr>
+                <td> 1239 </td>
+                <td> </td>
+                <td> </td>
+                <td><span class="tdnowrap"><a href="#">查看</a>| <a href="@">修改| 修改</a></span></td>
+              </tr>
+              <tr>
+                <td> 2229 </td>
+                <td> </td>
+                <td> </td>
+                <td><span class="tdnowrap"><a href="#">查看</a>| <a href="@">修改| 修改</a></span></td>
+              </tr>
+              <tr>
+                <td> 5529 </td>
+                <td>&nbsp;</td>
+                <td> </td>
+                <td><span class="tdnowrap"><a href="#">查看</a>| <a href="@">修改| 修改</a></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../js/comm/other/tablelink.js"></script>
+</html>

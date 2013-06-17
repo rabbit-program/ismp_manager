@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3390/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/operation/service
+END
+WinsensorOperationDutyManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/code2/!svn/ver/2416/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/operation/service/WinsensorOperationDutyManagerService.java
+END
+WinsensorOperationWorkOrdersService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/code2/!svn/ver/3390/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/operation/service/WinsensorOperationWorkOrdersService.java
+END

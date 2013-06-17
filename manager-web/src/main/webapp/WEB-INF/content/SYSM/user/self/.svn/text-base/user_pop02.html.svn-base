@@ -1,0 +1,26 @@
+<div  id="data" class="pad1 ">
+<h2>用户资料更新 "<span class="alert">*</span>"为必填项</h2>
+  <table>
+    <tr>
+      <th>用户名</th>
+      <td><input size="12" /> "<span class="alert">*</span>"</td>
+      <th>真实姓名</th>
+      <td><input size="12" />"<span class="alert">*</span>"</td>
+    </tr>
+    <tr>
+      <th>手机</th>
+      <td><input size="12" />"<span class="alert">*</span>"</td>
+      <th>邮箱</th>
+      <td><input size="12" />"<span class="alert">*</span>"</td>
+    </tr>
+    <tr>
+      <th>电话</th>
+      <td><input size="12" />"<span class="alert">*</span>"</td>
+      <th>终端IP地址</th>
+      <td><input size="12" />"<span class="alert">*</span>"</td>
+    </tr>
+  </table>
+  <div class="paddiv">This is for verticl spacing</div>
+<a href="#" class="R6">保存</a>
+<div class="paddiv">This is for verticl spacing</div>
+</div>

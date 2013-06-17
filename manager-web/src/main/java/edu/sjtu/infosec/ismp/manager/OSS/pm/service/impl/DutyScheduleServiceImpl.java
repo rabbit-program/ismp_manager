@@ -1,0 +1,59 @@
+package edu.sjtu.infosec.ismp.manager.OSS.pm.service.impl;
+
+import java.sql.Timestamp;
+import java.util.List;
+import edu.sjtu.infosec.ismp.manager.OSS.pm.dao.DutyScheduleDao;
+import edu.sjtu.infosec.ismp.manager.OSS.pm.model.DutySchedule;
+import edu.sjtu.infosec.ismp.manager.OSS.pm.service.DutyScheduleService;
+import edu.sjtu.infosec.ismp.manager.VPM.pm.comm.PMPage;
+import edu.sjtu.infosec.ismp.manager.VPM.pm.comm.PMPageUtil;
+import edu.sjtu.infosec.ismp.security.Domain;
+
+public class DutyScheduleServiceImpl implements DutyScheduleService {
+	private DutyScheduleDao dutyScheduleDao;
+	public void setDutyScheduleDao(DutyScheduleDao dutyScheduleDao) {
+		this.dutyScheduleDao = dutyScheduleDao;
+	}
+	public void add(DutySchedule dutySchedule) throws Exception {
+		dutyScheduleDao.add(dutySchedule);
+	}
+
+	public void delete(DutySchedule dutySchedule) throws Exception {
+		dutyScheduleDao.delete(dutySchedule);
+	}
+
+	public List<DutySchedule> findAll() {
+		return dutyScheduleDao.findAll();
+	}
+
+	public DutySchedule findById(int id) {
+		return dutyScheduleDao.findById(id);
+	}
+
+	public List<DutySchedule> findConditionsInfo(DutySchedule dutySchedule,
+			List<Domain> domainList, PMPage page, Timestamp startRecordTime,
+			Timestamp endRecordTime) {
+		List<DutySchedule> list=  dutyScheduleDao.findConditionsInfo(dutySchedule, domainList, page, startRecordTime, endRecordTime);
+		int count = (int) dutyScheduleDao.findRosterByCount(dutySchedule, domainList, page, startRecordTime, endRecordTime);
+		page.setPageInfo(PMPageUtil.createPage(page, count));
+		return list;
+	}
+
+	public void update(DutySchedule dutySchedule) throws Exception {
+		dutyScheduleDao.update(dutySchedule);
+	}
+
+	public List<DutySchedule> findNotPulishedDutySchedule(List<Domain> domainList) {
+		DutySchedule dutySchedule= new DutySchedule();
+		dutySchedule.setIsPublished(1);
+		return dutyScheduleDao.findNotPulishedDutySchedule(dutySchedule,domainList);
+	}
+
+	public void publishedDutySchedule(List<DutySchedule> dutyScheduleList) {
+		dutyScheduleDao.publishedDutySchedule(dutyScheduleList);
+	}
+	public List<DutySchedule> findDutyDate(Timestamp startRecordTime) {
+		return dutyScheduleDao.findDutyDate(startRecordTime);
+	}
+
+}

@@ -1,0 +1,71 @@
+
+<div  id="data" class="pad1 ">
+<h2>告警触发设置(带<span class="alert">*</span>的为必填)</h2>
+  <table width="600">
+    <tr>
+      <th>事件优先级</th>
+      <td>
+        <select name="list item2">
+          <option>-Select-</option>
+        </select>
+        <select name="list item">
+          <option>-Select-</option>
+      </select>
+      <span class="alert">*</span></td>
+      <th>事件类型</th>
+      <td><select name="list item3">
+        <option>-Select-</option>
+      </select>
+      <span class="alert">*</span></td>
+      <td>子类型</td>
+      <td><select name="list item5">
+        <option>-Select-</option>
+      </select></td>
+      <td><input type="radio" name="radio" id="radio" value="radio" />
+        启用规则
+<input type="radio" name="radio" id="radio2" value="radio" />
+禁用规则</td>
+    </tr>
+  </table>
+  <h2 class="martop8" >告警发送设置(<span class="alert" style="font-size:12px;">联系方式可填写多个,多个之间用";"号隔开,最多10个</span>)</h2>
+  <table width="600">
+    <tr>
+      <th>桌面消息告警</th>
+      <td><input type="radio" name="radio1" id="radio" value="radio" />
+        启用
+<input type="radio" name="radio1" id="radio3" value="radio" />
+禁用</td>
+      <th>桌面IP地址</th>
+      <td><span style="float:left;">
+        <input type="text" class="input" size="24"/>
+      </span></td>
+    </tr>
+    <tr>
+      <th>Email消息告警</th>
+      <td><input type="radio" name="radio2" id="radio4" value="radio" />
+启用
+  <input type="radio" name="radio2" id="radio5" value="radio" />
+禁用</td>
+      <th>Email地址</th>
+      <td><span style="float:left;">
+        <input type="text" class="input" size="24"/>
+      </span></td>
+    </tr>
+    <tr>
+      <th>短消息告警</th>
+      <td><input type="radio" name="radio3" id="radio6" value="radio" />
+启用
+  <input type="radio" name="radio3" id="radio7" value="radio" />
+禁用</td>
+      <th>短消息号码</th>
+      <td><span style="float:left;">
+        <input type="text" class="input" size="24"/>
+      </span></td>
+    </tr>
+  </table>
+  <div class="paddiv"></div> 
+  <input class="submit" type="submit" name="测试" value="添加" />
+   <input class="submit" type="submit" name="测试2" value="返回" />
+  <a onclick="Boxy.load('pm_03_pop01_0.html');" href="#" >使用系统用户的联系方式</a>?
+<div class="paddiv"></div>
+</div>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/code2/!svn/ver/2724/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/sd
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3729/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/sd/index.jsp
+END
+software_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/2724/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/sd/software_detail.jsp
+END
+software_update.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/2724/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/sd/software_update.jsp
+END
+software_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3731/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/sd/software_add.jsp
+END

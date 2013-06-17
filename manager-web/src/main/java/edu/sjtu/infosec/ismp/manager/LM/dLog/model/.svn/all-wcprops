@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/1319/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model
+END
+SysLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/820/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model/SysLog.java
+END
+PcLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1319/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model/PcLog.java
+END
+SysLogFacility.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/820/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model/SysLogFacility.java
+END
+Ftp.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/952/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model/Ftp.java
+END
+SysLogSeverity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/820/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/LM/dLog/model/SysLogSeverity.java
+END

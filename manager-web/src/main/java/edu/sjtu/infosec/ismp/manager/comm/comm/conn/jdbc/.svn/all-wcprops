@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/2863/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/conn/jdbc
+END
+JdbcSensorClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/2863/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/conn/jdbc/JdbcSensorClient.java
+END
+ReadProp.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2863/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/conn/jdbc/ReadProp.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3249/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/web/actions
+END
+AppSysRoleAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3866/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/web/actions/AppSysRoleAction.java
+END
+RARAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/3866/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/web/actions/RARAction.java
+END
+AppSysInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3866/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/web/actions/AppSysInfoAction.java
+END

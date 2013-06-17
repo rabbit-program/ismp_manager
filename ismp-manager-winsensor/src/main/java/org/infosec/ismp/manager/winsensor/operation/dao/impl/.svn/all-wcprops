@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3407/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/operation/dao/impl
+END
+ManagerProblemDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/3407/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/operation/dao/impl/ManagerProblemDaoImpl.java
+END
+DutyManagerSentHistoryDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/code2/!svn/ver/3407/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/operation/dao/impl/DutyManagerSentHistoryDaoImpl.java
+END
+DutyManagerDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/code2/!svn/ver/3407/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/operation/dao/impl/DutyManagerDaoImpl.java
+END

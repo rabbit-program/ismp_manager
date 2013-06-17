@@ -1,0 +1,117 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/user/other
+http://192.168.9.252/svn/code2
+
+
+
+2010-12-28T05:38:35.558533Z
+2670
+liuqing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:51:05.110123Z
+982e00e08a60fe244b1ec658721b734c
+2010-11-10T02:03:51.457650Z
+1283
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+769
+
+pageInfo.jsp
+file
+
+
+
+
+2011-03-26T08:51:05.118123Z
+e814dc225c45c802330e87695e3f0721
+2010-11-22T04:43:13.942344Z
+1548
+gengtongyong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+878
+
+html
+dir
+
+rar
+dir
+
+asr
+dir
+
+warns
+dir
+
+comm
+dir
+
+asi
+dir
+
+errors
+dir
+

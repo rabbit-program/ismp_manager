@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+    <bean id="registerHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.RegisterHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="hostResourceHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.HostResourceHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="windowsLogHolder" 
+        class="org.infosec.ismp.agent.winsensor.communication.services.WindowsLogHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="operationDutyHolder" 
+    	class="org.infosec.ismp.agent.winsensor.communication.services.OperationDutyHolder">
+    	<property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="operationWorkOrdersHolder"
+    	class="org.infosec.ismp.agent.winsensor.communication.services.OperationWorkOrdersHolder">
+    	<property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="invalidHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.InvalidHolder">
+    </bean>
+   
+    <bean id="httpServices" 
+        class="org.infosec.ismp.agent.winsensor.communication.services.WinsensorHttpServices">
+        <property name="registerHolder" ref="registerHolder" />
+        <property name="hostResourceHolder" ref="hostResourceHolder" />
+        <property name="windowsLogHolder" ref="windowsLogHolder" />
+        <property name="operationDutyHolder" ref="operationDutyHolder" />
+        <property name="operationWorkOrdersHolder" ref="operationWorkOrdersHolder" />
+        <property name="invalidHolder" ref="invalidHolder" />
+        <property name="registerPath" value="${winsensor.register.path}" />
+        <property name="registerPort" value="${winsensor.register.port}" />
+        <property name="hostResourcePath" value="${winsensor.hostResource.path}" />
+        <property name="hostResourcePort" value="${winsensor.hostResource.port}" />
+        <property name="windowsLogPath" value="${winsensor.windowsLog.path}" />
+        <property name="windowsLogPort" value="${winsensor.windowsLog.port}" />
+        <property name="operationDutyPath" value="${winsensor.duty.path}" />
+        <property name="operationDutyPort" value="${winsensor.duty.port}" />
+        <property name="operationWorkOrdersPath" value="${winsensor.workOrders.path}" />
+        <property name="operationWorkOrdersPort" value="${winsensor.workOrders.port}" />
+    </bean>
+</beans>

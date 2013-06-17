@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3642/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck
+END
+ServiceCheckLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/3642/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/ServiceCheckLocator.java
+END
+ServiceCheckNodeEntityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/2180/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/ServiceCheckNodeEntityService.java
+END
+ServiceCheckNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2180/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/ServiceCheckNode.java
+END
+ServiceCheckNodeEntityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2491/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/ServiceCheckNodeEntityDao.java
+END
+AgentAddServiceCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/2175/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/AgentAddServiceCheckTask.java
+END
+AgentRemoveServiceCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/2190/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/agent/servicecheck/AgentRemoveServiceCheckTask.java
+END

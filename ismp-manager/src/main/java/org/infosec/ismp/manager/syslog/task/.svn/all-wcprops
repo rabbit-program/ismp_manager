@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/task
+END
+AgentRemoveSyslogTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2041/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/task/AgentRemoveSyslogTask.java
+END
+SyslogNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/task/SyslogNode.java
+END
+AgentAddSyslogTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1987/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/task/AgentAddSyslogTask.java
+END

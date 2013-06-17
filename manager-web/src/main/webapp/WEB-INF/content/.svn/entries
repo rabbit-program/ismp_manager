@@ -1,0 +1,73 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-25T03:30:05.005317Z
+3693
+wguojie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+RAM
+dir
+
+TM
+dir
+
+SCM
+dir
+
+BSAM
+dir
+
+ERM
+dir
+
+SYSM
+dir
+
+AM
+dir
+
+EM
+dir
+
+VPM
+dir
+
+OSS
+dir
+
+HM
+dir
+
+WSM
+dir
+
+AIM
+dir
+
+LM
+dir
+
+GOSP
+dir
+

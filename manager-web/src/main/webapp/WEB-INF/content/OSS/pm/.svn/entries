@@ -1,0 +1,83 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-18T02:03:50.926866Z
+3623
+liuqing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+dutyManager
+dir
+
+onWatching
+dir
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:50:58.519746Z
+010240d47bc8e41d4397e77ec9ac19d5
+2010-11-25T03:08:35.613913Z
+1715
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+759
+
+html
+dir
+
+rosterManager
+dir
+
+warns
+dir
+
+comm
+dir
+
+errors
+dir
+

@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	background:#edf1f4;
+}
+#board {
+	background:url(../../../img/comm/other/login_back.gif) center center no-repeat;
+	width:1024px;
+	height:740px;
+	margin:auto;
+	position:relative;
+	font-size:12px;
+}
+.inputBox {
+	position:absolute;
+	top:327px;
+	left:442px;
+}
+
+.userBox {
+	border:none;
+	background:url(../../../img/comm/other/login_input_back.gif) left top no-repeat fixed;
+	width:131px;
+	height:18px;
+	color:#e8942b;
+}
+.pwBox {
+	border:none;
+	background:url(../../../img/comm/other/login_input_back.gif) left bottom no-repeat fixed;
+	width:131px;
+	height:18px;
+	color:#e8942b;
+}
+#board li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	list-style-position:outside;
+	float:left;
+	line-height:18px;
+}
+#board li p{
+	margin:0;
+}
+.pwposition {
+	padding-top:13px;
+}
+**.pwposition {
+	padding-top:12px;
+}
+.rember {
+	padding-top:8px;
+	outline:none;
+}
+.loginBtn {
+	display:block;
+	position:absolute;
+	top:21px;
+	left:150px;
+	width:59px;
+	height:37px;
+}
+.loginBtn a,.loginBtn a:visited,.loginBtn input {
+	background:url(../../../img/comm/other/loginBtn.png) no-repeat top center;
+	display:block;
+	width:59px;
+	height:37px;
+	outline:none;
+	border:none;
+	cursor:pointer;
+}
+.loginBtn a:hover,.loginBtn a:active {
+	background:url(../../../img/comm/other/loginBtn.png) no-repeat bottom center;
+	display:block;
+	width:59px;
+	height:37px;
+	outline:none;
+}
+**.loginBtn a,.loginBtn a:visited {
+	background:url(../../../img/comm/other/login_Btn.gif) no-repeat top center;
+}
+**.loginBtn a:hover,.loginBtn a:active {
+	background:url(../../../img/comm/other/login_Btn.gif) no-repeat bottom center;
+}
+.wrapper span.checkbox {
+	-moz-background-clip:border;
+	-moz-background-origin:padding;
+	-moz-background-size:auto auto;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url(../../../img/comm/other/check.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	clear:left;
+	display:block;
+	float:left;
+	height:17px;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:5px;
+	padding-top:0;
+	width:18px;
+}
+**.wrapper span.checkbox {
+	background-image:url(../../../img/comm/other/checkgif.gif);
+}
+.wrapper span.radio {
+	-moz-background-clip:border;
+	-moz-background-origin:padding;
+	-moz-background-size:auto auto;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("radio.png");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	clear:left;
+	display:block;
+	float:left;
+	height:25px;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:5px;
+	padding-top:0;
+	width:19px;
+}
+.wrapper span.select {
+	-moz-background-clip:border;
+	-moz-background-origin:padding;
+	-moz-background-size:auto auto;
+	-x-system-font:none;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("select.png");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	font-family:arial, sans-serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	height:21px;
+	line-height:21px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	padding-bottom:0;
+	padding-left:8px;
+	padding-right:24px;
+	padding-top:0;
+	position:absolute;
+	width:158px;
+}
+
+span.red {
+	color:#CC0000;
+}
+.clear {
+	clear:both;
+}
+input.styled {
+	display: none;
+}
+select.styled {
+	position: relative;
+	width: 190px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 5;
+}

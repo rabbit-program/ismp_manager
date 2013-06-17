@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos
+END
+ManagedObjectComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/ManagedObjectComponent.java
+END
+MODeviceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/MODeviceInfo.java
+END
+MOManagerComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/MOManagerComponent.java
+END
+WindowsDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/WindowsDevice.java
+END
+MODevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/MODevice.java
+END
+HostDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/mos/HostDevice.java
+END

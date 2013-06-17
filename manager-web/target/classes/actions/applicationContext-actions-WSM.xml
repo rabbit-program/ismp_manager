@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    
+   <bean name="/ismp/domain/local/wsm/webMonitor"
+        class="edu.sjtu.infosec.ismp.manager.WSM.web.actions.WebMonitorAction" 
+        singleton="false"
+        lazy-init="true">
+        <property name="webMonitorRecordsService" ref="webMonitorRecordsService" />
+        <property name="domainService" ref="domainService" />
+        <property name="topoWebService" ref="topoWebService" />
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+    
+
+</beans>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/1240/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo
+END
+clientsVirusInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1240/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/clientsVirusInfo.jsp
+END
+virusTopN.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/virusTopN.jsp
+END
+virusTopNDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1119/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/virusTopNDetail.jsp
+END
+clientsContractTopN.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/836/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/clientsContractTopN.jsp
+END
+virusIndex.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/1240/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/virusIndex.jsp
+END
+clientsContractTopNDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1117/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/clientsContractTopNDetail.jsp
+END
+virusAlertDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1118/trunk/manager-web/src/main/webapp/WEB-INF/content/VPM/vm/virusInfo/virusAlertDetail.jsp
+END

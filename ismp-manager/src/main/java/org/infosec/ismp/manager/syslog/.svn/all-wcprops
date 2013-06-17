@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog
+END
+RawSyslogReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1987/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/RawSyslogReceiver.java
+END
+SyslogProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogProcess.java
+END
+SyslogManagerNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogManagerNode.java
+END
+SyslogLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogLocator.java
+END
+SyslogControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogControllerImpl.java
+END
+SyslogNodeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogNodeService.java
+END
+SyslogNodeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogNodeDao.java
+END
+SyslogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogManager.java
+END
+SyslogProcessorManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/SyslogProcessorManager.java
+END

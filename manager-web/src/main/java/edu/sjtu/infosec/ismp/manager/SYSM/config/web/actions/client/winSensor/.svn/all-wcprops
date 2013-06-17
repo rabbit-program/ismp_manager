@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/3686/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/client/winSensor
+END
+DefConfigFindAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/code2/!svn/ver/3839/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/client/winSensor/DefConfigFindAction.java
+END
+DetailConfigFindAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/code2/!svn/ver/3839/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/client/winSensor/DetailConfigFindAction.java
+END
+DefConfigModifyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/code2/!svn/ver/3839/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/client/winSensor/DefConfigModifyAction.java
+END
+DetailConfigModifyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/code2/!svn/ver/3817/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/client/winSensor/DetailConfigModifyAction.java
+END

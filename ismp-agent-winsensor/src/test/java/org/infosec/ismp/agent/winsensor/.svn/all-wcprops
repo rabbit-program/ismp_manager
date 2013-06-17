@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3389/trunk/ismp-agent-winsensor/src/test/java/org/infosec/ismp/agent/winsensor
+END
+Log4jTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1822/trunk/ismp-agent-winsensor/src/test/java/org/infosec/ismp/agent/winsensor/Log4jTest.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/1937/trunk/ismp-agent-winsensor/src/test/java/org/infosec/ismp/agent/winsensor/Test.java
+END
+SensorServerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3058/trunk/ismp-agent-winsensor/src/test/java/org/infosec/ismp/agent/winsensor/SensorServerTest.java
+END
+SimplestServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1558/trunk/ismp-agent-winsensor/src/test/java/org/infosec/ismp/agent/winsensor/SimplestServer.java
+END

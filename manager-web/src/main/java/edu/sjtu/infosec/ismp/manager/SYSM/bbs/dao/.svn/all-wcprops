@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3873/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/bbs/dao
+END
+AnswersDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3871/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/bbs/dao/AnswersDao.java
+END
+QuestionsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3953/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/bbs/dao/QuestionsDao.java
+END

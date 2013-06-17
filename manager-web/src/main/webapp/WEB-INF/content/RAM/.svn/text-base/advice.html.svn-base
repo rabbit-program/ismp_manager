@@ -1,0 +1,24 @@
+
+<div  id="data" class="pad1 ">
+<table>
+  <tr>
+    <th> 安全级别 </th>
+    <td><select><option>Select</option></select></td>
+    <th>&nbsp;</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th> 建议描述 </th>
+    <td>&nbsp;</td>
+    <th>&nbsp;</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="35" colspan="4"><textarea name="textarea" id="textarea" cols="80" rows="7"></textarea></td>
+  </tr>
+  <tr>
+    <td height="35" colspan="4"><input name="提交" type="submit" class="submit" value="保存" /></td>
+  </tr>
+  </table>
+
+</div>

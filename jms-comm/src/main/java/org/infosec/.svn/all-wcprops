@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code2/!svn/ver/102/trunk/jms-comm/src/main/java/org/infosec
+END
+JmsSubscribeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/102/trunk/jms-comm/src/main/java/org/infosec/JmsSubscribeListener.java
+END
+JmsSendClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/102/trunk/jms-comm/src/main/java/org/infosec/JmsSendClient.java
+END
+TestAjaxServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/code2/!svn/ver/102/trunk/jms-comm/src/main/java/org/infosec/TestAjaxServlet.java
+END

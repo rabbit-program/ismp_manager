@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" > </div>
+  <div class="contant">
+    <h2 >现有权限</h2>
+ <ul id="page">
+    <li><a href="#" class="R6 R7 boxy" title="添加">添加</a></li>
+  </ul>
+  <div id="data" class="greenborder overf pad1" >
+        <form name="f1" id="f1" action="" method="post">
+          <table id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                <th width="21%" style="cursor:pointer" onclick="sortTable('senfe',0);">名称</th>
+                <th width="33%">简述</th>
+                <th width="33%">备注</th>
+                <th width="13%">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td><a href="#">删除</a>| <a href="@">修改</a></td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>名称</td>
+                <td>简述</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </div>
+    <div class="martop8 Height_t">
+    <ul id="page">
+    
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+  </ul>
+    <br />
+  </div>
+   <div class="contant">
+    <h2 >新增权限</h2>
+ 
+  <div id="data" class="greenborder overf pad1" >
+        <form action="" method="post" enctype="multipart/form-data" name="f1" id="f1">
+          <table id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                 <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">名称<span class="webdings"></span></th>
+                <td colspan="6"><label for="textfield"></label>
+                <input type="text" name="textfield" id="textfield" /></td>
+              </tr>
+              <tr>
+                <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">描述<span class="webdings"></span></th>
+                <td colspan="6"><textarea name="textfield" cols="100%" 
+ rows="3" id="textfield"  >详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内</textarea></td>
+              </tr>
+              <tr>
+             <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">备注</th>
+                <td colspan="6"><input type="text" name="textfield" id="textfield" /></td>
+              </tr>
+              <tr>
+             
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </div>
+    <div class="martop8 Height_t">
+    <ul id="page">
+    <li><a href="#" class="R6 R7 boxy" title="添加">重置</a></li>
+        <li><a href="#" class="R6 R7 boxy" title="添加">确认</a></li>
+  </ul>
+  
+    <br />
+  </div>
+  </div>
+     </div>
+   
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../../js/comm/other/tablelink.js"></script>
+</html>

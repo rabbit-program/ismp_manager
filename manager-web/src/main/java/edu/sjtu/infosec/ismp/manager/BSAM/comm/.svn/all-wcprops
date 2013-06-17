@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2948/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm
+END
+DomainComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3746/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/DomainComparator.java
+END
+BaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2453/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/BaseDaoHibernate.java
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/2453/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/Service.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2453/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/BaseService.java
+END
+DateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/2453/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/DateUtil.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2508/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/Constants.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/2453/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/comm/BaseDao.java
+END

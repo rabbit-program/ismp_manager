@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code2/!svn/ver/1948/trunk/sensor-web/src/main/resources
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/1945/trunk/sensor-web/src/main/resources/applicationContext.xml
+END
+applicationContext-sensorweb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/1948/trunk/sensor-web/src/main/resources/applicationContext-sensorweb.xml
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/1945/trunk/sensor-web/src/main/resources/application.properties
+END

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <!-- 
+    <form-bean name="virusClientsORMForm" 
+                type="edu.sjtu.infosec.ismp.manager.virusManager.web.form.VirusClientsORMForm" />
+    -->
+    <!-- 资产Form Bean -->
+    <form-bean name="assetForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.AssetForm"></form-bean>
+    <!-- 软件Form -->
+	<form-bean name="softForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.SoftForm"></form-bean>
+	<!-- 硬件Form -->
+	<form-bean name="hardwareForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.HardwareForm"></form-bean>
+	<!-- 软件关联FormBean -->
+	<form-bean name="softRelatingForm"	type="edu.sjtu.infosec.ismp.manager.AM.web.form.SoftRelatingForm"></form-bean>        
+    <!-- 硬件关联Formbean -->
+	<form-bean name="hardwareRelatingForm"	type="edu.sjtu.infosec.ismp.manager.AM.web.form.HardwareRaletingForm"></form-bean>
+    <!-- 物理位置Form -->
+	<form-bean name="locationForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.LocationForm"></form-bean>
+	<form-bean name="searchForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.SearchForm"></form-bean>
+	<form-bean name="assetChangeLogForm" type="edu.sjtu.infosec.ismp.manager.AM.web.form.AssetChangeLogForm"></form-bean>
+  </form-beans>
+  
+  <global-exceptions />
+  <global-forwards >
+  		<forward name="softmain" path="/WEB-INF/content/AM/software/asstSoft.jsp"></forward>
+  		<forward name="locationFrame" path="/WEB-INF/content/AM/location/LocationFrame.jsp"></forward>
+  		<forward name="assetpart" path="/WEB-INF/content/AM/device/assetPart.jsp"></forward>
+  		<forward name="searchHardware" path="/ismp/domain/local/am/search.do?method=searchHardware"></forward>
+  </global-forwards>
+  		
+  
+  
+  <!-- action -->
+  <action-mappings>
+  	<!--
+    <action 
+        path="/virusMappedAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMForm" 
+        name="virusClientsORMForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="clientQuery"
+         		path="/WEB-INF/jsp/virusManager/virusClients/show/virusClientsMapping.jsp" /> 
+    </action>
+    -->
+    <action path="/ismp/domain/local/am/fwdPage" type="edu.sjtu.infosec.ismp.manager.AM.web.actions.ForwardAction">
+    	<forward name="ind" path="/WEB-INF/content/AM/device/facilityManager.jsp"></forward>
+    	<forward name="child" path="/WEB-INF/content/AM/device/childFrame.jsp"></forward>
+		<forward name="devicewelcome" path="/WEB-INF/content/AM/device/assetWelcome.jsp"></forward>
+		<forward name="top" path="/WEB-INF/content/AM/device/top.jsp"></forward>
+		<forward name="left" path="/WEB-INF/content/AM/device/leftFrame.jsp"></forward>
+		<forward name="addAsset" path="/WEB-INF/content/AM/device/addAsset.jsp"></forward>
+		<forward name="softPage" path="/WEB-INF/content/AM/software/SoftFrame.jsp"></forward>
+		<forward name="leftSoft" path="/WEB-INF/content/AM/software/leftFrame.jsp"></forward>
+		<forward name="addSoft" path="/WEB-INF/content/AM/software/addSoft.jsp"></forward>
+		<!-- 硬件Frame跳转专用 -->
+		<forward name="hardware" path="/WEB-INF/content/AM/hardware/hardwareFrame.jsp"></forward>
+		<forward name="hardwareleft" path="/WEB-INF/content/AM/hardware/leftFrame.jsp"></forward>
+		<forward name="hardwardMain" path="/WEB-INF/content/AM/hardware/asstHardward.jsp"></forward>
+		<forward name="addHardware" path="/WEB-INF/content/AM/hardware/addHardware.jsp"></forward>
+		<!-- 物理位置 -->
+		<forward name="location" path="/WEB-INF/content/AM/location/position_add.jsp"></forward>
+		<forward name="locationIndex" path="/WEB-INF/content/AM/location/index.jsp"></forward>
+		<forward name="search" path="/WEB-INF/content/AM/search/device_search.jsp"></forward>
+    </action>
+    <action path="/ismp/domain/local/am/assetAvailability" type="org.springframework.web.struts.DelegatingActionProxy" scope="request" parameter="method">
+    	<forward name="assetAnalysis" path="/WEB-INF/content/AM/device/asset_analysis.jsp"></forward>
+    	<forward name="success" path="/WEB-INF/content/AM/search/statistic_analysis.jsp"></forward>
+    </action>
+     <!-- 资产-设备模块assetAction -->
+    <action path="/ismp/domain/local/am/asset" type="org.springframework.web.struts.DelegatingActionProxy" name="assetForm" parameter="method">
+		<forward name="deviceMain" path="/ismp/domain/local/am/asset.do?method=findAssetAll"></forward>
+		<forward name="viewDevice" path="/WEB-INF/content/AM/search/device_detail.jsp"></forward>
+		<forward name="excel_import" path="/WEB-INF/content/AM/device/excel_import.jsp"></forward>
+		<forward name="chilmain" path="/WEB-INF/content/AM/device/asset_list.jsp"></forward>
+		<forward name="assetpart" path="/WEB-INF/content/AM/device/assetPart.jsp"></forward>
+		<forward name="showassetOne" path="/WEB-INF/content/AM/device/updateAsset.jsp"></forward>
+	</action>
+	
+	<action path="/ismp/domain/local/am/changelog"
+            type="org.springframework.web.struts.DelegatingActionProxy" scope="request" name="assetChangeLogForm" parameter="method">
+            <forward name="changelogList" path="/WEB-INF/content/AM/search/asset_changelog.jsp"></forward>
+            <forward name="changelog" path="/WEB-INF/content/AM/search/changelog.jsp"></forward>
+    </action>
+    
+    <!-- 软件模块  -->
+    <action path="/ismp/domain/local/am/soft" type="org.springframework.web.struts.DelegatingActionProxy" scope="request" name="softForm" parameter="method">
+    	<forward name="showsoftOne" path="/WEB-INF/content/AM/software/showSoftPart.jsp"></forward>
+    	<forward name="updateSoft" path="/WEB-INF/content/AM/software/updateSoft.jsp"></forward>
+    	<forward name="showsoftOne" path="/WEB-INF/content/AM/software/showSoftPart.jsp"></forward>
+    	<forward name="softRelating" path="/WEB-INF/content/AM/software/softRelating.jsp"></forward>
+    	<forward name="softCancelRelating" path="/WEB-INF/content/AM/software/softCancelRelating.jsp"></forward>
+    	<forward name="showAssetSoft" path="/WEB-INF/content/AM/search/ShowAssetToSoft.jsp"></forward>
+    	<forward name="findSoftPagin" path="/ismp/domain/local/am/soft.do?method=findSoftPagin"></forward>
+    </action>
+    
+    <!-- 软件设备关联 -->
+	<action path="/ismp/domain/local/am/softrelating" name="softRelatingForm"
+		type="org.springframework.web.struts.DelegatingActionProxy"
+		parameter="method">
+	</action>
+	
+	<!-- 设备详细 -->
+	<action path="/ismp/domain/local/am/DeviceDetailsInfo" type="edu.sjtu.infosec.ismp.manager.AM.web.actions.DeviceDetailsInfo"/>	
+	<!-- 设备可用性统计 -->
+	<action path="/ismp/domain/local/am/DevicePerformance" type="edu.sjtu.infosec.ismp.manager.AM.web.actions.DevicePerformance"/>
+	<action path="/ismp/domain/local/am/DeviceList" type="edu.sjtu.infosec.ismp.manager.comm.web.reports.DeviceList"/>
+    <action path="/ismp/domain/local/am/HardwareList" type="edu.sjtu.infosec.ismp.manager.comm.web.reports.HardwareList"/>
+    <action path="/ismp/domain/local/am/SoftwareList" type="edu.sjtu.infosec.ismp.manager.comm.web.reports.SoftwareList"/>
+    
+	<!-- 硬件模块action -->
+	<action path="/ismp/domain/local/am/hardware" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" name="hardwareForm">
+			<forward name="updateHardware" path="/WEB-INF/content/AM/hardware/updateHardware.jsp"></forward>
+			<forward name="showHardware" path="/WEB-INF/content/AM/hardware/showHardwarePart.jsp"></forward>
+			<forward name="asstHardward" path="/WEB-INF/content/AM/hardware/asstHardward.jsp"></forward>
+			<forward name="hardwareRaleting" path="/WEB-INF/content/AM/hardware/hardwareRelating.jsp"></forward>
+			<forward name="cancelhardwareRaleting" path="/WEB-INF/content/AM/hardware/cancelHardwareRelating.jsp"></forward>
+                <!-- 跟查询资产有关 -->
+			<forward name="findHardWarePagin" path="/ismp/domain/local/am/hardware.do?method=findHardWarePagin" />
+			<forward name="showAssetHardeware" path="/WEB-INF/content/AM/search/showAssetToHardware.jsp"></forward>
+	 </action>
+	 <!-- 硬件设备关联 -->
+	 <action path="/ismp/domain/local/am/hardwareRelating" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" name="hardwareRelatingForm">
+	 
+	 </action>
+	 <action path="/ismp/domain/local/am/device_" forward="/WEB-INF/content/AM/search/device_search.jsp" ></action>
+	 <action path="/ismp/domain/local/am/hard_" forward="/WEB-INF/content/AM/search/hardware_search.jsp" />
+     <action path="/ismp/domain/local/am/pos_" forward="/WEB-INF/content/AM/search/position_search.jsp" />
+     <action path="/ismp/domain/local/am/soft_" forward="/WEB-INF/content/AM/search/software_search.jsp" />
+     <action path="/ismp/domain/local/am/chlog" forward="/WEB-INF/content/AM/search/down_list.jsp"  parameter="id"/>
+     <action path="/ismp/domain/local/am/devicedetail" forward="/WEB-INF/content/AM/search/device_detail.jsp" />
+     <action path="/ismp/domain/local/am/device_analysis" forward="/WEB-INF/content/AM/search/device_analysis.jsp" />
+	 <!-- 物理位置 -->
+	 <action path="/ismp/domain/local/am/location" parameter="method" name="locationForm" type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="locationleft" path="/WEB-INF/content/AM/location/leftFrame.jsp"></forward>
+			<forward name="locationToasset"	path="/WEB-INF/content/AM/location/LocationToasset.jsp"></forward>
+			<forward name="updateDevice" path="/WEB-INF/content/AM/location/updateDevice.jsp"></forward>
+			<forward name="deviceJion" path="/WEB-INF/content/AM/location/deviceJion.jsp"></forward>
+			<forward name="canceldeviceJion" path="/WEB-INF/content/AM/location/canceldeviceJion.jsp"></forward>
+			<forward name="addromm" path="/WEB-INF/content/AM/location/room_add.jsp"></forward>
+			<forward name="showAssetToLocation"	path="/WEB-INF/content/AM/search/showAssetToLocation.jsp"></forward>
+			<forward name="positionAdd"	path="/WEB-INF/content/AM/location/position_add.jsp"></forward>
+			<forward name="delromm" path="/WEB-INF/content/AM/location/delLocation.jsp"></forward>
+			<forward name="delFang" path="/WEB-INF/content/AM/location/room_del.jsp"></forward>
+	 </action>
+	 
+	 <!-- 搜索 search Action -->
+	 <action path="/ismp/domain/local/am/search" type="org.springframework.web.struts.DelegatingActionProxy" scope="request" parameter="method" name="searchForm">
+            <forward name="deviceList" path="/WEB-INF/content/AM/search/device_search.jsp"></forward>
+            <forward name="softwareList" path="/WEB-INF/content/AM/search/software_search.jsp"></forward>
+            <forward name="hardwareList" path="/WEB-INF/content/AM/search/hardware_search.jsp"></forward>
+            <forward name="positionList" path="/WEB-INF/content/AM/search/position_search.jsp"></forward>
+            <forward name="viewDevice" path="/WEB-INF/content/AM/search/device_detail.jsp"></forward>
+            <forward name="viewSoftware" path="/WEB-INF/content/AM/search/software_detail.jsp"></forward>
+            <forward name="viewHardware" path="/WEB-INF/content/AM/search/hardware_detail.jsp"></forward>
+            <forward name="viewPosition" path="/WEB-INF/content/AM/search/position_detail.jsp"></forward>
+            <forward name="mainframe" path="/WEB-INF/content/AM/search/main_frame.jsp"></forward>
+      </action>
+      <action path="/ismp/domain/local/am/deviceAnalysis" type="org.springframework.web.struts.DelegatingActionProxy">
+      		<forward name="success" path="/WEB-INF/content/AM/search/device_analysis.jsp"></forward>
+      </action>
+	  <action path="/ismp/domain/local/am/DeviceCountInBureauGroupByType" type="edu.sjtu.infosec.ismp.manager.AM.web.actions.DeviceCountInBureauGroupByType"/>
+		
+  </action-mappings>
+   
+  
+  <!-- 
+   <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+   <message-resources parameter="application"></message-resources>
+   <message-resources parameter="ApplicationResources_asset"	key="assetResource"></message-resources>
+   <message-resources parameter="ApplicationResources_zh" ></message-resources>
+   -->
+
+  <message-resources parameter="ApplicationResources_asset"	key="assetResource"></message-resources>
+  	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"	value="/WEB-INF/validator-rules.xml,/WEB-INF/validation-asset.xml" />
+	</plug-in>
+</struts-config>

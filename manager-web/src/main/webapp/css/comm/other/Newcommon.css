@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+margin-bottom:0;
+margin-left:0;
+margin-right:0;
+margin-top:0;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:0;
+padding-bottom:0;
+padding-left:0;
+padding-right:0;
+padding-top:0;
+}
+body {
+-moz-background-clip:border;
+-moz-background-origin:padding;
+-moz-background-size:auto auto;
+background-attachment:scroll;
+background-color:#FFFFFF;
+background-image:none;
+color:#333;
+font-family:Arial,sans-serif,"宋体";
+font-size:12px;
+line-height:17px;
+}
+input, textarea, select {
+color:#333333;
+font-family:Arial,sans-serif;
+font-size:12px;
+}
+textarea {
+overflow-x:auto;
+overflow-y:auto;
+}
+a img {
+	border:none;
+}
+a:link, a:visited {
+color:#333;
+cursor:pointer;
+text-decoration:none;
+outline:none;
+}
+a:hover,a:active {
+color:##83AC26;
+}
+/* top */
+.logo {
+	background:url(../../../img/comm/other/top.jpg) no-repeat left top;
+	width:575px;
+	float:left;
+	height:91px;
+}
+.bg {
+	background:url(../../../img/comm/other/top.jpg) no-repeat right top;
+	position:relative;
+}
+.marqu {
+	color:#1a1a1a;
+	float:right;
+	width:290px;
+	margin: 52px 22px 0 0;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px #e3e3e3; 
+}
+**.marqu {
+	margin-right:12px; /* for IE6 */
+}
+.font_bold {
+	color:#ffba00;
+}
+.font_tip {
+	color:#d39a00;
+}
+.help {
+	position:absolute;
+	right:22px;
+	top:22px;
+	width:37px;
+}
+.help a {
+	display:block;
+	background:url(../../../img/comm/other/help_n.jpg) no-repeat;
+	height:16px;
+	width:37px;
+}
+.help a:hover {
+	background:url(../../../img/comm/other/help_a.jpg) no-repeat;
+}
+/* Min */
+.minbg {
+	background:url(../../../img/comm/other/min.jpg) no-repeat left top;
+	width:13px;
+}
+.arrow {
+	margin-top:100px;
+	font-family:Webdings;
+	font-size:14px;
+	color:#0084c2;
+}
+.arrow a, .arrow:visited, .arrow a:hover, .arrow:active {
+	color:#0084c2;
+	text-decoration:none;
+}
+.webdings {
+	color:#afc666;
+	font-family:Webdings;
+}
+/*  mainframe  */
+.mainbg {
+	background:url(../../../img/comm/other/mainframe_topback.jpg) no-repeat right top;
+	background-attachment: fixed;
+	padding:5px;
+}
+.grayline {
+	background:url(../../../img/comm/other/graydot.gif) repeat-x left bottom;
+}
+.overf {
+	overflow:hidden;
+}

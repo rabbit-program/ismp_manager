@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/code2/!svn/ver/3698/trunk/manager-web/src/main/resources
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/code2/!svn/ver/3509/trunk/manager-web/src/main/resources/applicationContext.xml
+END
+ApplicationResources_asset.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2621/trunk/manager-web/src/main/resources/ApplicationResources_asset.properties
+END
+ApplicationResources_event.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2220/trunk/manager-web/src/main/resources/ApplicationResources_event.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code2/!svn/ver/285/trunk/manager-web/src/main/resources/log4j.properties
+END
+applicationContext-managerweb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1287/trunk/manager-web/src/main/resources/applicationContext-managerweb.xml
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/195/trunk/manager-web/src/main/resources/application.properties
+END

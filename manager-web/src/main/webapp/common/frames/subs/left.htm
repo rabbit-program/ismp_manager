@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menu</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Menu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+funA = function(element)
+{
+	var nClass=new Array("li","li","li","li","","li","li","li","li","","li","li","li","li","","li","li","li","li");
+	var aClass=new Array("ok","ok","ok","ok","li","ok","ok","ok","ok","","ok","ok","ok","ok","","ok","ok","ok","ok");
+	var objUl = document.getElementById("SearchT").children[0];
+   	for(var i = 0; i < objUl.children.length; i++)
+	{
+		objUl.children[i].children[0].className = nClass[i];
+	}
+	var begin = element.name.indexOf("a");
+	var index = element.name.substr(begin + 1, (element.name.length-begin+1));
+	element.className = aClass[index];
+} 
+</script>
+<!--target="mainContant"-->
+</head>
+<body class="menubg">
+<div class="menu">
+  <div id="SearchT">
+    <ul>
+      <li><a href="#" target="mainContant" name="a0" onclick="funA(this)" class="ok"  ><span class="tp">拓扑管理</span></a></li>
+      <li><a href="../../../WEB-INF/content/AM/pm_01.htm" name="a1" onclick="funA(this)" target="mainContant" class="li"><span class="zc">资产管理</span></a></li>
+      <li><a href="../../../WEB-INF/content/OSS/pm/html/ywdd_01.htm" name="a2" target="mainContant" onclick="funA(this)" class="li"><span class="yw">运维支撑</span></a></li>
+      <li><a href="../../../WEB-INF/content/GOSP/html/djbh_01.html" target="mainContant" name="a3" onclick="funA(this)" class="li"><span class="bh">等级保护</span></a></li>
+      
+      <li style="margin:6px 0 0 -4px"><img src="../../../img/comm/other/cut01.PNG" /></li>
+      <li><a href="../../../WEB-INF/content/VPM/pm/pm_01.htm" target="mainContant" name="a5" onclick="funA(this)" class="li"><span class="vp">病毒补丁</span></a></li>
+      <li><a href="../../../WEB-INF/content/SCM/pm_01.htm" name="a6" onclick="funA(this)" target="mainContant" class="li"><span class="server">服务检测</span></a></li>
+      <li><a href="../../../WEB-INF/content/EM/tm_01.htm" name="a7" target="mainContant" onclick="funA(this)" class="li"><span class="event">事件管理</span></a></li>
+      <li><a href="../../../WEB-INF/content/BSAM/tm_01.htm" name="a8" target="mainContant" onclick="funA(this)" class="li"><span class="ts">态势感知</span></a></li>
+      <li style="margin:6px 0 0 -4px"><img src="../../../img/comm/other/cut01.PNG" /></li>
+      <li><a href="../../../WEB-INF/content/RAM/pm_01.htm" target="mainContant" name="a10" onclick="funA(this)" class="li"><span class="danger">风险评估</span></a></li>
+      <li><a href="../../../WEB-INF/content/ERM/tm_01.htm" target="mainContant" name="a11" onclick="funA(this)" class="li"><span class="alarm">应急响应</span></a></li>      
+      <li><a href="../../../WEB-INF/content/LM/dLog/pm_01.htm" target="mainContant" name="a12" onclick="funA(this)" class="li"><span class="dairy">日志审计</span></a></li>
+      <li><a href="../../../WEB-INF/content/AIM/pm_01.htm" target="mainContant" name="a13" onclick="funA(this)" class="li"><span class="bell">告警管理</span></a></li>
+      <li style="margin:6px 0 0 -4px"><img src="../../../img/comm/other/cut01.PNG" /></li>
+      <li><a href="../../../WEB-INF/content/WSM/html/aqjc_01.html" target="mainContant" name="a15" onclick="funA(this)" class="li"><span class="aqjc">网站安全监测</span></a></li>
+      <li><a href="../../../WEB-INF/content/SYSM/user/other/html/yyqy_01.html" target="mainContant" name="a16" onclick="funA(this)" class="li"><span class="yyqx">应用系统权限管理</span></a></li>
+      <li><a href="../../../WEB-INF/content/SYSM/user/self/user_01.htm" target="mainContant" name="a17" onclick="funA(this)" class="li"><span class="system">系统管理</span></a></li>
+      <li><a href="#" name="a18" onclick="funA(this)" class="li"><span class="exit">安全退出</span></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

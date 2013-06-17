@@ -1,0 +1,78 @@
+
+<div  id="data" class="pad1 ">
+  <div class="greenborder pad3"><p>硬件名称:</p>
+  <p>版本：Intel</p>
+  <p>描述信息：补录</p></div>
+  <h2 class="martop8">请选择设备</h2>
+  <p>全选/反选</p>
+                    <table>
+                <tbody>
+                  <tr>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox" name="asscheckbox" value="66" />
+                      192.168.9.121</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox2" name="asscheckbox3" value="66" />
+                      192.168.9.254</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox4" name="asscheckbox4" value="66" />
+                      103</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox5" name="asscheckbox5" value="66" />
+                      防火墙2</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox6" name="asscheckbox6" value="66" />
+                      防火墙3</td>
+                  </tr>
+                  <tr>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox12" name="asscheckbox12" value="66" />
+                      防火墙4</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox10" name="asscheckbox10" value="66" />
+                      IDS</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox9" name="asscheckbox9" value="66" />
+                      服务器</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox8" name="asscheckbox8" value="66" />
+                      交换机</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox7" name="asscheckbox7" value="66" />
+                      防火墙1</td>
+                  </tr>
+                  <tr>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox13" name="asscheckbox13" value="66" />
+                      104</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox11" name="asscheckbox11" value="66" />
+                      155</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox14" name="asscheckbox14" value="66" />
+                      103</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox15" name="asscheckbox15" value="66" />
+                      交换机2</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox16" name="asscheckbox16" value="66" />
+                      交换机3</td>
+                  </tr>
+                  <tr>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox17" name="asscheckbox17" value="66" />
+                      SNMP1</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox18" name="asscheckbox18" value="66" />
+                      SNMP2</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox19" name="asscheckbox19" value="66" />
+                      服务器</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox20" name="asscheckbox20" value="66" />
+                      192.168.9.121</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox3" name="asscheckbox2" value="66" />
+                      177</td>
+                  </tr>
+                  <tr>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox21" name="asscheckbox21" value="66" />
+                      产品服务器</td>
+                    <td><input class="noneborder" type="checkbox" id="asscheckbox22" name="asscheckbox22" value="66" />
+                      test</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>备注信息：</td>
+                    <td colspan="4"><textarea name="hardwareraletingvo.description2" cols="70" rows="5"></textarea></td>
+                  </tr>
+                  </tbody>
+              </table>
+   
+</div>
+<div align="center">
+                    <input class="submit" type="submit" value="关联" name="Submit">                    
+                    <input class="submit" type="button" onclick="javascript:history.back(-1);" value="返回" name="Submit3">
+                  </div>

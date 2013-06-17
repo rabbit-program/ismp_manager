@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="DeviceBaseInfo"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="537"
+		 columnSpacing="0"
+		 leftMargin="29"
+		 rightMargin="29"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<reportFont name="song列" isDefault="false" fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+	<reportFont name="song页头" isDefault="false" fontName="宋体" size="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+	<reportFont name="song列名" isDefault="false" fontName="宋体" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+
+	<parameter name="deviceId" isForPrompting="false" class="java.lang.Integer"/>
+	<queryString language="hql"><![CDATA[select id as id, 
+	(case assetType when '1' then '网络设备' 
+	 when '2' then '安全设备' 
+	 when '3' then '服务器' 
+	 when '4' then '桌面主机' 
+	 end) as assetType, 
+	department as department, 
+	description as description, 
+	ip as ip, 
+	mac as mac, 
+	manufacturer as manufacturer, 
+	model as model, 
+	name as name, 
+	priority as priority, 
+	registrationTime as registrationTime, 
+	sn as sn, 
+	(case status when '1' then '在线' 
+	 when '2' then '报废' 
+	 end) as status, 
+	stockTime as stockTime, 
+	telephone as telephone, 
+	unit as unit, 
+	user as user, 
+	validityPeriod as validityPeriod 
+from AssetDeviceBO where id=$P{deviceId}]]></queryString>
+
+	<field name="assetType" class="java.lang.String"/>
+	<field name="department" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="ip" class="java.lang.String"/>
+	<field name="mac" class="java.lang.String"/>
+	<field name="manufacturer" class="java.lang.String"/>
+	<field name="model" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="priority" class="java.lang.Integer"/>
+	<field name="registrationTime" class="java.util.Date"/>
+	<field name="sn" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="stockTime" class="java.util.Date"/>
+	<field name="telephone" class="java.lang.String"/>
+	<field name="unit" class="java.lang.String"/>
+	<field name="user" class="java.lang.String"/>
+	<field name="validityPeriod" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="28"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="37"
+						y="0"
+						width="207"
+						height="23"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font reportFont="song页头"/>
+					</textElement>
+				<text><![CDATA[设备基本信息表]]></text>
+				</staticText>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="220"  isSplitAllowed="true" >
+				<rectangle>
+					<reportElement
+						x="37"
+						y="0"
+						width="464"
+						height="202"
+						key="rectangle-1"
+						stretchType="RelativeToBandHeight"/>
+					<graphicElement stretchType="RelativeToBandHeight"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="45"
+						y="2"
+						width="53"
+						height="18"
+						key="staticText-2"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[资产编号]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="25"
+						width="53"
+						height="18"
+						key="staticText-3"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[资产类型]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="47"
+						width="53"
+						height="18"
+						key="staticText-4"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[厂商]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="69"
+						width="53"
+						height="18"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[IP地址]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="92"
+						width="53"
+						height="18"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[使用人]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="115"
+						width="53"
+						height="18"
+						key="staticText-7"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[单位]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="137"
+						width="53"
+						height="18"
+						key="staticText-8"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[资产状态]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="159"
+						width="53"
+						height="18"
+						key="staticText-9"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[有效期]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="2"
+						width="53"
+						height="18"
+						key="staticText-10"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[资产名称]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="25"
+						width="53"
+						height="18"
+						key="staticText-11"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[优先级]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="47"
+						width="53"
+						height="18"
+						key="staticText-12"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[设备型号]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="69"
+						width="53"
+						height="18"
+						key="staticText-13"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[MAC地址]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="92"
+						width="53"
+						height="18"
+						key="staticText-14"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[电话]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="115"
+						width="53"
+						height="18"
+						key="staticText-15"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[部门]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="137"
+						width="53"
+						height="18"
+						key="staticText-16"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[采购时间]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="159"
+						width="53"
+						height="18"
+						key="staticText-17"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[登记时间]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="2"
+						width="156"
+						height="18"
+						key="textField-1"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{sn}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="25"
+						width="156"
+						height="18"
+						key="textField-2"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{assetType}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="47"
+						width="156"
+						height="18"
+						key="textField-3"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{manufacturer}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="69"
+						width="156"
+						height="18"
+						key="textField-4"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ip}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="92"
+						width="156"
+						height="18"
+						key="textField-5"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{user}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="115"
+						width="156"
+						height="18"
+						key="textField-6"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{unit}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="137"
+						width="156"
+						height="18"
+						key="textField-7"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{status}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="159"
+						width="156"
+						height="18"
+						key="textField-8"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{validityPeriod}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="2"
+						width="156"
+						height="18"
+						key="textField-9"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="25"
+						width="156"
+						height="18"
+						key="textField-10"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{priority}+"（最高等级：5  最低等级：1）"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="47"
+						width="156"
+						height="18"
+						key="textField-11"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{model}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="69"
+						width="156"
+						height="18"
+						key="textField-12"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{mac}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="92"
+						width="156"
+						height="18"
+						key="textField-13"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{telephone}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="115"
+						width="156"
+						height="18"
+						key="textField-14"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{department}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="137"
+						width="156"
+						height="18"
+						key="textField-15"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.sql.Timestamp"><![CDATA[$F{stockTime}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="327"
+						y="159"
+						width="156"
+						height="18"
+						key="textField-16"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.sql.Timestamp"><![CDATA[$F{registrationTime}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="45"
+						y="181"
+						width="53"
+						height="18"
+						key="staticText-18"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[资产描述]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="102"
+						y="181"
+						width="306"
+						height="18"
+						key="textField-17"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{description}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

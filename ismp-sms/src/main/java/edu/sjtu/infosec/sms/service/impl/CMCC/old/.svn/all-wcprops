@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/1157/trunk/ismp-sms/src/main/java/edu/sjtu/infosec/sms/service/impl/CMCC/old
+END
+MsgSendUseEMPP.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1157/trunk/ismp-sms/src/main/java/edu/sjtu/infosec/sms/service/impl/CMCC/old/MsgSendUseEMPP.java
+END
+RecvListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1157/trunk/ismp-sms/src/main/java/edu/sjtu/infosec/sms/service/impl/CMCC/old/RecvListener.java
+END

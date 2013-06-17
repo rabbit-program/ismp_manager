@@ -1,0 +1,20 @@
+package org.infosec.ismp.agent.winsensor.strategy.service;
+
+import java.util.List;
+
+import org.infosec.ismp.agent.winsensor.strategy.entity.WinsensorManagerStrategyBO;
+
+/**
+ * @author Rocky
+ * @version create time：Oct 20, 2010 8:31:03 PM
+ * 
+ */
+public interface WinsensorManagerStrategyService {
+	public void addStrategy(WinsensorManagerStrategyBO strategy);
+	
+	public void updateStrategy(WinsensorManagerStrategyBO strategy);
+	
+	public WinsensorManagerStrategyBO findStrategy(String ip, String sensorId, boolean issued);
+	
+	public List<WinsensorManagerStrategyBO>findAllUnissuedStrategy();
+}

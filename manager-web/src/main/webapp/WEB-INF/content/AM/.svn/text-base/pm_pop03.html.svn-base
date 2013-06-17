@@ -1,0 +1,76 @@
+
+<div  id="data" class="pad1 ">
+  <h2 class="martop8">更新软件信息<span class="font_tip">(说明：带*号表示必填)</span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>软件名称</th>
+        <td>
+          <input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+        <th>软件类型</th>
+        <td><span style="float:left;">
+          <select name="list item">
+            <option>-Select-</option>
+          </select>
+        </span></td>
+      </tr>
+      <tr>
+        <th>发行商</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+        <th>版本</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+      </tr>
+      <tr>
+        <th>描述信息</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+        <th >使用人</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+      </tr>
+      <tr>
+        <th>使用人电话</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+        <th>单位</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+      </tr>
+      <tr>
+        <th>部门</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+        <th>状态</th>
+        <td><span style="float:left;">
+          <select name="list item3">
+            <option>-Select-</option>
+          </select>
+        </span><span class="font_tip">*</span></td>
+      </tr>
+      <tr>
+        <th>登记时间</th>
+        <td><input type="text" class="input" size="16"/></td>
+        <th>有效期</th>
+        <td><input type="text" class="input" size="16"/>
+        <span class="font_tip">*</span></td>
+      </tr>
+      <tr>
+        <th>采购时间</th>
+        <td><input type="text" class="input" size="16"/></td>
+        <th>所属机构</th>
+        <td><span style="float:left;">
+          <select name="list item2">
+            <option>-Select-</option>
+          </select>
+        </span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div align="center" class="martop8">
+                    <input class="submit" type="submit" value="更新"  name="Submit">                    
+                    <input class="submit" type="button" onclick="javascript:history.back(-1);" value="返回" name="Submit3">
+                  </div>
+</div>

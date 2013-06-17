@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/3569/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/event
+END
+EventRevicerMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/3569/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/event/EventRevicerMock.java
+END
+EventSenderMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3569/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/event/EventSenderMock.java
+END

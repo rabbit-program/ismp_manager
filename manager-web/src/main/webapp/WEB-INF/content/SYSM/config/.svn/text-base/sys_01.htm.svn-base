@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/floatdiv.js"></script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="#"><span style="background:url(../../../../img/SYSM/users.png) no-repeat; padding-left:22px;">用户管理</span></a></li>
+    <li class="act"><a href="#"><span style="background:url(../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">其他管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div id="data" class=" pad3 overf">     
+    <table>
+  <tr>
+    <th colspan="3">日志审计</th>
+    </tr>
+  <tr>
+    <td height="35" valign="top"><table class="martop8" style="margin-bottom:8px;">
+      <tr>
+        <th><span style="float:left;">Syslog</span><span style="float:right;"><a href="sys_01_01.htm" class="R6 martop8">配置</a></span></th>
+      </tr>
+      <tr>
+        <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+      </tr>
+    </table></td>
+    <td valign="top"><table class="martop8" style="margin-bottom:8px;">
+      <tr>
+        <th><span style="float:left;">Syslog</span><span style="float:right;"><a href="sys_01_01.htm" class="R6 martop8">配置</a></span></th>
+      </tr>
+      <tr>
+        <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+      </tr>
+    </table></td>
+    <td valign="top"><table class="martop8" style="margin-bottom:8px;">
+      <tr>
+        <th><span style="float:left;">PC</span><span style="float:right;"><a href="lm/pc_01_01.htm" class="R6 martop8">配置</a></span></th>
+      </tr>
+      <tr>
+        <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+      </tr>
+    </table></td>
+    </tr>
+</table>
+    <table class="martop8">
+      <tr>
+        <th colspan="3">应急响应</th>
+      </tr>
+      <tr>
+        <td height="35" valign="top"><table class="martop8" style="margin-bottom:8px;">
+          <tr>
+            <th><span style="float:left;">Syslog</span><span style="float:right;"><a href="sys_01_01.htm" class="R6 martop8">配置</a></span></th>
+            </tr>
+          <tr>
+            <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+            </tr>
+          
+        </table></td>
+        <td valign="top"><table class="martop8" style="margin-bottom:8px;">
+          <tr>
+            <th><span style="float:left;">Syslog</span><span style="float:right;"><a href="sys_01_01.htm" class="R6 martop8">配置</a></span></th>
+          </tr>
+          <tr>
+            <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+          </tr>
+        </table></td>
+        <td valign="top"><table class="martop8" style="margin-bottom:8px;">
+          <tr>
+            <th><span style="float:left;">Syslog</span><span style="float:right;"><a href="sys_01_01.htm" class="R6 martop8">配置</a></span></th>
+          </tr>
+          <tr>
+            <td class="grayword">Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci, in laoreet ipsum feugiat et. Nam in mauris eget leo accumsan varius eleifend eu sem. </td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../js/comm/other/tablelink.js"></script>
+</html>

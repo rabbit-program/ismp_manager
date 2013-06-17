@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+     <!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogservice"></property>
+    </bean>
+      -->
+     
+     
+     
+     <!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+      <!-- 告警Service -->
+      <bean id="alertService" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean class="edu.sjtu.infosec.ismp.manager.AIM.service.impl.AlertServiceImpl">
+      			<property name="alertDao" ref="alertDao"/>
+      		</bean>
+      	</property>
+      </bean>
+      <!-- 告警类型Service -->
+      <bean id="alertTypeService" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean class="edu.sjtu.infosec.ismp.manager.AIM.service.impl.AlertTypeServiceImpl">
+      			<property name="alertTypeDao" ref="alertTypeDao"/>
+      		</bean>		
+      	</property>
+      </bean>
+      <!-- 告警规则事件 Service-->
+      <bean id="alertRuleService" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean class="edu.sjtu.infosec.ismp.manager.AIM.service.impl.AlertRuleServiceImpl">
+      			<property name="alertRuleDao" ref="alertRuleDao"/>
+     		</bean>
+      	</property>
+      </bean>
+      <!-- 告警归并事件Services -->
+      <bean id="alertFusionRuleServices" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean  class="edu.sjtu.infosec.ismp.manager.AIM.service.impl.AlertFusionRuleServicesImpl">
+      			<property name="alertFusionRuleDao" ref="alertFusionRuleDao"/>
+      		</bean>
+      	</property>
+      </bean>
+      <bean id="sendAlertService" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean class="edu.sjtu.infosec.ismp.manager.AIM.service.impl.SendAlertServiceImpl">
+      			<property name="sendAlertDao" ref="sendAlertDao"></property>
+      		</bean>
+      	</property>
+      </bean>
+       <!-- 此处定义alert的相关Bean最新告警 -->    
+    <bean id="alertControllerClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceUrl" value="rmi://localhost:1199/NewAlertService"></property>
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.aim.service.NewAlertService"></property>
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+      <!-- 用于检查是否有新的告警信息，暴露给DWR 调用 -->
+      <bean id="alertDwrService" parent="txProxyTemplate">
+      	<property name="target">
+      		<bean class="edu.sjtu.infosec.ismp.manager.AIM.web.dwr.AlertDwrServicesImpl">
+      			<property name="alertDwrDao" ref="alertDwrDao"></property>
+      			<property name="alertFusionRuleServices" ref="alertFusionRuleServices"></property>
+      			<property name="newAlertDao" ref="newAlertDao"></property>
+      			<property name="sendAlertService" ref="sendAlertService"></property>
+      			<property name="alertControllerClient" ref="alertControllerClient"></property>
+     		</bean>
+      	</property>
+      </bean>
+     
+      
+</beans>

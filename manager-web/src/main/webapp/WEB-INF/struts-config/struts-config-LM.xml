@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+	<form-beans>
+		<form-bean name="sysLogFrom"
+			type="edu.sjtu.infosec.ismp.manager.LM.dLog.web.form.SysLogFrom" />
+		
+		<form-bean name="systemLogFrom"
+			type="edu.sjtu.infosec.ismp.manager.LM.pfLog.web.form.SystemLogActionForm" />
+		
+		<!-- ...............................下面为系统配置模块所用.................................. -->
+		
+		<form-bean name="sysLogSourceFrom"
+			type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.lm.dLog.SysLogSourceFrom" />
+			
+		<form-bean name="snmpTrapSourceFrom"
+			type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.lm.dLog.SnmpTrapSourceFrom" />
+			
+		<form-bean name="pcSourceFrom"
+			type="edu.sjtu.infosec.ismp.manager.SYSM.config.web.form.lm.dLog.PcSourceFrom" />
+	</form-beans>
+	<global-exceptions />
+	<global-forwards>
+		<forward name="sysLogDivSource" path="/WEB-INF/content/LM/dLog/sysLogDivSource.jsp" />
+		<forward name="snmpTrapDivSource" path="/WEB-INF/content/LM/dLog/snmpTrapDivSource.jsp" />
+	</global-forwards>
+
+  <!-- action -->
+	<action-mappings>
+	
+	<!-- ...............................下面为平台日志模块所用.................................. -->
+	<action path="/ismp/lm/pflog/systemLogAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="systemLogFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="systemLogDisplay" path="/WEB-INF/content/LM/pfLog/systemLogDisplay.jsp" />
+		</action>
+	
+	
+	
+	<!-- ...............................下面为日志管理模块所用.................................. -->
+	<!-- forwardAction -->
+		<action path="/ismp/lm/dlog/forwardAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				scope="request" 
+				parameter="method">
+				<forward name="testIndex" path="/WEB-INF/content/LM/dLog/warns/testIndex.jsp" />
+		</action>
+	
+		<!-- 对原始SysLog的操作的Action -->
+		<action path="/ismp/lm/dlog/sysLogAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="sysLogFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="sysLogDisplay" path="/WEB-INF/content/LM/dLog/sysLogDisplay.jsp" />
+				<forward name="sysLogQuery" path="/WEB-INF/content/LM/dLog/sysLogQuery.jsp" />
+				<forward name="sysLogSourceListDisplay" path="/WEB-INF/content/LM/dLog/sysLogSourceListDisplay.jsp" />
+		</action>
+		
+		<!-- 对SnmpTrap的操作的Action -->
+		<action path="/ismp/lm/dlog/snmpTrapAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="snmpTrapSourceFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="snmpTrapSourceListDisplay" path="/WEB-INF/content/LM/dLog/snmpTrapSourceListDisplay.jsp" />
+		</action>
+		
+		<!-- 对 Pc的操作的Action -->
+		<action path="/ismp/lm/dlog/pcAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="pcSourceFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="pcSourceDisplay" path="/WEB-INF/content/LM/dLog/pcSourceDisplay.jsp" />
+				<forward name="pcSensorLogDisplay" path="/WEB-INF/content/LM/dLog/pcSensorLogDisplay.jsp"/>
+		</action>
+		
+		<!-- 对Ftp的操作的Action -->
+		<action path="/ismp/lm/dlog/ftpAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="ftpSourceListDisplay" path="/WEB-INF/content/LM/dLog/ftpSourceListDisplay.jsp" />
+				<forward name="ftpListDisplay" path="/WEB-INF/content/LM/dLog/ftpListDisplay.jsp" />
+		</action>
+		
+		<!-- 对解析后SysLog的对DivSource赋值 操作的  **转发** Action -->
+		<action path="/ismp/lm/dlog/sysLogDivSourceAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="sysLogAnalysisDisplay" path="/WEB-INF/content/LM/dLog/sysLogAnalysisDisplay.jsp" />
+				<forward name="hillStoneFireWallAction_0.0" path="/ismp/lm/dlog/hillStoneFireWallAction.do" />
+				<forward name="testAction_1.0" path="/ismp/lm/dlog/testAction.do" />
+		</action>
+		
+		<!-- 对解析后SnmpTrap的对DivSource赋值 操作的  **转发** Action -->
+		<action path="/ismp/lm/dlog/snmpTrapDivSourceAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="snmpTrapAnalysisDisplay" path="/WEB-INF/content/LM/dLog/snmpTrapAnalysisDisplay.jsp" />
+				<forward name="sanLingIDSAction_0.0" path="/ismp/lm/dlog/sanLingIDSAction.do" />
+		</action>
+		
+		<!-- ...............................下面为 ** SysLog日志解析 ** 模块所用..................... -->
+		
+		<!-- HillStoneFireWall 设备 -->
+		<action path="/ismp/lm/dlog/hillStoneFireWallAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request">
+		</action>
+		
+		<!-- SanLingIDS 设备 -->
+		<action path="/ismp/lm/dlog/sanLingIDSAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request">
+		</action>
+		
+		<!-- test 设备 -->
+		<action path="/ismp/lm/dlog/testAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request">
+		</action>
+		
+		
+		<!-- ...............................下面为系统配置模块所用.................................. -->
+		
+		<!-- 对SysLogSource的操作的Action -->
+		<action path="/ismp/domain/local/sysm/config/lm/dlog/sysLogConfigAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="sysLogSourceFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="sysLogSourceDisplay" path="/WEB-INF/content/SYSM/config/lm/dLog/sysLogSourceDisplay.jsp" />
+				<forward name="sysLogSourceType" path="/WEB-INF/content/SYSM/config/lm/dLog/sysLogSourceType.jsp" />
+				<forward name="getSource" path="/ismp/domain/local/sysm/config/lm/dlog/sysLogConfigAction.do?method=getSysLogSource" />
+		</action>
+		
+		<!-- 对SnmpTrapSource的操作的Action -->
+		<action path="/ismp/domain/local/sysm/config/lm/dlog/snmpTrapConfigAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="snmpTrapSourceFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="snmpTrapSourceDisplay" path="/WEB-INF/content/SYSM/config/lm/dLog/snmpTrapSourceDisplay.jsp" />
+				<forward name="snmpTrapSourceType" path="/WEB-INF/content/SYSM/config/lm/dLog/snmpTrapSourceType.jsp" />
+				<forward name="getSource" path="/ismp/domain/local/sysm/config/lm/dlog/snmpTrapConfigAction.do?method=getSnmpTrapSource" />
+		</action>
+		
+		<!-- 对 Pc Source的操作的Action -->
+		<action path="/ismp/domain/local/sysm/config/lm/dlog/pcConfigAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				name="pcSourceFrom"
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="pcSourceDisplay" path="/WEB-INF/content/SYSM/config/lm/dLog/pcSourceDisplay.jsp" />
+				<forward name="pcSensorDisplay" path="/WEB-INF/content/SYSM/config/lm/dLog/pcSensorDisplay.jsp"/>
+				<forward name="getSource" path="/ismp/domain/local/sysm/config/lm/dlog/pcConfigAction.do?method=getPcSource" />
+		</action>
+		
+		<!-- 对Ftp的操作的Action -->
+		<action path="/ismp/domain/local/sysm/config/lm/dlog/ftpConfigAction"
+				type="org.springframework.web.struts.DelegatingActionProxy" 
+				validate="false" 
+				scope="request" 
+				parameter="method">
+				<forward name="ftpSourceDisplay" path="/WEB-INF/content/SYSM/config/lm/dLog/ftpSourceDisplay.jsp" />
+		</action>
+	</action-mappings>
+	<controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+	<message-resources parameter="application"></message-resources>
+</struts-config>

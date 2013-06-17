@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/code2/!svn/ver/2876/trunk/manager-web/src/main/resources/dao
+END
+applicationContext-dao-RAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/1348/trunk/manager-web/src/main/resources/dao/applicationContext-dao-RAM.xml
+END
+applicationContext-dao-TM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2876/trunk/manager-web/src/main/resources/dao/applicationContext-dao-TM.xml
+END
+applicationContext-dao-BSAM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/2846/trunk/manager-web/src/main/resources/dao/applicationContext-dao-BSAM.xml
+END
+applicationContext-dao-SCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2032/trunk/manager-web/src/main/resources/dao/applicationContext-dao-SCM.xml
+END
+applicationContext-dao-ERM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/758/trunk/manager-web/src/main/resources/dao/applicationContext-dao-ERM.xml
+END
+applicationContext-dao-SYSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3880/trunk/manager-web/src/main/resources/dao/applicationContext-dao-SYSM.xml
+END
+applicationContext-dao-comm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/74/trunk/manager-web/src/main/resources/dao/applicationContext-dao-comm.xml
+END
+applicationContext-dao-AM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2074/trunk/manager-web/src/main/resources/dao/applicationContext-dao-AM.xml
+END
+applicationContext-dao-EM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1592/trunk/manager-web/src/main/resources/dao/applicationContext-dao-EM.xml
+END
+applicationContext-dao-VPM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2716/trunk/manager-web/src/main/resources/dao/applicationContext-dao-VPM.xml
+END
+applicationContext-dao-HM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/74/trunk/manager-web/src/main/resources/dao/applicationContext-dao-HM.xml
+END
+applicationContext-dao-OSS.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2713/trunk/manager-web/src/main/resources/dao/applicationContext-dao-OSS.xml
+END
+applicationContext-dao-AIM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/1605/trunk/manager-web/src/main/resources/dao/applicationContext-dao-AIM.xml
+END
+applicationContext-dao-WSM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/1336/trunk/manager-web/src/main/resources/dao/applicationContext-dao-WSM.xml
+END
+applicationContext-dao-LM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2528/trunk/manager-web/src/main/resources/dao/applicationContext-dao-LM.xml
+END
+applicationContext-dao-GOSP.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/1474/trunk/manager-web/src/main/resources/dao/applicationContext-dao-GOSP.xml
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code2/!svn/ver/3550/trunk/ismp-situation/src/main/resources
+END
+applicationContext-resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/1005/trunk/ismp-situation/src/main/resources/applicationContext-resources.xml
+END
+applicationContext-service-situation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3550/trunk/ismp-situation/src/main/resources/applicationContext-service-situation.xml
+END
+auditlog.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/resources/auditlog.properties
+END
+applicationContext-dao-situation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/1217/trunk/ismp-situation/src/main/resources/applicationContext-dao-situation.xml
+END
+applicationContext-situation-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3550/trunk/ismp-situation/src/main/resources/applicationContext-situation-rmi.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/resources/jdbc.properties
+END
+applicationContext-situation-process-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/3550/trunk/ismp-situation/src/main/resources/applicationContext-situation-process-service.xml
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/3550/trunk/ismp-situation/src/main/resources/hibernate.cfg.xml
+END

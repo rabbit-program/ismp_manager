@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3677/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog
+END
+SnmpTrapSourceHandleOrParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/code2/!svn/ver/3677/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SnmpTrapSourceHandleOrParser.java
+END
+SysLogSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1252/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SysLogSource.java
+END
+SysLogSourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/1013/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SysLogSourceType.java
+END
+SnmpTrapSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1413/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SnmpTrapSource.java
+END
+SnmpTrapSourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/1413/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SnmpTrapSourceType.java
+END
+Sensor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1415/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/Sensor.java
+END
+FtpSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/951/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/FtpSource.java
+END
+SysLogSourceHandleOrParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3677/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/model/lm/dLog/SysLogSourceHandleOrParser.java
+END

@@ -1,0 +1,34 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/snmp-collectd/src
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-24T08:19:05.885694Z
+3670
+llin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+test
+dir
+
+main
+dir
+

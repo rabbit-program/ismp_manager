@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <description>导入manager中的applicationContext文件列表</description>
+
+    <import resource="eventd/applicationContext-eventd.xml" />
+    <import resource="jms/applicationContext-jms.xml" />
+    <import resource="ping/applicationContext-ping.xml" />
+    <import resource="ping/applicationContext-ping-rmi.xml" />
+
+    <import resource="db/applicationContext-db.xml" />
+    <import resource="db/applicationContext-db-rmi.xml"/>
+     
+    <import resource="snmp/applicationContext-snmp.xml" />
+    <import resource="snmp/applicationContext-snmp-rmi.xml" />
+
+    <import resource="syslog/applicationContext-syslog.xml" />
+    <import resource="syslog/applicationContext-syslog-rmi.xml" />
+
+    <import resource="threshold/applicationContext-threshold-rmi.xml"/>
+    
+    <import resource="servicecheck/applicationContext-serviceCheck.xml" />
+    <import resource="servicecheck/applicationContext-serviceCheck-rmi.xml" />
+    
+    <import resource="sitecheck/applicationContext-siteCheck.xml" />
+    <import resource="sitecheck/applicationContext-siteCheck-rmi.xml" />
+    
+    <import resource="snmpTrap/applicationContext-snmpTrap.xml" />
+    <import resource="snmpTrap/applicationContext-snmpTrap-rmi.xml" />
+    
+    <import resource="alert/applicationContext-alert.xml" />
+    
+    <import resource="event/applicationContext-event.xml" />
+    <import resource="event/applicationContext-dao-event.xml" />
+    <import resource="event/applicationContext-resources-event.xml" />
+    <import resource="event/applicationContext-service-event.xml" />
+    <import resource="winsensor/applicationContext-event.xml" />
+    
+
+</beans>

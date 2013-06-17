@@ -1,0 +1,6 @@
+###WSUS SQLserver
+
+Ums.Driver=net.sourceforge.jtds.jdbc.Driver
+Ums.url=jdbc:jtds:sqlserver://192.168.9.143:1433/SUSDB
+Ums.username=sa
+Ums.password=123456

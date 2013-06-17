@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3554/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl
+END
+SecurityAreaServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/2842/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/SecurityAreaServiceImpl.java
+END
+SecurityAreaSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/code2/!svn/ver/3554/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/SecurityAreaSituationServiceImpl.java
+END
+MachineRoomServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2842/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/MachineRoomServiceImpl.java
+END
+MachineServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/2462/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/MachineServiceImpl.java
+END
+MachineSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3554/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/MachineSituationServiceImpl.java
+END
+SubUnitSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3554/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/SubUnitSituationServiceImpl.java
+END
+MachineCabinetServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/2842/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/MachineCabinetServiceImpl.java
+END
+ColorThresholdServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/2462/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/service/impl/ColorThresholdServiceImpl.java
+END

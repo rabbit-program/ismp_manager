@@ -1,0 +1,44 @@
+<html style="background-color: buttonface; color: buttontext;">
+
+<head>
+<meta http-equiv="content-type" content="text/xml; charset=utf-8" />
+
+<title>Simple calendar</title>
+
+  <!-- calendar stylesheet -->
+  <link rel="stylesheet" type="text/css" media="all" href="calendar-win2k-cold-1.css" title="win2k-cold-1" />
+
+  <!-- main calendar program -->
+  <script type="text/javascript" src="calendar.js"></script>
+
+  <!-- language for the calendar -->
+  <script type="text/javascript" src="lang/cn_utf8.js"></script>
+
+  <!-- the following script defines the Calendar.setup helper function, which makes
+       adding a calendar a matter of 1 or 2 lines of code. -->
+  <script type="text/javascript" src="calendar-setup.js"></script>
+
+<script type="text/javascript">
+    function getCurrDate(inputId){  
+    Calendar.setup({
+        inputField     :    inputId,     // id of the input field
+        ifFormat       :    "%Y-%m-%d %H:%M:%S",    // format of the input field 
+        align          :    "Tl",           // alignment (defaults to "Bl")
+        singleClick    :    true
+    });
+    }
+</script>
+</head>
+
+<body>
+ <h1 style="font: 200">相应的js和css文件，都加到工程的js和css包中了，大家只要改一下路径就可以了 </h1>
+<div align="center" >
+<form action="#" method="get">
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse"><tr>
+ <td><input type="text" name="date" id="dateId" readonly="1"  onFocus="getCurrDate(this.id)"/></td> 
+</table>
+</form>
+</div>
+ 
+</body>
+</html>

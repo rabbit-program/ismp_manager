@@ -1,0 +1,28 @@
+jms.broker_url=tcp://localhost:61616
+
+#Agent server identify.
+agentId=agent1
+
+#Agent server ip address.
+agentAddress=192.168.9.200
+
+#Sensor client register path.
+winsensor.register.path=/register/*
+#Sensor client register port.
+winsensor.register.port=8090
+#Sensor client hostResource path.
+winsensor.hostResource.path=/hostResource/*
+#Sensor client hostResource port.
+winsensor.hostResource.port=8080
+#Sensor client windowsLog path.
+winsensor.windowsLog.path=/windowsLog/*
+#Sensor client windowsLog port.
+winsensor.windowsLog.port=8070
+#Sensor client duty path.
+winsensor.duty.path=/duty/*
+#Sensor client duty port.
+winsensor.duty.port=8060
+#Sensor client workOrders path.
+winsensor.workOrders.path=/workOrders/*
+#Sensor client workOrders port.
+winsensor.workOrders.port=8050

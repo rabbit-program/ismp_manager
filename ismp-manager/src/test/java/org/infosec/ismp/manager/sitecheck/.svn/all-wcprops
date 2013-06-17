@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/2432/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/sitecheck
+END
+RemoveSiteCheckRmiClientMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2422/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/sitecheck/RemoveSiteCheckRmiClientMock.java
+END
+GetSiteCheckResultRmiClinetMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/2432/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/sitecheck/GetSiteCheckResultRmiClinetMock.java
+END
+AddSiteCheckRmiClientMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2422/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/sitecheck/AddSiteCheckRmiClientMock.java
+END

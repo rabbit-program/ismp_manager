@@ -1,0 +1,11 @@
+
+<div  id="data" class="pad1 ">
+  <p class="alert" style="width:500px; font-size:12px;"> 数据填写规则：    <br />
+    每个excel单元格内的汉字不超过100个，IP地址填写格式：例192.168.9.100,设备mac地址填写格式：用冒号加以区分-例00:24:81:10:67:D6
+    资产状态：只能填写1（在线）或2（报废），采购时间/登记时间格式(yyyy-MM-dd)例：填写2009-10-10，优先级：1到5之间的数字，1最低5最高   
+    是否可变动（true/false）只能填写true或false。有效期格式为：0到9数字，最大输入数位为6位。</p>
+    <P>批量导入：      
+      <input type="file"  name="fileField" id="fileField" />
+      <input class="submit" type="submit" value="上传"  name="Submit"> 
+    <a href="#">下载文件模版</a></P>
+</div>

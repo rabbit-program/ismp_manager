@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code2/!svn/ver/3568/trunk/ismp-manager/src/main/resources/winsensor
+END
+applicationContext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-service.xml
+END
+applicationContext-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3568/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-event.xml
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-dao.xml
+END
+applicationContext-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-rmi-client.xml
+END
+applicationContext-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-rmi.xml
+END
+applicationContext-winsensor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-winsensor.xml
+END
+applicationContext-jms.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3374/trunk/ismp-manager/src/main/resources/winsensor/applicationContext-jms.xml
+END

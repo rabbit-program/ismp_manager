@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3592/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/util
+END
+SituationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/util/SituationUtils.java
+END
+ConstantSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/3591/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/util/ConstantSource.java
+END
+ToolUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3592/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/util/ToolUtil.java
+END
+MachineSituationComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/3549/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/util/MachineSituationComparator.java
+END

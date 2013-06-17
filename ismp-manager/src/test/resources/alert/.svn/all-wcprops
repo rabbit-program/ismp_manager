@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code2/!svn/ver/3116/trunk/ismp-manager/src/test/resources/alert
+END
+applicationContext-alert-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3116/trunk/ismp-manager/src/test/resources/alert/applicationContext-alert-rmi-client.xml
+END

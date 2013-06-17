@@ -1,0 +1,71 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/user
+http://192.168.9.252/svn/code2
+
+
+
+2011-02-28T07:42:02.357671Z
+3503
+gengtongyong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+other
+dir
+
+self
+dir
+
+comm
+dir
+
+top.jsp
+file
+
+
+
+
+2011-03-26T08:51:06.166183Z
+c5a197f33f19e803960aeaa1fe5d016a
+2011-01-27T02:06:39.681470Z
+3482
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+752
+

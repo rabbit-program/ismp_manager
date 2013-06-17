@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3698/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84
+END
+日志审计.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3682/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E6%97%A5%E5%BF%97%E5%AE%A1%E8%AE%A1.sql
+END
+系统管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3337/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86.sql
+END
+态势感知.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3563/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E6%80%81%E5%8A%BF%E6%84%9F%E7%9F%A5.sql
+END
+应用系统.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3698/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F.sql
+END
+服务检测.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3227/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E6%9C%8D%E5%8A%A1%E6%A3%80%E6%B5%8B.sql
+END
+告警管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3578/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E5%91%8A%E8%AD%A6%E7%AE%A1%E7%90%86.sql
+END
+风险评估.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3023/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BC%B0.sql
+END
+事件管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/2668/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86.sql
+END
+病毒补丁.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3685/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E7%97%85%E6%AF%92%E8%A1%A5%E4%B8%81.sql
+END
+应急响应.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3019/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94.sql
+END
+拓扑管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3681/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E6%8B%93%E6%89%91%E7%AE%A1%E7%90%86.sql
+END
+值班管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3576/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E5%80%BC%E7%8F%AD%E7%AE%A1%E7%90%86.sql
+END
+资产管理.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86.sql
+END
+网站监测.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3024/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E7%BD%91%E7%AB%99%E7%9B%91%E6%B5%8B.sql
+END
+等级保护.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3603/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4.sql
+END
+运维支撑.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3055/trunk/manager-web/src/main/resources/sql/mysql/%E8%A1%A8%E7%BB%93%E6%9E%84/%E8%BF%90%E7%BB%B4%E6%94%AF%E6%92%91.sql
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code2/!svn/ver/2526/trunk/ismp-ping/src/test/resources
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/1295/trunk/ismp-ping/src/test/resources/applicationContext.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code2/!svn/ver/1292/trunk/ismp-ping/src/test/resources/log4j.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/1292/trunk/ismp-ping/src/test/resources/application.properties
+END
+applicationContext-jms.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/2526/trunk/ismp-ping/src/test/resources/applicationContext-jms.xml
+END

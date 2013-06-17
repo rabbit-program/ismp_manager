@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<bean id="agentDao"
+		class="org.infosec.ismp.manager.winsensor.dao.impl.AgentDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="managerWinsensorDeviceDao"
+		class="org.infosec.ismp.manager.winsensor.dao.impl.ManagerWinsensorDeviceDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="patchClientDao" class="org.infosec.ismp.manager.winsensor.patch.dao.impl.PatchClientDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="pcLogDao" class="org.infosec.ismp.manager.winsensor.windowslog.dao.impl.PcLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="pcLogSourceDao" class="org.infosec.ismp.manager.winsensor.windowslog.dao.impl.PcLogSourceDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="thresholdDao" class="org.infosec.ismp.manager.winsensor.dao.impl.ThresholdDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="hostResourceHistoryDao" class="org.infosec.ismp.manager.winsensor.history.dao.impl.HostResourceHistoryDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+</beans>

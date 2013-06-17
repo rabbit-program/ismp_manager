@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <!--服务检测 -->
+    <bean name="/ismp/domain/local/scm/monitorAction"
+        class="edu.sjtu.infosec.ismp.manager.SCM.web.actions.MonitorAction"
+        singleton="false" lazy-init="true">
+        
+        <property name="monitorService">
+            <ref bean="monitorService" />
+        </property>
+        
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        
+        <property name="monitorServiceClient">
+            <ref bean="monitorServiceClient" />
+        </property>
+        
+        <property name="systemLogService">
+            <ref bean="systemlogService" />
+        </property>
+        
+        <property name="topoWebService">
+            <ref bean="topoWebService" />
+        </property>
+        
+    </bean>
+    
+</beans>

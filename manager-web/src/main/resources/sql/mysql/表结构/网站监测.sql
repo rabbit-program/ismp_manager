@@ -1,0 +1,20 @@
+CREATE TABLE `wsm_web_monitor_records` (
+  `ID` int(11) NOT NULL auto_increment,
+  `domain_id` int(11) default NULL,
+  `sn` varchar(20) default NULL,
+  `name` varchar(20) default NULL,
+  `description` varchar(500) default NULL,
+  `url` varchar(500) default NULL,
+  `time_interval` int(11) default NULL,
+  `time_out` int(11) default NULL,
+  `create_time` datetime default NULL,
+  `last_update_time` datetime default NULL,
+  `remark` varchar(500) default NULL,
+  `change_code` varchar(500) default NULL,
+  `node_id` varchar(500) default NULL,
+  `online_state` int(1) default '0',
+  `resp_time` int(20) default '0',
+  PRIMARY KEY  (`ID`),
+  KEY `domain_id` (`domain_id`),
+  CONSTRAINT `domain_id` FOREIGN KEY (`domain_id`) REFERENCES `ismp_domain` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;

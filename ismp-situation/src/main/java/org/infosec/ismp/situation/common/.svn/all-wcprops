@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/3398/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common
+END
+BaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common/BaseDaoHibernate.java
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common/Service.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common/BaseService.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common/Constants.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/924/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/common/BaseDao.java
+END

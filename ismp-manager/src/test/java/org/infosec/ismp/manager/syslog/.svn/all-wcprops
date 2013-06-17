@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/2440/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/syslog
+END
+MockSyslogWebAddCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2440/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/syslog/MockSyslogWebAddCommand.java
+END
+SyslogRmiClientMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1987/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/syslog/SyslogRmiClientMock.java
+END
+AddHanlerType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2440/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/syslog/AddHanlerType.java
+END
+MockSyslogWebRemoveCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2440/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/syslog/MockSyslogWebRemoveCommand.java
+END

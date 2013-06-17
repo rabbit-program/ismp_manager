@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="#"><span style="background:url(../../../../../img/SYSM/users.png) no-repeat; padding-left:22px;">用户管理</span></a></li>
+    <li class="act"><a href="#"><span style="background:url(../../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">其他管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div class=" pad3 overf">
+      <div id="data">
+      <h2>PC</h2>
+      <div class="greenborder Height_a pad3"><span style="float:left;">所属单位:
+        <select name="select">
+          <option title="1111">01</option>
+          <option title="222">33</option>
+        </select>
+        预案名称:
+        <input size="8" />
+        对应系统:
+        <input size="8" />
+        修改时间:
+        <input size="8" /></span> <a href="sys_pop02.html" class="R6 R7 boxy" title="Sensor添加">添加</a> <a href="javascript:history.back(1)" class="R6 R7">返回</a></div>
+       <h2 class="martop8">PC list</h2>
+      <table>
+  <tr>
+    <th>ItemA</th>
+    <th><span style="float: left;">操作</span> <a class="R6" style="float: left; margin: 6px;" href="#">全选</a></th>
+  </tr>
+  <tr>
+    <td>Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci. </td>
+    <td><input class="noneborder" type="checkbox" name="checkbox2" id="checkbox2" style="float:left; margin-right:20px;" />
+      <a href="sys_pop02.html" class="R6 boxy" title="1111">      编辑</a></td>
+  </tr>
+  <tr>
+    <td>Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, Nulla venenatis sagittis orci. </td>
+    <td><input class="noneborder" type="checkbox" name="checkbox" id="checkbox3" style="float:left; margin-right:20px;" />
+      <a href="#" class="R6"> 编辑</a></td>
+  </tr>
+  <tr>
+    <td>Fusce tempor condimentum dolor ultrices vulputate. Sed quis risus velit, ut porta felis. Nulla venenatis sagittis orci. </td>
+    <td><input class="noneborder" type="checkbox" name="checkbox" id="checkbox4" style="float:left; margin-right:20px;" />
+      <a href="#" class="R6"> 编辑</a></td>
+  </tr>
+  </table>
+
+</div>
+      
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../js/comm/other/tablelink.js"></script>
+</html>

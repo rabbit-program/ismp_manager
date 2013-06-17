@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3068/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/dao
+END
+ThresholdDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/3068/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/dao/ThresholdDao.java
+END
+AgentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3068/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/dao/AgentDao.java
+END
+ManagerWinsensorDeviceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3068/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/dao/ManagerWinsensorDeviceDao.java
+END

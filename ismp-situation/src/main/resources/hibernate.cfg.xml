@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+		<!-- 态势 -->
+		<mapping class="org.infosec.ismp.situation.model.Machine" />
+		<mapping class="org.infosec.ismp.situation.model.MachineCabinet" />
+		<mapping class="org.infosec.ismp.situation.model.MachineRoom" />
+		<mapping class="org.infosec.ismp.situation.model.Domain" />
+		<mapping class="org.infosec.ismp.situation.model.MachineSituation" />
+		<mapping class="org.infosec.ismp.situation.model.MachineCabinetSituation" />
+		<mapping class="org.infosec.ismp.situation.model.MachineRoomSituation" />
+		<mapping class="org.infosec.ismp.situation.model.SecurityAreaSituation" />
+		<mapping class="org.infosec.ismp.situation.model.ColorThreshold" />
+		<mapping class="org.infosec.ismp.situation.model.SituationEvent" />
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.situation.model.SituationVirusIndexBO" />-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.situation.model.SituationVirusIndexAllBO" />-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.situation.model.SituationCalcBO" />-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.situation.model.SituationCalcAllBO" />   -->
+        <!-- 告警 -->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.alert.model.AlertInfoBO"/>-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.alert.model.AlertTypeBO"/>-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.alert.model.AlertRuleBO"/>-->
+<!--        <mapping class="edu.sjtu.infosec.ismp.manager.alert.model.AlertFusionRuleBO"/>-->
+        <!-- 委办局信息  -->
+<!--        <mapping  class="edu.sjtu.infosec.ismp.manager.user.model.ManagerBO"/>-->
+    
+    </session-factory>
+</hibernate-configuration>

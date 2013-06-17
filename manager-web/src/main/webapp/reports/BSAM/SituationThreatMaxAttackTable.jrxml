@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="SituationThreatMaxAttackTable"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="535"
+		 pageHeight="802"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<reportFont name="song列名" isDefault="false" fontName="宋体" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+	<reportFont name="song列" isDefault="false" fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+
+	<parameter name="mySelect1" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["month(time)"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="myWhere" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[" and year(time)="+(new Date().getYear()+1900)+" "]]></defaultValueExpression>
+	</parameter>
+	<parameter name="myGroupBy" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[" month(time),event_type "]]></defaultValueExpression>
+	</parameter>
+	<parameter name="myHavingWhere" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[" and year(b.time)="+(new Date().getYear()+1900)+" and month(b.time)=col_0_0_ "]]></defaultValueExpression>
+	</parameter>
+	<parameter name="countDate" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[(new Date().getYear()+1900)+"年"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dateSuffix" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["月"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="hql"><![CDATA[select ($P!{mySelect1}) as currDate, 
+	count(*) as threNum, 
+	event_type as event_type, 
+	count(*)*thre_rank as threIntensity, 
+	thre_rank as thre_rank 
+from Eventrealdisp a
+where 1=1 
+$P!{myWhere} 
+group by $P!{myGroupBy} 
+having 
+	count(*) >= all(select count(b.id) 
+				from Eventrealdisp b 
+				where 1=1 
+				$P!{myHavingWhere} 
+				group by b.event_type  
+				) 
+order by $P!{mySelect1} asc]]></queryString>
+
+	<field name="currDate" class="java.lang.Integer"/>
+	<field name="threNum" class="java.lang.Long"/>
+	<field name="event_type" class="java.lang.String"/>
+	<field name="threIntensity" class="java.lang.Long"/>
+	<field name="thre_rank" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="25"  isSplitAllowed="true" >
+				<rectangle>
+					<reportElement
+						x="18"
+						y="0"
+						width="499"
+						height="25"
+						key="rectangle-3"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="28"
+						y="5"
+						width="145"
+						height="15"
+						key="staticText-4"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[威胁类型]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="183"
+						y="5"
+						width="50"
+						height="15"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[威胁数量]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="178"
+						y="0"
+						width="0"
+						height="25"
+						key="line-5"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="238"
+						y="0"
+						width="0"
+						height="25"
+						key="line-6"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<staticText>
+					<reportElement
+						x="303"
+						y="5"
+						width="204"
+						height="15"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[时间]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="298"
+						y="0"
+						width="0"
+						height="25"
+						key="line-10"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<staticText>
+					<reportElement
+						x="243"
+						y="5"
+						width="50"
+						height="15"
+						key="staticText-7"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列名"/>
+					</textElement>
+				<text><![CDATA[威胁强度]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="22"  isSplitAllowed="true" >
+				<rectangle>
+					<reportElement
+						x="18"
+						y="0"
+						width="499"
+						height="22"
+						key="rectangle-4"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="RelativeToBandHeight"/>
+				</rectangle>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="28"
+						y="2"
+						width="145"
+						height="18"
+						key="textField-4"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{event_type}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="2"
+						width="50"
+						height="18"
+						key="textField-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{threNum}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="178"
+						y="0"
+						width="0"
+						height="22"
+						key="line-7"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="RelativeToBandHeight"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="238"
+						y="0"
+						width="0"
+						height="22"
+						key="line-8"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="RelativeToBandHeight"/>
+				</line>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="303"
+						y="2"
+						width="204"
+						height="18"
+						key="textField-6"
+						isPrintWhenDetailOverflows="true"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{countDate}+$F{currDate}+$P{dateSuffix}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="298"
+						y="0"
+						width="0"
+						height="22"
+						key="line-11"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="RelativeToBandHeight"/>
+				</line>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="243"
+						y="2"
+						width="50"
+						height="18"
+						key="textField-8"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song列"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{threIntensity}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <!-- 
+    <bean id="killResultTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.dao.impl.KillResultTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    -->
+<!--拓扑发现-->
+    <bean id="lineDao"
+        class="edu.sjtu.infosec.ismp.manager.TM.discover.dao.impl.LineDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="nodeDao"
+        class="edu.sjtu.infosec.ismp.manager.TM.discover.dao.impl.NodeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="nodeTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.TM.discover.dao.impl.NodeTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="deviceTypeRulerDao"
+        class="edu.sjtu.infosec.ismp.manager.TM.discover.dao.impl.typeSense.DeviceTypeRulerDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+<!--拓扑管理-->
+ 
+</beans>

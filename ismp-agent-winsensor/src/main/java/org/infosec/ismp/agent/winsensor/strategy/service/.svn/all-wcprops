@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3516/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service
+END
+WindowsLogStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/WindowsLogStrategyService.java
+END
+SoftwareUpdateStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/SoftwareUpdateStrategyService.java
+END
+WindowsUpdateStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/WindowsUpdateStrategyService.java
+END
+StrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/StrategyService.java
+END
+WinsensorManagerStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/WinsensorManagerStrategyService.java
+END
+RegisterStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/RegisterStrategyService.java
+END
+HostResourceStrategyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/code2/!svn/ver/3065/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/strategy/service/HostResourceStrategyService.java
+END

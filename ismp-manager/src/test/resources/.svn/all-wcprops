@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code2/!svn/ver/3314/trunk/ismp-manager/src/test/resources
+END
+applicationContext-syslog-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/974/trunk/ismp-manager/src/test/resources/applicationContext-syslog-client.xml
+END
+hbm2ddl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/code2/!svn/ver/3314/trunk/ismp-manager/src/test/resources/hbm2ddl.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code2/!svn/ver/3314/trunk/ismp-manager/src/test/resources/hibernate.cfg.xml
+END

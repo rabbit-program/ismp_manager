@@ -1,0 +1,35 @@
+<div  id="data" class="pad1 ">
+<h2>Sensor分配</h2>
+  <table>
+    <tr>
+      <th>用户名</th>
+      <td>XXX</td>
+      <th>真实姓名</th>
+      <td>XXX</td>
+    </tr>
+    <tr>
+      <th>手机</th>
+      <td>&nbsp;</td>
+      <th><div align="center">邮箱</div></th>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>电话</th>
+      <td>&nbsp;</td>
+      <th>终端IP地址</th>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>创建时间</th>
+      <td>&nbsp;</td>
+      <th>所属角色</th>
+      <td>超级管理员 </td>
+    </tr>
+    <tr>
+      <th>管辖部门</th>
+      <td>产品市场销售部 ,咨询集成事业部 ,行政人事部 </td>
+      <th>状态</th>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>

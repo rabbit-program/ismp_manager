@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="snmpDeviceLocator" class="org.infosec.ismp.manager.snmp.SnmpDeviceLocator" lazy-init="false"/>
+	
+    <bean id="snmpDeviceRmiImpl" class="org.infosec.ismp.manager.snmp.SnmpDeviceMonitorRmiImpl"/>
+    
+    
+    <bean id="CDPServiceRmiInterfaceImpl" class="org.infosec.ismp.manager.topo.CDPServiceImpl"/>
+    
+    <bean id="ICMPServiceRmiInterfaceImpl" class="org.infosec.ismp.manager.topo.ICMPServiceImpl"/>
+    
+    <bean id="SNMPServiceRmiInterfaceImpl" class="org.infosec.ismp.manager.topo.SNMPServiceImpl"/>
+    
+     <bean id="snmpGetterDirectRequstSender" class="org.infosec.ismp.manager.direct.DirectRequestSender">      
+       <property name="jmsSocket" ref="snmpGetterSocket"></property>
+    </bean>
+    
+    <bean id="snmpGetterSocket" class="org.infosec.ismp.manager.topo.SnmpGetterSocket">
+       <property name="jmsTemplate" ref="jmsTemplate"></property>
+       <property name="destination" value="snmpGetterQueue"></property>    
+    </bean>
+</beans>

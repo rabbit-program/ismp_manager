@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search
+END
+device_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/device_search.jsp
+END
+position_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/position_detail.jsp
+END
+asset_changelog.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3499/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/asset_changelog.jsp
+END
+changelog.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2779/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/changelog.jsp
+END
+position_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3499/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/position_search.jsp
+END
+topo_asset_devicelist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/topo_asset_devicelist.jsp
+END
+main_frame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2779/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/main_frame.jsp
+END
+showAssetToHardware.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/showAssetToHardware.jsp
+END
+down_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/down_list.jsp
+END
+device_analysis.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/device_analysis.jsp
+END
+statistic_analysis.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/statistic_analysis.jsp
+END
+software_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/software_detail.jsp
+END
+showAssetToLocation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/showAssetToLocation.jsp
+END
+software_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3499/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/software_search.jsp
+END
+hardware_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/hardware_detail.jsp
+END
+ShowAssetToSoft.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/ShowAssetToSoft.jsp
+END
+device_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/device_detail.jsp
+END
+hardware_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2779/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/search/hardware_search.jsp
+END

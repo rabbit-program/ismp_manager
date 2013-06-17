@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container
+END
+BaseInfoManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/BaseInfoManagerBO.java
+END
+SoftwareRecordManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareRecordManagerBO.java
+END
+ValidatePolicyManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/ValidatePolicyManagerBO.java
+END
+SensorInfoBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SensorInfoBO.java
+END
+SoftwareManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareManagerBO.java
+END
+SoftwareRecordManagerContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareRecordManagerContainer.java
+END
+SensorInfoDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SensorInfoDetail.java
+END
+SoftwareDepartmentManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareDepartmentManagerBO.java
+END
+DispatchPolicyManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/DispatchPolicyManagerBO.java
+END
+SoftwareTreeDeviceDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareTreeDeviceDetail.java
+END
+SoftwareTreeUnitDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/SoftwareTreeUnitDetail.java
+END
+ExecutePolicyManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/2705/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/sd/model/container/ExecutePolicyManagerBO.java
+END

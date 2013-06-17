@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status
+END
+Status.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/Status.java
+END
+OracleDeadLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/OracleDeadLock.java
+END
+OracleProcessMemory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/OracleProcessMemory.java
+END
+SqlserverDeadLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/SqlserverDeadLock.java
+END
+SqlserverProcessMemory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/SqlserverProcessMemory.java
+END
+Workspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3159/trunk/ismp-model/src/main/java/org/infosec/ismp/model/db/status/Workspace.java
+END

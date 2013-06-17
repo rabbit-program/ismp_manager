@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <!-- 
+    <form-bean name="virusClientsORMForm" 
+                type="edu.sjtu.infosec.ismp.manager.virusManager.web.form.VirusClientsORMForm" />
+    -->
+    <!-- 值班管理 -Form表单-配置 -->
+    <form-bean name="dutyScheduleForm" 
+                type="edu.sjtu.infosec.ismp.manager.OSS.pm.web.form.DutyScheduleForm" />
+    <form-bean name="rosterForm" 
+                type="edu.sjtu.infosec.ismp.manager.OSS.pm.web.form.RosterForm" />
+    
+    <!-- 运维支持-运维知识库-Form表单-配置 -->
+     <form-bean name="ossKBForm" 
+                type="edu.sjtu.infosec.ismp.manager.OSS.klbm.web.form.OssKnowledgeBaseForm" />
+     <form-bean name="workOrderForm" 
+                type="edu.sjtu.infosec.ismp.manager.OSS.wom.web.form.WorkOrderForm" />           
+     <form-bean name="clientQuestionForm" 
+                type="edu.sjtu.infosec.ismp.manager.OSS.wom.web.form.ClientQuestionForm" />    
+  </form-beans>
+  
+  
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  
+  <!-- action -->
+  <action-mappings>
+  	<!--
+    <action 
+        path="/virusMappedAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMForm" 
+        name="virusClientsORMForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="clientQuery"
+         		path="/WEB-INF/jsp/virusManager/virusClients/show/virusClientsMapping.jsp" /> 
+    </action>
+    -->
+    
+         <!--排班记录-->
+    <action 
+        path="/ismp/oss/pm/dsinfo"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="dutyScheduleForm" 
+        name="dutyScheduleForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+           <forward name="onduty" path="/WEB-INF/content/OSS/pm/onWatching/showList.jsp"/>
+           <forward name="publishingManagement" path="/WEB-INF/content/OSS/pm/dutyManager/showList.jsp"/>
+           <forward name="modifyDuty" path="/WEB-INF/content/OSS/pm/dutyManager/modifyDuty.jsp"/>
+           <forward name="dutyDetail" path="/WEB-INF/content/OSS/pm/dutyManager/dutyDetail.jsp"/>
+       </action>
+       <action path="/ismp/oss/pm/newDuty" forward="/WEB-INF/content/OSS/pm/dutyManager/newDuty.jsp" />
+        <!--投诉-->
+        <action path="/ismp/oss/pm/newOrUpdateComplaint" forward="/WEB-INF/content/OSS/pm/dutyManager/newOrUpdateComplaint.jsp" />
+        
+        
+       <!--值班人员-->
+        <action 
+        path="/ismp/oss/pm/rosterInfo"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="rosterForm" 
+        name="rosterForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+           <forward name="index" path="/WEB-INF/content/OSS/pm/rosterManager/showList.jsp"/>
+           <forward name="modifyRoster" path="/WEB-INF/content/OSS/pm/rosterManager/modifyRoster.jsp"/>
+           <forward name="rosterDetail" path="/WEB-INF/content/OSS/pm/rosterManager/rosterDetail.jsp"/>
+       </action>
+     <action path="/ismp/oss/pm/newRoster" forward="/WEB-INF/content/OSS/pm/rosterManager/newRoster.jsp" />
+    
+    
+    
+     <!-- 运维支持-运维知识库-查询-配置 -->
+      <action 
+        path="/ismp/domain/local/oss/ossKnowledgeBase"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="ossKBForm"
+        validate="false" 
+        scope="request">
+        <forward name="ossFindSucc"
+                path="/WEB-INF/content/OSS/klbm/showList.jsp" /> 
+    </action>
+    
+    <!-- 运维支持-运维知识库-新增-配置 -->
+    <action 
+        path="/ismp/domain/local/oss/addOssKB"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="ossKBForm"
+        validate="false" 
+        scope="request">
+        <forward name="opSucc"
+                path="/WEB-INF/content/OSS/klbm/newKnowledge.jsp" /> 
+         <forward name="AddSucc"
+                path="/ismp/domain/local/oss/ossKnowledgeBase.do" /> 
+    </action>
+    
+    <!-- 运维支持-运维知识库-更新-配置 -->
+    <action 
+        path="/ismp/domain/local/oss/updateOssKB"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="ossKBForm"
+        parameter="method"
+        validate="false" 
+        scope="request">
+        <forward name="forwardValue"
+                path="/WEB-INF/content/OSS/klbm/modifyKnowledge.jsp" /> 
+         <forward name="updateSucc"
+                path="/ismp/domain/local/oss/ossKnowledgeBase.do" /> 
+         <forward name="deleteSucc"
+                path="/ismp/domain/local/oss/ossKnowledgeBase.do" />
+    </action>
+
+    <!-- 运维支持运维知识库根据content全文检索 -->
+     <action 
+        path="/ismp/domain/local/oss/ListOssKB"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="ossKBForm"
+        parameter="method"
+        validate="false" 
+        scope="request">
+        <forward name="FindossSucc"
+                path="/WEB-INF/content/OSS/klbm/showklbm.jsp" />
+    </action>
+    
+    
+    <!--运维工单-客户端问题-->
+    <action 
+        path="/ismp/domain/local/oss/clientQuestion"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="clientQuestionForm"
+        parameter="method"
+        validate="false" 
+        scope="request">
+        <forward name="showQues"
+                path="/WEB-INF/content/OSS/wom/showQuestion.jsp" /> 
+         <forward name="lookQues"
+                path="/WEB-INF/content/OSS/wom/lookQues.jsp" /> 
+         <forward name="deleteSucc"
+                path="/ismp/domain/local/oss/ossKnowledgeBase.do" />
+    </action>
+    
+     <!--运维工单-派工单-->
+    <action 
+        path="/ismp/domain/local/oss/workOrder"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        name="workOrderForm"
+        parameter="method"
+        validate="false" 
+        scope="request">
+        <forward name="showWorkOrder"
+                path="/WEB-INF/content/OSS/wom/showWorkOrder.jsp" /> 
+         <forward name="preAddWorkOrder"
+                path="/WEB-INF/content/OSS/wom/newWorkOrder.jsp" /> 
+         <forward name="lookOrder"
+                path="/WEB-INF/content/OSS/wom/lookWorkOrder.jsp" />
+    </action>
+  </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

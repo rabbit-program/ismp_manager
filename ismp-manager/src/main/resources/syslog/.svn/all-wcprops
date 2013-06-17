@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code2/!svn/ver/3313/trunk/ismp-manager/src/main/resources/syslog
+END
+applicationContext-syslog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3313/trunk/ismp-manager/src/main/resources/syslog/applicationContext-syslog.xml
+END
+applicationContext-syslog-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/syslog/applicationContext-syslog-rmi.xml
+END

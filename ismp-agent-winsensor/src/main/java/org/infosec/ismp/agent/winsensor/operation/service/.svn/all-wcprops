@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/3516/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/service
+END
+AgentDutyManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/code2/!svn/ver/3386/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/service/AgentDutyManagerService.java
+END
+ProblemService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3386/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/service/ProblemService.java
+END
+AgentDutyManagerSentHisService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/code2/!svn/ver/3516/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/service/AgentDutyManagerSentHisService.java
+END

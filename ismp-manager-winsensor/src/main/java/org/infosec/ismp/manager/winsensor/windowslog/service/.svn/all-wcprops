@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3408/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/windowslog/service
+END
+PcLogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/3070/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/windowslog/service/PcLogService.java
+END
+PcLogSourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/code2/!svn/ver/3070/trunk/ismp-manager-winsensor/src/main/java/org/infosec/ismp/manager/winsensor/windowslog/service/PcLogSourceService.java
+END

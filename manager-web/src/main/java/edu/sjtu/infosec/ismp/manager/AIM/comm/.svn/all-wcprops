@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1544/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/comm
+END
+AlertQueryVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1544/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/comm/AlertQueryVO.java
+END
+AlertTypeConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/953/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/comm/AlertTypeConstants.java
+END
+Alert.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/953/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/comm/Alert.java
+END

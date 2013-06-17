@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code2/!svn/ver/3674/trunk/ismp-agent/src/main/resources
+END
+syslogd.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code2/!svn/ver/207/trunk/ismp-agent/src/main/resources/syslogd.properties
+END
+applicationContext-resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/1878/trunk/ismp-agent/src/main/resources/applicationContext-resources.xml
+END
+applicationContext-agent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/3229/trunk/ismp-agent/src/main/resources/applicationContext-agent.xml
+END
+TABLE.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code2/!svn/ver/373/trunk/ismp-agent/src/main/resources/TABLE.SQL
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/3278/trunk/ismp-agent/src/main/resources/applicationContext.xml
+END
+agent.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code2/!svn/ver/2281/trunk/ismp-agent/src/main/resources/agent.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code2/!svn/ver/1369/trunk/ismp-agent/src/main/resources/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code2/!svn/ver/3277/trunk/ismp-agent/src/main/resources/jdbc.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/3231/trunk/ismp-agent/src/main/resources/application.properties
+END

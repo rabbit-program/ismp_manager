@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code2/!svn/ver/3674/trunk/ismp-agent/src/main/resources/snmpresources
+END
+snmpSwitchCisco.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpSwitchCisco.xml
+END
+snmpFirewallH3c.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpFirewallH3c.xml
+END
+snmpFirewallTopsec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpFirewallTopsec.xml
+END
+snmpHostResource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpHostResource.xml
+END
+snmpConfigCisco.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3361/trunk/ismp-agent/src/main/resources/snmpresources/snmpConfigCisco.xml
+END
+snmpFirewallLeadsec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpFirewallLeadsec.xml
+END
+snmpResource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3674/trunk/ismp-agent/src/main/resources/snmpresources/snmpResource.xml
+END
+snmpRouterH3c.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpRouterH3c.xml
+END
+snmpSwitchH3c.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpSwitchH3c.xml
+END
+snmpConfigWeblogic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/2661/trunk/ismp-agent/src/main/resources/snmpresources/snmpConfigWeblogic.xml
+END
+snmpFirewallWibeda.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpFirewallWibeda.xml
+END
+snmpRouterCisco.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3614/trunk/ismp-agent/src/main/resources/snmpresources/snmpRouterCisco.xml
+END

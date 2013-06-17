@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="${jms.broker_url}"></property>
+    </bean>
+    
+    <bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <property name="targetConnectionFactory" ref="connectionFactory"></property>
+        <property name="sessionCacheSize" value="5"></property>
+    </bean>
+    
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="cachingConnectionFactory"></property>
+    </bean>
+
+    <bean id="windowsLogQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="windowsLog.queue"></constructor-arg>
+    </bean>
+
+    <bean id="windowsLogMessageListener" class="org.infosec.ismp.manager.winsensor.windowslog.WindowsLogMessageListener">
+    	<property name="managerSensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="windowsLogQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"></property>
+        <property name="destination" ref="windowsLogQueue"></property>
+        <property name="messageListener" ref="windowsLogMessageListener"></property>
+        <property name="concurrentConsumers" value="4"></property>
+    </bean>
+    
+    <bean id="hostResourceQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="hostResource.queue"></constructor-arg>
+    </bean>
+    
+    <bean id="hostResourceMessageListener" class="org.infosec.ismp.manager.winsensor.status.HostResourceMessageListener">
+        <property name="managerSensorServer" ref="sensorServer"></property>
+    </bean>
+    
+    <bean id="hostResourceQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"></property>
+        <property name="destination" ref="hostResourceQueue"></property>
+        <property name="messageListener" ref="hostResourceMessageListener"></property>
+        <property name="concurrentConsumers" value="4"></property>
+    </bean>
+    
+    <bean id="registerOnlineStatusQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="registerOnlineStatus.queue"></constructor-arg>
+    </bean>
+    
+    <bean id="registerOnlineStatusMessageListener" class="org.infosec.ismp.manager.winsensor.register.RegisterOnlineStatusMessageListener">
+        <property name="managerSensorServer" ref="sensorServer"></property>
+    </bean>
+    
+    <bean id="registerOnlineStatusQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="destination" ref="registerOnlineStatusQueue" />
+        <property name="messageListener" ref="registerOnlineStatusMessageListener" />
+        <property name="concurrentConsumers" value="4" />
+    </bean>
+    
+    <bean id="registerOfflineStatusQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="registerOfflineStatus.queue" />
+    </bean>
+    
+    <bean id="registerOfflineStatusMessageListener" class="org.infosec.ismp.manager.winsensor.register.RegisterOfflineStatusMessageListener">
+        <property name="managerSensorServer" ref="sensorServer"></property>
+    </bean>
+    
+    <bean id="registerOfflineStatusQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="destination" ref="registerOfflineStatusQueue" />
+        <property name="messageListener" ref="registerOfflineStatusMessageListener" />
+        <property name="concurrentConsumers" value="4" />
+    </bean>
+    
+	<bean id="operationProblemQueue" class="org.apache.activemq.command.ActiveMQQueue">
+    	<constructor-arg value="operationProblem.queue" />
+    </bean>
+    
+    <bean id="operationProblemMessageListener" class="org.infosec.ismp.manager.winsensor.operation.OperationProblemMessageListener">
+    	<property name="managerSensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="operationProblemQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+    	<property name="connectionFactory" ref="connectionFactory" />
+    	<property name="destination" ref="operationProblemQueue" />
+    	<property name="messageListener" ref="operationProblemMessageListener" />
+    	<property name="concurrentConsumers" value="4" />
+    </bean>
+</beans>

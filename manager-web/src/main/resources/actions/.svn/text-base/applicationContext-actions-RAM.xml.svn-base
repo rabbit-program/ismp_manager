@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- 风险评估  -->
+<!-- 新建项目 项目管理 -->
+    <bean name="/ismp/domain/local/ram/projManager"
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.ProjectAction" 
+        singleton="false"
+        lazy-init="true">
+        <property name="projectService" ref="projectService" />
+        <property name="domainService" ref="domainService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="dicAsseStatService" ref="dicAsseStatService"/>
+        <property name="dicCpKindService" ref="dicCpKindService"></property>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+
+   
+ <!-- 业务录入 -->
+    <bean name="/ismp/domain/local/ram/businessManager"
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.BusinessAction" 
+        singleton="false"
+        lazy-init="true">
+        <property name="projectService" ref="projectService" />
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="businessService" ref="businessService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+    <!-- 资产录入 -->
+    <bean name="/ismp/domain/local/ram/AssetManager"
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.AssetAction" 
+        singleton="false"
+        lazy-init="true">
+        <property name="projectService" ref="projectService" />
+        <property name="dicAsseKindService" ref="dicAsseKindService"/>
+        <property name="businessService" ref="businessService"/>
+        <property name="assetService" ref="assetService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+       <!-- 问卷 -->
+    <bean name="/ismp/domain/local/ram/papeManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.PapeAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="statSecuElemService" ref="statSecuElemService"/>
+        <property name="papeService" ref="papeService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+     <!-- 漏洞扫描 -->
+   <bean name="/ismp/domain/local/ram/leakScanManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.LeakScanAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="leakScanService" ref="leakScanService"/>
+        <property name="dynaLeakService" ref="dynaLeakService"/>
+        <property name="dynaLeakThreService" ref="dynaLeakThreService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+        <!-- 脆弱性分析 -->
+   <bean name="/ismp/domain/local/ram/VulnAnalManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.VulnAnalAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="vulnAnalService" ref="vulnAnalService"/>
+        <property name="assetService" ref="assetService"/>
+        <property name="statVulnKindService" ref="statVulnKindService"/>
+        <property name="statVulnPoinService" ref="statVulnPoinService"/>
+        <property name="dicAsseKindService" ref="dicAsseKindService"/>
+        <property name="papeService" ref="papeService"/>
+        <property name="threAnalService" ref="threAnalService"/>
+        <property name="dynaLeakService" ref="dynaLeakService"/>
+        <property name="dynaLeakThreService" ref="dynaLeakThreService"/>
+        <property name="leakScanService" ref="leakScanService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+
+     <!-- 威胁分析 -->
+   <bean name="/ismp/domain/local/ram/ThreAnalManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.ThreAnalAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="assetService" ref="assetService"/>
+        <property name="dicAsseKindService" ref="dicAsseKindService"/>
+        <property name="vulnAnalService" ref="vulnAnalService"/>
+        <property name="threAnalService" ref="threAnalService" />
+        <property name="statThreKindService" ref="statThreKindService"/>
+        <property name="statThreService" ref="statThreService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"></property>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+    <!-- 脆弱威胁关联 -->
+   <bean name="/ismp/domain/local/ram/VulnThreRelaManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.VulnThreRelaAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="assetService" ref="assetService"/>
+        <property name="vulnAnalService" ref="vulnAnalService"/>
+        <property name="threAnalService" ref="threAnalService"/>
+        <property name="statThreKindService" ref="statThreKindService" />
+        <property name="statThreService" ref="statThreService"/>
+        <property name="statVulnKindService" ref="statVulnKindService"/>
+        <property name="statVulnPoinService" ref="statVulnPoinService"/>
+        <property name="dynaLeakThreService" ref="dynaLeakThreService" />
+        <property name="leakScanService" ref="leakScanService"/>
+        <property name="statCVEThreService" ref="statCVEThreService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+   
+       <!-- 风险计算 -->
+   <bean name="/ismp/domain/local/ram/CalManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.CalculateAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="statWarnStriService" ref="statWarnStriService" />
+        <property name="projectService" ref="projectService"/>
+        <property name="assetService" ref="assetService"/>
+        <property name="vulnAnalService" ref="vulnAnalService"/>
+        <property name="threAnalService" ref="threAnalService" />
+        <property name="dicRiskMatrRuleService" ref="dicRiskMatrRuleService"/>
+        <property name="dynaAsseResuService" ref="dynaAsseResuService"/>
+        <property name="dynaAsseValueService" ref="dynaAsseValueService"/>
+        <property name="dynaElemResuService" ref="dynaElemResuService" />
+        <property name="dynaVTARepoService" ref="dynaVTARepoService"/>
+        <property name="statVulnPoinService" ref="statVulnPoinService"/>
+        <property name="statThreService" ref="statThreService"/>
+        <property name="dynaLeakService" ref="dynaLeakService"/>
+        <property name="leakScanService" ref="leakScanService" />
+        <property name="statCVEThreService" ref="statCVEThreService"/>
+        <property name="dynaLeakThreService" ref="dynaLeakThreService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+
+   <!-- 报表生成 -->
+    <bean name="/ismp/domain/local/ram/reportManager" 
+        class="edu.sjtu.infosec.ismp.manager.RAM.web.actions.ReportAction" 
+        singleton="false"
+        lazy-init="true" >
+        <property name="projectService" ref="projectService" />
+        <property name="reportService" ref="reportService"/>
+        <property name="dynaAsseValueService" ref="dynaAsseValueService"/>
+        <property name="dicSecuLeveService" ref="dicSecuLeveService"/>
+        <property name="vulnAnalService" ref="vulnAnalService" />
+        <property name="statVulnPoinService" ref="statVulnPoinService"/>
+        <property name="dynaLeakService" ref="dynaLeakService"/>
+        <property name="leakScanService" ref="leakScanService"/>
+        <property name="threAnalService" ref="threAnalService" />
+        <property name="statThreService" ref="statThreService"/>
+        <property name="dynaLeakThreService" ref="dynaLeakThreService"/>
+        <property name="statCVEThreService" ref="statCVEThreService"/>
+        <property name="logService" ref="systemlogService"></property>
+   </bean>
+</beans>

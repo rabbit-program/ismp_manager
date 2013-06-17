@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code2/!svn/ver/3663/trunk/ismp-manager-rmi/src/main/resources
+END
+applicationContext-threshold.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3663/trunk/ismp-manager-rmi/src/main/resources/applicationContext-threshold.xml
+END
+applicationContext-snmp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3630/trunk/ismp-manager-rmi/src/main/resources/applicationContext-snmp.xml
+END
+ismp.store
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code2/!svn/ver/3430/trunk/ismp-manager-rmi/src/main/resources/ismp.store
+END
+applicationContext-scm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/1975/trunk/ismp-manager-rmi/src/main/resources/applicationContext-scm.xml
+END
+applicationContext-db.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3631/trunk/ismp-manager-rmi/src/main/resources/applicationContext-db.xml
+END

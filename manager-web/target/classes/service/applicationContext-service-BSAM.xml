@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+    
+    <!--主机： 与manager-web相关  -->
+	<bean id="machineService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.MachineServiceImpl">
+          <property name="machineDao" ref="machineDao"></property>
+          <property name="machineCabinetDao" ref="machineCabinetDao"></property>
+          <property name="machineRoomDao" ref="machineRoomDao"></property>
+          <property name="domainDao" ref="domainDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--机柜： 与manager-web相关  -->
+    <bean id="machineCabinetService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.MachineCabinetServiceImpl">
+          <property name="machineCabinetDao" ref="machineCabinetDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--机房： 与manager-web相关  -->
+    <bean id="machineRoomService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.MachineRoomServiceImpl">
+          <property name="machineRoomDao" ref="machineRoomDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--安全域： 与manager-web相关  -->
+    <bean id="securityAreaService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.SecurityAreaServiceImpl">
+          <property name="securityAreaDao" ref="securityAreaDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--颜色阈值： 与manager-web相关  -->
+    <bean id="colorThresholdService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.ColorThresholdServiceImpl">
+          <property name="colorThresholdDao" ref="colorThresholdDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--主机态势： 与manager-web相关  -->
+    <bean id="machineSituationService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.MachineSituationServiceImpl">
+          <property name="machineDao" ref="machineDao"></property>
+          <property name="colorThresholdDao" ref="colorThresholdDao"></property>
+          <property name="situationService" ref="situationService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--下级子单位态势： 与manager-web相关  -->
+    <bean id="subUnitSituationService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.SubUnitSituationServiceImpl">
+          <property name="colorThresholdDao" ref="colorThresholdDao"></property>
+          <property name="situationService" ref="situationService"></property>
+          <property name="machineRoomService" ref="machineRoomService"></property>
+          <property name="machineCabinetService" ref="machineCabinetService"></property>
+          <property name="securityAreaService" ref="securityAreaService"></property>
+          <property name="machineSituationDao" ref="machineSituationDao"></property>
+          <property name="machineCabinetSituationDao" ref="machineCabinetSituationDao"></property>
+          <property name="machineRoomSituationDao" ref="machineRoomSituationDao"></property>
+          <property name="securityAreaSituationDao" ref="securityAreaSituationDao"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--安全域态势： 与manager-web相关  -->
+    <bean id="securityAreaSituationService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.BSAM.service.impl.SecurityAreaSituationServiceImpl">
+          <property name="colorThresholdDao" ref="colorThresholdDao"></property>
+          <property name="situationService" ref="situationService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- RMI -->
+    <bean id="situationService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.bsam.service.SituationService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost:1099/situationManagerService</value>
+        </property>
+    </bean>
+    
+</beans>

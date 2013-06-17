@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/db
+END
+applicationContext-db-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/db/applicationContext-db-rmi.xml
+END
+applicationContext-db.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/2317/trunk/ismp-manager/src/main/resources/db/applicationContext-db.xml
+END

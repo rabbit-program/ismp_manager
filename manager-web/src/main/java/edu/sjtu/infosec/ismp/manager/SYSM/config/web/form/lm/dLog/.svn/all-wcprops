@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1409/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/form/lm/dLog
+END
+SysLogSourceFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/1247/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/form/lm/dLog/SysLogSourceFrom.java
+END
+PcSourceFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/1313/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/form/lm/dLog/PcSourceFrom.java
+END
+SnmpTrapSourceFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/1409/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/form/lm/dLog/SnmpTrapSourceFrom.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3248/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3248/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao/UserDao.java
+END
+BlackAndWhiteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/791/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao/BlackAndWhiteDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/702/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao/RoleDao.java
+END
+BlackAndWhiteStatusDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/791/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao/BlackAndWhiteStatusDao.java
+END
+DomainDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2019/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/self/dao/DomainDao.java
+END

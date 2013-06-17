@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <!-- 
+	<bean name="/virusMappedAction"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.web.actions.VirusMappedAction"
+		singleton="false" lazy-init="true">
+		<property name="virusClientsService">
+			<ref bean="virusClientsService" />
+		</property>
+	</bean>
+	 -->
+	 
+	  <!-- 运维支持-运维知识库-查询-配置 -->
+     <bean name="/ismp/domain/local/oss/ossKnowledgeBase"
+        class="edu.sjtu.infosec.ismp.manager.OSS.klbm.web.actions.FindOssKnowledgeBaseAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="ossKnowledgeBaseService">
+                <ref bean="ossKnowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+    </bean>
+    
+    <!-- 运维支持-运维知识库-添加-配置 -->
+    <bean name="/ismp/domain/local/oss/addOssKB"
+        class="edu.sjtu.infosec.ismp.manager.OSS.klbm.web.actions.AddOssKnowledgeBaseAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="ossKnowledgeBaseService">
+                <ref bean="ossKnowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+     <!-- 运维支持-运维知识库-更新-配置 -->
+      <bean name="/ismp/domain/local/oss/updateOssKB"
+        class="edu.sjtu.infosec.ismp.manager.OSS.klbm.web.actions.UpdateAndDelOssKBAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="ossKnowledgeBaseService">
+                <ref bean="ossKnowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+         <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+       <!-- 运维支持-运维知识库 -根据content全文检索 -->
+      <bean name="/ismp/domain/local/oss/ListOssKB"
+        class="edu.sjtu.infosec.ismp.manager.OSS.klbm.web.actions.ShowOssKnowledgeAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="ossKnowledgeBaseService">
+                <ref bean="ossKnowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+      </bean>
+    
+       <!--运维工单-客户端问题-->
+     <bean name="/ismp/domain/local/oss/clientQuestion"
+        class="edu.sjtu.infosec.ismp.manager.OSS.wom.web.actions.ClientQuestionAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="workOrderService">
+                <ref bean="workOrderService" />
+        </property>
+        <property name="clientQuestionService">
+                <ref bean="clientQuestionService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+         <property name="winsensorOperationWorkOrdersService">
+                <ref bean="winsensorOperationWorkOrdersService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+     </bean>
+     
+       <!--运维工单-派工单-->
+      <bean name="/ismp/domain/local/oss/workOrder"
+        class="edu.sjtu.infosec.ismp.manager.OSS.wom.web.actions.WorkOrderAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="workOrderService">
+                <ref bean="workOrderService" />
+        </property>
+        <property name="clientQuestionService">
+                <ref bean="clientQuestionService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="winsensorOperationWorkOrdersService">
+                <ref bean="winsensorOperationWorkOrdersService" />
+        </property>
+        <property name="logService" ref="systemlogService"></property>
+     </bean>
+     
+     <!--值班管理-->
+     <!--排班记录-->
+    <bean name="/ismp/oss/pm/dsinfo"
+        class="edu.sjtu.infosec.ismp.manager.OSS.pm.web.actions.DutyScheduleAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="dutyScheduleService">
+                <ref bean="dutyScheduleService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="complaintService">
+                <ref bean="complaintService" />
+        </property>
+        <property name="winsensorOperationDutyManagerService">
+                <ref bean="rmiDutyScheduleService"/>
+        </property>
+        <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+        <property name="rosterService">
+                <ref bean="rosterService" />
+        </property>
+    </bean>
+
+        <!--值班人员-->
+    <bean name="/ismp/oss/pm/rosterInfo"
+        class="edu.sjtu.infosec.ismp.manager.OSS.pm.web.actions.RosterAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="rosterService">
+                <ref bean="rosterService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+</beans>

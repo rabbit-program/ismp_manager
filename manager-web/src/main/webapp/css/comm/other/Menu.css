@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(Newcommon.css);
+/* Menu */
+.menubg {
+	background:url(../../../img/comm/other/menu_back.jpg) #0483be no-repeat;
+	background-attachment:fixed;
+}
+.menu {
+	margin:31px 0 0 13px;
+	width:132px;
+}
+li {
+	list-style:none;
+	font-family:"微软雅黑";
+}
+li a,.li {
+	color:#000;	
+	font-size:12px;
+	display:block;
+	width:132px;
+	height:30px;
+	text-shadow: 1px 1px 1px #9ae2ff;
+	padding:0 0 0 25px;
+	line-height:28px;
+}
+
+li a:hover, li a:active, .ok{
+	color:#e0f1f9;
+	text-shadow: 1px 1px 1px #5ca9c9;
+	background:url(../../../img/comm/other/hoverback.png) no-repeat;
+}
+**li a:hover, **li a:active {
+	color:#e0f1f9;
+	text-shadow: 1px 1px 1px #5ca9c9;	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="../../../img/comm/other/hoverback.png");   
+background:none;   
+}
+**.ok {
+	color:#e0f1f9;
+	text-shadow: 1px 1px 1px #5ca9c9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="../../../img/comm/other/hoverback.png");   
+background:none; 
+}
+/* Every menu icon define */
+.menu span {
+	padding-left:25px;
+}
+/*拓扑管理*/
+.tp {
+	background:url(../../../img/comm/other/tp.png) no-repeat;
+}
+/*资产管理*/
+.zc {
+	background:url(../../../img/comm/other/zc.png) no-repeat;
+}
+/*资产管理*/
+.yw {
+	background:url(../../../img/comm/other/yw.png) no-repeat;
+}
+/*等级保护*/
+.bh {
+	background:url(../../../img/comm/other/shield.png) no-repeat;
+}
+/*病毒补丁*/
+.vp {
+	background:url(../../../img/comm/other/vp.png) no-repeat;
+}
+a.menuAlarm:hover, a.menuAlarm:active, a.menuAlarma {
+	background:url(../../../img/comm/other/btn_alarm_a.jpg) no-repeat;
+}
+/*服务检测*/
+.server {
+	background:url(../../../img/comm/other/server.png) no-repeat;
+}
+/*事件管理*/
+.event {
+	background:url(../../../img/comm/other/event.png) no-repeat;
+}
+/*态势感知*/
+.ts {
+	background:url(../../../img/comm/other/ts.png) no-repeat;
+}
+/*风险评估*/
+.danger {
+	background:url(../../../img/comm/other/danger.png) no-repeat;
+}
+/*应急响应*/
+.alarm {
+	background:url(../../../img/comm/other/alarm.png) no-repeat;
+}
+/*日志审计*/
+.dairy {
+	background:url(../../../img/comm/other/dairy.png) no-repeat;
+}
+/*系统管理*/
+.system {
+	background:url(../../../img/comm/other/system.png) no-repeat;
+}
+/*告警管理*/
+.bell {
+	background:url(../../../img/comm/other/bell.png) no-repeat;
+}
+/*安全退出*/
+.exit {
+	background:url(../../../img/comm/other/exit.png) no-repeat;
+}
+/*安全退出*/
+.exit {
+	background:url(../../../img/comm/other/exit.png) no-repeat;
+}
+/*网站安全监测*/
+.aqjc {
+	background:url(../../../img/comm/other/aqjc.png) no-repeat;
+}
+/*应用系统权限管理*/
+.yyqx {
+	background:url(../../../img/comm/other/yyqx.png) no-repeat;
+}

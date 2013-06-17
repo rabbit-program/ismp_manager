@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/1719/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/dao/impl
+END
+PatchTacticsDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1089/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/dao/impl/PatchTacticsDaoImpl.java
+END
+SensorClientsDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1719/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/dao/impl/SensorClientsDaoImpl.java
+END
+SensorClientsPatchDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/1089/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/dao/impl/SensorClientsPatchDaoImpl.java
+END

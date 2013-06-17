@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-lazy-init="false">
+	<bean id="sysLogService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.LM.dLog.service.impl.SysLogServiceImpl">
+				<property name="sysLogDao" ref="sysLogDao" />
+			</bean>
+		</property>
+	</bean>
+	<bean id="pcService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.LM.dLog.service.impl.PcServiceImpl">
+				<property name="pcDao" ref="pcDao" />
+			</bean>
+		</property>
+	</bean>
+	<bean id="ftpService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.LM.dLog.service.impl.FtpServiceImpl">
+				<property name="ftpDao" ref="ftpDao" />
+			</bean>
+		</property>
+	</bean>
+	<!--
+		...............................下面为平台日志模块所用..................................
+	
+	<bean id="systemlogService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.LM.pfLog.service.impl.SystemLogServiceImpl">
+				<property name="systemLogDao" ref="systemlogDao"></property>
+			</bean>
+		</property>
+	</bean>
+	-->
+	<!--
+		...............................下面为系统配置模块所用..................................
+	-->
+    
+    <!-- SysLog Source-->
+	<bean id="sysLogSourceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.SYSM.config.service.lm.dLog.impl.SysLogSourceServiceImpl">
+				<property name="sysLogSourceDao" ref="sysLogSourceDao" />
+				<property name="syslogController" ref="syslogControllerClient" />
+			</bean>
+		</property>
+	</bean>
+    
+        <!-- SnmpTrap Source-->
+	<bean id="snmpTrapSourceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.SYSM.config.service.lm.dLog.impl.SnmpTrapSourceServiceImpl">
+				<property name="snmpTrapSourceDao" ref="snmpTrapSourceDao" />
+				<property name="snmpTrapController" ref="snmpTrapControllerClient" />
+			</bean>
+		</property>
+	</bean>
+    
+    <!-- Pc Source-->
+	<bean id="pcSourceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.SYSM.config.service.lm.dLog.impl.PcSourceServiceImpl">
+				<property name="pcSourceDao" ref="pcSourceDao" />
+				<property name="pcController" ref="pcControllerClient" />
+			</bean>
+		</property>
+	</bean>
+    
+    <!-- Ftp Source-->
+	<bean id="ftpSourceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="edu.sjtu.infosec.ismp.manager.SYSM.config.service.lm.dLog.impl.FtpSourceServiceImpl">
+				<property name="ftpSourceDao" ref="ftpSourceDao" />
+			</bean>
+		</property>
+	</bean>
+    
+    <!-- RMI -->
+    
+    <!-- Syslog -->
+	<bean id="syslogControllerClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://localhost:1199/SyslogController"></property>
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.syslog.SyslogController"></property>
+		<property name="lookupStubOnStartup" value="false"></property>
+		<property name="refreshStubOnConnectFailure" value="true"></property>
+	</bean>
+    
+    <!-- SnmpTrap -->
+	<bean id="snmpTrapControllerClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://localhost:1199/SnmpTrapController"></property>
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.snmpTrap.SnmpTrapController"></property>
+		<property name="lookupStubOnStartup" value="false"></property>
+		<property name="refreshStubOnConnectFailure" value="true"></property>
+	</bean>
+    
+     <!-- PC Sensor -->
+	<bean id="pcControllerClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://localhost:1199/SensorController"></property>
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.SensorController"></property>
+		<property name="lookupStubOnStartup" value="false"></property>
+		<property name="refreshStubOnConnectFailure" value="true"></property>
+	</bean>
+     
+     <!-- 与managerweb相关  -->
+	<!--
+		<bean id="killResultTypeService"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+		<property name="killResultTypeDao" ref="killResultTypeDao"></property>
+		<property name="systemlogservice" ref="systemlogservice"></property>
+		</bean>
+	-->
+     
+     <!-- 与managerServer相关  -->
+	<!--
+		<bean id="virusGetService" parent="rmiProxyParent"> <property
+		name="serviceInterface">
+		<value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+		</property> <property name="serviceUrl">
+		<value>rmi://localhost/virusManagerService</value> </property> </bean>
+	-->
+</beans>

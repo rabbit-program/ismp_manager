@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="pm_01.htm"><span style="background:url(../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">设备</span></a></li>
+    <li class="nor" id="m"><a href="#"><span style="background:url(../../../img/SYSM/page-edit-icon.png) no-repeat; padding-left:22px;">软件</span></a></li>
+    <li class="nor" id="m"><a href="#"><span style="background:url(../../../img/SYSM/HD-icon.png) no-repeat; padding-left:22px;">硬件</span></a></li>
+     <li class="nor" id="m"><a href="#"><span style="background:url(../../../img/SYSM/computers-icon.png) no-repeat; padding-left:22px;">物理位置</span></a></li>
+    <li class="act" id="m"><a href="#"><span style="background:url(../../../img/SYSM/computer-icon.png) no-repeat; padding-left:22px;">资产查询</span></a></li>
+    <li class="nor" id="m"><a href="pm_04.htm"><span style="background:url(../../../img/SYSM/database-add-icon.png) no-repeat; padding-left:22px;">关联拓扑设备</span></a></li>
+    <li class="nor" id="m"><a href="pm_05.htm"><span style="background:url(../../../img/SYSM/calendar-date-icon.png) no-repeat; padding-left:22px;">设备历年统计</span></a></li>
+  </div>
+  <div class="contant">
+     <div class="overf h20 martop10">
+      <li id="m"><a  class="mbacka" href="#"><span class="menus10">设备查询</span></a></li>
+      <li><a  class="mback" href="pm_06.htm"><span class="menus11"> 软件查询</span></a></li>
+      <li><a  class="mback" href="pm_07.htm"><span class="menus12">硬件查询</span></a></li>
+       <li><a  class="mback" href="pm_08.htm"><span class="menus07">物理位置查询</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf">
+    <h2 class="martop10">请选择查询条件</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <span style="float:left;">设备名称<input type="text" size="8" class="input"/>
+      设备编号<input type="text" size="8" class="input"/> IP地址<input type="text" size="8" class="input"/> Mac地址<input type="text" size="8" class="input"/>
+      使用人
+      <input type="text" size="8" class="input"/>
+      </span><span style="float:left;">单位
+      <input type="text" size="8" class="input"/>
+      </span> <a href="#" class="R6" style="margin-left:12px;">搜索</a><a href="#" class="R6" style="margin-left:12px;">重置</a>
+</div>
+          <h2 class="martop8">统计列表</h2>
+          <div id="data"><table>
+            <tr>
+              <th>名称</th>
+              <th>厂商</th>
+              <th>型号</th>
+              <th>登记时间</th>
+              <th>有效期</th>
+              <th>物理位置</th>
+              <th>性能利用率</th>
+              <th>存储利用率</th>
+              <th>网络利用率</th>
+              <th>操作</th>
+            </tr>
+              <tbody>
+                <tr>
+                  <td>warve</td>
+                  <td>CISCO</td>
+                  <td>型号</td>
+                  <td>2001-12-05</td>
+                  <td>有效期</td>
+                  <td>物理位置</td>
+                  <td>80%</td>
+                  <td>20%</td>
+                  <td>3%</td>
+                  <td><a href="pm_03_01.htm" class="R6 boxy" title="查看">查看</a> <a href="#" class="R6">删除</a></td>
+                </tr>
+                <tr>
+                  <td>名称</td>
+                  <td>厂商</td>
+                  <td>型号</td>
+                  <td>登记时间</td>
+                  <td>有效期</td>
+                  <td>物理位置</td>
+                  <td>性能利用率</td>
+                  <td>存储利用率</td>
+                  <td>网络利用率</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <div  class="Height_t">
+             <ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>        
+    </ul>
+    </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../js/comm/other/tablelink.js"></script>
+</html>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/3596/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/event
+END
+UDPServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3333/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/event/UDPServer.java
+END
+EventModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3334/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/event/EventModel.java
+END
+UDPClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3596/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/event/UDPClient.java
+END
+EventModelParse.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3596/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/event/EventModelParse.java
+END

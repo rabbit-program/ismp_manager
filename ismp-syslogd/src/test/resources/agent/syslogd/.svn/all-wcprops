@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code2/!svn/ver/938/trunk/ismp-syslogd/src/test/resources/agent/syslogd
+END
+applicationContext-syslogd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/938/trunk/ismp-syslogd/src/test/resources/agent/syslogd/applicationContext-syslogd.xml
+END

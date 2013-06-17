@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software
+END
+addSoft.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/addSoft.jsp
+END
+leftFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/leftFrame.jsp
+END
+SoftFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/SoftFrame.jsp
+END
+asstSoft.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/asstSoft.jsp
+END
+softCancelRelating.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/softCancelRelating.jsp
+END
+updateSoft.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/updateSoft.jsp
+END
+softRelating.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/softRelating.jsp
+END
+showSoftPart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/software/showSoftPart.jsp
+END

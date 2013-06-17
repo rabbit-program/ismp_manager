@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1435/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/dao/lm/dLog
+END
+SysLogSourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1247/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/dao/lm/dLog/SysLogSourceDao.java
+END
+PcSourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1316/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/dao/lm/dLog/PcSourceDao.java
+END
+SnmpTrapSourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/1414/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/dao/lm/dLog/SnmpTrapSourceDao.java
+END
+FtpSourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/951/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/dao/lm/dLog/FtpSourceDao.java
+END

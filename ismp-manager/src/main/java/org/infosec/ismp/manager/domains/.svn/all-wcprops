@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/3595/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains
+END
+DomainManagerComp.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1724/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains/DomainManagerComp.java
+END
+StatusType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3091/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains/StatusType.java
+END
+StatusComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2445/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains/StatusComponent.java
+END
+DomainComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/3595/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains/DomainComponent.java
+END
+DomainLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/2789/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/domains/DomainLocator.java
+END

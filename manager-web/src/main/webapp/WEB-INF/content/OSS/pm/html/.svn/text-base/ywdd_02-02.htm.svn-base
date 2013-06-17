@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+  <li class="act" id="m"><a href="#"><span style="background:url(../../../../../img/comm/other/013.gif) no-repeat; padding-left:22px;">值班管理</span></a></li>
+    
+    <li class="nor"><a href="../../klbm/html/zsk_01.html"><span style="background:url(../../../../../img/comm/other/027.gif) no-repeat; padding-left:22px;">知识库</span></a></li>
+        <li class="nor"><a href="#"><span style="background:url(../../../../../img/comm/other/062.gif) no-repeat; padding-left:22px;">管理操作</span></a></li>
+    <li class="nor"><a href="#"><span style="background:url(../../../../../img/comm/other/379.gif) no-repeat; padding-left:22px;">运维管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div class="overf h20 martop10"> 
+      <li><a  class="mback" href="pm_03.htm"><span class="menus11">当班人员</span></a></li>
+      <li><a  class="mbacka" href="#"><span class="menus12">排班管理</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf">
+    
+    <h2 class="martop10">排班列表</h2>
+      <div id="data" class="greenborder overf pad1" >
+        <form action="" method="post" enctype="multipart/form-data" name="f1" id="f1">
+          <table width="100%" id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                 <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">委办局<span class="webdings"></span></th>
+                <td colspan="6"><label for="textfield"></label>
+                  <select name="select" id="select">
+                    <option>==委办局==</option>
+                </select></td>
+              </tr>
+              <tr>
+                <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">时间<span class="webdings"></span></th>
+                <td colspan="6"><select name="select2" id="select2">
+                  <option>2010-10-10</option>
+                </select>
+                —
+                <select name="select3" id="select3">
+                  <option>2010-10-10</option>
+                </select></td>
+              </tr>
+              <tr>
+             <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">人员指定<span class="webdings"></span></th>
+                <td colspan="6"><select name="select4" id="select4">
+                  <option>== 人 员 ==</option>
+                </select></td>
+              </tr>
+              <tr>
+                 <th width="18%" rowspan="3" style="cursor:pointer" onclick="sortTable('senfe',0);">&nbsp;</th>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image18" width="12" height="12" border="0" id="Image18" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image1" width="12" height="12" border="0" id="Image1" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image21" width="12" height="12" border="0" id="Image21" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image22" width="12" height="12" border="0" id="Image22" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image23" width="12" height="12" border="0" id="Image23" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image24','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image24" width="12" height="12" border="0" id="Image24" /></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image210','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image210" width="12" height="12" border="0" id="Image210" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image29" width="12" height="12" border="0" id="Image29" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image28','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image28" width="12" height="12" border="0" id="Image28" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image27','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image27" width="12" height="12" border="0" id="Image27" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image25','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image25" width="12" height="12" border="0" id="Image25" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image26','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image26" width="12" height="12" border="0" id="Image26" /></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image211','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image211" width="12" height="12" border="0" id="Image211" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image212','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image212" width="12" height="12" border="0" id="Image212" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image213','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image213" width="12" height="12" border="0" id="Image213" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image214','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image214" width="12" height="12" border="0" id="Image214" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image215','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image215" width="12" height="12" border="0" id="Image215" /></a></td>
+                  </tr>
+                </table></td>
+                <td><table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="73" align="center">人员姓名</td>
+                    <td width="18"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image216','','../../../../../img/comm/other/110.gif',1)"><img src="../../../../../img/comm/other/109.gif" name="Image216" width="12" height="12" border="0" id="Image216" /></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <th width="18%" style="cursor:pointer" onclick="sortTable('senfe',0);">值班<span class="webdings"></span></th>
+                <td colspan="6"><textarea name="textfield" cols="100%" 
+ rows="5" id="textfield"  >详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内</textarea></td>
+              </tr>
+            </thead>
+          </table>
+        </form>
+    </div>
+      <div>
+    <ul id="page">
+    <li><a href="#" class="R6 R7 boxy" title="添加">重置</a></li>
+        <li><a href="#" class="R6 R7 boxy" title="添加">确认</a></li>
+  </ul>
+  </div>
+      <br />
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../js/comm/other/tablelink.js"></script>
+</html>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/2880/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao
+END
+LinkDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/LinkDao.java
+END
+SNMPDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/SNMPDao.java
+END
+DeviceModelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/DeviceModelDao.java
+END
+DatabaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/DatabaseDao.java
+END
+TopoNodeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2880/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/TopoNodeDao.java
+END
+SensorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/SensorDao.java
+END
+TopoDomainDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2880/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/TopoDomainDao.java
+END
+TopoNodeTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/2581/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/TopoNodeTypeDao.java
+END
+TradeMarkDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2082/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/TM/manager/dao/TradeMarkDao.java
+END

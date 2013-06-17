@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <!-- 
+    <form-bean name="virusClientsORMForm" 
+                type="edu.sjtu.infosec.ismp.manager.virusManager.web.form.VirusClientsORMForm" />
+    -->
+  </form-beans>
+  
+  
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  
+  <!-- action -->
+  <action-mappings>
+  	<!--
+    <action 
+        path="/virusMappedAction"
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        attribute="virusClientsORMForm" 
+        name="virusClientsORMForm"
+        validate="false" 
+        scope="request" 
+        parameter="method">
+        <forward name="clientQuery"
+         		path="/WEB-INF/jsp/virusManager/virusClients/show/virusClientsMapping.jsp" /> 
+    </action>
+    -->
+  </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

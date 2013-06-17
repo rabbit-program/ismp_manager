@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model
+END
+Device.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/954/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/Device.java
+END
+AssetDeviceVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2618/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetDeviceVO.java
+END
+AssetRawAvailabilityBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetRawAvailabilityBO.java
+END
+AssetMonthlyAvailabilityBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetMonthlyAvailabilityBO.java
+END
+AssetMonthlyAvailabilityForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetMonthlyAvailabilityForComm.java
+END
+AssetChangeLogBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetChangeLogBO.java
+END
+AssetSoftwareBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetSoftwareBO.java
+END
+AssetSoftwareForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetSoftwareForComm.java
+END
+AssetHardwareBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetHardwareBO.java
+END
+AssetDailyAvailabilityBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetDailyAvailabilityBO.java
+END
+AssetToSoftwareBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToSoftwareBO.java
+END
+AssetHardwareForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetHardwareForComm.java
+END
+AssetDeviceBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetDeviceBO.java
+END
+AssetDailyAvailabilityForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetDailyAvailabilityForComm.java
+END
+AssetToSoftwareForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToSoftwareForComm.java
+END
+AssetToHardwareBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToHardwareBO.java
+END
+AssetDeviceForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetDeviceForComm.java
+END
+AssetToHardwareForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToHardwareForComm.java
+END
+AssetPositionBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetPositionBO.java
+END
+DeviceChartVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/DeviceChartVO.java
+END
+AssetPositionForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetPositionForComm.java
+END
+AssetToPositionBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2908/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToPositionBO.java
+END
+AssetToPositionForComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/model/AssetToPositionForComm.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/ping
+END
+applicationContext-ping.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3115/trunk/ismp-manager/src/main/resources/ping/applicationContext-ping.xml
+END
+applicationContext-ping-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/ping/applicationContext-ping-rmi.xml
+END

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <!-- 
+    <bean id="killResultTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.dao.impl.KillResultTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    -->
+<!--值班管理-->
+    <!--排班记录-->
+        <bean id="dutyScheduleDao"
+            class="edu.sjtu.infosec.ismp.manager.OSS.pm.dao.impl.DutyScheduleDaoImpl">
+            <property name="sessionFactory" ref="sessionFactory" />
+        </bean>
+    <!--值班人员-->
+        <bean id="rosterDao"
+            class="edu.sjtu.infosec.ismp.manager.OSS.pm.dao.impl.RosterDaoImpl">
+            <property name="sessionFactory" ref="sessionFactory" />
+        </bean>
+     <!--投诉电话-->
+         <bean id="complaintDao"  
+             class="edu.sjtu.infosec.ismp.manager.OSS.pm.dao.impl.ComplaintDaoImpl">
+           <property name="sessionFactory" ref="sessionFactory" />
+         </bean>
+<!--运维知识库-->
+	<!--知识库-->
+	    <bean id="ossKnowledgeDao"
+	        class="edu.sjtu.infosec.ismp.manager.OSS.klbm.dao.impl.OssKnowledgeBaseDaoImpl">
+	        <property name="sessionFactory" ref="sessionFactory" />
+	    </bean>
+<!--安全管理操作审计-->
+<!--运维工单-->
+        <!-- 客户端问题Dao -->
+        <bean id="clientQuestionDao"
+            class="edu.sjtu.infosec.ismp.manager.OSS.wom.dao.impl.ClientQuestionDaoImpl">
+            <property name="sessionFactory" ref="sessionFactory" />
+        </bean>
+        <!-- 派工单Dao -->
+          <bean id="workOrderDao"
+            class="edu.sjtu.infosec.ismp.manager.OSS.wom.dao.impl.WorkOrderDaoImpl">
+            <property name="sessionFactory" ref="sessionFactory" />
+        </bean>
+</beans>

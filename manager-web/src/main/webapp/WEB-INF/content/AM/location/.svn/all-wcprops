@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location
+END
+room_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3297/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/room_add.jsp
+END
+canceldeviceJion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/canceldeviceJion.jsp
+END
+position_del.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3258/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/position_del.jsp
+END
+delLocation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3258/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/delLocation.jsp
+END
+delRomm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3258/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/delRomm.jsp
+END
+room_del.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3258/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/room_del.jsp
+END
+updateDevice.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/updateDevice.jsp
+END
+leftFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/2779/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/leftFrame.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/index.jsp
+END
+delHouse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/delHouse.jsp
+END
+LocationToasset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/LocationToasset.jsp
+END
+position_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3297/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/position_add.jsp
+END
+LocationMain.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/LocationMain.jsp
+END
+deviceJion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3499/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/deviceJion.jsp
+END
+addRomm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3258/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/addRomm.jsp
+END
+LocationFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/location/LocationFrame.jsp
+END

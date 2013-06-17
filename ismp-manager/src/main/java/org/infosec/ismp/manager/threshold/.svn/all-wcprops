@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3679/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold
+END
+ThresholdLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2910/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold/ThresholdLoader.java
+END
+ThresholdAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3655/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold/ThresholdAlert.java
+END
+ThresholdConfigImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3665/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold/ThresholdConfigImpl.java
+END
+ThresholdAlertLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3032/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold/ThresholdAlertLocator.java
+END
+Threshold.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/2910/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/threshold/Threshold.java
+END

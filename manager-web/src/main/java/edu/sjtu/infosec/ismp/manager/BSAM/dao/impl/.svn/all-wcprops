@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3553/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl
+END
+MachineCabinetDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2840/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineCabinetDaoImpl.java
+END
+MachineCabinetSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3553/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineCabinetSituationDaoImpl.java
+END
+ColorThresholdDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2460/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/ColorThresholdDaoImpl.java
+END
+SecurityAreaDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2840/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/SecurityAreaDaoImpl.java
+END
+SecurityAreaSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/3553/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/SecurityAreaSituationDaoImpl.java
+END
+MachineRoomDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2840/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineRoomDaoImpl.java
+END
+MachineRoomSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/3553/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineRoomSituationDaoImpl.java
+END
+MachineDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2460/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineDaoImpl.java
+END
+MachineSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/3553/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/dao/impl/MachineSituationDaoImpl.java
+END

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor"><a href="djbh_01.html"><span style="background:url(../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">法律法规</span></a></li>
+    <li class="nor"><a href="djbh_02.html"><span style="background:url(../../../../img/comm/other/map01.png) no-repeat; padding-left:22px;">知识库</span></a></li>
+       <li class="act" id="m"><a href="#"><span style="background:url(../../../../img/comm/other/map01.png) no-repeat; padding-left:22px;">网络等保状态</span></a></li>
+  </div>
+  <div class="contant">
+    <h2>选择委办局</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <div class="pad3">部门:
+        <select name="select">
+          <option>==委办局==</option>
+        </select>
+        <input class="submit" type="button" value="确定" />
+           <input class="submit" type="button" value="确定" />     
+      </div>      
+    </div>
+        <h2 class="martop8">饼状图</h2>
+<div class="greenborder greenback overf pad3 " >
+  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center"><img src="bt.png" width="150" height="92" /></td>
+      <td align="center"><img src="bt.png" width="150" height="92" /></td>
+    </tr>
+  </table>
+</div>
+    <h2 class="martop8">查看列表</h2>
+       <ul id="page">
+    <li><a href="djbh_07.html" class="R6 R7 boxy" title="添加">添加</a></li>
+  </ul>
+    <div id="data" class="greenborder overf pad1 " >
+      <form name="f1" id="f1" action="" method="post">
+        <table id="senfe" sortcol="-1">
+          <thead>
+            <tr>
+              <th width="19%" style="cursor:pointer" onclick="sortTable('senfe',0);">网络名称<span class="webdings"></span></th>
+              <th width="35%" style="cursor:pointer" onclick="sortTable('senfe',0);">描述</th>
+              <th width="13%" style="cursor:pointer" onclick="sortTable('senfe',0);">等级</th>
+              <th width="21%">状态</th>
+              <th width="12%">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> 6629 </td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>安全威胁强度</td>
+              <td class="tdnowrap"><a href="#">删除</a>| <a href="@">修改</a></td>
+            </tr>
+            <tr>
+              <td> 6429 </td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td> 病毒感染 </td>
+              <td><span class="tdnowrap"><a href="#">删除</a>| <a href="@">修改</a></span></td>
+            </tr>
+            <tr>
+              <td>0032</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><span class="tdnowrap">安全威胁强度</span></td>
+              <td><span class="tdnowrap"><a href="#">删除</a>| <a href="@">修改</a></span></td>
+            </tr>
+            <tr>
+              <td>2589</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><span class="tdnowrap">安全威胁强度</span></td>
+              <td><span class="tdnowrap"><a href="#">删除</a>| <a href="@">修改</a></span></td>
+            </tr>
+            <tr>
+              <td> 2629 </td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td> 病毒感染 </td>
+              <td><span class="tdnowrap"><a href="#">删除</a>| <a href="@">修改</a></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+       <div class="martop8 Height_p">
+    <ul id="page">
+      <li><a class="first" href="#"></a></li>
+      <li><a class="pre" href="#"></a></li>
+      <li><a class="next" href="#"></a></li>
+      <li><a class="last" href="#"></a></li>
+      <li>共 5 页 跳至
+        <input type="text" size="2" class="input"/>
+        &nbsp; </li>
+     <li><a class="R6" href="#">GO</a></li> 
+    </ul>
+</div>
+    </div>
+
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../js/comm/other/tablelink.js"></script>
+</html>

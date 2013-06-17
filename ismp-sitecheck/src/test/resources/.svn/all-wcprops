@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code2/!svn/ver/3097/trunk/ismp-sitecheck/src/test/resources
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/1374/trunk/ismp-sitecheck/src/test/resources/applicationContext.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/code2/!svn/ver/3097/trunk/ismp-sitecheck/src/test/resources/log4j.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/1374/trunk/ismp-sitecheck/src/test/resources/application.properties
+END
+applicationContext-jms.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3097/trunk/ismp-sitecheck/src/test/resources/applicationContext-jms.xml
+END

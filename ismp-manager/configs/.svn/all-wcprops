@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/code2/!svn/ver/2777/trunk/ismp-manager/configs
+END
+trap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code2/!svn/ver/2777/trunk/ismp-manager/configs/trap.xml
+END
+trap_rule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/code2/!svn/ver/2777/trunk/ismp-manager/configs/trap_rule.xml
+END

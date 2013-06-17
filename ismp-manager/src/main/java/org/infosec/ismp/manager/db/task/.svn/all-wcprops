@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/2385/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/task
+END
+AgentAddDatabaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2204/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/task/AgentAddDatabaseTask.java
+END
+AgentRemoveDatabaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2385/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/task/AgentRemoveDatabaseTask.java
+END
+DatabaseNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2385/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/task/DatabaseNode.java
+END

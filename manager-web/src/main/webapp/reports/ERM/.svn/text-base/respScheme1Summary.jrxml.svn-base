@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="respScheme1Summary"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="535"
+		 pageHeight="802"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="schemeId" isForPrompting="false" class="java.lang.Integer"/>
+	<queryString language="hql"><![CDATA[select id as id, 
+	name as name, 
+	domain.id as domainId, 
+	domain.domainName as domainName, 
+	sysName as sysName, 
+	refs as refs, 
+	state as state, 
+	sysDesc as sysDesc, 
+	touchBy as touchBy, 
+	expect as expect, 
+	createTime as createTime, 
+	updateTime as updateTime 
+from RespInfoBO 
+where id=$P{schemeId}]]></queryString>
+
+	<field name="id" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="domainId" class="java.lang.Integer"/>
+	<field name="domainName" class="java.lang.String"/>
+	<field name="sysName" class="java.lang.String"/>
+	<field name="refs" class="java.lang.String"/>
+	<field name="state" class="java.lang.Integer"/>
+	<field name="sysDesc" class="java.lang.String"/>
+	<field name="touchBy" class="java.lang.String"/>
+	<field name="expect" class="java.lang.String"/>
+	<field name="createTime" class="java.util.Date"/>
+	<field name="updateTime" class="java.util.Date"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="30"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="50"
+						y="0"
+						width="485"
+						height="30"
+						key="staticText-1"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[介绍]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-5"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[1]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="772"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="75"
+						key="textField-1"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["    本文档为针对"+$F{sysName}+"的应急预案。其目的是通过该预案来应对针对该系统指定的信息安全威胁，优化在发生信息安全事故之后，组织的应急响应过程。本应急预案及其组成部分将发布给对应的受众。应急响应过程的参与者及其它相关人员，须要确保对该预案内容给予足够的重视，并清楚认识自己的责任和使命。对应的防御性措施和资源在信息系统安全运维层面需要得到保证。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="75"
+						width="535"
+						height="45"
+						key="textField-2"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["     鉴于本应急预案涉及到组织信息系统内部的资料和安全管理内容，资料内容敏感，请勿在应急预案受众范围之外散播。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="120"
+						width="535"
+						height="45"
+						key="textField-3"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["     本应急预案主要针对网络信息系统层面的信息安全威胁制定。任何时间，员工的安全应该放在第一位，这里员工撤离问题不在本预案覆盖范围之内；另外，本预案不针对自然灾害（地震、火灾，水灾等）威胁进行规划。"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="165"
+						width="535"
+						height="75"
+						key="textField-4"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["     本应急预案为应急响应行为的激活和系统的恢复提供指导。但需要声明的是本预案是应急响应工作开展的必要条件而非充分条件。应急响应工作是一个多阶段的任务，涉及到应急响应策略制定，预案研发，防御性措施实施，恢复性措施实施，预案培训、演练、测试和运维改进等内容。"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="50"
+						y="240"
+						width="485"
+						height="30"
+						key="staticText-2"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[目标]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="270"
+						width="535"
+						height="60"
+						key="textField-5"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["    本预案的目的是，帮助"+$F{sysName}+"应对突如其来的安全事故带来的超出允许限度的系统宕机，使得其关键业务过程及其信息系统可以高效地恢复运行。本应急预案在评估"+$F{sysName}+"的应急需求的基础上，提供对应信息系统由中断到高效恢复的应急指导。"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="50"
+						y="330"
+						width="485"
+						height="30"
+						key="staticText-3"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[范围]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="360"
+						width="535"
+						height="30"
+						key="textField-6"
+						stretchType="RelativeToBandHeight"
+						isPrintWhenDetailOverflows="true"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["    本预案所针对的目标系统为"+$F{domainName}+"的"+$F{sysName}+"，具体描述详见第3部分。"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="50"
+						y="390"
+						width="485"
+						height="30"
+						key="staticText-4"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[预案说明]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="420"
+						width="535"
+						height="45"
+						key="textField-7"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["    本应急预案文档由两大部分组成，预案及其附录。其中预案内容为预案本身的目标，范围和组织结构，流程，阶段等主体内容，多为静态信息。附录部分则为含有文档，BIA结果，SLA，联系方式等内容，多为需要维护的动态信息。"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="240"
+						width="50"
+						height="30"
+						key="staticText-6"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[1.1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="330"
+						width="50"
+						height="30"
+						key="staticText-7"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[1.2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="390"
+						width="50"
+						height="30"
+						key="staticText-8"
+						stretchType="RelativeToBandHeight"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[1.3]]></text>
+				</staticText>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

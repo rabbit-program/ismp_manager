@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl
+END
+MachineCabinetDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1059/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineCabinetDaoImpl.java
+END
+MachineCabinetSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1052/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineCabinetSituationDaoImpl.java
+END
+ColorThresholdDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1008/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/ColorThresholdDaoImpl.java
+END
+SecurityAreaDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3544/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/SecurityAreaDaoImpl.java
+END
+SecurityAreaSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/1032/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/SecurityAreaSituationDaoImpl.java
+END
+MachineRoomDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1141/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineRoomDaoImpl.java
+END
+MachineRoomSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1052/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineRoomSituationDaoImpl.java
+END
+SituationEventDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1209/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/SituationEventDaoImpl.java
+END
+MachineDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1036/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineDaoImpl.java
+END
+MachineSituationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1052/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/MachineSituationDaoImpl.java
+END
+RecordIndexDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/982/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/dao/impl/RecordIndexDaoImpl.java
+END

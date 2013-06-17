@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2368/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/servicecheck
+END
+ServiceCheckResultDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/2337/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/servicecheck/ServiceCheckResultDao.java
+END
+ServiceCheckMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/2368/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/servicecheck/ServiceCheckMessageListener.java
+END
+ServiceCheckResultService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2367/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/servicecheck/ServiceCheckResultService.java
+END

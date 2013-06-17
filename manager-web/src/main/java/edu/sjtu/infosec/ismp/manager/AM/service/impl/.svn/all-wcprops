@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3423/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl
+END
+AssetDailyAvailabilityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetDailyAvailabilityServiceImpl.java
+END
+AssetHardwareServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetHardwareServiceImpl.java
+END
+AssetToSoftwareServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetToSoftwareServiceImpl.java
+END
+AssetDeviceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/3423/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetDeviceServiceImpl.java
+END
+AssetToHardwareServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetToHardwareServiceImpl.java
+END
+AssetPositionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetPositionServiceImpl.java
+END
+AssetRawAvailabilityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetRawAvailabilityServiceImpl.java
+END
+AssetMonthlyAvailabilityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetMonthlyAvailabilityServiceImpl.java
+END
+AssetChangeLogServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetChangeLogServiceImpl.java
+END
+AssetToPositionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/3248/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetToPositionServiceImpl.java
+END
+AssetSoftwareServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2772/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/service/impl/AssetSoftwareServiceImpl.java
+END

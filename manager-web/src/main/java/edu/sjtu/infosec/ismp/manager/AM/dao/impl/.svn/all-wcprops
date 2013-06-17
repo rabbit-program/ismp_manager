@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2864/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl
+END
+AssetSoftwareDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetSoftwareDaoImpl.java
+END
+AssetDailyAvailabilityDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetDailyAvailabilityDaoImpl.java
+END
+AssetHardwareDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetHardwareDaoImpl.java
+END
+AssetToSoftwareDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetToSoftwareDaoImpl.java
+END
+AssetDeviceDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/2864/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetDeviceDaoImpl.java
+END
+AssetToHardwareDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetToHardwareDaoImpl.java
+END
+AssetPositionDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetPositionDaoImpl.java
+END
+AssetRawAvailabilityDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetRawAvailabilityDaoImpl.java
+END
+AssetMonthlyAvailabilityDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetMonthlyAvailabilityDaoImpl.java
+END
+AssetChangeLogDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetChangeLogDaoImpl.java
+END
+AssetToPositionDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/dao/impl/AssetToPositionDaoImpl.java
+END

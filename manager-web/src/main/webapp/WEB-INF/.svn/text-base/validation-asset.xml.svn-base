@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN" "validator_1_0.dtd" >
+<form-validation>
+    <formset>      
+              <!-- 验证设备FORM 基本的不能为空-->
+        <form name="assetForm">
+            <field property="assetBo.sn" depends="required,maxlength">
+                <arg0 name="required" key="assetBo.sn" />
+                <arg0 name="maxlength" key="assetBo.sn"/>
+                <!-- 长度不能大于30 -->
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>30</var-value>
+                </var>
+            </field>
+            <field property="assetBo.name" depends="required,maxlength">
+                <arg0 name="required" key="assetBo.name" />
+                <arg1 name="maxlength" key="assetBo.name"/>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>15</var-value>
+                </var>
+            </field>
+            <field property="assetBo.assetType" depends="required">
+                <arg0 name="required" key="assetBo.assetType" />
+            </field>
+            <field property="assetBo.ip" depends="maxlength">
+                <arg0 name="required" key="assetBo.ip" />
+                <arg0 name="maxlength" key="assetBo.ip"/>
+                <!-- 长度不能大于30 -->
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>30</var-value>
+                </var>
+            </field>
+           
+            <field property="assetBo.manufacturer" depends="required">
+                <arg0 name="required" key="assetBo.manufacturer" />
+            </field>
+            <field property="assetBo.description" depends="required">
+                <arg0 name="required" key="assetBo.description" />
+            </field>
+            <field property="assetBo.user" depends="required">
+                <arg0 name="required" key="assetBo.user" />
+            </field>
+            <field property="assetBo.telephone" depends="required">
+                <arg0 name="required" key="assetBo.telephone" />
+            </field>
+            <field property="assetBo.unit" depends="required">
+                <arg0 name="required" key="assetBo.unit" />
+            </field>
+            <field property="assetBo.department" depends="required">
+                <arg0 name="required" key="assetBo.department" />
+            </field>
+            <field property="assetBo.status" depends="required,integer">
+                <arg0 name="required" key="assetBo.status" />
+                <arg0 name="integer" key="assetBo.status"/>
+            </field>
+            <field property="stocktimepage" depends="required">
+                <arg0 name="required" key="assetBo.stockTime" />
+            </field>
+            <field property="assetBo.validityPeriod" depends="required,integer">
+                <arg0 name="required" key="assetBo.validityPeriod" />
+                <arg0 name="integer" key="assetBo.validityPeriod"/>
+            </field>
+            <field property="registrationtimepage" depends="required">
+                <arg0 name="required" key="assetBo.registrationTime" />
+            </field>
+            <field property="assetBo.priority" depends="required,integer">
+                <arg0 name="required" key="assetBo.priority" />
+                <arg0 name="integer" key="assetBo.priority"/>
+            </field>
+        </form>
+              
+            
+                          <!-- 验证物理位置FORM 基本的不能为空-->
+        <form name="locationForm">
+            <field property="assetBo.sn" depends="required,maxlength">
+                <arg0 name="required" key="assetBo.sn" />
+                <arg0 name="maxlength" key="assetBo.sn"/>
+                <!-- 长度不能大于30 -->
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>30</var-value>
+                </var>
+            </field>
+            <field property="assetBo.name" depends="required,maxlength">
+                <arg0 name="required" key="assetBo.name" />
+                <arg1 name="maxlength" key="assetBo.name"/>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>15</var-value>
+                </var>
+            </field>
+            <field property="assetBo.assetType" depends="required">
+                <arg0 name="required" key="assetBo.assetType" />
+            </field>
+            <field property="assetBo.ip" depends="required,maxlength">
+                <arg0 name="required" key="assetBo.ip" />
+                <arg0 name="maxlength" key="assetBo.ip"/>
+                <!-- 长度不能大于30 -->
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>30</var-value>
+                </var>
+            </field>
+            <field property="assetBo.mac" depends="required">
+                <arg0 name="required" key="assetBo.mac" />
+            </field>
+            <field property="assetBo.manufacturer" depends="required">
+                <arg0 name="required" key="assetBo.manufacturer" />
+            </field>
+            <field property="assetBo.description" depends="required">
+                <arg0 name="required" key="assetBo.description" />
+            </field>
+            <field property="assetBo.user" depends="required">
+                <arg0 name="required" key="assetBo.user" />
+            </field>
+            <field property="assetBo.telephone" depends="required">
+                <arg0 name="required" key="assetBo.telephone" />
+            </field>
+            <field property="assetBo.unit" depends="required">
+                <arg0 name="required" key="assetBo.unit" />
+            </field>
+            <field property="assetBo.department" depends="required">
+                <arg0 name="required" key="assetBo.department" />
+            </field>
+            <field property="assetBo.status" depends="required,integer">
+                <arg0 name="required" key="assetBo.status" />
+                <arg0 name="integer" key="assetBo.status"/>
+            </field>
+            <field property="stocktimepage" depends="required">
+                <arg0 name="required" key="assetBo.stockTime" />
+            </field>
+            <field property="assetBo.validityPeriod" depends="required,integer">
+                <arg0 name="required" key="assetBo.validityPeriod" />
+                <arg0 name="integer" key="assetBo.validityPeriod"/>
+            </field>
+            <field property="registrationtimepage" depends="required">
+                <arg0 name="required" key="assetBo.registrationTime" />
+            </field>
+            <field property="assetBo.priority" depends="required,integer">
+                <arg0 name="required" key="assetBo.priority" />
+                <arg0 name="integer" key="assetBo.priority"/>
+            </field>
+        </form>
+            
+              
+               <!-- 验证软件Form表单 基本的不能为空-->
+        <form name="softForm">
+            <field property="softbo.softwareType" depends="required">
+                <arg0 name="required" key="softbo.softwareType" />
+            </field>
+            <field property="softbo.name" depends="required">
+                <arg0 name="required" key="softbo.name" />
+            </field>
+            <field property="softbo.manufacturer" depends="required">
+                <arg0 name="required" key="softbo.manufacturer" />
+            </field>
+            <field property="softbo.version" depends="required">
+                <arg0 name="required" key="softbo.version" />
+            </field>
+            <field property="softbo.description" depends="required">
+                <arg0 name="required" key="softbo.description" />
+            </field>
+            <field property="softbo.user" depends="required">
+                <arg0 name="required" key="softbo.user" />
+            </field>
+            <field property="softbo.telephone" depends="required">
+                <arg0 name="required" key="softbo.telephone" />
+            </field>
+            <field property="softbo.unit" depends="required">
+                <arg0 name="required" key="softbo.unit" />
+            </field>
+            <field property="softbo.department" depends="required">
+                <arg0 name="required" key="softbo.department" />
+            </field>
+            <field property="softbo.status" depends="required,integer">
+                <arg0 name="required" key="softbo.status" />
+                <arg0 name="integer" key="softbo.status"/>
+            </field>
+            <field property="stocktimepage" depends="required">
+                <arg0 name="required" key="stocktimepage" />
+            </field>
+            <field property="softbo.validityPeriod" depends="required,integer">
+                <arg0 name="required" key="softbo.validityPeriod" />
+                <arg0 name="integer" key="softbo.validityPeriod"/>
+            </field>
+            <field property="registrationtimepage" depends="required">
+                <arg0 name="required" key="registrationtimepage" />
+            </field>            
+        </form>
+        
+        <!-- 硬件的Form表单验证 -->
+                <form name="hardwareForm">
+            <field property="hardware.hardwareType" depends="required">
+                <arg0 name="required" key="hardware.hardwareType" />
+            </field>
+            <field property="hardware.name" depends="required">
+                <arg0 name="required" key="hardware.name" />
+            </field>
+            <field property="hardware.manufacturer" depends="required">
+                <arg0 name="required" key="hardware.manufacurer" />
+            </field>
+            <field property="hardware.version" depends="required">
+                <arg0 name="required" key="hardware.version" />
+            </field>
+            <field property="hardware.capacity" depends="long,required">
+                <arg0 name="required" key="hardware.capacity"/>
+                <arg0 name="long" key="hardware.capacity"/>
+            </field>
+            <field property="hardware.description" depends="required">
+                <arg0 name="required" key="hardware.description" />
+            </field>
+            <field property="hardware.status" depends="required,integer">
+                <arg0 name="required" key="hardware.status" />
+                <arg0 name="integer" key="hardware.status"/>
+            </field>
+            <field property="stocktimepage" depends="required">
+                <arg0 name="required" key="stocktimepage" />
+            </field>
+            <field property="hardware.validityPeriod" depends="required,integer">
+                <arg0 name="required" key="hardware.validityPeriod" />
+                <arg0 name="integer" key="hardware.validityPeriod"/>
+            </field>
+            <field property="registrationtimepage" depends="required">
+                <arg0 name="required" key="registrationtimepage" />
+            </field>            
+        </form>
+    </formset>
+</form-validation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<description>jms的相关配置</description>
+
+	<!-- -->
+	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="${jms.broker_url}"></property>
+	</bean>
+
+	<bean id="cachingconnectionFactory"
+		class="org.springframework.jms.connection.CachingConnectionFactory">
+		<property name="targetConnectionFactory" ref="connectionFactory"></property>
+		<property name="sessionCacheSize" value="5"></property>
+	</bean>
+
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="cachingconnectionFactory"></property>
+	</bean>
+
+
+	<!-- syslog中jms相关配置 -->
+
+    <bean id="syslogQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="syslogQueue"></constructor-arg>
+    </bean>
+
+    <bean id="pingdQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="pingdQueue"></constructor-arg>
+    </bean>
+    
+    <bean id="siteCheckQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="siteCheckQueue"></constructor-arg>
+    </bean>
+    
+    <bean id="serviceCheckQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="serviceCheckQueue"></constructor-arg>
+    </bean>
+    
+    <bean id="snmpTrapQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="snmpTrapQueue"></constructor-arg>
+    </bean>
+    
+    <bean id="nestMapSnmpCollectQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="nest.map.snmp.queue"></constructor-arg>
+    </bean>
+    
+    <bean id="sqlserverCollectQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="sqlserver.queue"></constructor-arg>
+    </bean>
+    
+    <bean id="oracleCollectQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="oracle.queue"></constructor-arg>
+    </bean>
+    
+	<bean id="syslogSender" class="org.infosec.ismp.eventd.sender.ObjectJmsSender">
+		<property name="jmsTemplate" ref="jmsTemplate"></property>
+		<property name="destination" ref="syslogQueue"></property>
+	</bean>
+
+	 <bean id="sqlserverCollectQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="sqlserverCollectQueue"></property>
+         <property name="messageListener" ref="sqlserverMessageListener"></property>
+         <property name="concurrentConsumers" value="4"></property>
+    </bean>
+    
+     <bean id="oracleCollectQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="oracleCollectQueue"></property>
+         <property name="messageListener" ref="oracleMessageListener"></property>
+         <property name="concurrentConsumers" value="4"></property>
+    </bean>
+    
+	<bean id="snmpCollectQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="nestMapSnmpCollectQueue"></property>
+         <property name="messageListener" ref="snmpMessageListener"></property>
+         <property name="concurrentConsumers" value="4"></property>
+    </bean>
+        
+    <bean id="pingdQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="pingdQueue"></property>
+         <property name="messageListener" ref="pingMessageListener"></property>
+         <property name="concurrentConsumers" value="4"></property>
+    </bean>
+        
+    <bean id="siteCheckQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="siteCheckQueue"></property>
+         <property name="messageListener" ref="siteCheckMessageListener"></property>
+         <property name="concurrentConsumers" value="3"></property>
+    </bean>
+    
+    <bean id="serviceCheckQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+         <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+         <property name="destination" ref="serviceCheckQueue"></property>
+         <property name="messageListener" ref="serviceCheckMessageListener"></property>
+         <property name="concurrentConsumers" value="2"></property>
+    </bean>
+    
+    <bean id="snmpTrapQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="cachingconnectionFactory"></property>
+        <property name="destination" ref="snmpTrapQueue"></property>
+        <property name="messageListener" ref="snmpTrapMessageListener"></property>
+        <property name="concurrentConsumers" value="2"></property>
+    </bean>
+    
+    <bean id="snmpTrapMessageListener" class="org.infosec.ismp.manager.snmpTrap.SnmpTrapMessageListener"></bean>
+    <bean id="snmpMessageListener" class="org.infosec.ismp.manager.snmp.SnmpMessageListener"></bean>
+    <bean id="sqlserverMessageListener" class="org.infosec.ismp.manager.db.SqlserverMessageListener"></bean>
+    <bean id="oracleMessageListener" class="org.infosec.ismp.manager.db.OracleMessageListener"/>
+	<bean id="pingMessageListener" class="org.infosec.ismp.manager.ping.pingMessageListener"></bean>
+    <bean id="siteCheckMessageListener" class="org.infosec.ismp.manager.sitecheck.SiteCheckMessageListener"></bean>
+    <bean id="serviceCheckMessageListener" class="org.infosec.ismp.manager.servicecheck.ServiceCheckMessageListener"></bean>
+
+
+</beans>

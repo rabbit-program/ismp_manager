@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code2/!svn/ver/3696/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent
+END
+SnmpConfigFactoryInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3675/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/SnmpConfigFactoryInitializer.java
+END
+AgentResourceMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/1863/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/AgentResourceMock.java
+END
+AgentMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/3696/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/AgentMain.java
+END
+MockManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1368/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/MockManager.java
+END
+SyslogPortTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/1368/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/SyslogPortTest.java
+END
+MockAgentClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/1368/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/MockAgentClient.java
+END
+WinsensorMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3662/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/WinsensorMain.java
+END
+MemoryAgentMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/1368/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/MemoryAgentMain.java
+END
+SyslogComponentMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/1368/trunk/ismp-agent/src/main/java/org/infosec/ismp/agent/SyslogComponentMock.java
+END

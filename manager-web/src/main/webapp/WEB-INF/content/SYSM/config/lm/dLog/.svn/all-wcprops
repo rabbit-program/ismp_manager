@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3502/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog
+END
+snmpTrapSourceType.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/1404/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/snmpTrapSourceType.jsp
+END
+sysLogSourceDisplay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3722/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/sysLogSourceDisplay.jsp
+END
+pcSourceDisplay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3722/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/pcSourceDisplay.jsp
+END
+dLogConfig.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3502/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/dLogConfig.jsp
+END
+snmpTrapSourceDisplay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3722/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/snmpTrapSourceDisplay.jsp
+END
+ftpSourceDisplay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/946/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/ftpSourceDisplay.jsp
+END
+pcSensorDisplay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1304/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/pcSensorDisplay.jsp
+END
+sysLogSourceType.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1404/trunk/manager-web/src/main/webapp/WEB-INF/content/SYSM/config/lm/dLog/sysLogSourceType.jsp
+END

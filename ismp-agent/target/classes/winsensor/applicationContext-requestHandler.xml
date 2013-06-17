@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+    <bean id="registerHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.RegisterHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="hostResourceHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.HostResourceHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="windowsLogHolder" 
+        class="org.infosec.ismp.agent.winsensor.communication.services.WindowsLogHolder">
+        <property name="sensorServer" ref="sensorServer" />
+    </bean>
+    
+    <bean id="invalidHolder"
+        class="org.infosec.ismp.agent.winsensor.communication.services.InvalidHolder">
+    </bean>
+   
+    <bean id="httpServices" 
+        class="org.infosec.ismp.agent.winsensor.communication.services.WinsensorHttpServices">
+        <property name="registerHolder" ref="registerHolder" />
+        <property name="hostResourceHolder" ref="hostResourceHolder" />
+        <property name="windowsLogHolder" ref="windowsLogHolder" />
+        <property name="invalidHolder" ref="invalidHolder" />
+        <property name="registerPort">
+            <value>8090</value>
+        </property>
+        <property name="hostResourcePort">
+            <value>8060</value>
+        </property>
+        <property name="windowsLogPort">
+            <value>8070</value>
+        </property>
+    </bean>
+</beans>

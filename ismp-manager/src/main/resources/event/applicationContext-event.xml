@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="false">
+	
+	<bean id="eventReceive-remote-rmi" class="org.springframework.remoting.rmi.RmiServiceExporter">
+       <property name="service" ref="eventReceiveImpl"></property>
+       <property name ="serviceInterface" value="org.infosec.ismp.manager.rmi.event.IEventReceive"></property>
+       <property name="serviceName" value="EventReceive"></property>
+       <!-- <property name="servicePort" value="1199"></property>
+       <property name="registryPort" value="1099"></property> -->
+    </bean>
+	<bean id="eventReceiveImpl"
+        class="org.infosec.ismp.manager.server.event.eventRmiImpl.EventReceiveImpl">
+        <property name="eventRecivePipe" ref="eventRecivePipe" />
+    </bean>
+    
+    <!-- 往容器中注入通道 -->
+    <bean id="eventRecivePipe"
+        class="org.infosec.ismp.manager.server.event.eventRmiImpl.EventRecivePipe">
+    </bean>
+    
+</beans>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code2/!svn/ver/3102/trunk/ismp-manager/src/test/resources/ping
+END
+applicationContext-ping-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/2149/trunk/ismp-manager/src/test/resources/ping/applicationContext-ping-rmi-client.xml
+END
+applicationContext-snmpgetter-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3102/trunk/ismp-manager/src/test/resources/ping/applicationContext-snmpgetter-rmi-client.xml
+END

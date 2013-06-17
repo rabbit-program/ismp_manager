@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/dao
+END
+RawSyslogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/dao/RawSyslogService.java
+END
+RawSyslogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/dao/RawSyslogDao.java
+END
+SyslogParserEntityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/dao/SyslogParserEntityDao.java
+END
+SyslogParserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2292/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/syslog/dao/SyslogParserService.java
+END

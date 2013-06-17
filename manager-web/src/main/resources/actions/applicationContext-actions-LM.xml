@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- forward-->
+	<bean name="/ismp/lm/dlog/forwardAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.forwardAction"/>
+	
+	<!-- 原始SysLog -->
+	<bean name="/ismp/lm/dlog/sysLogAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.SysLogAction">
+		<property name="sysLogSer" ref="sysLogService"/>
+	</bean>
+	
+	<!-- SnmpTrap -->
+	<bean name="/ismp/lm/dlog/snmpTrapAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.SnmpTrapAction">
+		<property name="snmpTrapSourceSer" ref="snmpTrapSourceService"/>
+	</bean>
+	
+	<!-- Pc -->
+	<bean name="/ismp/lm/dlog/pcAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.PcAction">
+		<property name="pcSourceSer" ref="pcSourceService"/>
+		<property name="pcSer" ref="pcService"/>
+	</bean>
+	
+	<!-- Ftp -->
+	<bean name="/ismp/lm/dlog/ftpAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.FtpAction">
+		<property name="ftpSer" ref="ftpService"/>
+	</bean>
+	
+	<!-- SysLog 的赋值 操作  **转发-->
+	<bean name="/ismp/lm/dlog/sysLogDivSourceAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.SysLogDivSourceAction">
+	</bean>
+	
+	<!-- SnmpTrap 的赋值 操作  **转发-->
+	<bean name="/ismp/lm/dlog/snmpTrapDivSourceAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.web.actions.SnmpTrapDivSourceAction">
+	</bean>
+	
+	<!-- ...............................下面为 ** SnmpTrap日志解析 ** 模块所用..................... -->
+	<bean name="/ismp/lm/dlog/sanLingIDSAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.trapLog.web.action.SanLingIDSAction">
+		<property name="snmpTrapIDSSer">
+			<bean parent="txProxyTemplate">
+    			<property name="target">
+		    		<bean class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.trapLog.service.impl.SnmpTrapIDSServiceImpl">
+		    			<property name="snmpTrapIDSDao">
+		    				<bean class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.trapLog.dao.impl.SnmpTrapIDSDaoImpl">
+        						<property name="sessionFactory" ref="sessionFactory" />
+    						</bean>
+		    			</property>
+		    		</bean>
+    			</property>
+    		</bean>
+		</property>
+	</bean>
+	
+	
+	<!-- ...............................下面为 ** SysLog日志解析 ** 模块所用..................... -->
+	
+	<!-- HillStoneFireWall 设备 -->
+	<bean name="/ismp/lm/dlog/hillStoneFireWallAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.sysLog.web.action.HillStoneFireWallAction">
+		<property name="hillStoneFireWallService">
+			<bean parent="txProxyTemplate">
+    			<property name="target">
+		    		<bean class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.sysLog.service.impl.HillStoneFireWallServiceImpl">
+		    			<property name="hillStoneFireWallDao">
+		    				<bean class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.sysLog.dao.impl.HillStoneFireWallDaoImpl">
+        						<property name="sessionFactory" ref="sessionFactory" />
+    						</bean>
+		    			</property>
+		    		</bean>
+    			</property>
+    		</bean>
+		</property>
+	</bean>
+	
+	
+	<!-- test 设备 --> 
+	<bean name="/ismp/lm/dlog/testAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.sysLog.web.action.testAction">
+	</bean>
+	
+	<!-- 模版  
+	<bean name="/ismp/lm/dlog/testAction" class="edu.sjtu.infosec.ismp.manager.LM.dLog.analysisLog.sysLog.web.action.testAction">
+		<property name="sysLogSourceService">
+			<bean parent="txProxyTemplate">
+    			<property name="target">
+		    		<bean class="edu.sjtu.infosec.ismp.manager.SYSM.config.service.impl.SysLogSourceServiceImpl">
+		    			<property name="sysLogSourceDao">
+		    				<bean class="edu.sjtu.infosec.ismp.manager.SYSM.config.dao.impl.SysLogSourceDaoImpl">
+        						<property name="sessionFactory" ref="sessionFactory" />
+    						</bean>
+		    			</property>
+		    		</bean>
+    			</property>
+    		</bean>
+		</property>
+	</bean>
+	-->
+	
+	<!-- ...............................下面为平台日志模块所用.................................. -->
+	<bean name="/ismp/lm/pflog/systemLogAction" class="edu.sjtu.infosec.ismp.manager.LM.pfLog.web.actions.SystemLogAction">
+		<property name="systemlogService" ref="systemlogService"/>
+	</bean>
+	
+	
+	<!-- ...............................下面为系统配置模块所用.................................. -->
+	
+	<!-- SysLog Source-->
+	<bean name="/ismp/domain/local/sysm/config/lm/dlog/sysLogConfigAction" class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.lm.dLog.SysLogConfigAction">
+		<property name="sysLogSourceSer" ref="sysLogSourceService"/>
+		<property name="topoWebService" ref="topoWebService"/>
+		<property name="logService" ref="systemlogService"/>
+	</bean>
+	
+	<!-- SnmpTrap Source-->
+	<bean name="/ismp/domain/local/sysm/config/lm/dlog/snmpTrapConfigAction" class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.lm.dLog.SnmpTrapConfigAction">
+		<property name="snmpTrapSourceSer" ref="snmpTrapSourceService"/>
+		<property name="topoWebService" ref="topoWebService"/>
+		<property name="logService" ref="systemlogService"/>
+	</bean>
+	
+	<!-- Pc Source-->
+	<bean name="/ismp/domain/local/sysm/config/lm/dlog/pcConfigAction" class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.lm.dLog.PcConfigAction">
+		<property name="pcSourceSer" ref="pcSourceService"/>
+		<property name="logService" ref="systemlogService"/>
+	</bean>
+	
+	<!-- Ftp Source-->
+	<bean name="/ismp/domain/local/sysm/config/lm/dlog/ftpConfigAction" class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.lm.dLog.FtpConfigAction">
+		<property name="ftpSourceSer" ref="ftpSourceService"/>
+	</bean>
+	
+</beans>

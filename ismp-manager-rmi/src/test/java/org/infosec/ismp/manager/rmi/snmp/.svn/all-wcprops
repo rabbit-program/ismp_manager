@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3132/trunk/ismp-manager-rmi/src/test/java/org/infosec/ismp/manager/rmi/snmp
+END
+SnmpAddTaskMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/3132/trunk/ismp-manager-rmi/src/test/java/org/infosec/ismp/manager/rmi/snmp/SnmpAddTaskMock.java
+END
+SnmpResultMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3132/trunk/ismp-manager-rmi/src/test/java/org/infosec/ismp/manager/rmi/snmp/SnmpResultMock.java
+END
+SnmpRemoveTaskMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2389/trunk/ismp-manager-rmi/src/test/java/org/infosec/ismp/manager/rmi/snmp/SnmpRemoveTaskMock.java
+END

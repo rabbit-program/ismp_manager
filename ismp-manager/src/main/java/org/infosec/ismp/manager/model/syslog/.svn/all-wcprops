@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2291/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/syslog
+END
+SyslogNodeEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2291/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/syslog/SyslogNodeEntity.java
+END
+SyslogParserEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1987/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/syslog/SyslogParserEntity.java
+END

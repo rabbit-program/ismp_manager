@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3041/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/service
+END
+WinsensorThresholdService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3041/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/service/WinsensorThresholdService.java
+END
+WinsensorTopoManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/2274/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/service/WinsensorTopoManagerService.java
+END
+WinsensorBasicInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/2274/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sensor/service/WinsensorBasicInfoService.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3654/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao
+END
+AlertRuleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/AlertRuleDao.java
+END
+NewAlertDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2134/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/NewAlertDao.java
+END
+SendAlertDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/2134/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/SendAlertDao.java
+END
+AlertFusionRuleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/AlertFusionRuleDao.java
+END
+AlertDwrDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/AlertDwrDao.java
+END
+AlertDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2134/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/AlertDao.java
+END
+AlertTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1132/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AIM/dao/AlertTypeDao.java
+END

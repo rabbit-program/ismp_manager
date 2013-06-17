@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/code2/!svn/ver/3220/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/snmpTrap
+END
+RemoveSnmpTrapRmiClientMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/3125/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/snmpTrap/RemoveSnmpTrapRmiClientMock.java
+END
+AddSnmpTrapRmiClientMock.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/3220/trunk/ismp-manager/src/test/java/org/infosec/ismp/manager/snmpTrap/AddSnmpTrapRmiClientMock.java
+END

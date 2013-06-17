@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="#"><span style="background:url(../../../../img/SYSM/users.png) no-repeat; padding-left:22px;">用户管理</span></a></li>
+    <li class="act"><a href="#"><span style="background:url(../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">其他管理</span></a></li>
+  </div>
+  <div class="contant">
+    <div class=" pad3 overf">
+      <div id="data">
+      <h2>Syslog</h2>
+      <div class="greenborder Height_a pad3"><span style="float:left;">所属单位:
+        <select name="select">
+          <option>01</option>
+        </select>
+        预案名称:
+        <input size="8" />
+        对应系统:
+        <input size="8" />
+        修改时间:
+        <input size="8" /> <input type="submit" class="submit" value="search" style="margin-left:12px;" /> <input type="submit" class="submit" value="search" /></span> <a href="#" class="R6 R7" style="margin-left:22px;">查询</a><a href="sys_pop01.html" class="R6 R7 boxy" title="添加">添加</a> <a href="javascript:history.back(1)" class="R6 R7">返回</a></div>
+       <h2 class="martop8">Syslog list</h2>
+      <table>
+  <tr>
+    <th>ItemA</th>
+    <th>ItemB</th>
+    <th>ItemC</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+      
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../js/comm/other/tablelink.js"></script>
+</html>

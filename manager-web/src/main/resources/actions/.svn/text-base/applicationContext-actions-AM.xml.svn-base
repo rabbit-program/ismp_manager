@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <!-- 
+	<bean name="/virusMappedAction"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.web.actions.VirusMappedAction"
+		singleton="false" lazy-init="true">
+		<property name="virusClientsService">
+			<ref bean="virusClientsService" />
+		</property>
+	</bean>
+	 -->
+	 <!-- 主框架frame 跳转专用 ACtion -->
+	 <bean name="/ismp/domain/local/am/fwdPage" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.ForwardAction">
+	 	<property name="topoWebService" ref="topoWebService"></property>
+	 </bean>
+	 <bean name="/ismp/domain/local/am/assetAvailability" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.AssetAvailabilityAction">
+	 	<property name="assetDailyAvailabilityService" ref="assetDailyAvailabilityService"></property>
+		<property name="assetMonthlyAvailabilityService" ref="assetMonthlyAvailabilityService"></property>
+		<property name="assetRawAvailabilityService" ref="assetRawAvailabilityService"></property>
+		<property name="domainService" ref="domainService"></property>
+		<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 </bean>
+	 <bean name="/ismp/domain/local/am/asset" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.AssetAction">
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="domainService" ref="domainService"></property>
+	 	<property name="userService" ref="userService"></property>
+	 	<property name="topoWebService" ref="topoWebService"></property>
+	 	<!-- <property name="topoNodeDao" ref="topoNodeDao"></property> -->
+	 	<!--  -->
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 	
+	 </bean>
+	 <bean name="/ismp/domain/local/am/changelog" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.AssetChangeLogAction">
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="sendAlertService" ref="sendAlertService"></property>
+	 	<property name="assetChangeLogService" ref="assetChangeLogService"></property>
+	 </bean>
+	 <bean name="/ismp/domain/local/am/soft" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.SoftAction">
+	 	<property name="userService" ref="userService"></property>
+	 	<property name="domainService" ref="domainService"></property>
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 	
+	 	<property name="assetToSoftwareService" ref="assetToSoftwareService"></property>
+	 	<property name="assetSoftwareService" ref="assetSoftwareService"></property>
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 </bean>
+	 <bean name="/ismp/domain/local/am/softrelating" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.SoftRelating">
+	 	<property name="assetToSoftwareService" ref="assetToSoftwareService"></property>
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 </bean>
+	 <bean name="/ismp/domain/local/am/hardware" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.HardwareAction">
+	 	<property name="assetHardwareService" ref="assetHardwareService"></property>
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="assetToHardwareService" ref="assetToHardwareService"></property>
+	 	<property name="domainService" ref="domainService"></property>
+	 	<property name="userService" ref="userService"></property>
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 </bean>
+	 <bean name="/ismp/domain/local/am/hardwareRelating" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.HardwareRaletingAction">
+	 	<property name="assetToHardwareService" ref="assetToHardwareService"></property>
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 </bean>
+	 <bean name="/ismp/domain/local/am/location" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.LocationAction">
+	 	<property name="assetPositionService" ref="assetPositionService"></property>
+	 	<property name="assetToPositionService" ref="assetToPositionService"></property>
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="domainService" ref="domainService"></property>
+	 	<property name="userService" ref="userService"></property>
+	 	<!-- <property name="assetSenderWrapper" ref="assetSenderWrapper"></property> -->
+	 </bean>
+	 <bean name="/ismp/domain/local/am/search" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.SearchAction">
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="assetHardwareService" ref="assetHardwareService"></property>
+	 	<property name="assetPositionService" ref="assetPositionService"></property>
+	 	<property name="assetSoftwareService" ref="assetSoftwareService"></property>
+	 </bean>
+	 <bean name="/ismp/domain/local/am/deviceAnalysis" class="edu.sjtu.infosec.ismp.manager.AM.web.actions.DeviceAnalysisAction">
+	 	<property name="assetDeviceService" ref="assetDeviceService"></property>
+	 	<property name="domainService" ref="domainService"></property>
+	 </bean>
+</beans>

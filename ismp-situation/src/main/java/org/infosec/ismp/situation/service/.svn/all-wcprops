@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service
+END
+SecurityAreaSituationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/SecurityAreaSituationService.java
+END
+MachineRoomService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1145/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineRoomService.java
+END
+MachineRoomSituationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineRoomSituationService.java
+END
+SituationEventService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1215/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/SituationEventService.java
+END
+MachineService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineService.java
+END
+MachineSituationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineSituationService.java
+END
+RecordIndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/983/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/RecordIndexService.java
+END
+MachineCabinetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineCabinetService.java
+END
+MachineCabinetSituationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/MachineCabinetSituationService.java
+END
+ColorThresholdService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1003/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/ColorThresholdService.java
+END

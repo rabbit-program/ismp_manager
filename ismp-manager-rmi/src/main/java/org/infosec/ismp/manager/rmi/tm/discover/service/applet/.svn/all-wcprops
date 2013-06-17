@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/service/applet
+END
+ICMPSearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/service/applet/ICMPSearchService.java
+END
+SNMPSearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/service/applet/SNMPSearchService.java
+END
+PCSearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/service/applet/PCSearchService.java
+END
+CDPSearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/service/applet/CDPSearchService.java
+END

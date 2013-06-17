@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/2020/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SCM/comm
+END
+BaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2020/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SCM/comm/BaseDaoHibernate.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/2020/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SCM/comm/Constants.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2020/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SCM/comm/BaseDao.java
+END

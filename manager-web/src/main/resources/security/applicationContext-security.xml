@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:s="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd"
+	default-lazy-init="true">
+
+	<description>SpringSecurity安全配置</description>
+
+	<!-- http安全配置，用于过滤URL -->
+	<s:http auto-config="true" use-expressions="true">
+		<s:intercept-url pattern="/css/**" filters="none" />
+		<s:intercept-url pattern="/img/**" filters="none" />
+		<s:intercept-url pattern="/js/**" filters="none" />
+
+		<s:intercept-url pattern="/login.jsp" access="permitAll" />
+        <s:intercept-url pattern="/remoting/**" access="permitAll" />
+        <s:intercept-url pattern="/applet/**" access="hasAnyRole('ROLE_DomainAdminLocal','ROLE_DomainAdminAll','ROLE_AdminAll')" />
+        <s:intercept-url pattern="/ismp/domain/local/**" access="hasAnyRole('ROLE_DomainAdminLocal','ROLE_DomainAdminAll','ROLE_AdminAll')" />
+        <s:intercept-url pattern="/ismp/domain/**" access="hasAnyRole('ROLE_DomainAdminAll','ROLE_AdminAll')" />
+		<s:intercept-url pattern="/ismp/**" access="hasAnyRole('ROLE_AdminAll')" />
+		<s:intercept-url pattern="/**" access="isAuthenticated()" />
+
+
+		<!-- 登录 -->
+		<s:form-login login-page="/login.jsp" default-target-url="/security/login.do" authentication-failure-url="/security/login.do?error=1" />
+		<!-- 退出 -->
+		<s:logout logout-success-url="/login.jsp" />
+		
+		<!-- session管理 -->
+		<s:session-management invalid-session-url="/security/login.do?error=2">
+			<s:concurrency-control max-sessions="1" error-if-maximum-exceeded="false" />
+		</s:session-management>
+		<s:custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="ipFilter" />
+	</s:http>
+
+	<!-- 方法安全配置 -->
+	<s:global-method-security secured-annotations="enabled" />
+
+	<!-- 认证配置，配置登录认证的管理者 -->
+	<s:authentication-manager alias="authenticationManager">
+		<s:authentication-provider user-service-ref="userDetailsService">
+			<s:password-encoder hash="md5" />
+		</s:authentication-provider>
+	</s:authentication-manager>
+
+	<!-- 项目实现的用户查询服务 -->
+	<bean id="userDetailsService" class="edu.sjtu.infosec.ismp.security.UserDetailsServiceImpl"/>
+	
+	<!-- 自定义过滤器实现黑白名单管理 -->
+	<bean id="ipFilter" class="edu.sjtu.infosec.ismp.security.IPRoleAuthenticationFilter">
+		 <property name="userService" ref="userService"></property>
+	</bean>
+	
+</beans>

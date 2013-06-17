@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/1266/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic
+END
+JdbcConnectionPoolRuntimeEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/1055/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/JdbcConnectionPoolRuntimeEntry.java
+END
+JvmRuntimeEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1266/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/JvmRuntimeEntry.java
+END
+ThreadPoolRuntimeEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/1266/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/ThreadPoolRuntimeEntry.java
+END
+JdbcConnectionPoolRuntimeTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/code2/!svn/ver/1055/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/JdbcConnectionPoolRuntimeTable.java
+END
+JvmRuntimeTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1266/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/JvmRuntimeTable.java
+END
+ThreadPoolRuntimeTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/1266/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/weblogic/ThreadPoolRuntimeTable.java
+END

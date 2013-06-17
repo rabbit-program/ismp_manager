@@ -1,0 +1,71 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/ismp-syslogd/src/test/resources
+http://192.168.9.252/svn/code2
+
+
+
+2010-11-04T02:12:07.598050Z
+1171
+llin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+TABLE.sql
+file
+
+
+
+
+2011-03-26T11:09:26.090911Z
+54db26bab29199b0afe10feb293040ad
+2010-10-20T07:44:48.387143Z
+959
+llin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2283
+
+jms
+dir
+
+manager
+dir
+
+agent
+dir
+

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code2/!svn/ver/2240/trunk/ismp-manager/src/test/resources/siteCheck
+END
+applicationContext-siteCheck-rmi-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2240/trunk/ismp-manager/src/test/resources/siteCheck/applicationContext-siteCheck-rmi-client.xml
+END

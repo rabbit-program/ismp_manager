@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device type="server" brand="server" parent="baseResource">
+    <table name="hrProcessorTable" table="true">
+        <column type="SnmpInt32">
+            <name>cpuLoad</name>
+            <value>.1.3.6.1.2.1.25.3.3.1.2</value>
+        </column>
+    </table>
+    <table name="hrDeviceTable" table="true">
+        <column type="SnmpInt32">
+            <name>hrDeviceIndex</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.1</value>
+        </column>
+        <column type="SnmpObjectId">
+            <name>hrDeviceType</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.2</value>
+            <comments></comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>hrDeviceDescr</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.3</value>
+            <comments></comments>
+        </column>
+        <column type="SnmpObjectId">
+            <name>hrDeviceID</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.4</value>
+            <comments></comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>hrDeviceStatus</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.5</value>
+            <comments></comments>
+        </column>
+        <column type="SnmpCounter32">
+            <name>hrDeviceErrors</name>
+            <value>.1.3.6.1.2.1.25.3.2.1.6</value>
+            <comments></comments>
+        </column>
+    </table>
+    <table name="hrSWRunTable" table="true">
+        <column type="SnmpInt32">
+            <name>index</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.1</value>
+        </column>
+        <column type="SnmpOctetString">
+            <name>name</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.2</value>
+       </column>
+        <column type="SnmpObjectId">
+            <name>pid</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.3</value>
+        </column>
+        <column type="SnmpOctetString">
+            <name>runPath</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.4</value>
+        </column>
+        <column type="SnmpOctetString">
+            <name>hrSWRunParameters</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.5</value>
+        </column>
+        <column type="SnmpInt32">
+            <name>hrSWRunType</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.6</value>
+        </column>
+        <column type="SnmpInt32">
+            <name>hrSWRunStatus</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.7</value>
+        </column>
+       <column type="SnmpInt32">
+            <name>hrSWRunIndex</name>
+            <value>.1.3.6.1.2.1.25.4.2.1.1</value>
+        </column>
+        <column type="SnmpInt32">
+            <name>consumedCPUTime</name>
+            <value>.1.3.6.1.2.1.25.5.1.1.1</value>
+       </column>
+        <column type="SnmpInt32">
+            <name>allocatedMemorySize</name>
+            <value>.1.3.6.1.2.1.25.5.1.1.2</value>
+        </column>
+    </table>
+
+    <table name="hrStorageTable" table="true">
+        <column type="SnmpInt32">
+            <name>index</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.1</value>
+        </column>
+        <column type="SnmpObjectId">
+            <name>type</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.2</value>
+        </column>
+        <column type="SnmpOctetString">
+            <name>label</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.3</value>
+        </column>
+        <column type="SnmpInt32">
+            <name>units</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.4</value>
+        </column>
+        <column type="SnmpCounter32">
+            <name>size</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.5</value>
+        </column>
+        <column type="SnmpCounter32">
+            <name>used</name>
+            <value>.1.3.6.1.2.1.25.2.3.1.6</value>
+        </column>
+    </table>
+</device>

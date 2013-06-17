@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/2257/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao
+END
+DynaLeakThreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaLeakThreDao.java
+END
+AssetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/1339/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/AssetDao.java
+END
+VulnAnalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/VulnAnalDao.java
+END
+LeakScanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/LeakScanDao.java
+END
+DicAsseKindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicAsseKindDao.java
+END
+PapeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/PapeDao.java
+END
+StatVulnKindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatVulnKindDao.java
+END
+DicProgDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicProgDao.java
+END
+DynaLeakDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaLeakDao.java
+END
+DicCpKindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicCpKindDao.java
+END
+DicSecuLeveDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicSecuLeveDao.java
+END
+BusinessDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/BusinessDao.java
+END
+DynaVTARepoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaVTARepoDao.java
+END
+StatCVEThreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatCVEThreDao.java
+END
+DynaElemResuDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaElemResuDao.java
+END
+StatSecuElemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatSecuElemDao.java
+END
+StatThreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatThreDao.java
+END
+ThreAnalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/ThreAnalDao.java
+END
+DicQuesKindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicQuesKindDao.java
+END
+DynaAsseValueDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaAsseValueDao.java
+END
+DicRiskMatrRuleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicRiskMatrRuleDao.java
+END
+StatThreKindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatThreKindDao.java
+END
+StatWarnStriDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatWarnStriDao.java
+END
+DynaAsseResuDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DynaAsseResuDao.java
+END
+ProjectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/ProjectDao.java
+END
+StatVulnPoinDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/StatVulnPoinDao.java
+END
+DicAsseStatDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1340/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/dao/DicAsseStatDao.java
+END

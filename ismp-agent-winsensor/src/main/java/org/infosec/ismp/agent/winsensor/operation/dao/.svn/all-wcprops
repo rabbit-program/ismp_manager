@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3516/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/dao
+END
+AgentDutyManagerSentHisDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3386/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/dao/AgentDutyManagerSentHisDao.java
+END
+AgentDutyManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3386/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/dao/AgentDutyManagerDao.java
+END
+ProblemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/3386/trunk/ismp-agent-winsensor/src/main/java/org/infosec/ismp/agent/winsensor/operation/dao/ProblemDao.java
+END

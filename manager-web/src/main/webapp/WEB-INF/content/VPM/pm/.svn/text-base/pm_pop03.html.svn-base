@@ -1,0 +1,12 @@
+<div  id="data" class="pad1 ">
+<h2>映射关系录入</h2>
+  <table>
+    <tr>
+      <th> 委办局</th>
+      <td><select><option>产品销售事业部</option></select></td>
+    </tr>
+  </table>
+  <div class="paddiv"></div>
+  <a href="#" class="R6">保存</a>
+  <div class="paddiv"></div>
+</div>

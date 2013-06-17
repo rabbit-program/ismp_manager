@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/1098/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/web/form
+END
+PatchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/1098/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/web/form/PatchForm.java
+END
+StatisticsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1098/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/web/form/StatisticsForm.java
+END
+StrateStatiscalPatchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1098/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/web/form/StrateStatiscalPatchForm.java
+END
+TacticsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1098/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/pm/web/form/TacticsForm.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/3239/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager
+END
+newOrUpdateComplaint.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/2721/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager/newOrUpdateComplaint.jsp
+END
+dutyDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2721/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager/dutyDetail.jsp
+END
+showList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3239/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager/showList.jsp
+END
+modifyDuty.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2721/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager/modifyDuty.jsp
+END
+newDuty.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/2721/trunk/manager-web/src/main/webapp/WEB-INF/content/OSS/pm/dutyManager/newDuty.jsp
+END

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+<!-- 与managerweb相关  -->
+     <!-- 
+    <bean id="killResultTypeService"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.service.impl.KillResultTypeServiceImpl">
+        <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+        <property name="systemlogservice" ref="systemlogService"></property>
+    </bean>
+      -->
+    <!--拓扑发现-->
+	    <bean id="cdpSearchService" parent="txProxyTemplate">
+	       <property name="target"> 
+	        <bean
+	          class="edu.sjtu.infosec.ismp.manager.TM.discover.service.impl.CDPSearchServiceImpl">
+				<property name="cdpGetService" ref="cdpGetService"></property>
+				<property name="nodeDao" ref="nodeDao"></property>
+				<property name="nodeTypeDao" ref="nodeTypeDao"></property>
+				<property name="lineDao" ref="lineDao"></property>
+				<property name="systemlogservice" ref="systemlogService"></property>
+                <property name="userService" ref="userService"></property>
+	        </bean>
+	       </property>
+	    </bean>
+        <bean id="icmpSearchService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.TM.discover.service.impl.ICMPSearchServiceImpl">
+	            <property name="icmpGetService" ref="icmpGetService"></property>
+	            <property name="nodeDao" ref="nodeDao"></property>
+	            <property name="nodeTypeDao" ref="nodeTypeDao"></property>
+	            <property name="lineDao" ref="lineDao"></property>
+	            <property name="systemlogservice" ref="systemlogService"></property>
+                <property name="userService" ref="userService"></property>
+            </bean>
+           </property>
+        </bean>
+        <bean id="pcSearchService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.TM.discover.service.impl.PCSearchServiceImpl">
+	            <property name="pcGetService" ref="pcGetService"></property>
+	            <property name="nodeDao" ref="nodeDao"></property>
+	            <property name="nodeTypeDao" ref="nodeTypeDao"></property>
+	            <property name="lineDao" ref="lineDao"></property>
+	            <property name="systemlogservice" ref="systemlogService"></property>
+                <property name="userService" ref="userService"></property>
+            </bean>
+           </property>
+        </bean>
+        <bean id="snmpSearchService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.TM.discover.service.impl.SNMPSearchServiceImpl">
+	            <property name="snmpGetService" ref="snmpGetService"></property>
+	            <property name="nodeDao" ref="nodeDao"></property>
+	            <property name="nodeTypeDao" ref="nodeTypeDao"></property>
+	            <property name="lineDao" ref="lineDao"></property>
+	            <property name="deviceTypeRulerDao" ref="deviceTypeRulerDao"></property>
+	            <property name="systemlogservice" ref="systemlogService"></property>
+                <property name="userService" ref="userService"></property>
+            </bean>
+           </property>
+        </bean>
+    <!--拓扑管理-->
+     
+     
+     
+<!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+    <!--拓扑发现-->
+	    <bean id="cdpGetService" parent="rmiProxyParent">
+	        <property name="serviceInterface">
+	            <value>org.infosec.ismp.manager.rmi.tm.discover.service.agent.CDPService</value>
+	        </property>
+	        <property name="serviceUrl">
+	            <value>rmi://localhost:1199/CDPService</value>
+	        </property>
+	    </bean>
+	    <bean id="icmpGetService" parent="rmiProxyParent">
+	        <property name="serviceInterface">
+	            <value>org.infosec.ismp.manager.rmi.tm.discover.service.agent.ICMPService</value>
+	        </property>
+	        <property name="serviceUrl">
+	            <value>rmi://localhost:1199/ICMPService</value>
+	        </property>
+	    </bean>
+	    <bean id="pcGetService" parent="rmiProxyParent">
+	        <property name="serviceInterface">
+	            <value>org.infosec.ismp.manager.rmi.tm.discover.service.agent.PCService</value>
+	        </property>
+	        <property name="serviceUrl">
+	            <value>rmi://localhost:1199/PCService</value>
+	        </property>
+	    </bean>
+	    <bean id="snmpGetService" parent="rmiProxyParent">
+	        <property name="serviceInterface">
+	            <value>org.infosec.ismp.manager.rmi.tm.discover.service.agent.SNMPService</value>
+	        </property>
+	        <property name="serviceUrl">
+	            <value>rmi://localhost:1199/SNMPService</value>
+	        </property>
+	    </bean>
+        
+    <!--拓扑管理-->
+    
+   <!-- snmp -->
+    <bean id="dbCollectionServiceMonitor" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.db.service.DbCollectionServiceMonitor" />
+        <property name="serviceUrl" value="rmi://localhost:1199/DbCollectionServiceMonitor"></property>
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+    
+    
+    <bean id="snmpDeviceMonitorRmi" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.snmp.service.SnmpDeviceMonitorRmi" />
+        <property name="serviceUrl" value="rmi://localhost:1199/SnmpDeviceMonitorRmi"></property>
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+    
+   
+   
+     <!-- snmp -->
+     <!-- 
+      <bean id="thresholdConfigRmi" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.threshold.service.ThresholdConfigRmi" />
+        <property name="serviceUrl" value="rmi://localhost/thresholdRmiService"></property>
+     </bean>
+      <bean name="winsensorThresholdService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceUrl" value="rmi://192.168.9.200:1199/WinsensorThresholdService" />
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorThresholdService" />
+    </bean>
+      -->
+     <!-- pc -->
+     <bean name="winsensorBasicInfoService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceUrl" value="rmi://localhost:1199/WinsensorBasicInfoService" />
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorBasicInfoService" />
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+   
+    <bean name="winsensorTopoManagerService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceUrl" value="rmi://localhost:1199/WinsensorTopoManagerService" />
+        <property name="serviceInterface" value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorTopoManagerService" />
+        <property name="lookupStubOnStartup" value="false"></property>
+        <property name="refreshStubOnConnectFailure" value="true"></property>
+    </bean>
+    
+     
+     <bean id="topoWebService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.TM.manager.service.TopoWebServiceImpl">
+              <property name="nodeDao" ref="nodeDao"></property>
+              <property name="lineDao" ref="lineDao"></property>
+               <property name="assetDeviceService" ref = "assetDeviceService"></property>
+            </bean>
+           </property>
+    </bean>
+    <bean id="topoManagerService" parent="txProxyTemplate">
+           <property name="target"> 
+            <bean
+              class="edu.sjtu.infosec.ismp.manager.TM.manager.service.TopoManagerServiceImpl">
+             <!--  <property name="thresholdConfigRmi" ref="thresholdConfigRmi"></property>
+               <property name="winsensorThresholdService" ref="winsensorThresholdService"></property>
+             --> 
+              <property name="dbCollectionServiceMonitor" ref="dbCollectionServiceMonitor"></property>
+              <property name="snmpDeviceMonitorRmi" ref="snmpDeviceMonitorRmi"></property>
+              <property name="winsensorBasicInfoService" ref="winsensorBasicInfoService"></property>
+              <property name="winsensorTopoManagerService" ref="winsensorTopoManagerService"></property>
+               <property name="topoWebService" ref="topoWebService"></property>
+            </bean>
+           </property>
+    </bean>
+     <!--拓扑管理-->
+</beans>

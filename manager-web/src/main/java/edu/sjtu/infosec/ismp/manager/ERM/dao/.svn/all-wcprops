@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/1461/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao
+END
+BiaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/858/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/BiaDao.java
+END
+PageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/406/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/PageDao.java
+END
+RespProcDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/1187/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/RespProcDao.java
+END
+RespInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/859/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/RespInfoDao.java
+END
+ContinotifyprocDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/859/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/ContinotifyprocDao.java
+END
+LinkManDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/873/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/dao/LinkManDao.java
+END

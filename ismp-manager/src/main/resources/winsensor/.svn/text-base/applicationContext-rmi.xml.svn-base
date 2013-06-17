@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="pcService"
+		class="org.infosec.ismp.manager.winsensor.service.impl.PCServiceImpl">
+		<property name="managerSensorServer" ref="sensorServer" />
+	</bean>
+
+	<bean id="pcServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="pcService" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.tm.discover.service.agent.PCService" />
+		<property name="serviceName" value="PcService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+
+	<bean id="sensorController"
+		class="org.infosec.ismp.manager.winsensor.service.impl.SensorControllerImpl">
+		<property name="managerSensorServer" ref="sensorServer" />
+	</bean>
+
+	<bean id="sensorControllerServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="sensorController" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.SensorController" />
+		<property name="serviceName" value="SensorController" />
+		<property name="registryPort" value="1199" />
+	</bean>
+
+	<bean id="winsensorBasicInfoService"
+		class="org.infosec.ismp.manager.winsensor.service.impl.WinsensorBasicInfoServiceImpl">
+		<property name="managerSensorServer" ref="sensorServer" />
+	</bean>
+
+	<bean id="winsensorBasicInfoServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="winsensorBasicInfoService" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorBasicInfoService" />
+		<property name="serviceName" value="WinsensorBasicInfoService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+
+	<bean id="winsensorOperationDutyManagerService"
+		class="org.infosec.ismp.manager.winsensor.service.impl.WinsensorOperationDutyManagerServiceImpl">
+	</bean>
+
+	<bean id="winsensorOperationDutyManagerServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="winsensorOperationDutyManagerService" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.operation.service.WinsensorOperationDutyManagerService" />
+		<property name="serviceName" value="WinsensorOperationDutyManagerService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+
+	<bean id="winsensorOperationWorkOrdersService"
+		class="org.infosec.ismp.manager.winsensor.service.impl.WinsensorOperationWorkOrdersServiceImpl">
+	</bean>
+
+	<bean id="winsensorOperationWorkOrdersServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="winsensorOperationWorkOrdersService" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.operation.service.WinsensorOperationWorkOrdersService" />
+		<property name="serviceName" value="WinsensorOperationWorkOrdersService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+
+	<bean id="winsensorTopoManagerService"
+		class="org.infosec.ismp.manager.winsensor.service.impl.WinsensorTopoManagerServiceImpl">
+		<property name="managerSensorServer" ref="sensorServer" />
+	</bean>
+
+	<bean id="winsensorTopoManagerServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="winsensorTopoManagerService" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorTopoManagerService" />
+		<property name="serviceName" value="WinsensorTopoManagerService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+	
+	<bean id="winsensorThresholdService" 
+		class="org.infosec.ismp.manager.winsensor.service.impl.WinsensorThresholdServiceImpl">
+		<property name="managerSensorServer" ref="sensorServer" />
+	</bean>
+	
+	<bean id="winsensorThresholdServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="service" ref="winsensorThresholdService" />
+		<property name="serviceInterface" value="org.infosec.ismp.manager.rmi.sensor.service.WinsensorThresholdService" />
+		<property name="serviceName" value="WinsensorThresholdService" />
+		<property name="registryPort" value="1199" />
+	</bean>
+</beans>

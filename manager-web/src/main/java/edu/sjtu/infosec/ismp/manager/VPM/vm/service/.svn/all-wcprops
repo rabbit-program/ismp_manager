@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/1720/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service
+END
+SysCenterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/SysCenterService.java
+END
+VirusAlertService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertService.java
+END
+VirusAlertDailyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertDailyService.java
+END
+VirusAlertDailyCenterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertDailyCenterService.java
+END
+VirusService.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusService.java
+END
+VirusClientsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/1720/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusClientsService.java
+END
+VirusTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusTypeService.java
+END
+VirusAlertMonthlyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertMonthlyService.java
+END
+KillResultTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/KillResultTypeService.java
+END
+VirusAlertMonthlyCenterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertMonthlyCenterService.java
+END
+VirusAlertStatService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/86/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/VPM/vm/service/VirusAlertStatService.java
+END

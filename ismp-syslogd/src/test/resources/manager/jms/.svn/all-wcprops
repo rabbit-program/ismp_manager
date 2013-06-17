@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/code2/!svn/ver/938/trunk/ismp-syslogd/src/test/resources/manager/jms
+END
+applicationContext-jms.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/938/trunk/ismp-syslogd/src/test/resources/manager/jms/applicationContext-jms.xml
+END

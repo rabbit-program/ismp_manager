@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/appletForm
+END
+CDPAppletForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/appletForm/CDPAppletForm.java
+END
+ICMPAppletForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/appletForm/ICMPAppletForm.java
+END
+SNMPAppletForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/appletForm/SNMPAppletForm.java
+END
+PCAppletForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3150/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/appletForm/PCAppletForm.java
+END

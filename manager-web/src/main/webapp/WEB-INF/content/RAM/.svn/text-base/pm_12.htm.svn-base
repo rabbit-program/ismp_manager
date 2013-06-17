@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="act" id="m"><a href="#"><span style="background:url(../../../img/comm/other/01.gif) no-repeat; padding-left:22px;">风险评估</span></a></li>
+  </div>
+  <div class="contant pad3 overf">
+    <div class="overf pad3  martop10" >
+      <table width="100%">
+        <tr>
+          <td><img src="../../../img/RAM/danger_banner_01.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_02.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_03.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_04.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_05.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_06.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_07.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_08.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_09.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_10.gif" /></td>
+          <td><img src="../../../img/RAM/daner_bannera_11.gif" /></td>
+          <td><img src="../../../img/RAM/danger_banner_12.gif" /></td>
+        </tr>
+      </table>
+    </div>
+    <h2> 风险计算 </h2>
+    <div id="data">           
+        <table width="100%">
+          <tr>
+            <td><P><b>项目名称</b>:3</P>
+<P><b>测评开始时间</b>:2010-10-14 13:08</P>
+<P><b>测评结束时间</b>:2010-10-20 16:12</P></td>
+            <td width="700"><img src="../../../img/RAM/DisplayChart.png" /></td>
+          </tr>
+        </table>         
+      <h2 class="martop8">资产列表</h2>
+      <div class="pad1 greenborder">
+        <table id="senfe" width="100%">
+          <tr>
+            <th>IP地址</th>
+            <th>信息</th>
+            <th>高风险点</th>
+            <th>中风险点</th>
+            <th>低风险点</th>
+          </tr>
+          <tr>
+            <td>192.168.0.123</td>
+            <td>资产名称</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>192.168.0.123</td>
+            <td>12</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>192.168.0.123</td>
+            <td>13</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>192.168.0.123</td>
+            <td>14</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>192.168.0.123</td>
+            <td>15</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </table>
+      <div class="Heightlist cl">     
+      <ul id="page">
+        <li style="margin-right:12px;"><a href="advice.html" class="R6 boxy" title="建议">建议</a></li>
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+      </ul>  
+      </div> 
+      </div>       
+    </div>
+    <div style="margin:0 auto; padding-top:12px; width:120px; height:30px; clear:both;"><a href="pm_13.htm" class="R6">下一步</a></div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../js/comm/other/tablelink.js"></script>
+</html>

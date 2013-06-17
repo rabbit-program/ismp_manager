@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/3077/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco
+END
+CpuTotalStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/3076/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/CpuTotalStatus.java
+END
+CpmProcessExtRevStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/2768/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/CpmProcessExtRevStatus.java
+END
+CpmProcessStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/2768/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/CpmProcessStatus.java
+END
+CpmProcessExtStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/2768/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/CpmProcessExtStatus.java
+END
+CiscoDeviceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/3076/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/CiscoDeviceStatus.java
+END
+MemoryPoolStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/3076/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/cisco/MemoryPoolStatus.java
+END

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="true">
+	<!--
+		<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" /> <property
+		name="configLocation" value="classpath:hibernate.cfg.xml" /> <property
+		name="hibernateProperties"> <value> hibernate.dialect=${jdbc.dialect}
+		hibernate.show_sql = true hibernate.query.substitutions=true 'Y',
+		false 'N' hibernate.cache.use_second_level_cache=true
+		hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+		</value> </property> </bean>
+	-->
+    
+    <!-- 事件管理功能Spring Ioc配置 -->
+	<bean id="eventmoniDao"
+		class="org.infosec.ismp.manager.rmi.event.dao.impl.EventmoniDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventtaskseleDao"
+		class="org.infosec.ismp.manager.rmi.event.dao.impl.EventtaskseleDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventmoniinfoDao"
+		class="org.infosec.ismp.manager.rmi.event.dao.impl.EventmoniinfoDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventrealdispDao"
+		class="org.infosec.ismp.manager.rmi.event.dao.impl.EventrealdispDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventcorrruleDao"
+		class="org.infosec.ismp.manager.rmi.event.dao.impl.EventcorrruleDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="eventGetTopoDao"
+        class="org.infosec.ismp.manager.rmi.event.dao.impl.EventGetTopoDao">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+      <!-- 发送应急响应信息DAO 
+    <bean id="contiEventDao"
+        class="org.infosec.ismp.manager.rmi.event.dao.impl.ContiEventDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    -->
+    <!-- 委办局信息 DAO 
+    <bean id="managerDao" class="edu.sjtu.infosec.ismp.manager.user.dao.impl.ManagerDaoImpl">
+           <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>-->
+</beans>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code2/!svn/ver/8/trunk/manager-web/src/main/resources/cache
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code2/!svn/ver/8/trunk/manager-web/src/main/resources/cache/ehcache.xml
+END
+applicationContext-ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/8/trunk/manager-web/src/main/resources/cache/applicationContext-ehcache.xml
+END

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+	<bean id="attackReckon"
+		class="org.infosec.ismp.situation.calculate.substep.AttackReckon">
+	</bean>
+	
+	<bean id="illicitConnectReckom"
+		class="org.infosec.ismp.situation.calculate.substep.IllicitConnectReckom">
+	</bean>
+	
+	<bean id="virusReckon"
+		class="org.infosec.ismp.situation.calculate.substep.VirusReckon">
+	</bean>
+	
+	<bean id="situationSaveToDB" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="org.infosec.ismp.situation.manager.SituationSaveToDB">
+				<property name="mcsService" ref="machineCabinetSituationService" />
+				<property name="mrsService" ref="machineRoomSituationService" />
+				<property name="msService" ref="machineSituationService" />
+				<property name="sasService" ref="securityAreaSituationService" />
+				<property name="seService" ref="situationEventService" />
+				<property name="surroundingsInit" ref="surroundingsInit" />
+				<property name="situationPipe" ref="situationPipe" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="surroundingsInit"
+		class="org.infosec.ismp.situation.manager.SurroundingsInit"
+		init-method="start">
+		<property name="machineDao" ref="machineDao" />
+		<property name="machineCabinetDao" ref="machineCabinetDao" />
+		<property name="machineRoomDao" ref="machineRoomDao" />
+		<property name="securityAreaDao" ref="securityAreaDao" />
+		<property name="colorThresholdDao" ref="colorThresholdDao" />
+	</bean>
+	
+	<bean id="acquireExponential"
+		class="org.infosec.ismp.situation.manager.AcquireExponential">
+		<property name="saveToDB" ref="situationSaveToDB" />
+		<property name="surroundingsInit" ref="surroundingsInit" />
+	</bean>
+</beans>

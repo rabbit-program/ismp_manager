@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<digester-rules>
+    <pattern value="trap">
+        <object-create-rule
+            classname="edu.sjtu.infosec.ismp.manager.server.event.analytic.trap.digester.TrapParsers" />
+        <pattern value="parser">
+            <object-create-rule
+                classname="edu.sjtu.infosec.ismp.manager.server.event.analytic.trap.digester.TrapParser" />
+            <set-properties-rule>
+                <alias attr-name="ip" prop-name="ip" />
+            </set-properties-rule>
+            <pattern value="matchers">
+                <pattern value="matcher">
+                    <object-create-rule
+                        classname="edu.sjtu.infosec.ismp.manager.server.event.analytic.trap.digester.TrapMatcher" />
+                    <call-method-rule pattern="tableName"
+                        methodname="setTableName" paramcount="0" />
+                    <pattern value="binding">
+                        <object-create-rule
+                        classname="edu.sjtu.infosec.ismp.manager.server.event.analytic.trap.digester.TrapBinding" />
+                        <set-properties-rule>
+                            <alias attr-name="number"
+                                prop-name="bindingNumber" />
+                        </set-properties-rule>
+                        <call-method-rule pattern="regex"
+                            methodname="setRegex" paramcount="0" />
+                        <call-method-rule pattern="column"
+                            methodname="setColumns" paramcount="0" />
+                        <pattern value="transform">
+                            <object-create-rule
+                                classname="edu.sjtu.infosec.ismp.manager.server.event.analytic.trap.digester.TrapTransform" />
+                            <call-method-rule pattern="serialNumber"
+                                methodname="setSerialNumber" paramcount="0" />
+                            <call-method-rule pattern="method"
+                                methodname="setMethod" paramcount="0" />
+                            <set-next-rule methodname="addTrapTransform" />
+                        </pattern>
+                        <set-next-rule methodname="addTrapBinding" />
+                    </pattern>
+                    <set-next-rule methodname="addTrapMatcher" />
+                </pattern>              
+            </pattern>
+            <set-next-rule methodname="addTrapParser" />
+            </pattern>
+        </pattern>
+</digester-rules>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2636/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/OSS/wom/dao
+END
+WorkOrderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1907/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/OSS/wom/dao/WorkOrderDao.java
+END
+ClientQuestionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1907/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/OSS/wom/dao/ClientQuestionDao.java
+END

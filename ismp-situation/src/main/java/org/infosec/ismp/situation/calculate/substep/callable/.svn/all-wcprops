@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1209/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/callable
+END
+IllicitConnectCallable.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/code2/!svn/ver/1208/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/callable/IllicitConnectCallable.java
+END
+AttackCallable.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/1208/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/callable/AttackCallable.java
+END
+VirusCallable.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1208/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/calculate/substep/callable/VirusCallable.java
+END

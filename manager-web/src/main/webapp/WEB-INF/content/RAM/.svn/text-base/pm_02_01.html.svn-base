@@ -1,0 +1,24 @@
+
+<div  id="data" class="pad1 "> <span class="font_tip">注意:业务编号唯一! </span>
+  <form method="post" action="" id="form" class="boxy"><table width="100%">
+    <tr>
+      <th> 业务编号 </th>
+      <td><input type="text" size="12" class="input"/></td>
+      <th> 业务名称 </th>
+      <td><input type="text" size="12" class="input"/></td>
+    </tr>
+    <tr>
+      <th>关键性 </th>
+      <td><select>
+          <option>000</option>
+        </select></td>
+      <th> 负责人 </th>
+      <td><input type="text" size="12" class="input"/></td>
+    </tr>
+    <tr>
+      <td height="32" colspan="4" align="center"><input class="submit" type="submit" name="测试" value="提交" />
+          
+        </td>
+    </tr>
+  </table></form>
+</div>

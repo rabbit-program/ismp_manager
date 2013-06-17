@@ -1,0 +1,199 @@
+.simpleTree
+{
+
+    margin:0;
+    padding:0;
+    margin-left:26px;
+    /*
+    overflow:auto;
+    width: 250px;
+    height:350px;
+    overflow:auto;
+    border: 1px solid #444444;
+    */
+}
+.simpleTree li
+{
+    margin:0;
+    padding:0 0 0 34px;
+    line-height: 14px;
+}
+.simpleTree li span
+{
+    display:inline;
+    clear: left;
+    white-space: nowrap;
+}
+.simpleTree ul
+{
+    margin:0; 
+    padding:0;
+}
+.simpleTree .root
+{
+    background: url(../../../img/VPM/pm/root.gif) no-repeat 16px 0 #ffffff; 
+    margin-left:-15px;
+    background-color: #F3F7E8;
+   /* background:  no-repeat 16px 0 #ffffff; */
+}
+.simpleTree .line
+{
+    float:none;
+    margin:0 0 0 -16px;
+    padding:0;
+    line-height: 3px;
+    height:3px;
+    font-size:3px;
+    background: url(../../../img/VPM/pm/line_bg.gif) 0 0 no-repeat transparent;
+}
+.simpleTree .line-last
+{
+    float:none;
+    margin:0 0 0 -16px;
+    padding:0;
+    line-height: 3px;
+    height:3px;
+    font-size:3px;
+    background: url(../../../img/VPM/pm/spacer.gif) 0 0 no-repeat transparent;
+}
+.simpleTree .line-over
+{
+    float:none;
+    margin:0 0 0 -16px;
+    padding:0;
+    line-height: 3px;
+    height:3px;
+    font-size:3px;
+    background: url(../../../img/VPM/pm/line_bg_over.gif) 0 0 no-repeat transparent;
+}
+.simpleTree .line-over-last
+{
+    float:none;
+    margin:0 0 0 -16px;
+    padding:0;
+    line-height: 3px;
+    height:3px;
+    font-size:3px;
+    background: url(../../../img/VPM/pm/line_bg_over_last.gif) 0 0 no-repeat transparent;
+}
+.simpleTree .folder-open
+{
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/collapsable.gif) 0 -2px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .folder-open-last
+{
+
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/collapsable-last.gif) 0 -2px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .folder-close
+{
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/expandable.gif) 0 -2px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .folder-close-last
+{
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/expandable-last.gif) 0 -2px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .doc
+{
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/leaf.gif) 0 -1px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .doc-last
+{
+    float:none;
+    margin-left:-16px;
+    background: url(../../../img/VPM/pm/leaf-last.gif) 0 -1px no-repeat #fff;
+    background-color: #F3F7E8;
+}
+.simpleTree .ajax
+{
+    float:none;
+    background: url(../../../img/VPM/pm/spinner.gif) no-repeat 0 0 #ffffff;
+    height: 16px;
+    display:none;
+    background-color: #F3F7E8;
+}
+.simpleTree .ajax li
+{
+    float:none;
+    display:none;
+    margin:0; 
+    padding:0;
+    background-color: #F3F7E8;
+}
+.simpleTree .trigger
+{
+    float:none;
+    display:inline;
+    margin-left:-32px;
+    width: 28px;
+    height: 11px;
+    cursor:pointer;
+}
+.simpleTree .text
+{
+    cursor: default;
+    padding:0px 2px;
+}
+.simpleTree .active
+{
+    cursor: default;
+    background-color:#F7BE77;
+    padding:0px 2px;
+    border: 1px dashed #444;
+}
+#drag_container
+{
+    background:#ffffff;
+    color:#000;
+    font: normal 11px arial, tahoma, helvetica, sans-serif;
+    border: 1px dashed #767676;
+}
+#drag_container ul
+{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#drag_container li
+{
+    list-style: none;
+    background-color:#ffffff;
+    line-height:18px;
+    white-space: nowrap;
+    padding:1px 1px 0px 16px;
+    margin:0;
+}
+#drag_container li span
+{
+    padding:0;
+}
+
+#drag_container li.doc, #drag_container li.doc-last
+{
+    background: url(../../../img/VPM/pm/leaf.gif) no-repeat -17px 0 #ffffff;
+}
+#drag_container .folder-close, #drag_container .folder-close-last
+{
+    background: url(../../../img/VPM/pm/expandable.gif) no-repeat -17px 0 #ffffff;
+}
+
+#drag_container .folder-open, #drag_container .folder-open-last
+{
+    background: url(../../../img/VPM/pm/collapsable.gif) no-repeat -17px 0 #ffffff;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device type="cisco" parent="baseResource">
+	<table name="memory" table="true">
+		<column type="SnmpCounter32">
+			<name>used</name>
+			<value>.1.3.6.1.4.1.9.9.48.1.1.1.5</value>
+			<comments></comments>
+		</column>
+		<column type="SnmpCounter32">
+			<name>size</name>
+			<value>.1.3.6.1.4.1.9.9.48.1.1.1.6</value>
+			<comments></comments>
+		</column>
+		<comments>思科内存池</comments>
+	</table>
+	<table name="cpu" table="true">
+		<column type="SnmpInt32">
+			<name>cpuLoad</name>
+			<value>.1.3.6.1.4.1.9.9.109.1.1.1.1.7
+			</value>
+			<comments></comments>
+		</column>
+		<comments></comments>
+	</table>
+</device>

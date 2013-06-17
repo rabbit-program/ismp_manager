@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form
+END
+AsseKnowDynaVulnForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseKnowDynaVulnForm.java
+END
+AsseInfoPapeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseInfoPapeForm.java
+END
+AsseKnowDynaAsseValueForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseKnowDynaAsseValueForm.java
+END
+AsseInfoProjForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseInfoProjForm.java
+END
+AsseInfoAsseForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseInfoAsseForm.java
+END
+AsseInfoLeakForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseInfoLeakForm.java
+END
+AsseKnowDynaThreForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseKnowDynaThreForm.java
+END
+AsseInfoBusiForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1346/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/web/form/AsseInfoBusiForm.java
+END

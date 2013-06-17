@@ -1,0 +1,30 @@
+<div  id="data" class="pad1 ">
+<h2>建立新预案 "<span class="alert">*</span>"为必填项</h2>
+  <table>
+    <tr>
+      <th>预案名称<span class="alert">*</span></th>
+      <td><input size="8" /></td>
+      <th>所属单位<span class="alert">*</span></th>
+      <td><select><option>000</option><option>000</option></select></td>
+    </tr>
+    <tr>
+      <th>IT系统描述<span class="alert">*</span></th>
+      <td colspan="3"><textarea cols="60" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <th>应急目标描述<span class="alert">*</span></th>
+      <td colspan="3"><textarea name="textarea" cols="60" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <th>预案的假定<span class="alert">*</span></th>
+      <td colspan="3"><textarea name="textarea2" cols="60" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <th>参考文献<span class="alert">*</span></th>
+      <td colspan="3"><textarea name="textarea3" cols="60" rows="5"></textarea></td>
+    </tr>
+  </table>
+  <div class="paddiv">This is for verticl spacing</div>
+<a href="#" class="R6">保存</a>
+<div class="paddiv">This is for verticl spacing</div>
+</div>

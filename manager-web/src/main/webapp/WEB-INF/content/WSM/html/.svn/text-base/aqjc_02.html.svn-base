@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" ></div>
+  <div class="contant">
+    <div class="greenborder pad3 overf">
+      <h2 class="martop10">添加列表</h2>
+    <div id="data" class="greenborder overf pad1" >
+      <form name="f1" id="f1" action="" method="post">
+        <table id="senfe" sortcol="-1">
+        
+          <tbody>
+            <tr>
+              <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+              <td width="80%">&nbsp;</td>
+              </tr>
+            <tr>
+            <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+              <td>&nbsp;</td>
+              </tr>
+            <tr>
+              <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+              <td>&nbsp;</td>
+              </tr>
+            <tr>
+            <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+              <td>&nbsp;</td>
+              </tr>
+            <tr>
+           <th style="cursor:pointer" onclick="sortTable('senfe',0);"> sensorIP <span class="webdings">6</span></th>
+              <td>&nbsp;</td>
+              </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+   <ul id="page">
+    <li><a href="aqjc_02.html" class="R6 R7 boxy" title="提交">提交</a>
+    </li>
+    <li><a href="aqjc_02.html" class="R6 R7 boxy" title="重置">重置</a>
+    </li>
+  </ul>
+      <br />
+      <br />
+      <br />
+  </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../js/comm/other/tablelink.js"></script>
+</html>

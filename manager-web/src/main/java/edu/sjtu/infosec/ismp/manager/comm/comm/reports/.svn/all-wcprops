@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/91/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/reports
+END
+JasperPrintWithHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/91/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/reports/JasperPrintWithHibernate.java
+END
+ExportToFileOrHtml.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/91/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/reports/ExportToFileOrHtml.java
+END
+ReadFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/91/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/comm/comm/reports/ReadFile.java
+END

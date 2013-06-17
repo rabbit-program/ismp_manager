@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3317/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/lm/dLog
+END
+SysLogConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/code2/!svn/ver/3760/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/lm/dLog/SysLogConfigAction.java
+END
+PcConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/2743/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/lm/dLog/PcConfigAction.java
+END
+SnmpTrapConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/code2/!svn/ver/3317/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/lm/dLog/SnmpTrapConfigAction.java
+END
+FtpConfigAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/951/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/config/web/actions/lm/dLog/FtpConfigAction.java
+END

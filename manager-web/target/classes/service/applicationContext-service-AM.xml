@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+     <!-- 与managerweb相关  -->
+    <bean id="assetDeviceService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetDeviceServiceImpl">
+          <property name="assetDeviceDao" ref="assetDeviceDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 资产更变日志 -->
+    <bean id="assetChangeLogService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetChangeLogServiceImpl">
+          <property name="assetChangeLogDao" ref="assetChangeLogDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 资产 -->
+    <bean id="assetDailyAvailabilityService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetDailyAvailabilityServiceImpl">
+          <property name="assetDailyAvailabilityDao" ref="assetDailyAvailabilityDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+     
+     <!-- 硬件 -->
+    <bean id="assetHardwareService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetHardwareServiceImpl">
+          <property name="assetHardwareDao" ref="assetHardwareDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!--  -->
+    <bean id="assetMonthlyAvailabilityService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetMonthlyAvailabilityServiceImpl">
+          <property name="assetMonthlyAvailabilityDao" ref="assetMonthlyAvailabilityDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 位置 -->
+    <bean id="assetPositionService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetPositionServiceImpl">
+          <property name="assetPositionDao" ref="assetPositionDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 位置 -->
+    <bean id="assetRawAvailabilityService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetRawAvailabilityServiceImpl">
+          <property name="assetRawAvailabilityDao" ref="assetRawAvailabilityDao"></property>
+          <property name="domainDao" ref="domainDao"></property>
+          <property name="assetToPositionDao" ref="assetToPositionDao"></property>
+          <property name="assetPositionDao" ref="assetPositionDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 资产到软件-->
+    <bean id="assetToSoftwareService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetToSoftwareServiceImpl">
+          <property name="assetToSoftwareDao" ref="assetToSoftwareDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 资产到位置-->
+    <bean id="assetToPositionService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetToPositionServiceImpl">
+          <property name="assetToPositionDao" ref="assetToPositionDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 资产到硬件-->
+    <bean id="assetToHardwareService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetToHardwareServiceImpl">
+          <property name="assetToHardwareDao" ref="assetToHardwareDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <!-- 软件 -->
+    <bean id="assetSoftwareService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.AM.service.impl.AssetSoftwareServiceImpl">
+          <property name="assetSoftwareDao" ref="assetSoftwareDao"></property>
+          <property name="systemlogService" ref="systemlogService"></property>
+        </bean>
+       </property>
+    </bean>
+    
+    <bean id="assetDwrServices" parent="txProxyTemplate">
+    	<property name="target">
+    		<bean class="edu.sjtu.infosec.ismp.manager.AM.web.dwr.AssetDwrServicesImpl">
+    			<property name="topoWebService" ref="topoWebService"></property>
+    			<property name="systemlogService" ref="systemlogService"></property>
+    		</bean>
+    	</property>
+    </bean>
+     
+     <!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+</beans>

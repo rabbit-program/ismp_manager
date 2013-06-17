@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../css/comm/other/Maincontant1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+var rosterNum = 0;
+var rosterArray = new Array();
+
+$(function(){
+    $(".boxy").boxy();
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function addRoster(inElement,rosterSelect){
+	var rosterCode = rosterSelect.value;
+	if(rosterCode == -1){
+		alert("请选择要添加的值班人员！");
+	}else{
+	    var rosterIsHas = false;
+	    for(var i=0; i<rosterArray.length; i++){
+	        if(rosterArray[i] == rosterCode){
+	            rosterIsHas = true;
+	        }
+	    }
+	    if(rosterIsHas){
+	        alert("您好！该人员已在值班列表中，不可重复添加！");
+	    }else{
+	        var rosterName = "";
+            if (window.ActiveXObject){
+            	rosterName = rosterSelect.options[rosterSelect.selectedIndex].innerText;
+            }else{
+            	rosterName = rosterSelect.options[rosterSelect.selectedIndex].text;
+            }
+	        if(rosterName.length>=5){
+	            rosterName = rosterName.substr(0,5)+"...";
+	        }
+	        
+	        var roster = document.createElement("div");
+	        //var br = document.createElement("br");
+	        roster.id = rosterCode;
+	        if (window.ActiveXObject){
+	            roster.style.styleFloat = "left";
+	        }else{
+	            roster.style.cssFloat = "left";
+	        }
+	        roster.style.paddingLeft = "10px";
+	        
+	        var inHTML = "<span title='"+rosterName+"' style='float: left; width: 60px;'>"+rosterName+"</span>"
+	                      +"<input id='rostersList' name='rostersList' type='checkbox' value='"+rosterCode+"' style='display: none;'/>"
+	                      +"<a href=javascript:delRoster('"+rosterCode+"') style='float: left; padding-top: 3px;' onmouseout=MM_swapImgRestore() onmouseover=MM_swapImage('Image"+rosterCode+"','','../../../../../img/comm/other/110.gif',1)>"
+	                           +"<img src='../../../../../img/comm/other/109.gif' width='12' height='12' border='0' id='Image"+rosterCode+"' name='Image"+rosterCode+"'/>"
+	                      +"</a>";
+
+	        //var x = Math.floor(rosterNum/6);
+	        //var y = x*6;
+	        //alert("rosterNum:="+rosterNum+"x:="+x+"y:="+y);
+	        //if(y==rosterNum && rosterNum>0){
+                //alert("换行");
+            //    br.id = "br" + x;
+            //    inElement.appendChild(br);
+                
+	        //    inHTML = "<span title='"+rosterName+"'>"+rosterName+"</span>"
+	        //             +"<a href=javascript:delRoster('"+rosterCode+"','"+x+"') onmouseout=MM_swapImgRestore() onmouseover=MM_swapImage('Image"+rosterCode+"','','../../../../../img/comm/other/110.gif',1)>"
+            //                  +"<img src='../../../../../img/comm/other/109.gif' width='12' height='12' border='0' id='Image"+rosterCode+"' name='Image"+rosterCode+"'/>"
+            //             +"</a>";
+	        //}
+            roster.innerHTML = inHTML;
+	        inElement.appendChild(roster);
+	        rosterArray.push(rosterCode);
+	        rosterNum++;
+	    }
+	}
+    //$("table tr:eq(3)").after(
+    //        "<tr>"+
+    //        "<td><table width='100' border='0' cellspacing='0' cellpadding='0'>"+
+    //          "<tr>"+
+    //            "<td width='73' align='center'>人员姓名"+(currRows-1)+"</td>"+
+    //            "<td width='18'><a href='#' onmouseout='MM_swapImgRestore()' onmouseover=MM_swapImage('Image211','','../../../../../img/comm/other/110.gif',1)><img src='../../../../../img/comm/other/109.gif' name='Image211' width='12' height='12' border='0' id='Image211' /></a></td>"+
+    //          "</tr>"+
+    //        "</table></td>"+
+    //      "</tr>");
+}
+
+function delRoster(rosterCode){
+    for(var i=0; i<rosterArray.length; i++){
+        if(rosterArray[i] == rosterCode){
+            //alert("删除前：="+rosterArray.length);
+            rosterArray.splice(i,1);
+            //alert("删除后：="+rosterArray.length);
+        }
+    }
+    //for(var j=0; j<rosterArray.length; j++){alert(rosterArray[j])}
+    rosterNum--;
+    var delElement = document.getElementById(rosterCode);
+    delElement.style.display = "none";
+	while(delElement.hasChildNodes()){
+		delElement.removeChild(delElement.firstChild);
+    }
+	delElement.id="hasDel";
+}
+
+//function delRoster(rosterCode, brCode){
+//    for(var i=0; i<rosterArray.length; i++){
+//        if(rosterArray[i] == rosterCode){
+//            rosterArray.splice(i,1);
+//        }
+//    }
+//    rosterNum--;
+    
+//    document.getElementById(rosterCode).style.display = "none";
+//    var x = Math.floor(rosterNum/6);
+//    var y = x*6;
+   // if(){
+        
+   // }
+//    document.getElementById("br"+brCode).style.display = "none";
+//}
+</script>
+</head>
+<body onload="MM_preloadImages('../../../../../img/comm/other/109.gif','../../../../../img/comm/other/110.gif')" >
+<div id="contant" class="mainbg" style="width: 700px;">
+  <div id="banner" class="grayline overf bannerH" > </div>
+  <div class="contant">
+    <h2 >修改权限</h2>
+ 
+  <div id="data" class="greenborder overf pad1" >
+        <form action="" method="post" enctype="multipart/form-data" name="f1" id="f1">
+          <table width="100%" id="senfe" sortcol="-1">
+              <tr>
+                 <th width="18%" style="">委办局<span class="webdings"></span></th>
+                <td colspan="5"><label for="textfield"></label>
+                  <select name="select" id="select">
+                    <option>==委办局==</option>
+                </select></td>
+              </tr>
+              <tr>
+                <th width="18%" style="">时间<span class="webdings"></span></th>
+                <td colspan="5"><select name="select2" id="select2">
+                  <option>2010-10-10</option>
+                </select>
+                —
+                <select name="select3" id="select3">
+                  <option>2010-10-10</option>
+                </select></td>
+              </tr>
+              <tr>
+             <th width="18%" style="">人员指定<span class="webdings"></span></th>
+                <td colspan="5">
+                    <select name="select4" id="select4">
+                      <option value="-1">== 请选择 ==</option>
+                      <option value="1">人员1</option>
+                      <option value="2">人员2</option>
+                      <option value="3">人员3</option>
+                      <option value="4">人员4</option>
+                      <option value="5">人员5</option>
+                      <option value="6">人员6</option>
+                      <option value="7">人员7</option>
+                      <option value="8">人员8</option>
+                      <option value="9">人员9</option>
+                      <option value="10">人员10</option>
+                    </select>
+                    <input type="button" onclick="addRoster(document.getElementById('rosterShow'),document.getElementById('select4'))" value="添加"/>
+                    <div style="padding-top: 15px;padding-bottom: 5px;float: left;">
+                        <div style="border: 1px solid #A4CE31;float: left;min-width: 500px;max-width: 546px;">
+                            <div id="rosterShow" style="line-height: 20px;">
+                                <input id="rosterNum" name="rosterNum" type="hidden" value="0"/>
+                                
+                                <!-- 
+                                <div id="01" style="float: left; padding-left: 10px;">
+                                    <span title="人员姓名01" style="float: left; width: 60px;">人员01</span>
+                                    <input id='rostersList' name='rostersList' type='checkbox' value='01' style='display: none;'/>
+                                    <a href="javascript:delRoster('01')" style="float: left; padding-top: 3px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image01','','../../../../../img/comm/other/110.gif',1)">
+                                        <img src="../../../../../img/comm/other/109.gif" width="12" height="12" border="0" id="Image01"  name="Image01"/>
+                                    </a>
+                                </div>
+                                <div id="02" style="float: left; padding-left: 10px;">
+                                    <span title="人员姓名02" style="float: left; width: 60px;">人员02</span>
+                                    <input id='rostersList' name='rostersList' type='checkbox' value='02' style='display: none;'/>
+                                    <a href="javascript:delRoster('02')" style="float: left; padding-top: 3px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image02','','../../../../../img/comm/other/110.gif',1)">
+                                        <img src="../../../../../img/comm/other/109.gif" width="12" height="12" border="0" id="Image02"  name="Image02"/>
+                                    </a>
+                                </div>
+                                <div id="03" style="float: left; padding-left: 10px;">
+                                    <span title="人员姓名03" style="float: left; width: 60px;">人员03</span>
+                                    <input id='rostersList' name='rostersList' type='checkbox' value='03' style='display: none;'/>
+                                    <a href="javascript:delRoster('03')" style="float: left; padding-top: 3px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image03','','../../../../../img/comm/other/110.gif',1)">
+                                        <img src="../../../../../img/comm/other/109.gif" width="12" height="12" border="0" id="Image03" name="Image03"/>
+                                    </a>
+                                </div>
+                                 -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <th width="18%" style="">值班<span class="webdings"></span></th>
+                <td colspan="5"><textarea name="textfield" cols="100%" 
+ rows="5" id="textfield"  >详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内</textarea></td>
+              </tr>
+          </table>
+        </form>
+    </div>
+    <div class="martop8 Height_t">
+    <ul id="page">
+    <li><a href="#" class="R6 R7 boxy" title="添加">重置</a></li>
+        <li><a href="#" class="R6 R7 boxy" title="添加">确认</a></li>
+  </ul>
+  
+    <br />
+  </div>
+  </div>
+   
+  </div>
+</div>
+<script type="text/javascript">
+      rosterNum = document.getElementById('rosterNum').value;
+      rosterArray.push(01);
+      rosterArray.push(02);
+      rosterArray.push(03);
+</script>
+</body>
+<script type="text/javascript" src="../../../../../js/comm/other/tablelink.js"></script>
+</html>

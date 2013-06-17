@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+<title>index</title>
+</head>
+<body>
+<div id="data">
+<table width="100%">
+  <tr>
+    <td width="700"><img src="../../../img/RAM/DisplayChart.png" /><img src="../../../img/RAM/DisplayChart.png" /></td>
+  </tr>
+</table>
+<h2 class="martop10">研发部各资产的风险列表</h2>
+<table width="100%">
+  <tr>
+    <th> 资产名称 </th>
+    <th> 威胁名称 </th>
+    <th> 安全事件发生可能性 </th>
+    <th> 查看 </th>
+  </tr>
+  <tr>
+    <td>nothing</td>
+    <td><div class="tdcut">大型组织中，没建立一个与组织规模相宜的跨部门管理论坛（或其他形式），由组织有施情况</a></div></td>
+    <td>High</td>
+    <td><a class="boxy" href="view_13_06.html" title="查看"><u>查看</u></a></td>
+    </tr>
+  <tr>
+    <td>change</td>
+    <td>Mouse</td>
+    <td>High</td>
+    <td>查看</td>
+    </tr>
+  <tr>
+    <td>Table</td>
+    <td>Table</td>
+    <td>Low</td>
+    <td>查看</td>
+    </tr>
+  <tr>
+    <td>Route</td>
+    <td>Route</td>
+    <td>High</td>
+    <td>查看</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

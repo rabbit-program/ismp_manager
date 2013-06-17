@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model
+END
+Eventcorrrule.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Eventcorrrule.java
+END
+Eventmoniinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Eventmoniinfo.java
+END
+Eventmoni.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Eventmoni.java
+END
+Centereventmoni.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Centereventmoni.java
+END
+Eventrealdisp.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Eventrealdisp.java
+END
+NormalizedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/NormalizedEvent.java
+END
+TrapEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/TrapEvent.java
+END
+Centertasksele.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Centertasksele.java
+END
+EventFaciip.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/EventFaciip.java
+END
+Eventtasksele.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/model/Eventtasksele.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/sitecheck
+END
+applicationContext-siteCheck.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/2230/trunk/ismp-manager/src/main/resources/sitecheck/applicationContext-siteCheck.xml
+END
+applicationContext-siteCheck-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/sitecheck/applicationContext-siteCheck-rmi.xml
+END

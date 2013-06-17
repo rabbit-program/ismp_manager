@@ -1,0 +1,32 @@
+<div  id="data" class="pad1 ">
+<h2>你现在选择的是<b>***</b></h2>
+  <table>
+    <tr>
+      <th> 业务过程 <span class="alert">*</span></th>
+      <td colspan="3"><textarea name="textarea" cols="30" rows="3"></textarea></td>
+    </tr>
+    <tr>
+      <th> 应急优先等级 <span class="alert">*</span></th>
+      <td colspan="3"><select name="select2">
+        <option>高</option>
+        <option selected="selected">中</option>
+        <option>低</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th> 关键资产 <span class="alert">*</span></th>
+      <td colspan="3"><textarea name="textarea3" cols="30" rows="3"></textarea></td>
+    </tr>
+    <tr>
+      <th> 恢复时间目标 <span class="alert">*</span></th>
+      <td><input size="12" /> 
+        小时</td>
+      <th> 恢复时间点目标 <span class="alert">*</span></th>
+      <td><input size="12" />
+      小时</td>
+    </tr>
+  </table>
+  <div class="paddiv">This is for verticl spacing</div>
+<a href="#" class="R6">保存</a> <a href="#" class="R6">重置</a> <a href="#" class="R6">返回</a>
+<div class="paddiv">This is for verticl spacing</div>
+</div>

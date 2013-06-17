@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2947/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model
+END
+ContiScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiScript.java
+END
+ContiNotifyInst.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2942/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiNotifyInst.java
+END
+ContiRespInst.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiRespInst.java
+END
+SafeThreatenInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/SafeThreatenInfo.java
+END
+ContiProManage.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2947/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiProManage.java
+END
+RespFilePrint.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/RespFilePrint.java
+END
+RespInfoBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/859/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/RespInfoBO.java
+END
+ContiBia.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiBia.java
+END
+ContiNotifyProc.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiNotifyProc.java
+END
+LinkMan.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/LinkMan.java
+END
+PriorityLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/328/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/PriorityLevel.java
+END
+ContiRespProc.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/459/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/ERM/model/ContiRespProc.java
+END

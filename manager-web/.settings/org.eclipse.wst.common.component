@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="manager-web">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/ismp-manager-rmi/ismp-manager-rmi">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/ismp-agent-winsensor-comm/ismp-agent-winsensor-comm">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="manager-web"/>
+        <property name="java-output-path"/>
+    </wb-module>
+</project-modules>

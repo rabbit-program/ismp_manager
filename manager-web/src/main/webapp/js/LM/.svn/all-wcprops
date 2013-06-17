@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code2/!svn/ver/1306/trunk/manager-web/src/main/webapp/js/LM
+END
+prototype.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code2/!svn/ver/825/trunk/manager-web/src/main/webapp/js/LM/prototype.js
+END
+sysLogValidate.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code2/!svn/ver/1248/trunk/manager-web/src/main/webapp/js/LM/sysLogValidate.js
+END
+pcValidate.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code2/!svn/ver/1306/trunk/manager-web/src/main/webapp/js/LM/pcValidate.js
+END
+goPage.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code2/!svn/ver/1042/trunk/manager-web/src/main/webapp/js/LM/goPage.js
+END
+getSysLogDiv.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code2/!svn/ver/1070/trunk/manager-web/src/main/webapp/js/LM/getSysLogDiv.js
+END

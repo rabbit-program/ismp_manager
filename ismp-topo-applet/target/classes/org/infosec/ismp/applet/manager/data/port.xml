@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.2_16" class="java.beans.XMLDecoder"> 
+ <object class="twaver.DataBoxContext"> 
+  <void property="images"> 
+   <object class="java.util.HashMap"> 
+    <void method="put"> 
+     <string>/resource/image/twaver/link_icon.png</string> 
+     <string>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKUlEQVR42mNgoAYoLS39j4zJMgAb&#13;
+m74GUOwNbIaNGjKYDRlGKZYqORkAfhloKfeZLLAAAAAASUVORK5CYII=&#13;
+</string> 
+    </void> 
+    <void method="put"> 
+     <string>/resource/image/twaver/node_icon.png</string> 
+     <string>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASElEQVR42mP4TwGYPGnSfwYQ4/z5&#13;
+82RhFANKS0tJwqMGjBqA1QBSsMx3GVQDQAxyMQMusGDevP/ImIFUQLIBu3bt+k8KhukDAHrNjasT&#13;
+jbHgAAAAAElFTkSuQmCC&#13;
+</string> 
+    </void> 
+    <void method="put"> 
+     <string>file:/D:/Work/TWaver/Java/Version/twaver-java-3.0/src/demo/resource/images/pc.png</string> 
+     <string>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&#13;
+AElFTkSuQmCC&#13;
+</string> 
+    </void> 
+    <void method="put"> 
+     <string>file:/D:/Work/TWaver/Java/Version/twaver-java-3.0/src/demo/resource/images/world.png</string> 
+     <string>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&#13;
+</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="name"> 
+   <string>Network Editor</string> 
+  </void> 
+ </object> 
+ <object id="Node0" class="twaver.Node"> 
+  <void property="image"> 
+   <string>file:/D:/Work/TWaver/Java/Version/twaver-java-3.0/src/demo/resource/images/pc.png</string> 
+  </void> 
+  <void property="location"> 
+   <object class="java.awt.Point"> 
+    <int>10</int> 
+    <int>15</int> 
+   </object> 
+  </void> 
+ </object> 
+ <object id="Node1" class="twaver.Node"> 
+  <void property="image"> 
+   <string>file:/D:/Work/TWaver/Java/Version/twaver-java-3.0/src/demo/resource/images/world.png</string> 
+  </void> 
+  <void property="location"> 
+   <object class="java.awt.Point"> 
+    <int>90</int> 
+    <int>50</int> 
+   </object> 
+  </void> 
+ </object> 
+ <object class="twaver.Link"> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.index</string> 
+   <int>0</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.size</string> 
+   <int>2</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.expand</string> 
+   <boolean>true</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.flowing</string> 
+   <boolean>true</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.flowing.color</string> 
+   <object id="Color0" class="java.awt.Color"> 
+    <int>51</int> 
+    <int>102</int> 
+    <int>0</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>render.color</string> 
+   <object id="Color1" class="java.awt.Color"> 
+    <int>255</int> 
+    <int>255</int> 
+    <int>255</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>border.visible</string> 
+   <boolean>false</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>state.outline.width</string> 
+   <int>1</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>render.alpha</string> 
+   <float>1.0</float> 
+  </void> 
+  <void property="from"> 
+   <object idref="Node0"/> 
+  </void> 
+  <void property="linkType"> 
+   <int>3</int> 
+  </void> 
+  <void property="to"> 
+   <object idref="Node1"/> 
+  </void> 
+ </object> 
+ <object class="twaver.Link"> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.index</string> 
+   <int>1</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.size</string> 
+   <int>2</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.bundle.expand</string> 
+   <boolean>true</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.flowing</string> 
+   <boolean>true</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>link.flowing.color</string> 
+   <object idref="Color0"/> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>render.color</string> 
+   <object idref="Color1"/> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>border.visible</string> 
+   <boolean>false</boolean> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>state.outline.width</string> 
+   <int>1</int> 
+  </void> 
+  <void method="putClientProperty"> 
+   <string>render.alpha</string> 
+   <float>1.0</float> 
+  </void> 
+  <void property="from"> 
+   <object idref="Node1"/> 
+  </void> 
+  <void property="linkType"> 
+   <int>3</int> 
+  </void> 
+  <void property="to"> 
+   <object idref="Node0"/> 
+  </void> 
+ </object> 
+</java> 

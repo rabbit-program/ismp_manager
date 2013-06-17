@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <!-- 态势管理 -->
+	<bean name="/ismp/domain/local/bsam/situationAction"
+		class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.SituationAction"
+		singleton="false" lazy-init="true">
+		<property name="securityAreaService">
+            <ref bean="securityAreaService" />
+        </property>
+        
+        <property name="machineRoomService">
+            <ref bean="machineRoomService" />
+        </property>
+        
+        <property name="machineCabinetService">
+            <ref bean="machineCabinetService" />
+        </property>
+        
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+	</bean>
+	
+	<!--主机列表 -->
+    <bean name="/ismp/domain/local/bsam/machineAction"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.MachineAction"
+        singleton="false" lazy-init="true">
+        <property name="machineService">
+            <ref bean="machineService" />
+        </property>
+        
+        <property name="machineCabinetService">
+            <ref bean="machineCabinetService" />
+        </property>
+        
+        <property name="machineRoomService">
+            <ref bean="machineRoomService" />
+        </property>
+        
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        
+        <property name="systemLogService">
+            <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+    <!--机柜列表-->
+    <bean name="/ismp/domain/local/bsam/machineCabinetAction"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.MachineCabinetAction"
+        singleton="false" lazy-init="true">
+        <property name="machineCabinetService">
+            <ref bean="machineCabinetService" />
+        </property>
+        
+        <property name="machineRoomService">
+            <ref bean="machineRoomService" />
+        </property>
+        
+        <property name="systemLogService">
+            <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+    <!--机房列表-->
+    <bean name="/ismp/domain/local/bsam/machineRoomAction"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.MachineRoomAction"
+        singleton="false" lazy-init="true">
+        <property name="machineRoomService">
+            <ref bean="machineRoomService" />
+        </property>
+        
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        
+        <property name="systemLogService">
+            <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+    <!--颜色阈值设置 -->
+    <bean name="/ismp/domain/local/bsam/colorThresholdAction"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.ColorThresholdAction"
+        singleton="false" lazy-init="true">
+        <property name="colorThresholdService">
+            <ref bean="colorThresholdService" />
+        </property>
+        
+        <property name="systemLogService">
+            <ref bean="systemlogService" />
+        </property>
+    </bean>
+	
+	<!--历史态势 -->
+    <bean name="/ismp/domain/local/bsam/situationHistoryAction"
+        class="edu.sjtu.infosec.ismp.manager.BSAM.web.actions.SituationHistoryAction"
+        singleton="false" lazy-init="true">
+        
+    </bean> 
+</beans>

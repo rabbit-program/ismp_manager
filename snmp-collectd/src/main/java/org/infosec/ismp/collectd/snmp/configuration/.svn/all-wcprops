@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3599/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/configuration
+END
+Device.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3599/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/configuration/Device.java
+END
+SnmpConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/1264/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/configuration/SnmpConfiguration.java
+END
+Table.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1264/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/configuration/Table.java
+END
+Column.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3358/trunk/snmp-collectd/src/main/java/org/infosec/ismp/collectd/snmp/configuration/Column.java
+END

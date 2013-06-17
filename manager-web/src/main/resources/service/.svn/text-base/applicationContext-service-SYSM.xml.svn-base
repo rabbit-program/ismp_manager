@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+<!-- 与managerweb相关  -->
+	<bean id="domainService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.service.impl.DomainServiceImpl">
+                <property name="domainDao" ref="domainDao"></property>
+			</bean>
+		</property>
+	</bean>
+    <!--应用系统管理-->
+	    <!--应用系统信息-->
+	    <bean id="appSysInfoService" parent="txProxyTemplate">
+	       <property name="target"> 
+	        <bean
+	          class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.service.impl.AppSysInfoServiceImpl">
+	          <property name="appSysInfoDao" ref="appSysInfoDao"></property>
+	        </bean>
+	       </property>
+	    </bean>
+	    <!--应用系统权限-->
+	    <bean id="appSysRoleService" parent="txProxyTemplate">
+	       <property name="target"> 
+	        <bean
+	          class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.service.impl.AppSysRoleServiceImpl">
+	          <property name="appSysRoleDao" ref="appSysRoleDao"></property>
+	        </bean>
+	       </property>
+	    </bean>
+	    <!--应用系统权限分配记录-->
+	    <bean id="roleAssignRecordsService" parent="txProxyTemplate">
+	       <property name="target"> 
+	        <bean
+	          class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.service.impl.RoleAssignRecordsServiceImpl">
+	          <property name="roleAssignRecordsDao" ref="roleAssignRecordsDao"></property>
+	        </bean>
+	       </property>
+	    </bean>
+    <!-- 用户管理 -->
+		<bean id="userService" parent="txProxyTemplate">
+		    <property name="target">
+		        <bean class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.service.impl.UserServiceImpl">
+		            <property name="blackandwhitedao" ref="blackandwhiteDao"></property>
+		            <property name="blackandwhitestatusdao" ref="blackandwhitestatusDao"></property>
+		            <property name="userdao" ref="userMDao"></property>
+		        </bean>
+		    </property>
+		</bean>
+		<bean id="roleService" parent="txProxyTemplate">
+		    <property name="target">
+		        <bean class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.service.impl.RoleServiceImpl">
+		            <property name="roledao" ref="roleMDao"></property>
+		        </bean>
+		    </property>
+		</bean>
+		<bean id="blackandwhiteService" parent="txProxyTemplate">
+		    <property name="target">
+		        <bean
+		            class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.service.impl.BlackAndWhiteServiceImpl">
+		            <property name="blackandwhitedao" ref="blackandwhiteDao"></property>                                                       
+		        </bean>
+		    </property>
+		</bean> 
+		<bean id="blackandwhitestatusService" parent="txProxyTemplate">
+		    <property name="target">
+		        <bean
+		            class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.service.impl.BlackAndWhiteStatusServiceImpl">
+		            <property name="blackandwhitestatusdao" ref="blackandwhitestatusDao"></property>
+		        </bean>
+		    </property>
+		</bean>
+		<!-- dwr 验证配置 -->
+		<bean id="userDwrValidate" parent="txProxyTemplate">
+		     <property name="target">
+		        <bean class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.web.dwr.UserDwrValidateService"></bean>
+		     </property>
+		</bean>
+    <!--系统配置-->
+	    <bean id="sysConfigDataSynService" parent="txProxyTemplate">
+	        <property name="target">
+	            <bean class="org.infosec.ismp.manager.rmi.sysm.config.service.impl.SysConfigDataSynServiceImpl">
+	                <property name="sysConfigDataSynDao" ref="sysConfigDataSynDao"></property>
+	            </bean>
+	        </property>
+	    </bean>
+	    <bean id="sysConfigDbService" parent="txProxyTemplate">
+	        <property name="target">
+	            <bean class="org.infosec.ismp.manager.rmi.sysm.config.service.impl.SysConfigDbServiceImpl">
+	                <property name="sysConfigDbDao" ref="sysConfigDbDao"></property>
+	            </bean>
+	        </property>
+	    </bean>
+	    <bean id="sysConfigSmsService" parent="txProxyTemplate">
+	        <property name="target">
+	            <bean class="org.infosec.ismp.manager.rmi.sysm.config.service.impl.SysConfigSmsServiceImpl">
+	                <property name="sysConfigSmsDao" ref="sysConfigSmsDao"></property>
+	            </bean>
+	        </property>
+	    </bean>
+    <!--bbs-->
+        <bean id="answersService" parent="txProxyTemplate">
+            <property name="target">
+                <bean class="edu.sjtu.infosec.ismp.manager.SYSM.bbs.service.impl.AnswersServiceImpl">
+                    <property name="answersDao" ref="answersDao"></property>
+                </bean>
+            </property>
+        </bean>
+        <bean id="questionsService" parent="txProxyTemplate">
+            <property name="target">
+                <bean class="edu.sjtu.infosec.ismp.manager.SYSM.bbs.service.impl.QuestionsServiceImpl">
+                    <property name="questionsDao" ref="questionsDao"></property>
+                </bean>
+            </property>
+        </bean>
+     
+     
+     
+<!-- 与managerServer相关  -->
+     <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.virusManager.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+      -->
+    
+</beans>

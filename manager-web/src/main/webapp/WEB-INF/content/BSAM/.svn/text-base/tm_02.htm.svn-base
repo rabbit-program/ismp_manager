@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="nor" id="m"><a href="tm_01.htm"><span style="background:url(../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">实时态势</span></a></li>
+    <li class="act"><a href="#"><span style="background:url(../../../img/comm/other/05375363.gif) no-repeat; padding-left:22px;">态势回放</span></a></li>
+    <li class="nor"><a href="tm_03.htm"><span style="background:url(../../../img/comm/other/map01.png) no-repeat; padding-left:22px;">态势统计</span></a></li>
+    <li class="nor"><a href="tm_04.htm"><span style="background:url(../../../img/comm/other/053753177.gif) no-repeat; padding-left:22px;">资产关联</span></a></li>
+    <li class="nor"><a href="tm_05.htm"><span style="background:url(../../../img/comm/other/045631195.gif) no-repeat; padding-left:22px;">告警设置</span></a></li>
+  </div>
+  <div class="contant">
+    <h2>条件选择</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <div class="pad3">部门:
+        <select name="select">
+          <option>==全部==</option>
+        </select>
+        
+      开始时间
+      <input size="24" />
+      结束时间
+      <input size="24" />
+      <input class="submit80" type="button" value="态势回放" />
+      </div>      
+    </div>
+    <div class="greenborder martop8 pad3">
+      <p>Contant</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="martop8" >   
+    <input class="submit80" type="button" value="态势指标" />
+  <input class="submit80" type="button" value="威胁最大攻击" />
+  <input class="submit80" type="button" value="病毒类型" />
+  <input class="submit80" type="button" value="态势报表" />
+  </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../js/comm/other/tablelink.js"></script>
+</html>

@@ -1,0 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
+<%@ include file="/common/taglibs.jsp" %>
+ <li  <c:choose><c:when test="${topcss=='userconfig'}">class='act'</c:when><c:otherwise>class='nor'</c:otherwise></c:choose>   id="m"><a href="${ctx}/ismp/domain/local/userConfig.do?method=forward&main=1"><span style="background:url(${ctx}/img/comm/other/01.gif) no-repeat; padding-left:22px;">用户管理</span></a></li>
+ <li <c:choose><c:when test="${topcss=='sysconfig'}">class='act'</c:when><c:otherwise>class='nor'</c:otherwise></c:choose> ><a href="${ctx}/ismp/domain/local/sysm/sysConfig.do"><span style="background:url(${ctx}/img/comm/other/03.gif) no-repeat; padding-left:22px;">平台配置</span></a></li>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3330/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model
+END
+CommWinsensorDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/2919/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/CommWinsensorDevice.java
+END
+CommThreshold.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/2955/trunk/ismp-agent-winsensor-comm/src/main/java/org/infosec/ismp/agent/comm/winsensor/model/CommThreshold.java
+END

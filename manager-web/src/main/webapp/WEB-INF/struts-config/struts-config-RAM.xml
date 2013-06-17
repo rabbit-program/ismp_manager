@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="asseInfoProjForm" 
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseInfoProjForm" />
+    <form-bean name="asseInfoBusiForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseInfoBusiForm"/>
+    <form-bean name="asseInfoAsseForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseInfoAsseForm"/>
+    <form-bean name="asseInfoPapeForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseInfoPapeForm"/>
+    <form-bean name="asseInfoLeakForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseInfoLeakForm"/>
+    <form-bean name="asseKnowDynaVulnForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseKnowDynaVulnForm"/>
+    <form-bean name="asseKnowDynaThreForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseKnowDynaThreForm"/>
+    <form-bean name="asseKnowDynaAsseValueForm"
+                type="edu.sjtu.infosec.ismp.manager.RAM.web.form.AsseKnowDynaAsseValueForm"/>           
+  </form-beans>
+ 
+  <action-mappings>
+    <!-- 风险评估 -->
+    <!-- 项目管理  -->
+     <action path="/ismp/domain/local/ram/projManager"
+            type="org.springframework.web.struts.DelegatingActionProxy" 
+            name="asseInfoProjForm" 
+            parameter="method" 
+            scope="request">
+            <forward name="show" 
+                path="/WEB-INF/content/RAM/projList/projManager.jsp" />
+            <forward name="newProject" 
+                path="/WEB-INF/content/RAM/projList/newProj.jsp" />
+            <forward name="respedit" 
+                path="/WEB-INF/content/ERM/showList/editresp.jsp" />
+        </action>
+ 
+  
+  <!-- 业务录入 -->
+  <action path="/ismp/domain/local/ram/businessManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseInfoBusiForm"
+            parameter="method" 
+            scope="request">
+            <forward name="showBusi" path="/WEB-INF/content/RAM/projList/business.jsp"/>
+  </action>
+  
+  <!--资产录入 -->
+  <action path="/ismp/domain/local/ram/AssetManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseInfoAsseForm"
+            parameter="method" 
+            scope="request">
+            <forward name="asse" path="/WEB-INF/content/RAM/projList/asset.jsp"/>
+  </action>
+  
+  <!--拓扑结构 -->
+  <action path="/ismp/domain/local/ram/topoInfo" forward="/WEB-INF/content/RAM/projList/topo.jsp" />
+  
+  <!-- 问卷 -->
+  <action path="/ismp/domain/local/ram/papeManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseInfoPapeForm"
+            parameter="method" 
+            scope="request">
+            <forward name="papeDesign" path="/WEB-INF/content/RAM/projList/paperDesign.jsp"/>
+            <forward name="papeAnswer" path="/WEB-INF/content/RAM/projList/paperAnswer.jsp"/>
+  </action>
+  
+  <!-- 漏洞扫描 -->
+   <action path="/ismp/domain/local/ram/leakScanManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseInfoLeakForm"
+            parameter="method" 
+            scope="request">
+            <forward name="leakScan" path="/WEB-INF/content/RAM/projList/leak.jsp"/>
+            <forward name="look" path="/WEB-INF/content/RAM/projList/view.jsp"/>
+  </action>
+  
+    <!-- 脆弱性分析 -->
+   <action path="/ismp/domain/local/ram/VulnAnalManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseKnowDynaVulnForm"
+            parameter="method" 
+            scope="request">
+            <forward name="vuln" path="/WEB-INF/content/RAM/projList/dynaVuln.jsp"/>
+            <forward name="look" path="/WEB-INF/content/RAM/projList/vulnView.jsp"/>
+  </action>
+  
+  
+    <!-- 威胁分析 -->
+   <action path="/ismp/domain/local/ram/ThreAnalManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseKnowDynaThreForm"
+            parameter="method" 
+            scope="request">
+            <forward name="thre" path="/WEB-INF/content/RAM/projList/dynaThre.jsp"/>
+  </action>
+  
+  
+   <!-- 脆弱性威胁关联 -->
+   <action path="/ismp/domain/local/ram/VulnThreRelaManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseKnowDynaThreForm"
+            parameter="method" 
+            scope="request">
+            <forward name="dynaVuln" path="/WEB-INF/content/RAM/projList/dynaVulnThre.jsp"/>
+             <forward name="look" path="/WEB-INF/content/RAM/projList/vulnThreView.jsp"/>
+  </action>
+  
+     <!-- 风险计算 -->
+   <action path="/ismp/domain/local/ram/CalManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseKnowDynaAsseValueForm"
+            parameter="method" 
+            scope="request">
+            <forward name="cal" path="/WEB-INF/content/RAM/projList/calculate.jsp"/>
+  </action>
+  
+       <!-- 报表生成 -->
+   <action path="/ismp/domain/local/ram/reportManager" 
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            name="asseKnowDynaAsseValueForm"
+            parameter="method" 
+            scope="request">
+            <forward name="report" path="/WEB-INF/content/RAM/report/report.jsp"/>
+            <forward name="report1" path="/WEB-INF/content/RAM/report/reportFirst.jsp"/>
+            <forward name="report2" path="/WEB-INF/content/RAM/report/reportSecond.jsp"/>
+            <forward name="report3" path="/WEB-INF/content/RAM/report/reportThird.jsp"/>
+            <forward name="report4" path="/WEB-INF/content/RAM/report/reportFour.jsp"/>
+            <forward name="report5" path="/WEB-INF/content/RAM/report/reportFive.jsp"/>
+            <forward name="report6" path="/WEB-INF/content/RAM/report/reportSix.jsp"/>
+            <forward name="report7" path="/WEB-INF/content/RAM/report/reportServen.jsp"/>
+            <forward name="look" path="/WEB-INF/content/RAM/report/viewFive.jsp"/>
+            <forward name="lookThre" path="/WEB-INF/content/RAM/report/viewSix.jsp"/>
+  </action>
+  
+</action-mappings>
+   
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

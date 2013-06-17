@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3128/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/task
+END
+SnmpDeviceNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/3128/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/task/SnmpDeviceNode.java
+END
+AgentAddSnmpDeviceTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3128/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/task/AgentAddSnmpDeviceTask.java
+END
+AgentRemoveSnmpDeviceTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2177/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/snmp/task/AgentRemoveSnmpDeviceTask.java
+END

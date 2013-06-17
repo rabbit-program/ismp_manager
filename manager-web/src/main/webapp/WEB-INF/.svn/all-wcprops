@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code2/!svn/ver/3693/trunk/manager-web/src/main/webapp/WEB-INF
+END
+remoting-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/3413/trunk/manager-web/src/main/webapp/WEB-INF/remoting-servlet.xml
+END
+validation-asset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/2625/trunk/manager-web/src/main/webapp/WEB-INF/validation-asset.xml
+END
+validation-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/1594/trunk/manager-web/src/main/webapp/WEB-INF/validation-event.xml
+END
+dwr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code2/!svn/ver/3422/trunk/manager-web/src/main/webapp/WEB-INF/dwr.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/2625/trunk/manager-web/src/main/webapp/WEB-INF/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code2/!svn/ver/2849/trunk/manager-web/src/main/webapp/WEB-INF/web.xml
+END

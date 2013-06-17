@@ -1,0 +1,19 @@
+# Output pattern : date [thread] priority category - message
+#TRACE,DEBUG,INFO,WARN,ERROR,FATAL
+#log4j.rootLogger=debug, Console
+log4j.rootLogger=DEBUG, Console,RollingFile
+
+log4j.category.org.springframework=INFO
+log4j.category.org.apache=INFO
+log4j.category.org.hibernate=INFO
+
+#Console
+log4j.appender.Console=org.apache.log4j.ConsoleAppender
+log4j.appender.Console.layout=org.apache.log4j.PatternLayout
+log4j.appender.Console.layout.ConversionPattern=%d %-5p [%t] %c{1}: %m%n
+
+#RollingFile
+log4j.appender.RollingFile=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.RollingFile.File=logs/ismp-agent-winsensor.log
+log4j.appender.RollingFile.layout=org.apache.log4j.PatternLayout
+log4j.appender.RollingFile.layout.ConversionPattern=%d [%t] %-5p %-40.40c %X{traceId}-%m%n

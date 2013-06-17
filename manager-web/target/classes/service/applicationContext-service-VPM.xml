@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+    default-lazy-init="true">
+
+     <!-- 补丁管理  -->
+    <bean id="sensorClientsService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.VPM.pm.service.impl.SensorClientsServiceImpl">
+          <property name="sensorClientsDao" ref="sensorClientsDao"></property>
+        </bean>
+       </property>
+    </bean>
+    <!-- 补丁统计  -->
+    <bean id="sensorService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean
+          class="edu.sjtu.infosec.ismp.manager.VPM.pm.service.impl.SensorServiceImpl">
+          <!--<property name="sensorClientsDao" ref="sensorClientsDao"></property>-->
+        </bean>
+       </property>
+    </bean>
+    
+    
+     <!-- 策略  -->
+     <bean id="patchTacicsService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.VPM.pm.service.impl.PatchTacicsServiceImpl">
+          <property name="patchTactics" ref="patchTactics"></property>
+        </bean>
+       </property>
+    </bean> 
+    
+     <!-- 软件分发  -->
+     <bean id="softwareManagerService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.VPM.sd.service.impl.SoftwareManagerServiceImpl">
+          <property name="softwareManagerDao" ref="softwareManagerDao"></property>
+        </bean>
+       </property>
+    </bean> 
+     <!-- 软件类型  -->
+   <bean id="softwareTypeInfoService" parent="txProxyTemplate">
+       <property name="target"> 
+        <bean class="edu.sjtu.infosec.ismp.manager.VPM.sd.service.impl.SoftwareTypeInfoServiceImpl">
+          <property name="softwareTypeInfoDao" ref="softwareTypeInfoDao"></property>
+        </bean>
+       </property>
+    </bean> 
+    
+    <!-- 病毒管理  -->
+    <bean id="killResultTypeService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.KillResultTypeServiceImpl">
+                <property name="killResultTypeDao" ref="killResultTypeDao"></property>
+		        <!-- 
+		        <property name="systemlogservice" ref="systemlogservice"></property>
+		          -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="sysCenterService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.SysCenterServiceImpl">
+                <property name="sysCenterDao" ref="sysCenterDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsDailyCenterService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertDailyCenterServiceImpl">
+                <property name="virusAlertsDailyCenterDao" ref="virusAlertsDailyCenterDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsDailyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertDailyServiceImpl">
+                <property name="virusAlertsDailyDao" ref="virusAlertsDailyDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsMonthlyCenterService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertMonthlyCenterServiceImpl">
+                <property name="virusAlertsMonthlyCenterDao" ref="virusAlertsMonthlyCenterDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsMonthlyService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertMonthlyServiceImpl">
+                <property name="virusAlertsMonthlyDao" ref="virusAlertsMonthlyDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertServiceImpl">
+                <property name="virusAlertsDao" ref="virusAlertsDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusAlertsStatService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusAlertStatServiceImpl">
+                <property name="virusAlertsStatDao" ref="virusAlertsStatDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusClientsService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusClientsServiceImpl">
+                <property name="virusClientsDao" ref="virusClientsDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusServiceImpl">
+                <property name="virusDao" ref="virusDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+    <bean id="virusTypeService" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="edu.sjtu.infosec.ismp.manager.VPM.vm.service.impl.VirusTypeServiceImpl">
+                <property name="virusTypeDao" ref="virusTypeDao"></property>
+                <!-- 
+                <property name="systemlogservice" ref="systemlogservice"></property>
+                  -->
+            </bean>
+        </property>
+    </bean>
+     
+     
+     
+     
+     <!-- 与managerServer相关 -->
+    <!-- 补丁管理  -->
+    <!-- 
+    <bean id="sensorGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>org.infosec.ismp.manager.rmi.vpm.pm.service.SensorService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/sensorManagerService</value>
+        </property>
+    </bean>
+       -->
+    
+    <!-- 病毒管理  -->
+    <!-- 
+    <bean id="virusGetService" parent="rmiProxyParent">
+        <property name="serviceInterface">
+            <value>edu.sjtu.infosec.ismp.manager.VPM.vm.service.managerServer.VirusService</value>
+        </property>
+        <property name="serviceUrl">
+            <value>rmi://localhost/virusManagerService</value>
+        </property>
+    </bean>
+       -->
+</beans>

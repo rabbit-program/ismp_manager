@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+	
+		<!-- 事件模块 -->
+		<create creator="spring" javascript="EventSrviceClient">
+           <param name="beanName" value="eventSrviceClientProxy"></param>
+             <include method="doNewEvents"/>
+             <include method="doRealtimeEvents"/>
+        </create>
+        <convert converter="bean" match="org.infosec.ismp.manager.rmi.event.modle.Eventmoni"></convert>
+        <convert converter="bean" match="org.infosec.ismp.manager.rmi.event.modle.Eventrealdisp"></convert>
+	
+		<!-- 验证用户 -->
+		<create creator="spring" javascript="UserDwrValidate">
+			<param name="beanName" value="userDwrValidate" />
+			<include method="checkUserName"/>
+			<include method="checkPassWord"/>
+		</create>
+		<!-- 告警信息Dwr接口 -->
+		<create creator="spring" javascript="checkIfNew">
+            <param name="beanName" value="alertDwrService"></param>
+        </create>
+        <convert match="java.lang.String" converter="string">               
+        </convert>  
+        <!-- 转换成功Alert_Type BO -->
+        
+        <convert match="edu.sjtu.infosec.ismp.manager.AIM.model.AlertTypeBO" converter="bean">
+        </convert>
+        
+        <convert match="org.infosec.ismp.manager.rmi.aim.model.AlertInfoBO" converter="bean">
+        	<param name="include" value="id,time,nodeid,type,level,alertType,alertSubType,alertReason,srcIP,rawContent,status,rule,fusioin,ifnew,alertIdentity"></param>
+        </convert>
+	 	<!-- 转换分页BO -->
+        <convert match="edu.sjtu.infosec.ismp.manager.comm.model.page.Page" converter="bean"></convert>
+        <convert match="edu.sjtu.infosec.ismp.security.User" converter="bean"></convert>
+        
+        <!-- 风险评估Dwr begin -->
+         <create creator="spring" javascript="assetService">
+          <param name="beanName" value="assetService"/>          
+	     </create>
+	     
+	      <create creator="spring" javascript="vulnAnalService">
+	          <param name="beanName" value="vulnAnalService"/>          
+	     </create>
+	     
+	      <create creator="spring" javascript="threAnalService">
+	          <param name="beanName" value="threAnalService"/>          
+	     </create>
+	     
+	      <create creator="spring" javascript="statThreService">
+	          <param name="beanName" value="statThreService"/>          
+	     </create>
+	     
+	     <create creator="spring" javascript="businessService">
+	          <param name="beanName" value="businessService"/>          
+	     </create>
+	     
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.RAM.model.AsseInfoAsse"/>
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.RAM.model.AsseKnowStatThre"/>
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.RAM.model.AsseInfoBusi"/>
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.RAM.model.AsseKnowDynaThre"/>
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.RAM.model.AsseKnowDynaVuln"/>
+	     <!--风险评估 end -->
+	     
+         <!--应急响应begin -->
+         <create creator="spring" javascript="linkManService">
+              <param name="beanName" value="linkManService"/>          
+         </create>
+         <!--应急响应end -->
+         
+         <!--网站安全检测begin -->
+          <create creator="spring" javascript="webMonitorRecordsService">
+              <param name="beanName" value="webMonitorRecordsService"/>          
+         </create>
+         <!--网站安全检测end -->
+         
+         <!--服务检测  start-->
+         <create creator="spring" javascript="monitorService"> 
+            <param name="beanName" value="monitorService" />
+         </create>  
+         <!--服务检测  end-->
+
+         
+         <!-- 检查物理位置是否相同 -->
+	     <create javascript="checkLocation" creator="spring">
+	         <param name="beanName" value="assetPositionService"></param>
+	         <include method="getChildPosIdDWR"/>
+	         <include method="getChildParentIdDWR"/>
+	         <include method="getChildPosDWR"/> 
+	         <include method="getChildParentDWR"/> 
+	     </create> 
+	     <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.AM.model.AssetPositionBO"/>
+
+         
+         <!--态势感知  start-->
+         <create creator="spring" javascript="machineSituationService">
+            <param name="beanName" value="machineSituationService" />
+         </create>
+         
+         <create creator="spring" javascript="subUnitSituationService">
+            <param name="beanName" value="subUnitSituationService" />
+         </create>
+         
+         <create creator="spring" javascript="securityAreaSituationService">
+            <param name="beanName" value="securityAreaSituationService" />
+         </create>
+         
+         <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.BSAM.model.MachineSituationVO"></convert>
+         <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.BSAM.model.ColorThreshold"></convert>
+         <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.BSAM.model.SecurityAreaSituationVO"></convert>  
+         <convert converter="bean" match="edu.sjtu.infosec.ismp.manager.BSAM.model.SubUnitSituationVO"></convert>  
+         <!--态势感知  end-->
+         
+         <!-- 根据设备品牌得到型号 start-->
+         <create javascript="assetDwr" creator="spring" >
+         	<param name="beanName" value="assetDwrServices"></param>
+         </create>
+         <convert converter="bean" match="org.infosec.ismp.manager.rmi.tm.manager.model.DeviceModelEntity"></convert>
+         
+         <!-- 根据设备品牌得到型号 end<convert match="bean" converter="org.infosec.ismp.manager.rmi.tm.manager.model.DeviceModelEntity"></convert>-->
+
+	</allow>
+	<!-- <signatures>
+			<![CDATA[
+			import java.util.List;
+			import edu.sjtu.infosec.ismp.manager.AIM.model.AlertInfoBO;
+			import edu.sjtu.infosec.ismp.security.Domain;
+			checkIfNew.getPageListAlertDwrService(int curpage,String pagesize,String status,String type,String subType,String fusioin,String logintime);
+			 ]]>
+		</signatures> -->
+		
+</dwr>

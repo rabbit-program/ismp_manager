@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/2314/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/dao
+END
+DatabaseResultService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2314/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/dao/DatabaseResultService.java
+END
+DatabaseResultDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/2314/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/dao/DatabaseResultDao.java
+END
+DatabaseNodeEntityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2314/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/dao/DatabaseNodeEntityService.java
+END
+DatabaseNodeEntityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2314/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/db/dao/DatabaseNodeEntityDao.java
+END

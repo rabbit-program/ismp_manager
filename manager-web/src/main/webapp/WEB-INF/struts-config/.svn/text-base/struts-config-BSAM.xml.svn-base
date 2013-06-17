@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <!-- form -->
+  <form-beans>
+    <form-bean name="colorThresholdForm" type="edu.sjtu.infosec.ismp.manager.BSAM.web.form.ColorThresholdForm" />
+    <form-bean name="machineForm" type="edu.sjtu.infosec.ismp.manager.BSAM.web.form.MachineForm" />
+    <form-bean name="machineCabinetForm" type="edu.sjtu.infosec.ismp.manager.BSAM.web.form.MachineCabinetForm" />
+    <form-bean name="machineRoomForm" type="edu.sjtu.infosec.ismp.manager.BSAM.web.form.MachineRoomForm" />
+  </form-beans>
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  <!-- action -->
+  <action-mappings>
+  	<!-- 态势分析 -->
+  	
+  	<!-- 态势管理 -->
+    <action path="/ismp/domain/local/bsam/situationAction" 
+        type="org.springframework.web.struts.DelegatingActionProxy"
+        parameter="method" >
+        <forward name="securityAreaSituationList" path="/WEB-INF/content/BSAM/situationIndex.jsp" />
+        <!-- 态势前20名主机 -->
+        <forward name="topMachineSituationList" path="/WEB-INF/content/BSAM/topsituation/topSituationMachineList.jsp" />
+        <forward name="securityAreaSubUnitList" path="/WEB-INF/content/BSAM/location/securityAreaSubUnitList.jsp" />
+        <forward name="machineRoomSubUnitList" path="/WEB-INF/content/BSAM/location/machineRoomSubUnitList.jsp" />
+        <forward name="machineCabinetSubUnitList" path="/WEB-INF/content/BSAM/location/machineCabinetSubUnitList.jsp" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" />
+    </action>
+    
+	<!-- 主机列表 -->
+	<action path="/ismp/domain/local/bsam/machineAction" 
+	   type="org.springframework.web.struts.DelegatingActionProxy" 
+	   parameter="method" name="machineForm" >
+        <forward name="machineList" path="/WEB-INF/content/BSAM/setting/machineList.jsp" />
+        <forward name="machineInput" path="/WEB-INF/content/BSAM/setting/machineInput.jsp" />
+        <forward name="machineSaveOrUpdate" path="/ismp/domain/local/bsam/machineAction.do?method=getMachineList" />
+        <!-- 权重前20名主机 -->
+        <forward name="topMachineListByWeight" path="/WEB-INF/content/BSAM/topweight/topWeightMachineList.jsp" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" /> 
+    </action>
+    
+    <!-- 机柜列表 -->
+    <action path="/ismp/domain/local/bsam/machineCabinetAction" 
+        type="org.springframework.web.struts.DelegatingActionProxy" 
+        parameter="method" name="machineCabinetForm">
+        <forward name="machineCabinetList" path="/WEB-INF/content/BSAM/setting/machineCabinetList.jsp" />
+        <forward name="machineCabinetInput" path="/WEB-INF/content/BSAM/setting/machineCabinetInput.jsp" />
+        <forward name="machineCabinetSaveOrUpdate" path="/ismp/domain/local/bsam/machineCabinetAction.do?method=getMachineCabinetList" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" /> 
+    </action>
+     
+    <!-- 机房列表 -->
+    <action path="/ismp/domain/local/bsam/machineRoomAction" 
+        type="org.springframework.web.struts.DelegatingActionProxy" 
+        parameter="method" name="machineRoomForm" scope="request">
+        <forward name="machineRoomList" path="/WEB-INF/content/BSAM/setting/machineRoomList.jsp" />
+        <forward name="machineRoomInput" path="/WEB-INF/content/BSAM/setting/machineRoomInput.jsp" />
+        <forward name="machineRoomSaveOrUpdate" path="/ismp/domain/local/bsam/machineRoomAction.do?method=getMachineRoomList" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" /> 
+    </action> 
+    
+    <!-- 颜色阈值设置 -->
+    <action path="/ismp/domain/local/bsam/colorThresholdAction" 
+        type="org.springframework.web.struts.DelegatingActionProxy" 
+        parameter="method" name="colorThresholdForm">
+        <forward name="colorThresholdInput" path="/WEB-INF/content/BSAM/setting/colorThresholdInput.jsp" />
+        <forward name="colorThresholdUpdate" path="/ismp/domain/local/bsam/colorThresholdAction.do?method=colorThresholdInput" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" />
+    </action> 
+    
+    <!-- 历史态势 -->
+    <action path="/ismp/domain/local/bsam/situationHistoryAction"  
+        type="org.springframework.web.struts.DelegatingActionProxy" 
+        parameter="method">
+        <forward name="situationHistory" path="/WEB-INF/content/BSAM/history/situationHistory.jsp" />
+        <forward name="failed" path="/WEB-INF/content/BSAM/error/500.jsp" />
+    </action>     
+    
+    
+  </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+</struts-config>

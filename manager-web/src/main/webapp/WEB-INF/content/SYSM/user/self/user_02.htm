@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../../../js/comm/other/js/floatdiv.js"></script>
+</head>
+<body >
+<div id="contant" class="mainbg">
+  <div id="banner" class="grayline overf bannerH" >
+    <li class="act" id="m"><a href="#"><span style="background:url(../../../../../img/comm/other/01.gif) no-repeat; padding-left:22px;">用户管理</span></a></li>
+    <li class="nor"><a href="#"><span style="background:url(../../../../../img/comm/other/03.gif) no-repeat; padding-left:22px;">其他管理</span></a></li>
+  </div>
+  <div class="contant">    
+    <div class="overf h20 martop10">
+      <li id="m"><a  class="mback" href="user_01.htm"><span class="menus01">用户浏览</span></a></li>
+      <li><a  class="mbacka" href="#"><span class="menus02">用户条件查询</span></a></li>
+      <li><a  class="mback" href="user_03.htm"><span class="menus03">黑白名单查询</span></a></li>
+      <li><a  class="mback" href="user_04.htm"><span class="menus04">新增用户</span></a></li>
+      <li><a  class="mback" href="user_05.htm"><span class="menus05">新增黑白名单</span></a></li>
+      <li><a  class="mback" href="user_06.htm"><span class="menus06">黑白名单状态管理</span></a></li>
+      <li><a  class="mback" href="user_07.htm"><span class="menus07">部门管理</span></a></li>
+      <li><a  class="mback" href="user_08.htm"><span class="menus08">密码重置</span></a></li>
+    </div>
+    <div class="greenborder pad3 overf">
+    <h2 class="martop10">请选择查询条件</h2>
+    <div class="greenborder greenback overf pad3 Height_a" >
+      <span style="float:left;">用户名<input type="text" size="8" class="input"/> 真实姓名<input type="text" size="8" class="input"/> 角色<select><option>001</option></select> 状态<select><option>002</option></select></span> <a href="#" class="R6" style="margin-left:12px;">搜索</a>
+    </div>
+      <h2 class="martop10">用户列表</h2>
+      <div id="data" class="greenborder overf pad1 " >
+        <form name="f1" id="f1" action="" method="post">
+          <table id="senfe" sortcol="-1">
+            <thead>
+              <tr>
+                <th style="cursor:pointer" onclick="sortTable('senfe',0);">ID<span class="webdings">6</span></th>
+                <th>用户名</th>
+                <th>角色</th>
+                <th>真实姓名</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> 6629 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('user_pop01.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('user_pop02.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('user_pop03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 6429 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 2629 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 6429 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 1239 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 2229 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+              <tr>
+                <td> 5529 </td>
+                <td> 病毒感染 </td>
+                <td> 产品市场销售部 </td>
+                <td> 病毒感染 </td>
+                <td> 完成 </td>
+                <td><a href="#" class="R6" onclick="Boxy.load('edit.html');">查看</a><a href="#" class="R6" onclick="Boxy.load('edit.html');">编辑</a><a href="#" class="R6" onclick="Boxy.load('telltree.html');">删除</a><a href="#" class="R6" onclick="Boxy.load('tag02.html');">启用</a><a href="#" class="R6 R7" onclick="Boxy.load('tag03.html');">指派部门</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="paddiv">This is for verticl spacing</div>
+      <ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../js/comm/other/tablelink.js"></script>
+</html>

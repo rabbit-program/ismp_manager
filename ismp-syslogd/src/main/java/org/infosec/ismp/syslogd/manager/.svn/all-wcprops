@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/manager
+END
+SyslogPersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/manager/SyslogPersister.java
+END
+SyslogEventProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/manager/SyslogEventProcessor.java
+END
+SyslogMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2671/trunk/ismp-syslogd/src/main/java/org/infosec/ismp/syslogd/manager/SyslogMessageListener.java
+END

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <!-- 补丁管理-->
+     <bean id="sensorClientsDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.pm.dao.impl.SensorClientsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+       <!-- 策略--> 
+    <bean id="patchTactics"
+        class="edu.sjtu.infosec.ismp.manager.VPM.pm.dao.impl.PatchTacticsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 软件分发--> 
+    <bean id="softwareManagerDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.sd.dao.impl.SoftwareManagerDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+     <!-- 软件类型--> 
+    <bean id="softwareTypeInfoDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.sd.dao.impl.SoftwareTypeInfoDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>    
+    
+    <!-- 病毒管理-->
+    <bean id="killResultTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.KillResultTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="sysCenterDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.SysCenterDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsDailyCenterDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertDailyCenterDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsDailyDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertDailyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsMonthlyCenterDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertMonthlyCenterDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsMonthlyDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertMonthlyDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusAlertsStatDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusAlertStatDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusClientsDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusClientsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <bean id="virusTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.VPM.vm.dao.impl.VirusTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

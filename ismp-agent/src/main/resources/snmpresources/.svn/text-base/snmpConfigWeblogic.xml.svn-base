@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device type="weblogic">
+    <table name="jdbcConnectionPoolRuntimeTable" table="true">
+        <column type="SnmpOctetString">
+            <name>type</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.10</value>
+            <comments>BEA-proprietary MBean type</comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>name</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.15</value>
+            <comments>BEA-proprietary MBean name</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>activeConnectionsCount</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.25
+            </value>
+            <comments>活动的连接数</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>waitingForConnectionCount</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.30
+            </value>
+            <comments>连接等待数</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>maxCapacity</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.60
+            </value>
+            <comments>池的最大容量</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>connectionDelayTime</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.62
+            </value>
+            <comments>得到连接的平均时间</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>leakedConnectionCount</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.68</value>
+            <comments>泄漏的连接数</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>numAvailable</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.69</value>
+            <comments>可用连接数</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>numUnAvailable</name>
+            <value>.1.3.6.1.4.1.140.625.190.1.70</value>
+            <comments>不可用连接数</comments>
+        </column>
+        <comments>JDBC连接</comments>
+    </table>
+    <table name="jvmRuntimeTable" table="true">
+        <column type="SnmpOctetString">
+            <name>jvmRuntimeIndex</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.1</value>
+            <comments>Unique value directed from ObjectName which is used as table index</comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>type</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.10</value>
+            <comments>BEA-proprietary MBean type</comments>
+        </column>
+        <column type="SnmpCounter64">
+            <name>heapFreeCurrent</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.25
+            </value>
+            <comments>当前可用内存量</comments>
+        </column>
+        <column type="SnmpCounter64">
+            <name>heapSizeCurrent</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.30
+            </value>
+            <comments>JVM的大小</comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>javaVersion</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.35
+            </value>
+            <comments>JVM的版本</comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>name</name>
+            <value>.1.3.6.1.4.1.140.625.340.1.45</value>
+            <comments>BEA-proprietary MBean name</comments>
+        </column>
+        <comments>JVM的监控</comments>
+    </table>
+    <table name="threadPoolRuntimeTable" table="true">
+        <column type="SnmpOctetString">
+            <name>type</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.10</value>
+            <comments>BEA-proprietary MBean type</comments>
+        </column>
+        <column type="SnmpOctetString">
+            <name>name</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.15</value>
+            <comments>BEA-proprietary MBean name</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>executeThreadTotalCount</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.25</value>
+            <comments>Returns the total number of threads in the pool</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>executeThreadIdleCount</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.30</value>
+            <comments>Returns the number of idle threads in the pool</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>requestCapacity</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.35</value>
+            <comments>Returns the maximum amount of requests that can be accepted in the priority qeueue</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>threadPoolRuntimeQueueLength</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.40</value>
+            <comments>等待队列长度</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>requestCount</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.45</value>
+            <comments>队列中等待的请求数目</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>completedRequestCount</name>
+            <value>.1.3.6.1.4.1.140.625.367.1.50
+            </value>
+            <comments>队列中已完成的请求数量</comments>
+        </column>
+        <column type="SnmpInt32">
+            <name>threadPoolRuntimeStandbyThreadCount
+            </name>
+            <value>.1.3.6.1.4.1.140.625.367.1.60
+            </value>
+            <comments>等待的线程数</comments>
+        </column>
+        <comments>线程池</comments>
+    </table>
+</device>

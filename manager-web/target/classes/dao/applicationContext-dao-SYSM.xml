@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+    default-lazy-init="true">
+    <!-- 
+    <bean id="killResultTypeDao"
+        class="edu.sjtu.infosec.ismp.manager.virusManager.dao.impl.KillResultTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    -->
+    <bean id="domainDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.dao.impl.DomainDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+           <!-- 黑白名单 -->
+    <bean id="blackandwhiteDao" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.dao.impl.BlackAndWhiteDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <!-- 黑白名单状态 -->
+    <bean id="blackandwhitestatusDao" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.dao.impl.BlackAndWhiteStatusDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+     <!-- 用户DAO -->
+    <bean id="userMDao" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.dao.impl.UserDaoImp" >
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>    
+   <!-- 用户角色DAO -->
+    <bean id="roleMDao" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.dao.impl.RoleDaoImpl" >
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>    
+    
+<!--应用系统管理-->
+    <!--应用系统信息-->
+    <bean id="appSysInfoDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.dao.impl.AppSysInfoDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <!--应用系统权限-->
+    <bean id="appSysRoleDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.dao.impl.AppSysRoleDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <!--应用系统权限分配记录-->
+    <bean id="roleAssignRecordsDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.dao.impl.RoleAssignRecordsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+<!--系统配置-->
+    <bean id="sysConfigDataSynDao"
+        class="org.infosec.ismp.manager.rmi.sysm.config.dao.impl.SysConfigDataSynDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="sysConfigDbDao"
+        class="org.infosec.ismp.manager.rmi.sysm.config.dao.impl.SysConfigDbDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="sysConfigSmsDao"
+        class="org.infosec.ismp.manager.rmi.sysm.config.dao.impl.SysConfigSmsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+<!--bbs-->
+    <bean id="answersDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.bbs.dao.impl.AnswersDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="questionsDao"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.bbs.dao.impl.QuestionsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

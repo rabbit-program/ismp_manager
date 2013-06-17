@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware
+END
+leftFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/leftFrame.jsp
+END
+showHardwarePart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/showHardwarePart.jsp
+END
+addHardware.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/addHardware.jsp
+END
+asstHardward.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/asstHardward.jsp
+END
+hardwareFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/hardwareFrame.jsp
+END
+cancelHardwareRelating.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/cancelHardwareRelating.jsp
+END
+updateHardware.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/updateHardware.jsp
+END
+hardwareRelating.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/hardware/hardwareRelating.jsp
+END

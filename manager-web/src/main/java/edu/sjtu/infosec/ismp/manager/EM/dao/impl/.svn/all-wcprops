@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3410/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl
+END
+EventtaskseleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventtaskseleDao.java
+END
+EventcorrruleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventcorrruleDao.java
+END
+EventmoniinfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2302/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventmoniinfoDao.java
+END
+EventGetTopoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3410/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventGetTopoDao.java
+END
+EventmoniDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2739/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventmoniDao.java
+END
+EventrealdispDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2302/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/dao/impl/EventrealdispDao.java
+END

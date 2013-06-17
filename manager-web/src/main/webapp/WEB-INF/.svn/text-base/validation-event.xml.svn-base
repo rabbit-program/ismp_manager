@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN" "validator_1_0.dtd" >
+<form-validation>
+<formset>
+<form name="statisticalAnalsForm">
+<field property="beginDate" depends="date">
+   <msg name="date" key="err.event.datePattern" />
+   <arg0 name="date" key="${var:datePattern}"  resource="false"/>
+   <var>
+   <var-name>datePattern</var-name>
+   <var-value>yyyy/MM/dd HH:mm:ss</var-value>
+   </var>
+</field>
+</form>
+</formset>
+</form-validation>

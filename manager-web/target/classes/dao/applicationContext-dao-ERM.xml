@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+default-lazy-init="true">
+
+<!--应急响应-->
+    <bean id="respInfoDao"
+        class="edu.sjtu.infosec.ismp.manager.ERM.dao.impl.RespInfoDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 应急响应通知过程 -->
+     <bean id="respprocDao"
+        class="edu.sjtu.infosec.ismp.manager.ERM.dao.impl.RespProcDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+     <!-- 应急响应过程 -->
+     <bean id="continotifyprocDao"
+        class="edu.sjtu.infosec.ismp.manager.ERM.dao.impl.ContinotifyprocDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- BIA -->
+     <bean id="biaDao"
+        class="edu.sjtu.infosec.ismp.manager.ERM.dao.impl.BiaDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- 电话树 -->
+     <bean id="linkManDao"
+        class="edu.sjtu.infosec.ismp.manager.ERM.dao.impl.LinkManDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+</beans>

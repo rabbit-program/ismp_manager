@@ -1,0 +1,20 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- <mapping class=""/> -->
+        <mapping class="org.infosec.ismp.agent.winsensor.entity.WinsensorDeviceBO" />
+        
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.SoftwareUpdateStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.HostResourceStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.RegisterStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.WindowsLogStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.WindowsUpdateStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.strategy.entity.WinsensorManagerStrategyBO"/>
+        <mapping class="org.infosec.ismp.agent.winsensor.operation.entity.AgentDutyBO" />
+        <mapping class="org.infosec.ismp.agent.winsensor.operation.entity.AgentDutyManagerBO" />
+        <mapping class="org.infosec.ismp.agent.winsensor.operation.entity.AgentDutyManagerSentHisBO" />
+        <mapping class="org.infosec.ismp.agent.winsensor.operation.entity.ProblemBO" />
+    </session-factory>
+</hibernate-configuration>

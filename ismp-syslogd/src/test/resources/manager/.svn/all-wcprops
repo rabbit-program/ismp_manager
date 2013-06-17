@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code2/!svn/ver/1171/trunk/ismp-syslogd/src/test/resources/manager
+END
+applicationContext-manager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/959/trunk/ismp-syslogd/src/test/resources/manager/applicationContext-manager.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/959/trunk/ismp-syslogd/src/test/resources/manager/applicationContext.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/851/trunk/ismp-syslogd/src/test/resources/manager/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/code2/!svn/ver/851/trunk/ismp-syslogd/src/test/resources/manager/jdbc.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/959/trunk/ismp-syslogd/src/test/resources/manager/application.properties
+END

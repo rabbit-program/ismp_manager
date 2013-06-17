@@ -1,0 +1,56 @@
+
+<div class="pad1 ">
+  <h2 >态势列表</h2>
+    <div id="data" class="greenborder overf pad1 " >
+      <form name="f1" id="f1" action="" method="post">
+        <table id="senfe" sortcol="-1">
+          <thead>
+            <tr>
+              <th onclick="sortTable('senfe',0);" style="cursor:pointer">序号<span class="webdings">6</span></th>
+              <th>项目</th>
+              <th>项目值</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> 6629 </td>
+              <td>安全威胁强度</td>
+              <td class="tdnowrap">0</td>
+            </tr>
+            <tr>
+              <td> 6429 </td>
+              <td> 病毒感染 </td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>0032</td>
+              <td><span class="tdnowrap">安全威胁强度</span></td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2589</td>
+              <td><span class="tdnowrap">安全威胁强度</span></td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td> 2629 </td>
+              <td> 病毒感染 </td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+   <div class="martop8 Height_t">
+    <ul id="page">
+      <li><a class="first" href="#"></a></li>
+      <li><a class="pre" href="#"></a></li>
+      <li><a class="next" href="#"></a></li>
+      <li><a class="last" href="#"></a></li>
+      <li>共 5 页 跳至
+        <input type="text" size="2" class="input"/>
+        &nbsp; </li>
+      <li><a class="R6" href="#">GO</a></li>
+    </ul>
+</div>
+</div>

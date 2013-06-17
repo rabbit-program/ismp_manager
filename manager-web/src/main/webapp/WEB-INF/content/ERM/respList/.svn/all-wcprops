@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/3494/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList
+END
+bia.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3161/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/bia.jsp
+END
+notifyProc.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/3161/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/notifyProc.jsp
+END
+showList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3493/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/showList.jsp
+END
+updateResp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2401/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/updateResp.jsp
+END
+respProc.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3161/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/respProc.jsp
+END
+newResp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3051/trunk/manager-web/src/main/webapp/WEB-INF/content/ERM/respList/newResp.jsp
+END

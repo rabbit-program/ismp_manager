@@ -1,0 +1,48 @@
+
+<div  id="data" class="pad1 "> <span class="font_tip">注意:业务编号唯一! </span>
+  <form method="post" action="" id="form" class="boxy"><table width="100%">
+    <tr>
+      <th>资产编号</th>
+      <td><input type="text" size="12" class="input"/></td>
+      <th>资产名称</th>
+      <td><input type="text" size="12" class="input"/></td>
+    </tr>
+    <tr>
+      <th>所属业务</th>
+      <td><select name="select2">
+        <option>000</option>
+      </select></td>
+      <th>重要性</th>
+      <td><select name="select">
+        <option>000</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th>资产类别</th>
+      <td><select name="select3">
+        <option>000</option>
+      </select></td>
+      <th>资产负责人</th>
+      <td><input type="text" size="12" class="input"/></td>
+    </tr>
+    <tr>
+      <th>资产IP</th>
+      <td>&nbsp;</td>
+      <th>所属部门</th>
+      <td><select name="select4">
+        <option>000</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th>备注说明</th>
+      <td colspan="3"><label>
+        <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+        </label></td>
+    </tr>
+    <tr>
+      <td height="32" colspan="4" align="center"><input class="submit" type="submit" name="测试" value="提交" />
+        
+        </td>
+    </tr>
+  </table></form>
+</div>

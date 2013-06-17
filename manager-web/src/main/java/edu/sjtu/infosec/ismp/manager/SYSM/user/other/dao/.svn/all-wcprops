@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/1633/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/dao
+END
+AppSysInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/1633/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/dao/AppSysInfoDao.java
+END
+AppSysRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/1633/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/dao/AppSysRoleDao.java
+END
+RoleAssignRecordsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1633/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/dao/RoleAssignRecordsDao.java
+END

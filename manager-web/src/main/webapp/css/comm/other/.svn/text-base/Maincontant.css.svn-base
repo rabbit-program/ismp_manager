@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* CSS Document */
+/* For mainContant defined */
+#contant {
+	padding:18px 8px;
+	overflow:auto;
+}
+.contant {
+	border-left:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+	padding:12px 1px 1px;
+}
+**.contant {
+	clear:both;
+}
+#contant a, #contant a:visited {	
+	color:#333;
+	text-decoration:none;
+	margin-right:2px;
+}
+#contant a:hover, #contant a:active {
+	color:#83ac26;
+	text-decoration:none;
+}
+li {
+	list-style:none;
+	float:left;
+	font-family:"微软雅黑";
+}
+**li {
+	line-height:27px;
+}
+li a, li a:visited {
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+li a:hover, li a:active {
+	color:#83ac26;
+	text-decoration:none;
+	cursor:pointer;
+	text-align:center;
+	background:url(../../../img/comm/other/btn_hover.jpg) no-repeat top left;
+}
+**li a:hover, li a:active {
+	background:url(../../../img/comm/other/btn_hover.jpg) no-repeat bottom left;
+}
+.nor {
+	height:27px;
+	width:114px;
+	text-align:center;
+	display:block;
+	line-height:30px;
+}
+.act {
+	line-height:30px;
+	height:27px;
+	width:114px;
+	color:#83ac26;
+	text-align:center;
+	background:url(../../../img/comm/other/btn_hover.jpg) no-repeat top left;
+}
+**.nor {
+	padding:3px 0 0 0;
+}
+**.act, li.act a:active,, li.nor a:active {
+ padding:3px 0 0 0;
+ background:url(../../../img/comm/other/btn_hover.jpg) no-repeat bottom left;
+}
+li a.mback, li a.mback:visited {
+	padding:0 6px 5px 6px;
+	line-height:170%;
+	display:block;
+	color:#333;
+	text-decoration:none;
+	background:none;
+}
+**.h20 {
+	height:25px;
+}
+li a.mbacka, li a.mbacka:visited {
+	padding:0 6px 5px 6px;
+	line-height:170%;
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	background:url(../../../img/SYSM/menuback.gif) repeat-x left bottom;
+}
+li a.mbacka:hover, li a.mbacka:active {
+	color:#333;
+	text-decoration:none;
+	cursor:pointer;
+	text-align:center;
+	font-weight:bold;
+	background:url(../../../img/SYSM/menuback.gif) repeat-x left bottom;
+}
+**.bannerH { /* For IE grayline Bug */
+	height:33px;
+}
+**.bannerk { /* For IE grayline Bug */
+	height:33px;
+}
+.pad1 {
+	padding:1px;
+}
+.pad2 {
+	padding:2px;
+}
+.pad3 {
+	padding:3px;
+}
+#m {
+	margin-left:4px;
+}
+#page li a:hover, li a:active {
+	background-image:-moz-linear-gradient(19% 75% 90deg, #F7FBF0, #E6F1CF, #eef6e0 100%);
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7FBF0), to(#E6F1CF), color-stop(.6, #eef6e0));
+}
+**#page li a:hover, li a:active {
+	background:url(../../../img/comm/other/ie6menuback_s.gif) no-repeat center center;
+}
+/* 以下为各单元定义 */
+
+h2 {
+	font-size:12px;
+	padding-left:15px;
+	font-weight:normal;
+	background:url(../../../img/comm/other/arrow.gif) no-repeat left center;
+	margin-bottom:4px;
+}
+h3 {
+	font-size:12px;
+	padding-left:18px;
+	font-weight:normal;
+	background:url(../../../img/RAM/05375352.gif) no-repeat left center;
+	margin-bottom:4px;
+}
+.greenborder {
+	border:1px solid #a4ce31;
+}
+.greenback {
+	background:#f3f7e8;
+}
+input {
+	border:1px solid #a4ce31;
+}
+.greenline {
+	width:40px;
+	height:40px;
+	background:url(../../../img/comm/other/green.gif) repeat-y center center;
+}
+.martop8 {
+	margin-top:8px;
+}
+.martop10 {
+	margin-top:10px;
+}
+.marright10 {
+	margin-right:10px;
+}
+.Height_t {
+	min-height:50px;
+	line-height:50px;
+}
+**.Height_t, **.Height_t li {
+	padding:4px 0;
+	height:50px;
+}
+.Height_p {
+	min-height:30px;
+	line-height:30px;
+}
+**.Height_p, **.Height_p li {
+	padding:4px 0;
+	height:30px;
+}
+.Height_a {
+	min-height:50px;
+	line-height:45px;
+}
+**.Height_a {
+	min-height:50px;
+	line-height:30px;
+}
+.Height_a a {
+	margin:10px 0 0 0;
+}
+**.Height_a a {
+	margin:0;
+}
+**.Height_a, **.Height_a li {
+	padding:10px 0 0 0;
+	height:35px;
+}
+**.Heightlist {
+	height:32px;
+}
+.R6 {
+	-moz-border-radius: 20%;
+	border-radius:6px;
+	background-image:-moz-linear-gradient(19% 75% 90deg, #F7FBF0, #E6F1CF, #eef6e0 100%);
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7FBF0), to(#E6F1CF), color-stop(.6, #eef6e0));
+	border:1px solid #d8dccd;
+	height:16px;
+	line-height:16px;
+	padding:2px 4px;
+	float:left;
+	margin-right:2px;
+	-moz-box-shadow:1px 1px 0px #969696;
+	-webkit-box-shadow:1px 1px 0px #969696;
+}
+**.R6 {
+	display:block;
+	width:24px;
+	line-height:24px;
+	width:36px;
+	border:none;
+	text-align:center;
+	background:url(../../../img/comm/other/ie6menuback_s.gif) no-repeat center center;
+}
+**.R7, **#page li a.R7:hover, **#page li a.R7:active {
+	display:block;
+	height:24px;
+	line-height:24px;
+	float:left;
+	width:93px;
+	border:none;
+	text-align:center;
+	background:url(../../../img/comm/other/ie6menuback_b.gif) no-repeat center center;
+}
+**.R8 {
+	border:1px solid #d8dccd;
+	height:20px;
+	line-height:20px;
+	padding:2px 4px;
+	float:left;
+	width:100px;
+	text-align:center;
+}
+.submit {
+	background:url(../../../img/comm/other/submitbg.PNG) no-repeat;
+	width:42px;
+	height:23px;
+	line-height:23px;
+	text-align:center;
+	border:none;
+	cursor:pointer;
+}
+.submit80 {
+	background:url(../../../img/comm/other/submitbg80.PNG) no-repeat;
+	width:80px;
+	height:23px;
+	line-height:23px;
+	text-align:center;
+	border:none;
+	cursor:pointer;
+}
+.paddiv {
+	clear:both;
+	height:20px;
+	visibility:hidden;
+}
+.tdcut {
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	width:200px;
+}
+.tdcut_a {
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	width:500px;
+}
+#data table {
+	border-collapse:collapse;
+	width:100%;
+	line-height:30px;
+	border:solid 1px #a4ce31;
+}
+#data th {
+	text-align:left;
+	padding:0 4px;
+	line-height:36px;
+	background:#e9fddb;
+	background-image:-moz-linear-gradient(19% 75% 90deg, #F7FBF0, #E6F1CF, #eef6e0 100%);
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7FBF0), to(#E6F1CF), color-stop(.6, #eef6e0));
+	white-space:nowrap;
+}
+.tdnowrap {
+	white-space:nowrap;
+}
+**#data th {
+	border-bottom:1px solid white;
+	border-right:1px solid white;
+}
+#data tr {
+	border-top:solid 1px #a4ce31;
+}
+#data td {
+	padding:0 4px;
+}
+#data a, #data a:visited {
+	color:#333;
+	text-decoration:none;
+}
+#data a:hover, #data a:active {
+	color:#83ac26;
+	text-decoration:none;
+}
+#search table {
+	border-collapse:collapse;
+	width:100%;
+	line-height:30px;
+	border:solid 1px #a4ce31;
+}
+#search th {
+	text-align:left;
+	padding:0 0 0 4px;
+	line-height:36px;
+	background:#e9fddb;
+	background-image:-moz-linear-gradient(19% 75% 90deg, #F7FBF0, #E6F1CF, #eef6e0 100%);
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7FBF0), to(#E6F1CF), color-stop(.6, #eef6e0));
+}
+#search tr {
+	border-top:solid 1px #a4ce31;
+}
+#search td {
+	padding:0 4px;
+}
+**#search td {
+	padding:0;
+}
+#search a, #search a:visited {
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+#search a:hover, #search a:active {
+	color:#83ac26;
+	text-decoration:none;
+}
+.alert {
+	color:red;
+	font-weight:bold;
+	font-size:14px;
+	padding:0 4px;
+}
+.greentxt {
+	color:green;
+}
+.redtext {
+	color:darkred;
+}
+#data textarea {
+	margin:2px 0;
+	border-style:groove;
+}
+#page {
+	clear:both;
+	margin:12px 0 0 0;
+	float:left;
+	line-height:25px;
+}
+**#page {
+	display:block;
+	overflow:hidden;
+	height:30px;
+}
+#page a {
+	display:block;
+	margin-right:4px;
+}
+#page a:link.first, #page a:visited.first {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_n.png) no-repeat;
+}
+#page a:hover.first, #page a:active.first, #page a:focus.first {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_a.png) no-repeat;
+}
+#page a:link.pre, #page a:visited.pre {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_n.png) no-repeat;
+	background-position:-22px 0;
+}
+#page a:hover.pre, #page a:active.pre, #page a:focus.pre {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_a.png) no-repeat;
+	background-position:-22px 0;
+}
+#page a:link.next, #page a:visited.next {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_n.png) no-repeat;
+	background-position:-44px 0;
+}
+#page a:hover.next, #page a:active.next, #page a:focus.next {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_a.png) no-repeat;
+	background-position:-44px 0;
+}
+#page a:link.last, #page a:visited.last {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_n.png) no-repeat;
+	background-position:-66px 0;
+}
+#page a:hover.last, #page a:active.last, #page a:focus.last {
+	width:22px;
+	height:22px;
+	background:url(../../../img/comm/other/btn_page_a.png) no-repeat;
+	background-position:-66px 0;
+}
+.noneborder {
+	border:none;
+}
+/* user */
+.menus01 {
+	background:url(../../../img/comm/other/user.gif) no-repeat;
+	padding-left:20px;
+}
+.menus02 {
+	background:url(../../../img/SYSM/usersearch.png) no-repeat;
+	padding-left:20px;
+}
+.menus03 {
+	background:url(../../../img/SYSM/page-search-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus04 {
+	background:url(../../../img/SYSM/database-add-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus05 {
+	background:url(../../../img/SYSM/add-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus06 {
+	background:url(../../../img/SYSM/page-edit-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus07 {
+	background:url(../../../img/SYSM/computers-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus08 {
+	background:url(../../../img/SYSM/lock-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus09 {
+	background:url(../../../img/SYSM/lock-off-icon.png) no-repeat;
+	padding-left:20px;
+}
+.menus10 {
+	background:url(../../../img/comm/other/map01.png) no-repeat;
+	padding-left:20px;
+}
+.menus11 {
+	background:url(../../../img/comm/other/dot_03.gif) no-repeat;
+	padding-left:20px;
+}
+.menus12 {
+	background:url(../../../img/comm/other/soft.gif) no-repeat;
+	padding-left:20px;
+}
+.edit {
+	background:url(../../../img/comm/other/edit.gif) no-repeat center center;
+	display:block;
+	width:20px;
+	height:14px;
+	margin:6px 2px 0;
+	float:left;
+}
+.edit a {
+	display:block;
+	width:20px;
+	height:20px;
+}
+.grayword {
+	color:#999;
+}
+.Height_b {
+	min-height:150px;
+	line-height:45px;
+}
+**.Height_b {
+	min-height:150px;
+	line-height:30px;
+}
+#page1 {
+	clear:both;
+	margin:5px 0 0 0;
+	float:left;
+	line-height:25px;
+}
+**#page1 {
+	display:block;
+	overflow:hidden;
+	height:30px;
+}

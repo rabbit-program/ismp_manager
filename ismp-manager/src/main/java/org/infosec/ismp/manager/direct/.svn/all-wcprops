@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/3647/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct
+END
+DirectRequestId.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/2563/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectRequestId.java
+END
+JMSSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/3080/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/JMSSocket.java
+END
+DirectMessenger.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/3647/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectMessenger.java
+END
+DirectRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/2534/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectRequest.java
+END
+DirectRequestSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/3080/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectRequestSender.java
+END
+DirectReply.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/2534/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectReply.java
+END
+DirectResponseCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/2534/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectResponseCallback.java
+END
+SingleDirectResponseCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/2562/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/SingleDirectResponseCallback.java
+END
+DirectToAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3080/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/direct/DirectToAgent.java
+END

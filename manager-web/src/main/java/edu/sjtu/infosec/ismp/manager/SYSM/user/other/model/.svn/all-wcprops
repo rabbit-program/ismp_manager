@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3697/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/model
+END
+AppSysRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1477/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/model/AppSysRole.java
+END
+RoleAssignRecords.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/3697/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/model/RoleAssignRecords.java
+END
+AppSysInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1430/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SYSM/user/other/model/AppSysInfo.java
+END

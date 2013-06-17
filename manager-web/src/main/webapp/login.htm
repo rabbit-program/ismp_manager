@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/comm/other/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/comm/other/formstyle.js"></script>
+<script type="text/javascript">
+function cls(){
+//捕获触发事件的对象，并设置为以下语句的默认对象
+with(event.srcElement)
+     //如果当前值为默认值，则清空
+if(value==defaultValue) value=""
+}
+function res(){
+//捕获触发事件的对象，并设置为以下语句的默认对象
+with(event.srcElement)
+//如果当前值为空，则重置为默认值
+if(value=="") value=defaultValue
+}
+</script>
+<title>登录</title>
+</head>
+<body>
+<div id="board">
+  <div class="inputBox">
+    <li>
+      <p>
+        <input class="userBox" value="请输入角色名" onfocus="cls()" onblur="res()" />
+      </p>
+      <p class="pwposition">
+        <input type="password" value="******" class="pwBox" onfocus="cls()" onblur="res()" />
+      </p>
+      <div class="wrapper">  
+   <p  class="rember">
+        <input class="styled" name="1" type="checkbox"/>记住我</p>
+        </div>
+    </li>
+    <li class="loginBtn"><input name="" type="button" /></li>
+  </div>
+</div>
+</body>
+</html>

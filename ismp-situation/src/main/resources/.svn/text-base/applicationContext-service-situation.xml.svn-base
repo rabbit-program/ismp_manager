@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    	
+    <bean id="machineService" class="org.infosec.ismp.situation.service.impl.MachineServiceImpl">
+        <property name="machineDao" ref="machineDao" />
+    </bean>
+    
+    <bean id="machineSituationService" class="org.infosec.ismp.situation.service.impl.MachineSituationServiceImpl">
+        <property name="machineSituationDao" ref="machineSituationDao" />
+    </bean>
+    
+    <bean id="machineCabinetService" class="org.infosec.ismp.situation.service.impl.MachineCabinetServiceImpl">
+        <property name="machineCabinetDao" ref="machineCabinetDao" />
+    </bean>
+    
+    <bean id="machineCabinetSituationService" class="org.infosec.ismp.situation.service.impl.MachineCabinetSituationServiceImpl">
+        <property name="machineCabinetSituationDao" ref="machineCabinetSituationDao" />
+    </bean>
+    
+    
+    <bean id="machineRoomSituationService" class="org.infosec.ismp.situation.service.impl.MachineRoomSituationServiceImpl">
+        <property name="machineRoomSituationDao" ref="machineRoomSituationDao" />
+    </bean>
+    
+    <bean id="securityAreaSituationService" class="org.infosec.ismp.situation.service.impl.SecurityAreaSituationServiceImpl">
+        <property name="securityAreaSituationDao" ref="securityAreaSituationDao" />
+    </bean>
+    
+    <bean id="situationEventService" class="org.infosec.ismp.situation.service.impl.SituationEventServiceImpl">
+        <property name="situationEventDao" ref="situationEventDao" />
+    </bean>
+    
+    <bean id="situationProcess" class="org.infosec.ismp.situation.manager.SituationProcess" init-method="init">
+		<property name="recordIndexDao" ref="recordIndexDao" />
+		<property name="attackReckon" ref="attackReckon" />
+		<property name="illicitConnectReckom" ref="illicitConnectReckom" />
+		<property name="virusReckon" ref="virusReckon" />
+		<property name="situationSaveToDB" ref="situationSaveToDB" />
+    </bean>
+
+    <bean id="situationPipe" class="org.infosec.ismp.situation.service.impl.SituationPipe" />
+    
+    <bean id="situationServiceImpl" class="org.infosec.ismp.situation.service.impl.SituationServiceImpl">
+        <property name="situationPipe" ref="situationPipe" />
+    </bean>
+    
+</beans>

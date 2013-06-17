@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device
+END
+leftFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/leftFrame.jsp
+END
+assetPart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/assetPart.jsp
+END
+addAsset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/addAsset.jsp
+END
+asset_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/asset_list.jsp
+END
+excel_import.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/excel_import.jsp
+END
+assetWelcome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/assetWelcome.jsp
+END
+childFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/childFrame.jsp
+END
+facilityManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/facilityManager.jsp
+END
+asset_analysis.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/2628/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/asset_analysis.jsp
+END
+top.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/3579/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/top.jsp
+END
+updateAsset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code2/!svn/ver/3503/trunk/manager-web/src/main/webapp/WEB-INF/content/AM/device/updateAsset.jsp
+END

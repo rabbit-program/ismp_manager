@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/snmp
+END
+applicationContext-snmp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3120/trunk/ismp-manager/src/main/resources/snmp/applicationContext-snmp.xml
+END
+applicationContext-snmp-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/snmp/applicationContext-snmp-rmi.xml
+END

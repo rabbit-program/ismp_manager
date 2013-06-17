@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/3219/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl
+END
+DynaVTARepoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaVTARepoServiceImpl.java
+END
+StatCVEThreServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatCVEThreServiceImpl.java
+END
+DynaElemResuServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaElemResuServiceImpl.java
+END
+StatSecuElemServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatSecuElemServiceImpl.java
+END
+StatThreServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatThreServiceImpl.java
+END
+ThreAnalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/3190/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/ThreAnalServiceImpl.java
+END
+DicQuesKindServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicQuesKindServiceImpl.java
+END
+DynaAsseValueServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaAsseValueServiceImpl.java
+END
+DicRiskMatrRuleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicRiskMatrRuleServiceImpl.java
+END
+StatThreKindServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatThreKindServiceImpl.java
+END
+StatWarnStriServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatWarnStriServiceImpl.java
+END
+DynaAsseResuServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaAsseResuServiceImpl.java
+END
+ProjectServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/ProjectServiceImpl.java
+END
+StatVulnPoinServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatVulnPoinServiceImpl.java
+END
+DicAsseStatServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicAsseStatServiceImpl.java
+END
+DynaLeakThreServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/3047/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaLeakThreServiceImpl.java
+END
+ReportServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2354/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/ReportServiceImpl.java
+END
+test.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/test.java
+END
+AssetServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2192/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/AssetServiceImpl.java
+END
+VulnAnalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/VulnAnalServiceImpl.java
+END
+LeakScanServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/LeakScanServiceImpl.java
+END
+DicAsseKindServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicAsseKindServiceImpl.java
+END
+PapeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/PapeServiceImpl.java
+END
+StatVulnKindServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/StatVulnKindServiceImpl.java
+END
+DicProgServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicProgServiceImpl.java
+END
+DynaLeakServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/3219/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DynaLeakServiceImpl.java
+END
+DicCpKindServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicCpKindServiceImpl.java
+END
+DicSecuLeveServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/DicSecuLeveServiceImpl.java
+END
+BusinessServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1344/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/service/impl/BusinessServiceImpl.java
+END

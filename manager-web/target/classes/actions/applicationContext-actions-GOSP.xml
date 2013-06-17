@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+     <!-- 等级保护-知识库-添加-配置 -->
+    <bean name="/ismp/domain/local/gosp/addKB"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.AddKnowledgeBaseAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="knowledgeBaseService">
+                <ref bean="knowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+	 <!-- 等级保护-知识库-查询-配置 -->
+	 <bean name="/ismp/domain/local/gosp/knowledgeBase"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.FindKnowledgeBaseAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="knowledgeBaseService">
+                <ref bean="knowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+    </bean>
+    
+    <!-- 等级保护-知识库-更新-配置 -->
+     <bean name="/ismp/domain/local/gosp/updateKB"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.UpdateAndDelAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="knowledgeBaseService">
+                <ref bean="knowledgeBaseService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+                                <!-- 等级保护-网络等级保护状况-配置信息 -->
+    
+    <!-- 等级保护-网络等级保护状况-添加-配置 -->
+    <bean name="/ismp/domain/local/gosp/addNetSafe"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.AddNetSafeAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="safeStateRecordsService">
+                <ref bean="safeStateRecordsService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+     <!-- 等级保护-网络等级保护状况-查询-配置 -->
+     <bean name="/ismp/domain/local/gosp/netSafe"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.FindNetStateSafeAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="safeStateRecordsService">
+                <ref bean="safeStateRecordsService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+    </bean>
+    
+     <!-- 等级保护-网络等级保护状况-更新-配置 -->
+     <bean name="/ismp/domain/local/gosp/netSafeUpdate"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.NetSafeUpdateAndDelAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="safeStateRecordsService">
+                <ref bean="safeStateRecordsService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+         <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+                         <!-- 等级保护-法律法规-配置信息 -->
+       
+       <!-- 等级保护-法律法规-上传-配置 -->                 
+      <bean name="/ismp/domain/local/gosp/upload"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.UploadLawAndRulesAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="lawsAndRulesService">
+                <ref bean="lawsAndRulesService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+         <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+        
+      <!-- 等级保护-法律法规-查询-配置 -->
+     <bean name="/ismp/domain/local/gosp/findLawRules"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.FindUploadLawRulesAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="lawsAndRulesService">
+                <ref bean="lawsAndRulesService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+    </bean> 
+    
+     <!-- 等级保护-法律法规-更新-配置 -->    
+      <bean name="/ismp/domain/local/gosp/lawRulesUpdate"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.UpdateAndDelLawRulesAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="lawsAndRulesService">
+                <ref bean="lawsAndRulesService" />
+        </property>
+         <property name="domainService">
+                <ref bean="domainService" />
+        </property>
+        <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>
+    
+     <!-- 等级保护-法律法规-下载-配置 -->   
+     <bean name="/ismp/domain/local/gosp/down"
+        class="edu.sjtu.infosec.ismp.manager.GOSP.web.actions.DownloadAction"
+        singleton="false" 
+        lazy-init="true">  
+         <property name="systemLogService">
+                <ref bean="systemlogService" />
+        </property>
+    </bean>        
+</beans>

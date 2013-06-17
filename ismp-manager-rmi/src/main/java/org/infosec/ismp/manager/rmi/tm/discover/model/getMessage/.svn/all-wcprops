@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1500/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/getMessage
+END
+ColumnMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/1500/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/getMessage/ColumnMessage.java
+END
+TableMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/1500/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/getMessage/TableMessage.java
+END
+CommonMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/code2/!svn/ver/1500/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/tm/discover/model/getMessage/CommonMessage.java
+END

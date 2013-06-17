@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="AssessmentReport4RotholeAndImportanceImage2"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="535"
+		 pageHeight="802"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<reportFont name="song标题" isDefault="false" fontName="宋体" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+
+	<parameter name="asseInfoProjId" isForPrompting="false" class="java.lang.Integer"/>
+	<queryString language="hql"><![CDATA[select b.assetName as assetName, 
+	(select COUNT(seriLeve) from AsseKnowDynaVuln 
+	 where asseInfoProjId=$P{asseInfoProjId} 
+	 and seriLeve = 'H'
+	 and asse.id=b.id 
+	) as vulnSeriNumH, 
+	(select COUNT(seriLeve) from AsseKnowDynaVuln 
+	 where asseInfoProjId=$P{asseInfoProjId} 
+	 and seriLeve = 'M'
+	 and asse.id=b.id 
+	) as vulnSeriNumM, 
+	(select COUNT(seriLeve) from AsseKnowDynaVuln 
+	 where asseInfoProjId=$P{asseInfoProjId} 
+	 and seriLeve = 'L'
+	 and asse.id=b.id 
+	) as vulnSeriNumL, 
+	(select COUNT(seriLeve) from AsseKnowDynaLeak 
+	 where asseInfoProjId=$P{asseInfoProjId}
+	 and seriLeve = 'H'
+	 and asse.id=b.id 
+	) as leakSeriNumH, 
+	(select COUNT(seriLeve) from AsseKnowDynaLeak 
+	 where asseInfoProjId=$P{asseInfoProjId}
+	 and seriLeve = 'M'
+	 and asse.id=b.id 
+	) as leakSeriNumM, 
+	(select COUNT(seriLeve) from AsseKnowDynaLeak 
+	 where asseInfoProjId=$P{asseInfoProjId}
+	 and seriLeve = 'L'
+	 and asse.id=b.id 
+	) as leakSeriNumL 
+from AsseInfoAsse b 
+group by b.id]]></queryString>
+
+	<field name="assetName" class="java.lang.String"/>
+	<field name="vulnSeriNumH" class="java.lang.Long"/>
+	<field name="vulnSeriNumM" class="java.lang.Long"/>
+	<field name="vulnSeriNumL" class="java.lang.Long"/>
+	<field name="leakSeriNumH" class="java.lang.Long"/>
+	<field name="leakSeriNumM" class="java.lang.Long"/>
+	<field name="leakSeriNumL" class="java.lang.Long"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="300"  isSplitAllowed="true" >
+				<lineChart>
+					<chart  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="40"
+						width="535"
+						height="260"
+						key="element-1"/>
+					<box></box>
+						<chartLegend textColor="#000000" backgroundColor="#FFFFFF" >
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+					</chartLegend>
+					</chart>
+					<categoryDataset>
+						<dataset >
+						</dataset>
+						<categorySeries>
+							<seriesExpression><![CDATA["高严重性漏洞数目"]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{assetName}]]></categoryExpression>
+							<valueExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumH}.longValue()) +($F{leakSeriNumH}.longValue()) )]]></valueExpression>
+							<labelExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumH}.longValue()) +($F{leakSeriNumH}.longValue()) ).toString()]]></labelExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA["中严重性漏洞数目"]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{assetName}]]></categoryExpression>
+							<valueExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumM}.longValue()) +($F{leakSeriNumM}.longValue()) )]]></valueExpression>
+							<labelExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumM}.longValue()) +($F{leakSeriNumM}.longValue()) ).toString()]]></labelExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA["低严重性漏洞数目"]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{assetName}]]></categoryExpression>
+							<valueExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumL}.longValue()) +($F{leakSeriNumL}.longValue()) )]]></valueExpression>
+							<labelExpression><![CDATA[new java.lang.Long(  ($F{vulnSeriNumL}.longValue()) +($F{leakSeriNumL}.longValue()) ).toString()]]></labelExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+					</categoryDataset>
+					<linePlot >
+						<plot />
+						<categoryAxisFormat>
+							<axisFormat >
+								<labelFont>
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</labelFont>
+								<tickLabelFont>
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</tickLabelFont>
+							</axisFormat>
+						</categoryAxisFormat>
+						<valueAxisFormat>
+							<axisFormat >
+								<labelFont>
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</labelFont>
+								<tickLabelFont>
+					<font fontName="SansSerif" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</tickLabelFont>
+							</axisFormat>
+						</valueAxisFormat>
+					</linePlot>
+				</lineChart>
+				<staticText>
+					<reportElement
+						x="0"
+						y="5"
+						width="535"
+						height="20"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font reportFont="song标题"/>
+					</textElement>
+				<text><![CDATA[不同资产各等级漏洞数目统计]]></text>
+				</staticText>
+			</band>
+		</summary>
+</jasperReport>

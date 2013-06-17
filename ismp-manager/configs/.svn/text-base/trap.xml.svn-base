@@ -1,0 +1,97 @@
+<trap>
+	<parser ip="172.16.1.2" type="1" deconding="">
+		<matchers>
+			<matcher>
+				<tableName>qiming_ids</tableName>
+				<binding number="2">
+					<regex>
+						^sub:(.*);se:(.*);sr:(.*);sport:(.*);dest:(.*);dport:(.*);proto:(.*);param:(.*);time:(.*);
+					</regex>
+					<column>msgtype</column>
+					<transform>
+						<serialNumber>8</serialNumber>
+						<method>transformIdsTime</method>
+					</transform>
+				</binding>
+			</matcher>
+		</matchers>
+	</parser>
+	<parser ip="192.168.9.119" type="1" deconding="">
+        <matchers>
+            <matcher>
+                <tableName>qiming_ids</tableName>
+                <binding number="1">
+                    <regex>
+                        ^sub:(.*);se:(.*);sr:(.*);sport:(.*);dest:(.*);dport:(.*);proto:(.*);param:(.*);time:(.*);
+                    </regex>
+                    <column>msgtype</column>
+                    <transform>
+                        <serialNumber>8</serialNumber>
+                        <method>transformIdsTime</method>
+                    </transform>
+                </binding>
+            </matcher>
+        </matchers>
+    </parser>
+	<parser ip="192.168.9.220" type="2" deconding="">
+		<matchers>
+			<matcher>
+				<tableName>qiming_ids</tableName>
+				<binding number="2">
+					<regex>^(.*)\tid:(\d*)\t(.*)\t{1,2}(.*)\t(.*)\t(.*)\t(.*)
+					</regex>
+					<column>msgtype</column>
+					<transform>
+						<serialNumber>3</serialNumber>
+						<method>transformIdsThreRank</method>
+					</transform>
+				</binding>
+			</matcher>
+		</matchers>
+	</parser>
+	<parser ip="172.16.11.2" type="3" deconding="">
+		<matchers>
+			<matcher>
+				<tableName>qiming_ids</tableName>
+				<binding number="0">
+				<!-- number: ０表示所有行都要拿；>0表示：该数字为几取第几行 -->
+					<regex>
+						^(.*);(\d*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);
+					</regex>
+					<column>msgtype</column>
+					<transform>
+					      <serialNumber>18</serialNumber>
+                          <method>transformIceyeIdsThreRank</method>
+					</transform>
+				</binding>
+			</matcher>
+		</matchers>
+	</parser>
+	<parser ip="127.0.0.1" type="1" deconding="">
+        <matchers>
+            <matcher>
+                <tableName>qiming_ids</tableName>
+                <binding number="1">
+                    <regex>
+                        ^sub:(.*);se:(.*);sr:(.*);sport:(.*);dest:(.*);dport:(.*);proto:(.*);param:(.*);time:(.*);
+                    </regex>
+                    <column>msgtype</column>
+                    <transform>
+                        <serialNumber>8</serialNumber>
+                        <method>transformIdsTime</method>
+                    </transform>
+                </binding>
+            </matcher>
+        </matchers>
+    </parser>
+	<!--
+		type 代表设备类型：１为启明星辰；２为三零鹰眼; 3 为绿盟 <parser ip="冰之眼"> <matchers>
+		<matcher> <tableName>bing_zhi_yan</tableName> <binding number="1">
+		<regex>^msgsource:(.*),msgtype:(.*)</regex>
+		<column>msgsource,msgtype</column>//数据库字段名 <transform>
+		<serialNumber>1</serialNumber> <method>transformType</method>
+		</transform> </binding> <binding number="4">
+		<regex>^product:(.*)</regex> <column>product</column> </binding>
+		</matcher> </matchers> </parser>
+	-->
+</trap>

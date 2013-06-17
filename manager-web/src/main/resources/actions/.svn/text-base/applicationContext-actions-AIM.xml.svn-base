@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <!-- 
+	<bean name="/virusMappedAction"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.web.actions.VirusMappedAction"
+		singleton="false" lazy-init="true">
+		<property name="virusClientsService">
+			<ref bean="virusClientsService" />
+		</property>
+	</bean>
+	 -->
+	 <!-- 告警管理 -->
+	 <bean name="/ismp/domain/local/aim/alert" class="edu.sjtu.infosec.ismp.manager.AIM.web.actions.AlertAction" singleton="false" lazy-init="true" >
+		<property name="alertService" ref="alertService"></property>
+		<property name="alertTypeService" ref="alertTypeService"></property>
+		<property name="alertDwrService" ref="alertDwrService"></property>
+		<property name="alertFusionRuleServices" ref="alertFusionRuleServices"></property>
+		<property name="userService" ref="userService"></property>
+		<property name="domainService" ref="domainService"></property>
+		<property name="alertRuleService" ref="alertRuleService"></property>
+		<property name="systemlogService" ref="systemlogService"></property>
+	</bean>
+	<!-- 告警规则信息 -->
+	<bean name="/ismp/domain/local/aim/alertRule" class="edu.sjtu.infosec.ismp.manager.AIM.web.actions.AlertRuleAction" singleton="false" lazy-init="true">
+		<property name="alertRuleService" ref="alertRuleService"/>
+		<property name="alertDwrService" ref="alertDwrService"/>
+		<property name="userService" ref="userService"/>
+		<property name="domainService" ref="domainService"/>
+		<property name="systemlogService" ref="systemlogService"/>
+	</bean>
+</beans>

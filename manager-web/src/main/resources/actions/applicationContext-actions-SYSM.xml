@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <!-- 
+	<bean name="/virusMappedAction"
+		class="edu.sjtu.infosec.ismp.manager.virusManager.web.actions.VirusMappedAction"
+		singleton="false" lazy-init="true">
+		<property name="virusClientsService">
+			<ref bean="virusClientsService" />
+		</property>
+	</bean>
+	 -->
+	 <!-- agent管理 -->
+	 <!-- bbs -->
+	  <bean name="/ismp/sysm/other/bbs" singleton="false" lazy-init="true"
+             class="edu.sjtu.infosec.ismp.manager.SYSM.bbs.web.actions.BBSPublishAction">
+	           <property name="questionsService">
+                    <ref bean="questionsService" />
+               </property>
+               <property name="userService" >
+                    <ref bean="userService" />
+               </property>
+	  </bean>
+	 
+	 
+	 <!-- 系统配置 -->
+	   <!-- 数据上报 -->
+	    <bean name="/ismp/domain/local/sysm/config/ds/dataSynConfigFind" 
+	        class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.ds.DataSynConfigFindAction"
+	        singleton="false" 
+	        lazy-init="true">
+	        <property name="sysConfigDataSynService">
+	            <ref bean="sysConfigDataSynService" />
+	        </property>
+	        <property name="systemlogService">
+	            <ref bean="systemlogService" />
+	        </property>
+	    </bean>
+        <bean name="/ismp/domain/local/sysm/config/ds/dataSynConfigModify" 
+            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.ds.DataSynConfigModifyAction"
+            singleton="false" 
+            lazy-init="true">
+            <property name="sysConfigDataSynService">
+                <ref bean="sysConfigDataSynService" />
+            </property>
+            <property name="systemlogService">
+                <ref bean="systemlogService" />
+            </property>
+        </bean>
+       <!-- 信息发送 -->
+        <bean name="/ismp/domain/local/sysm/config/sms/smsConfigFind" 
+            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.sms.SmsConfigFindAction"
+            singleton="false" 
+            lazy-init="true">
+            <property name="sysConfigSmsService">
+                <ref bean="sysConfigSmsService" />
+            </property>
+            <property name="systemlogService">
+                <ref bean="systemlogService" />
+            </property>
+        </bean>
+        <bean name="/ismp/domain/local/sysm/config/sms/smsConfigModify" 
+            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.sms.SmsConfigModifyAction"
+            singleton="false" 
+            lazy-init="true">
+            <property name="sysConfigSmsService">
+                <ref bean="sysConfigSmsService" />
+            </property>
+            <property name="systemlogService">
+                <ref bean="systemlogService" />
+            </property>
+        </bean>
+       <!-- 病毒补丁数据库 -->
+        <bean name="/ismp/domain/local/sysm/config/vpm/vpmDbConfigFindAction" 
+            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.VpmDbConfigFindAction"
+            singleton="false" 
+            lazy-init="true">
+            <property name="sysConfigDbService">
+                <ref bean="sysConfigDbService" />
+            </property>
+            <property name="systemlogService">
+                <ref bean="systemlogService" />
+            </property>
+        </bean>
+        <bean name="/ismp/domain/local/sysm/config/vpm/vpmDbConfigModifyAction" 
+            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.VpmDbConfigModifyAction"
+            singleton="false" 
+            lazy-init="true">
+            <property name="sysConfigDbService">
+                <ref bean="sysConfigDbService" />
+            </property>
+            <property name="systemlogService">
+                <ref bean="systemlogService" />
+            </property>
+        </bean>
+	       <!-- 补丁数据库 -->
+	        <bean name="/ismp/domain/local/sysm/config/vpm/pm/patchDbConfigFind" 
+	            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.pm.PatchDbConfigFindAction"
+	            singleton="false" 
+	            lazy-init="true">
+	            <property name="sysConfigDbService">
+	                <ref bean="sysConfigDbService" />
+	            </property>
+	            <property name="systemlogService">
+	                <ref bean="systemlogService" />
+	            </property>
+	        </bean>
+	        <bean name="/ismp/domain/local/sysm/config/vpm/pm/patchDbConfigModify" 
+	            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.pm.PatchDbConfigModifyAction"
+	            singleton="false" 
+	            lazy-init="true">
+	            <property name="sysConfigDbService">
+	                <ref bean="sysConfigDbService" />
+	            </property>
+	            <property name="systemlogService">
+	                <ref bean="systemlogService" />
+	            </property>
+	        </bean>
+	       <!-- 病毒数据库 -->
+	        <bean name="/ismp/domain/local/sysm/config/vpm/vm/virusDbConfigFind" 
+	            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.vm.VirusDbConfigFindAction"
+	            singleton="false" 
+	            lazy-init="true">
+	            <property name="sysConfigDbService">
+	                <ref bean="sysConfigDbService" />
+	            </property>
+	            <property name="systemlogService">
+	                <ref bean="systemlogService" />
+	            </property>
+	        </bean>
+	        <bean name="/ismp/domain/local/sysm/config/vpm/vm/virusDbConfigModify" 
+	            class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.vpm.vm.VirusDbConfigModifyAction"
+	            singleton="false" 
+	            lazy-init="true">
+	            <property name="sysConfigDbService">
+	                <ref bean="sysConfigDbService" />
+	            </property>
+	            <property name="systemlogService">
+	                <ref bean="systemlogService" />
+	            </property>
+	        </bean>
+       <!-- WinSensor配置 -->
+           <!-- 默认配置 -->
+            <bean name="/ismp/domain/local/sysm/config/client/winSensor/defSensorConfigFind" 
+                class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.client.winSensor.DefConfigFindAction"
+                singleton="false" 
+                lazy-init="true">
+                <property name="systemlogService">
+                    <ref bean="systemlogService" />
+                </property>
+            </bean>
+            <bean name="/ismp/domain/local/sysm/config/client/winSensor/defSensorConfigModify" 
+                class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.client.winSensor.DefConfigModifyAction"
+                singleton="false" 
+                lazy-init="true">
+                <property name="systemlogService">
+                    <ref bean="systemlogService" />
+                </property>
+            </bean>
+           <!-- 详细配置 -->
+            <bean name="/ismp/domain/local/sysm/config/client/winSensor/detailSensorConfigFind" 
+                class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.client.winSensor.DetailConfigFindAction"
+                singleton="false" 
+                lazy-init="true">
+                <property name="systemlogService">
+                    <ref bean="systemlogService" />
+                </property>
+            </bean>
+            <bean name="/ismp/domain/local/sysm/config/client/winSensor/detailSensorConfigModify" 
+                class="edu.sjtu.infosec.ismp.manager.SYSM.config.web.actions.client.winSensor.DetailConfigModifyAction"
+                singleton="false" 
+                lazy-init="true">
+                <property name="systemlogService">
+                    <ref bean="systemlogService" />
+                </property>
+            </bean>
+	           <!-- 注册 -->
+	           <!-- 本地信息上报 -->
+	           <!-- 补丁更新 -->
+	           <!-- 软件分发 -->
+	           <!-- Windows日志信息 -->
+	           <!-- WinSensor管理策略 -->
+        
+        
+        
+	 <!-- 用户管理 -->
+	<bean name="/security/login"
+		class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.web.actions.LoginAction"
+		singleton="false" lazy-init="true">
+	</bean>
+	<!-- 用户管理 -->
+    <bean name="/ismp/domain/local/userConfig" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.web.actions.UserConfigAction">
+         <property name="userservice" ref="userService"></property>
+         <property name="roleservice" ref="roleService"></property>
+         <property name="blackandwhiteservice" ref="blackandwhiteService"></property>
+         <property name="blackandwhitestatusservice" ref="blackandwhitestatusService"></property>
+         <property name="domainService" ref="domainService"></property>
+         <property name="systemlogService" ref="systemlogService"></property>
+    </bean>
+    <bean name="/ismp/domain/local/sysm/sysConfig" class="edu.sjtu.infosec.ismp.manager.SYSM.user.self.web.actions.SysConfigAction"></bean>
+     <!-- 应用系统 -->
+       <bean name="/ismp/sysm/other/appSysInfo"
+        class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.actions.AppSysInfoAction"
+        singleton="false" 
+        lazy-init="true">
+        <property name="appSysInfoService">
+            <ref bean="appSysInfoService" />
+        </property>
+        <property name="domainService">
+            <ref bean="domainService" />
+        </property>
+        <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+    </bean> 
+   
+      <!--应用系统权限-->
+       <bean name="/ismp/sysm/other/appSysRole" 
+       class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.actions.AppSysRoleAction"  singleton="false"  lazy-init="true">
+         <property name="appSysRoleService" ref="appSysRoleService" />
+        <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+     </bean> 
+     
+     <!--应用系统权限分配记录-->
+     
+      <bean name="/ismp/sysm/other/rarInfo" 
+       class="edu.sjtu.infosec.ismp.manager.SYSM.user.other.web.actions.RARAction"  singleton="false"  lazy-init="true">
+         <property name="roleAssignRecordsService" ref="roleAssignRecordsService" />
+         <property name="systemlogservice">
+                <ref bean="systemlogService" />
+        </property>
+     </bean> 
+     
+</beans>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/3518/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/dao
+END
+SafeStateRecordsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2409/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/dao/SafeStateRecordsDao.java
+END
+GospKnowledgeBaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1760/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/dao/GospKnowledgeBaseDao.java
+END
+LawsAndRulesDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1671/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/GOSP/dao/LawsAndRulesDao.java
+END

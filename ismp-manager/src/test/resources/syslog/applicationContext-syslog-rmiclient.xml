@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- 此处定义syslog的相关RMI客户端 -->
+	<bean id="syslogRmiClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://localhost:1199/syslogController" />
+		<property name="serviceInterface"
+			value="org.infosec.ismp.manager.rmi.syslog.SyslogController" />
+		<!-- <property name="lookupStubOnStartup" value="false" />
+		<property name="refreshStubOnConnectFailure" value="true" />
+		<property name="servicePort" value="1199"></property>
+		<property name="registryPort" value="1099"></property> -->
+	</bean>
+</beans>

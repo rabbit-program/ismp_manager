@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mainframe</title>
+<link href="../../../css/comm/other/Newcommon.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/comm/other/Maincontant.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/common.css" type="text/css" />
+<link rel="stylesheet" href="../../../css/comm/other/boxy.css" type="text/css" />
+<script type="text/javascript" src="../../../js/comm/other/table.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/sorttable.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/jquery.boxy.js"></script>
+<script type="text/javascript" src="../../../js/comm/other/js/floatdiv.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".boxy").boxy();
+});
+</script>
+</head>
+<body>
+<h2 class="martop8">地理位置信息</h2>
+          <div id="data"><table>
+            <tr>
+              <th>名称</th>
+              <th>厂商</th>
+              <th>型号</th>
+              <th>登记时间</th>
+              <th>有效期</th>
+              <th>物理位置</th>
+              <th>性能利用率</th>
+            </tr>
+              <tbody>
+                <tr>
+                  <td>warve</td>
+                  <td>CISCO</td>
+                  <td>型号</td>
+                  <td>2001-12-05</td>
+                  <td>有效期</td>
+                  <td>物理位置</td>
+                  <td>80%</td>
+                </tr>
+                <tr>
+                  <td>名称</td>
+                  <td>厂商</td>
+                  <td>型号</td>
+                  <td>登记时间</td>
+                  <td>有效期</td>
+                  <td>物理位置</td>
+                  <td>性能利用率</td>
+                </tr>
+              </tbody>
+            </table>
+             <ul id="page">
+        <li><a class="first" href="#"></a></li>
+        <li><a class="pre" href="#"></a></li>
+        <li><a class="next" href="#"></a></li>
+        <li><a class="last" href="#"></a></li>
+        <li>共 5 页 跳至
+          <input type="text" size="2" class="input"/>
+          &nbsp; </li>
+        <li><a class="R6" href="#">GO</a></li>        
+    </ul>
+      </div>
+     
+    </div>
+    </body>

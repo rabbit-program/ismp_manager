@@ -1,0 +1,71 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/webapp/WEB-INF/content/LM
+http://192.168.9.252/svn/code2
+
+
+
+2011-03-08T02:17:59.080868Z
+3539
+lchao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+index.jsp
+file
+
+
+
+
+2011-03-26T08:51:01.861937Z
+a3528f309b46270f142ca47e506c6c7b
+2010-10-09T03:09:18.422482Z
+804
+wguojie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+745
+
+dLog
+dir
+
+pfLog
+dir
+
+comm
+dir
+

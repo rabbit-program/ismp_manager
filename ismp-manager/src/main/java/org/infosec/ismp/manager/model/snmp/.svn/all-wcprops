@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code2/!svn/ver/3127/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp
+END
+HostResourceHistoryEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2656/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp/HostResourceHistoryEntity.java
+END
+SnmpDeviceHistoryBaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/3127/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp/SnmpDeviceHistoryBaseEntity.java
+END
+NetworkHistoryEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3090/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp/NetworkHistoryEntity.java
+END
+WeblogicHistoryEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2657/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp/WeblogicHistoryEntity.java
+END
+SnmpDeviceHistoryBaseStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/3127/trunk/ismp-manager/src/main/java/org/infosec/ismp/manager/model/snmp/SnmpDeviceHistoryBaseStatus.java
+END

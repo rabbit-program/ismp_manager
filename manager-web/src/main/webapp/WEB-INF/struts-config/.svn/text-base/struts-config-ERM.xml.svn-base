@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+    <form-beans>
+        <form-bean name="respinfoform"
+            type="edu.sjtu.infosec.ismp.manager.ERM.web.form.AddRespInfoForm" />
+            
+          <form-bean name="notifyform"
+            type="edu.sjtu.infosec.ismp.manager.ERM.web.form.NotifyForm" />
+            
+          <form-bean name="procform"
+            type="edu.sjtu.infosec.ismp.manager.ERM.web.form.RespProcForm" />
+            
+           <form-bean name="biaform"
+            type="edu.sjtu.infosec.ismp.manager.ERM.web.form.BiaForm" />
+            
+           <form-bean name="fileprintform" 
+           type="edu.sjtu.infosec.ismp.manager.ERM.web.form.FilePrintFrom" />
+           
+            <form-bean name="showlistform" 
+           type="edu.sjtu.infosec.ismp.manager.ERM.web.form.ShowListForm" />
+           
+            <form-bean name="phoneTreeform" 
+           type="edu.sjtu.infosec.ismp.manager.ERM.web.form.PhoneTreeform" />
+    </form-beans>
+  
+  
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  
+    <action-mappings>
+    <!--应急响应-->
+<!-- 新建预案 -->
+        <action path="/ismp/domain/local/erm/addrespinfo"
+            type="org.springframework.web.struts.DelegatingActionProxy" 
+            input="/WEB-INF/jsp/resp/showList/newResp.jsp"
+            name="respinfoform" 
+            parameter="method" 
+            scope="request">
+            <forward name="opSucc" 
+                path="/WEB-INF/content/ERM/respList/newResp.jsp" />
+            <forward name="addSucc" 
+                path="/ismp/domain/local/erm/respShow.do" />
+            <forward name="error" 
+                path="/WEB-INF/content/ERM/showList/error.jsp" />
+            <forward name="respedit" 
+                path="/WEB-INF/content/ERM/showList/editresp.jsp" />
+        </action>
+        
+<!-- 预案管理 -->
+	    <action path="/ismp/domain/local/erm/respShow"
+	        type="org.springframework.web.struts.DelegatingActionProxy" name="showlistform">
+	        <forward name="success" 
+	            path="/WEB-INF/content/ERM/respList/showList.jsp" />
+	        <forward name="failed" 
+	            path="/WEB-INF/content/ERM/respList/showList.jsp" />
+	    </action>
+	    
+<!-- 修改预案 --><!-- 根据id查看详细应急预案信息 -->
+	    <action path="/ismp/domain/local/erm/updateResp"
+            type="org.springframework.web.struts.DelegatingActionProxy" 
+            parameter="method"
+            name="respinfoform">
+           <forward name="showlistResp" 
+                path="/WEB-INF/content/ERM/respList/updateResp.jsp" />
+            <forward name="update" 
+                path="/ismp/domain/local/erm/respShow.do" />
+            <forward name="deleteinfo" 
+                path="/WEB-INF/content/ERM/respList/showList.jsp" />
+        </action>
+        
+<!-- 应急通知过程 -->
+        <action path="/ismp/domain/local/erm/respnotify"
+            type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" name="notifyform">
+           <forward name="shownotifylist" 
+                path="/WEB-INF/content/ERM/respList/notifyProc.jsp" />
+           <forward name="deletenotify" 
+                 path="/ismp/domain/local/erm/respnotify.do?method=showNotify" />
+        </action>
+        
+<!-- 应急响应过程 -->
+        <action path="/ismp/domain/local/erm/respproc"
+            type="org.springframework.web.struts.DelegatingActionProxy" 
+            parameter="method" 
+            name="procform">
+           <forward name="showrespproc" 
+                path="/WEB-INF/content/ERM/respList/respProc.jsp" />
+        </action>
+        
+<!-- 预案文件打印 -->
+        <action path="/ismp/domain/local/erm/respPrint"
+            type="org.springframework.web.struts.DelegatingActionProxy" name="fileprintform" parameter="method">
+            <forward name="success" 
+                path="/WEB-INF/content/ERM/respPrint/filePrint.jsp" />
+            <forward name="failed" 
+                path="/WEB-INF/content/ERM/respPrint/filePrint.jsp" />
+            <forward name="filecount" 
+                path="/WEB-INF/content/ERM/respPrint/filePrint.jsp" />
+        </action>
+        
+<!-- BIA -->
+        <action path="/ismp/domain/local/erm/bia"
+            type="org.springframework.web.struts.DelegatingActionProxy" 
+            parameter="method" 
+            name="biaform">
+           <forward name="showBia" 
+                path="/WEB-INF/content/ERM/respList/bia.jsp" />
+           <forward name="update" 
+                path="/WEB-INF/content/ERM/respList/bia.jsp" />
+        </action>
+        
+<!-- 电话树-->
+        <action path="/ismp/domain/local/erm/phoneTree"
+            type="org.springframework.web.struts.DelegatingActionProxy"
+            parameter="method" 
+            name="phoneTreeform">
+            <forward name="success"  
+                path="/WEB-INF/content/ERM/respList/tellTreeManager/tellTree.jsp" />
+            <forward name="failed" 
+                path="/WEB-INF/content/ERM/respList/tellTreeManager/tellTree.jsp" />
+            <forward name="addteam"
+            	path="/WEB-INF/content/ERM/respList/tellTreeManager/newNode.jsp"/>
+             <forward name="addperson"
+            	path="/WEB-INF/content/ERM/respList/tellTreeManager/telltree_sub.jsp"/>
+        </action>
+<!-- 报表 -->
+        <action path="/ismp/domain/local/erm/reports/RespSchemeReport" type="edu.sjtu.infosec.ismp.manager.ERM.web.reports.RespSchemeReport"/>
+    </action-mappings>
+  
+  
+  
+  <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
+  <message-resources parameter="application"></message-resources>
+    <!--<message-resources parameter="ApplicationResources_resp.properties" key="resp" />-->
+</struts-config>

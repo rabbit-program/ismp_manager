@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code2/!svn/ver/3639/trunk/ismp-manager/src/main/resources/event
+END
+applicationContext-service-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/3639/trunk/ismp-manager/src/main/resources/event/applicationContext-service-event.xml
+END
+applicationContext-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/1865/trunk/ismp-manager/src/main/resources/event/applicationContext-event.xml
+END
+applicationContext-dao-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/code2/!svn/ver/1865/trunk/ismp-manager/src/main/resources/event/applicationContext-dao-event.xml
+END
+applicationContext-resources-event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/code2/!svn/ver/1865/trunk/ismp-manager/src/main/resources/event/applicationContext-resources-event.xml
+END

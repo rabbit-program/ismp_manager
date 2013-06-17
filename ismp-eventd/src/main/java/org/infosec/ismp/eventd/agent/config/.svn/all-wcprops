@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/844/trunk/ismp-eventd/src/main/java/org/infosec/ismp/eventd/agent/config
+END
+EventdConfigManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/844/trunk/ismp-eventd/src/main/java/org/infosec/ismp/eventd/agent/config/EventdConfigManager.java
+END
+EventdConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/844/trunk/ismp-eventd/src/main/java/org/infosec/ismp/eventd/agent/config/EventdConfig.java
+END

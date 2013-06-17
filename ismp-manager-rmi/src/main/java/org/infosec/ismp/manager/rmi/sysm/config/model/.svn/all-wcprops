@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/code2/!svn/ver/3470/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/model
+END
+SysConfigSms.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2771/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/model/SysConfigSms.java
+END
+SysConfigDataSyn.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/2771/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/model/SysConfigDataSyn.java
+END
+SysConfigDb.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/3470/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/sysm/config/model/SysConfigDb.java
+END

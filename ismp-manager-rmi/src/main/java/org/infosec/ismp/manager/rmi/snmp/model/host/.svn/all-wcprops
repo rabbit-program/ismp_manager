@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/code2/!svn/ver/3357/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host
+END
+HostDeviceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/3095/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/HostDeviceStatus.java
+END
+ProcessStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/ProcessStatus.java
+END
+InterfaceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/InterfaceStatus.java
+END
+ProcessesStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/3357/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/ProcessesStatus.java
+END
+CPUStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/2915/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/CPUStatus.java
+END
+MemoryStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/3131/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/MemoryStatus.java
+END
+HardDiskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/2768/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/HardDiskStatus.java
+END
+NetworkStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/2768/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/NetworkStatus.java
+END
+PartitionStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/2640/trunk/ismp-manager-rmi/src/main/java/org/infosec/ismp/manager/rmi/snmp/model/host/PartitionStatus.java
+END

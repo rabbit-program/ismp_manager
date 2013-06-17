@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/servicecheck
+END
+applicationContext-serviceCheck.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2235/trunk/ismp-manager/src/main/resources/servicecheck/applicationContext-serviceCheck.xml
+END
+applicationContext-serviceCheck-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/code2/!svn/ver/3283/trunk/ismp-manager/src/main/resources/servicecheck/applicationContext-serviceCheck-rmi.xml
+END

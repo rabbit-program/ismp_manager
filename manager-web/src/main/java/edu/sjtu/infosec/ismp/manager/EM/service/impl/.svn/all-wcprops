@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/code2/!svn/ver/2244/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl
+END
+EventcorrruleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventcorrruleService.java
+END
+EventmoniinfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventmoniinfoService.java
+END
+EventmoniService.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventmoniService.java
+END
+EventrealdispService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventrealdispService.java
+END
+EventStatisticsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventStatisticsService.java
+END
+GetTopoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/2244/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/GetTopoInfo.java
+END
+EventtaskseleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/code2/!svn/ver/1591/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/EM/service/impl/EventtaskseleService.java
+END

@@ -1,0 +1,52 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/SCM
+http://192.168.9.252/svn/code2
+
+
+
+2011-01-18T06:48:21.617505Z
+3396
+changchao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+test
+dir
+
+model
+dir
+
+service
+dir
+
+dao
+dir
+
+rmi
+dir
+
+comm
+dir
+
+util
+dir
+
+web
+dir
+

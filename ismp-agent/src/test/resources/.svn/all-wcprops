@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code2/!svn/ver/3278/trunk/ismp-agent/src/test/resources
+END
+hbm2ddl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code2/!svn/ver/3278/trunk/ismp-agent/src/test/resources/hbm2ddl.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code2/!svn/ver/3278/trunk/ismp-agent/src/test/resources/hibernate.cfg.xml
+END

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/2262/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model
+END
+AsseKnowDicCpKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicCpKind.java
+END
+AsseInfoLeak.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2199/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseInfoLeak.java
+END
+AsseKnowDicSecuLeve.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicSecuLeve.java
+END
+AsseInfoPape.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseInfoPape.java
+END
+AsseKnowStatThreKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatThreKind.java
+END
+AsseKnowDicRiskMatrRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicRiskMatrRule.java
+END
+AsseKnowDynaAsseResu.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaAsseResu.java
+END
+AsseResuHandOn.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseResuHandOn.java
+END
+AsseKnowDicAsseStat.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicAsseStat.java
+END
+AsseInfoAsse.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2262/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseInfoAsse.java
+END
+AsseKnowDynaLeakThre.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaLeakThre.java
+END
+AsseKnowDynaThre.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaThre.java
+END
+AsseInfoBusi.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseInfoBusi.java
+END
+AsseKnowDicAsseKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicAsseKind.java
+END
+AsseKnowDynaWarn.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaWarn.java
+END
+AsseKnowStatVulnKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatVulnKind.java
+END
+AsseInfoProj.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseInfoProj.java
+END
+AsseKnowDicProg.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicProg.java
+END
+AsseKnowDynaLeak.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaLeak.java
+END
+AsseKnowStatLeakThre.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatLeakThre.java
+END
+AsseKnowStatCVEThre.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatCVEThre.java
+END
+AsseKnowDynaVTARepo.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaVTARepo.java
+END
+AsseKnowDynaElemResu.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaElemResu.java
+END
+AsseKnowStatThre.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatThre.java
+END
+AsseKnowStatSecuElem.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatSecuElem.java
+END
+AsseKnowDynaVuln.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaVuln.java
+END
+AsseKnowDicQuesKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDicQuesKind.java
+END
+AsseKnowDynaAsseValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowDynaAsseValue.java
+END
+AsseKnowStatWarnStri.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatWarnStri.java
+END
+AsseKnowStatVulnPoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatVulnPoin.java
+END
+AsseKnowStatLeak.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/1342/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM/model/AsseKnowStatLeak.java
+END

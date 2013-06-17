@@ -1,0 +1,43 @@
+9
+
+dir
+3698
+http://192.168.9.252/svn/code2/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/RAM
+http://192.168.9.252/svn/code2
+
+
+
+2011-01-07T21:21:10.385107Z
+3219
+tanglibo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06340d00-c960-c84c-885f-82298c7987cd
+
+model
+dir
+
+service
+dir
+
+dao
+dir
+
+comm
+dir
+
+web
+dir
+

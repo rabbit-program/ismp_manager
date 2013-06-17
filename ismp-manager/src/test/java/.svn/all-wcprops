@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code2/!svn/ver/3569/trunk/ismp-manager/src/test/java
+END
+MockPingRemoveWebClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/2174/trunk/ismp-manager/src/test/java/MockPingRemoveWebClient.java
+END
+MockPingGetWebclient.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code2/!svn/ver/2441/trunk/ismp-manager/src/test/java/MockPingGetWebclient.java
+END
+MockPingWebClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code2/!svn/ver/2148/trunk/ismp-manager/src/test/java/MockPingWebClient.java
+END

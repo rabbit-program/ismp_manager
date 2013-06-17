@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form
+END
+SoftForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/SoftForm.java
+END
+HardwareForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/HardwareForm.java
+END
+AssetForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/AssetForm.java
+END
+ExcelForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/ExcelForm.java
+END
+SoftRelatingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/SoftRelatingForm.java
+END
+HardwareRaletingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/HardwareRaletingForm.java
+END
+SearchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/SearchForm.java
+END
+AssetChangeLogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/AssetChangeLogForm.java
+END
+LocationForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/code2/!svn/ver/2073/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/AM/web/form/LocationForm.java
+END

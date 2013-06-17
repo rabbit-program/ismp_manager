@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/2951/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet
+END
+WangLuoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/code2/!svn/ver/3749/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet/WangLuoServlet.java
+END
+JiFangServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3749/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet/JiFangServlet.java
+END
+AnQuanYuServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/code2/!svn/ver/3749/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet/AnQuanYuServlet.java
+END
+JiGuiServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3749/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet/JiGuiServlet.java
+END
+ZhuJiServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/code2/!svn/ver/3749/trunk/manager-web/src/main/java/edu/sjtu/infosec/ismp/manager/BSAM/servlet/ZhuJiServlet.java
+END

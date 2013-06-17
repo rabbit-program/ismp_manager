@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl
+END
+SituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/SituationServiceImpl.java
+END
+SecurityAreaSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/SecurityAreaSituationServiceImpl.java
+END
+MachineRoomServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/code2/!svn/ver/1145/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineRoomServiceImpl.java
+END
+MachineRoomSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineRoomSituationServiceImpl.java
+END
+SituationEventServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1215/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/SituationEventServiceImpl.java
+END
+MachineServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/code2/!svn/ver/1004/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineServiceImpl.java
+END
+MachineSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineSituationServiceImpl.java
+END
+RecordIndexServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/code2/!svn/ver/983/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/RecordIndexServiceImpl.java
+END
+MachineCabinetServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1004/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineCabinetServiceImpl.java
+END
+MachineCabinetSituationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/MachineCabinetSituationServiceImpl.java
+END
+SituationPipe.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/code2/!svn/ver/3546/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/SituationPipe.java
+END
+ColorThresholdServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/code2/!svn/ver/1005/trunk/ismp-situation/src/main/java/org/infosec/ismp/situation/service/impl/ColorThresholdServiceImpl.java
+END

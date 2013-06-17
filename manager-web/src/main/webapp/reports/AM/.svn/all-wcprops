@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code2/!svn/ver/2622/trunk/manager-web/src/main/webapp/reports/AM
+END
+netQuByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netQuByDay.jrxml
+END
+DeviceCountInBureauGroupByTypeTable.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/code2/!svn/ver/2622/trunk/manager-web/src/main/webapp/reports/AM/DeviceCountInBureauGroupByTypeTable.jrxml
+END
+SoftwareList.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/2622/trunk/manager-web/src/main/webapp/reports/AM/SoftwareList.jrxml
+END
+diskPerformanceByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/diskPerformanceByYear.jrxml
+END
+HardwareList.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/HardwareList.jrxml
+END
+netIntByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netIntByDay.jrxml
+END
+DevicePerformanceGroupByType.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DevicePerformanceGroupByType.jrxml
+END
+onLineByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/onLineByYear.jrxml
+END
+memoryPerformanceByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/memoryPerformanceByYear.jrxml
+END
+netQuByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netQuByYear.jrxml
+END
+asset_device.xls
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/2622/trunk/manager-web/src/main/webapp/reports/AM/asset_device.xls
+END
+cpuPerformanceByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/cpuPerformanceByMonth.jrxml
+END
+diskPerformanceByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/diskPerformanceByMonth.jrxml
+END
+DeviceLifecycle.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DeviceLifecycle.jrxml
+END
+DeviceCountInBureauGroupByTypeImage.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DeviceCountInBureauGroupByTypeImage.jrxml
+END
+DeviceDetailsInfo.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DeviceDetailsInfo.jrxml
+END
+onLineByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/onLineByMonth.jrxml
+END
+cpuPerformanceByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/cpuPerformanceByYear.jrxml
+END
+memoryPerformanceByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/memoryPerformanceByMonth.jrxml
+END
+DeviceList.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/2622/trunk/manager-web/src/main/webapp/reports/AM/DeviceList.jrxml
+END
+netQuByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netQuByMonth.jrxml
+END
+netIntByMonth.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netIntByMonth.jrxml
+END
+cpuPerformanceByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/cpuPerformanceByDay.jrxml
+END
+diskPerformanceByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/diskPerformanceByDay.jrxml
+END
+DeviceBaseInfo.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DeviceBaseInfo.jrxml
+END
+SoftwareInfo.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/SoftwareInfo.jrxml
+END
+HardwareInfo.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/HardwareInfo.jrxml
+END
+onLineByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/onLineByDay.jrxml
+END
+netIntByYear.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/netIntByYear.jrxml
+END
+DeviceCountInBureauGroupByType.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DeviceCountInBureauGroupByType.jrxml
+END
+PositionInfo.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/PositionInfo.jrxml
+END
+DevicePerformance.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/DevicePerformance.jrxml
+END
+memoryPerformanceByDay.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/code2/!svn/ver/816/trunk/manager-web/src/main/webapp/reports/AM/memoryPerformanceByDay.jrxml
+END
